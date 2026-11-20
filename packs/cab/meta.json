@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "category": "archive",
   "order": 208,
-  "summary": "Microsoft Cabinet (.cab): header with its optional reserve and chained-cabinet fields, the folder table, and the file table followed to its offset.",
+  "summary": "Microsoft Cabinet archive",
   "description": "Microsoft Cabinet (.cab): header with its optional reserve and chained-cabinet fields, the folder table, and the file table followed to its offset.",
   "tags": [
     "archive",
@@ -21,6 +21,7 @@
   "source": {
     "provider": "nybble",
     "id": "cab",
+    "format": "CAB",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/cab",
     "license": "Nybble format registry"

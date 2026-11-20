@@ -18,6 +18,7 @@
   "source": {
     "provider": "nybble",
     "id": "avi",
+    "format": "AVI",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/avi",
     "license": "Nybble format registry"

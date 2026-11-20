@@ -3,8 +3,8 @@
   "name": "NTFS boot sector",
   "version": "1.0.0",
   "category": "system",
-  "order": 248,
-  "summary": "NTFS boot sector: geometry, the clusters holding the MFT and its mirror, and the volume serial number.",
+  "order": 252,
+  "summary": "NTFS volume boot record",
   "description": "NTFS boot sector: geometry, the clusters holding the MFT and its mirror, and the volume serial number.",
   "tags": [
     "filesystem",
@@ -20,6 +20,7 @@
   "source": {
     "provider": "nybble",
     "id": "ntfs",
+    "format": "NTFS",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/ntfs",
     "license": "Nybble format registry"

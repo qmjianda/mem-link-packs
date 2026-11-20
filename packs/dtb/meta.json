@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "category": "system",
   "order": 215,
-  "summary": "Flattened device tree (.dtb / FIT): header, memory reservation map, the full structure block token walk and the strings block.",
+  "summary": "Flattened device tree blob (also U-Boot FIT images)",
   "description": "Flattened device tree (.dtb / FIT): header, memory reservation map, the full structure block token walk and the strings block.",
   "tags": [
     "firmware",
@@ -21,6 +21,7 @@
   "source": {
     "provider": "nybble",
     "id": "dtb",
+    "format": "DTB",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/dtb",
     "license": "Nybble format registry"

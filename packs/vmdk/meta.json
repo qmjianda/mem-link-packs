@@ -3,8 +3,8 @@
   "name": "VMDK sparse disk",
   "version": "1.0.0",
   "category": "system",
-  "order": 267,
-  "summary": "VMware sparse extent header: capacity, grain size, the embedded text descriptor and the grain directory.",
+  "order": 274,
+  "summary": "VMware virtual disk, hosted sparse extent (KDMV)",
   "description": "VMware sparse extent header: capacity, grain size, the embedded text descriptor and the grain directory.",
   "tags": [
     "filesystem",
@@ -21,6 +21,7 @@
   "source": {
     "provider": "nybble",
     "id": "vmdk",
+    "format": "VMDK",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/vmdk",
     "license": "Nybble format registry"

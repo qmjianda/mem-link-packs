@@ -3,8 +3,8 @@
   "name": "Game Boy ROM",
   "version": "1.0.0",
   "category": "game",
-  "order": 221,
-  "summary": "Game Boy and Game Boy Color cartridge header at 0x100: title, mapper, ROM and RAM sizes, and both checksums.",
+  "order": 222,
+  "summary": "Game Boy / Game Boy Color cartridge ROM",
   "description": "Game Boy and Game Boy Color cartridge header at 0x100: title, mapper, ROM and RAM sizes, and both checksums.",
   "tags": [
     "game",
@@ -21,6 +21,7 @@
   "source": {
     "provider": "nybble",
     "id": "gameboy",
+    "format": "GB",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/gameboy",
     "license": "Nybble format registry"

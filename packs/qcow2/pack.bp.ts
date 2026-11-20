@@ -24,18 +24,18 @@ const Qcow2AutoclearFeatures = struct("Qcow2AutoclearFeatures", [
 
 const Qcow2 = struct("Qcow2", [
   bytes("magic", { size: 4, label: "51 46 49 FB, the ASCII QFI followed by 0xFB" }),
-  u32("version", { endian: "little", label: "2 or 3" }),
-  u64("backingFileOffset", { endian: "little", label: "offset of the backing file path string, 0 if this image stands alone" }),
-  u32("backingFileSize", { endian: "little", label: "length of that path in bytes, no terminator" }),
-  u32("clusterBits", { endian: "little", label: "cluster size as a power of two; 16 means 65536 bytes" }),
-  u64("size", { endian: "little", label: "virtual disk size the guest sees, in bytes" }),
+  u32("version", { endian: "big", label: "2 or 3" }),
+  u64("backingFileOffset", { endian: "big", label: "offset of the backing file path string, 0 if this image stands alone" }),
+  u32("backingFileSize", { endian: "big", label: "length of that path in bytes, no terminator" }),
+  u32("clusterBits", { endian: "big", label: "cluster size as a power of two; 16 means 65536 bytes" }),
+  u64("size", { endian: "big", label: "virtual disk size the guest sees, in bytes" }),
   u32("cryptMethod", { values: { "0": "NoEncryption", "1": "Aes", "2": "Luks" }, label: "how guest data is encrypted" }),
-  u32("l1Size", { endian: "little", label: "entries in the L1 table" }),
-  u64("l1TableOffset", { endian: "little", label: "offset of the L1 table; cluster aligned" }),
-  u64("refcountTableOffset", { endian: "little", label: "offset of the refcount table; cluster aligned" }),
-  u32("refcountTableClusters", { endian: "little", label: "clusters occupied by the refcount table" }),
-  u32("nbSnapshots", { endian: "little", label: "number of internal snapshots" }),
-  u64("snapshotsOffset", { endian: "little", label: "offset of the snapshot table" }),
+  u32("l1Size", { endian: "big", label: "entries in the L1 table" }),
+  u64("l1TableOffset", { endian: "big", label: "offset of the L1 table; cluster aligned" }),
+  u64("refcountTableOffset", { endian: "big", label: "offset of the refcount table; cluster aligned" }),
+  u32("refcountTableClusters", { endian: "big", label: "clusters occupied by the refcount table" }),
+  u32("nbSnapshots", { endian: "big", label: "number of internal snapshots" }),
+  u64("snapshotsOffset", { endian: "big", label: "offset of the snapshot table" }),
 ]);
 
 export default definePack({

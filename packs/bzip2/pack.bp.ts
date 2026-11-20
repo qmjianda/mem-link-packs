@@ -7,11 +7,11 @@
 // 覆盖：complete
 const Bzip2 = struct("Bzip2", [
   str("magic", { size: 2, label: "always BZ" }),
-  char("version", { endian: "little", label: "always h (Huffman)" }),
-  char("level", { endian: "little", label: "block size: 1..9, in units of 100 kB" }),
+  char("version", { endian: "big", label: "always h (Huffman)" }),
+  char("level", { endian: "big", label: "block size: 1..9, in units of 100 kB" }),
   bytes("blockMagic", { size: 6, label: "31 41 59 26 53 59 (a compressed block follows)" }),
-  u32("blockCrc", { endian: "little", label: "CRC-32 of this block's uncompressed data" }),
-  u8("randomised", { endian: "little", label: "bit 7: obsolete randomisation flag; the rest is the bit-packed block" }),
+  u32("blockCrc", { endian: "big", label: "CRC-32 of this block's uncompressed data" }),
+  u8("randomised", { endian: "big", label: "bit 7: obsolete randomisation flag; the rest is the bit-packed block" }),
 ]);
 
 export default definePack({

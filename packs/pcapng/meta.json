@@ -3,8 +3,8 @@
   "name": "pcapng capture",
   "version": "1.0.0",
   "category": "network",
-  "order": 252,
-  "summary": "pcapng capture: walks every block, decoding the common block types.",
+  "order": 256,
+  "summary": "Wireshark/dumpcap block-structured capture",
   "description": "pcapng capture: walks every block, decoding the common block types.",
   "tags": [
     "network",
@@ -19,6 +19,7 @@
   "source": {
     "provider": "nybble",
     "id": "pcapng",
+    "format": "PCAPNG",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/pcapng",
     "license": "Nybble format registry"

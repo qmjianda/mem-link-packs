@@ -1,10 +1,10 @@
 {
-  "id": "tiff",
-  "name": "TIFF image",
+  "id": "tiff-le",
+  "name": "TIFF (LE)",
   "version": "1.0.0",
   "category": "image",
-  "order": 262,
-  "summary": "TIFF header + first image file directory (both byte orders).",
+  "order": 267,
+  "summary": "TIFF image, little-endian (II)",
   "description": "TIFF header + first image file directory (both byte orders).",
   "tags": [
     "image",
@@ -18,6 +18,7 @@
   "source": {
     "provider": "nybble",
     "id": "tiff",
+    "format": "TIFF (LE)",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/tiff",
     "license": "Nybble format registry"

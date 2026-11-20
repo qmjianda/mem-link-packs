@@ -3,7 +3,7 @@
   "name": "Apple icon image",
   "version": "1.0.0",
   "category": "image",
-  "order": 229,
+  "order": 230,
   "summary": "Apple .icns icon family: the file header and its stream of icon elements.",
   "description": "Apple .icns icon family: the file header and its stream of icon elements.",
   "tags": [
@@ -19,6 +19,7 @@
   "source": {
     "provider": "nybble",
     "id": "icns",
+    "format": "ICNS",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/icns",
     "license": "Nybble format registry"

@@ -3,8 +3,8 @@
   "name": "PDB debug database",
   "version": "1.0.0",
   "category": "system",
-  "order": 245,
-  "summary": "Microsoft PDB / MSF 7.0 superblock: block size, the free block maps and where the stream directory lives.",
+  "order": 249,
+  "summary": "Microsoft program database (MSF 7.0 container)",
   "description": "Microsoft PDB / MSF 7.0 superblock: block size, the free block maps and where the stream directory lives.",
   "tags": [
     "system",
@@ -22,6 +22,7 @@
   "source": {
     "provider": "nybble",
     "id": "msf",
+    "format": "PDB",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/msf",
     "license": "Nybble format registry"

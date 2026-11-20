@@ -1,10 +1,10 @@
 {
-  "id": "macho-fat",
-  "name": "Mach-O universal binary",
+  "id": "universal-binary-64-bit-table",
+  "name": "Universal binary (64-bit table)",
   "version": "1.0.0",
   "category": "executable",
-  "order": 237,
-  "summary": "Apple fat / universal binary: the architecture slice table, with each slice's Mach-O magic peeked.",
+  "order": 241,
+  "summary": "Mach-O fat binary with 64-bit slice offsets (FAT_MAGIC_64)",
   "description": "Apple fat / universal binary: the architecture slice table, with each slice's Mach-O magic peeked.",
   "tags": [
     "executable",
@@ -20,6 +20,7 @@
   "source": {
     "provider": "nybble",
     "id": "macho-fat",
+    "format": "Universal binary (64-bit table)",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/macho-fat",
     "license": "Nybble format registry"

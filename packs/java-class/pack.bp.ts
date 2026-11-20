@@ -6,25 +6,25 @@
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
 // 覆盖：partial；未移植 4 项（见文件末尾）
 const CpUtf8 = struct("CpUtf8", [
-  u16("length", { endian: "little" }),
+  u16("length", { endian: "big" }),
 ]);
 
 const CpRef = struct("CpRef", [
-  u16("classIndex", { endian: "little" }),
-  u16("nameTypeIndex", { endian: "little", label: "class/field/method reference" }),
+  u16("classIndex", { endian: "big" }),
+  u16("nameTypeIndex", { endian: "big", label: "class/field/method reference" }),
 ]);
 
 const CpIndex1 = struct("CpIndex1", [
-  u16("index", { endian: "little", label: "single constant-pool index" }),
+  u16("index", { endian: "big", label: "single constant-pool index" }),
 ]);
 
 const CpMethodHandle = struct("CpMethodHandle", [
-  u8("refKind", { endian: "little" }),
-  u16("refIndex", { endian: "little", label: "method handle" }),
+  u8("refKind", { endian: "big" }),
+  u16("refIndex", { endian: "big", label: "method handle" }),
 ]);
 
 const CpInfo = struct("CpInfo", [
-  u8("tag", { endian: "little", label: "constant type tag" }),
+  u8("tag", { endian: "big", label: "constant type tag" }),
 ]);
 
 const ClassAccess = struct("ClassAccess", [
@@ -41,9 +41,9 @@ const ClassAccess = struct("ClassAccess", [
 
 const ClassFile = struct("ClassFile", [
   str("magic", { size: 4, label: "magic CAFEBABE" }),
-  u16("minor", { endian: "little", label: "minor version" }),
-  u16("major", { endian: "little", label: "major version (52 = Java 8, 61 = Java 17)" }),
-  u16("cpCount", { endian: "little", label: "constant pool count (entries = count - 1)" }),
+  u16("minor", { endian: "big", label: "minor version" }),
+  u16("major", { endian: "big", label: "major version (52 = Java 8, 61 = Java 17)" }),
+  u16("cpCount", { endian: "big", label: "constant pool count (entries = count - 1)" }),
 ]);
 
 export default definePack({

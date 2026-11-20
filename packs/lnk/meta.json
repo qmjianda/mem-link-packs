@@ -3,8 +3,8 @@
   "name": "Windows shortcut",
   "version": "1.0.0",
   "category": "system",
-  "order": 235,
-  "summary": "Windows .lnk ShellLinkHeader: timestamps, target attributes and link flags.",
+  "order": 237,
+  "summary": "Windows shell link (shortcut) header",
   "description": "Windows .lnk ShellLinkHeader: timestamps, target attributes and link flags.",
   "tags": [
     "windows",
@@ -20,6 +20,7 @@
   "source": {
     "provider": "nybble",
     "id": "lnk",
+    "format": "LNK",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/lnk",
     "license": "Nybble format registry"

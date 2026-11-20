@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "category": "system",
   "order": 216,
-  "summary": "Windows EVTX event log: the file header and every 64 KiB chunk header, with the record numbering that survives rollover.",
+  "summary": "Windows Vista and later event log",
   "description": "Windows EVTX event log: the file header and every 64 KiB chunk header, with the record numbering that survives rollover.",
   "tags": [
     "system",
@@ -20,6 +20,7 @@
   "source": {
     "provider": "nybble",
     "id": "evtx",
+    "format": "EVTX",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/evtx",
     "license": "Nybble format registry"

@@ -3,8 +3,8 @@
   "name": "NIfTI-1 image",
   "version": "1.0.0",
   "category": "image",
-  "order": 247,
-  "summary": "NIfTI-1 348-byte header: dimensions, data type, scaling and both spatial transforms.",
+  "order": 251,
+  "summary": "NIfTI-1 neuroimaging volume (single file, .nii)",
   "description": "NIfTI-1 348-byte header: dimensions, data type, scaling and both spatial transforms.",
   "tags": [
     "image",
@@ -20,6 +20,7 @@
   "source": {
     "provider": "nybble",
     "id": "nifti",
+    "format": "NIfTI",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/nifti",
     "license": "Nybble format registry"

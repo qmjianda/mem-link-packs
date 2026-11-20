@@ -3,8 +3,8 @@
   "name": "HDF5 file",
   "version": "1.0.0",
   "category": "database",
-  "order": 227,
-  "summary": "HDF5 superblock, root group and its member index: the container behind NetCDF-4, MATLAB v7.3 and Keras .h5 files.",
+  "order": 228,
+  "summary": "Hierarchical Data Format 5, superblock versions 0 to 3",
   "description": "HDF5 superblock, root group and its member index: the container behind NetCDF-4, MATLAB v7.3 and Keras .h5 files.",
   "tags": [
     "database",
@@ -22,6 +22,7 @@
   "source": {
     "provider": "nybble",
     "id": "hdf5",
+    "format": "HDF5",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/hdf5",
     "license": "Nybble format registry"

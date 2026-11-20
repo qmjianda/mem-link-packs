@@ -12,9 +12,9 @@ const FlacBlockHeader = struct("FlacBlockHeader", [
 
 const FlacBlock = struct("FlacBlock", [
   record("header", FlacBlockHeader, { label: "bit7 = last block, bits0-6 = type (0 = STREAMINFO)" }),
-  u8("lenHi", { endian: "little", label: "length byte (high)" }),
-  u8("lenMid", { endian: "little", label: "length byte (mid)" }),
-  u8("lenLo", { endian: "little", label: "length byte (low)" }),
+  u8("lenHi", { endian: "big", label: "length byte (high)" }),
+  u8("lenMid", { endian: "big", label: "length byte (mid)" }),
+  u8("lenLo", { endian: "big", label: "length byte (low)" }),
 ]);
 
 const Flac = struct("Flac", [

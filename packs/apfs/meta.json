@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "category": "system",
   "order": 203,
-  "summary": "Apple File System container superblock, its object map, and the first volume superblock it maps to.",
+  "summary": "APFS container (NXSB), as a raw partition or image",
   "description": "Apple File System container superblock, its object map, and the first volume superblock it maps to.",
   "tags": [
     "filesystem",
@@ -21,6 +21,7 @@
   "source": {
     "provider": "nybble",
     "id": "apfs",
+    "format": "APFS",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/apfs",
     "license": "Nybble format registry"

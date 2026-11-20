@@ -7,10 +7,10 @@
 // 覆盖：complete
 const Aiff = struct("Aiff", [
   str("form", { size: 4, label: "FORM container tag" }),
-  u32("fileSize", { endian: "little", label: "size of everything after this field" }),
+  u32("fileSize", { endian: "big", label: "size of everything after this field" }),
   str("formType", { size: 4, label: "AIFF (or AIFC for compressed)" }),
   str("firstCkID", { size: 4, label: "first chunk id (often COMM or FVER)" }),
-  u32("firstCkSize", { endian: "little", label: "size of the first chunk" }),
+  u32("firstCkSize", { endian: "big", label: "size of the first chunk" }),
 ]);
 
 export default definePack({

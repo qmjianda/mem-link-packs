@@ -20,6 +20,7 @@
   "source": {
     "provider": "nybble",
     "id": "dds",
+    "format": "DDS",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/dds",
     "license": "Nybble format registry"

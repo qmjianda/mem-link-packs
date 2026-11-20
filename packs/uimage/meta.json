@@ -3,8 +3,8 @@
   "name": "U-Boot uImage",
   "version": "1.0.0",
   "category": "system",
-  "order": 264,
-  "summary": "U-Boot legacy image header: the 64-byte big-endian header on embedded kernels and ramdisks.",
+  "order": 271,
+  "summary": "U-Boot legacy image header",
   "description": "U-Boot legacy image header: the 64-byte big-endian header on embedded kernels and ramdisks.",
   "tags": [
     "firmware",
@@ -20,6 +20,7 @@
   "source": {
     "provider": "nybble",
     "id": "uimage",
+    "format": "UIMAGE",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/uimage",
     "license": "Nybble format registry"

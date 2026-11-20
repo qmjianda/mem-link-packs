@@ -3,8 +3,8 @@
   "name": "gzip compressed",
   "version": "1.0.0",
   "category": "archive",
-  "order": 226,
-  "summary": "gzip member header, including the optional extra field, original file name and comment.",
+  "order": 227,
+  "summary": "gzip compressed data (RFC 1952)",
   "description": "gzip member header, including the optional extra field, original file name and comment.",
   "tags": [
     "archive",
@@ -20,6 +20,7 @@
   "source": {
     "provider": "nybble",
     "id": "gzip",
+    "format": "GZIP",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/gzip",
     "license": "Nybble format registry"

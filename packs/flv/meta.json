@@ -3,8 +3,8 @@
   "name": "FLV video",
   "version": "1.0.0",
   "category": "media",
-  "order": 220,
-  "summary": "Flash Video: header and the full tag stream, with audio, video and script tag headers decoded.",
+  "order": 221,
+  "summary": "Flash Video / F4V container",
   "description": "Flash Video: header and the full tag stream, with audio, video and script tag headers decoded.",
   "tags": [
     "video",
@@ -20,6 +20,7 @@
   "source": {
     "provider": "nybble",
     "id": "flv",
+    "format": "FLV",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/flv",
     "license": "Nybble format registry"

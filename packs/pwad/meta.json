@@ -1,10 +1,10 @@
 {
-  "id": "wad",
-  "name": "Doom WAD",
+  "id": "pwad",
+  "name": "PWAD",
   "version": "1.0.0",
   "category": "game",
-  "order": 268,
-  "summary": "Doom WAD: the header and the full lump directory, followed to its offset.",
+  "order": 276,
+  "summary": "Doom PWAD, a patch loaded over an IWAD",
   "description": "Doom WAD: the header and the full lump directory, followed to its offset.",
   "tags": [
     "game",
@@ -21,6 +21,7 @@
   "source": {
     "provider": "nybble",
     "id": "wad",
+    "format": "PWAD",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/wad",
     "license": "Nybble format registry"

@@ -7,19 +7,19 @@
 // 覆盖：partial；未移植 2 项（见文件末尾）
 const FatArch = struct("FatArch", [
   i32("cputype", { values: { "1": "Vax", "6": "Mc680x0", "7": "X86", "16777223": "X86_64", "10": "Mc98000", "11": "Hppa", "12": "Arm", "16777228": "Arm64", "33554444": "Arm64_32", "13": "Mc88000", "14": "Sparc", "15": "I860", "18": "PowerPC", "16777234": "PowerPC64" }, label: "CPU family of this slice" }),
-  u32("cpusubtype", { endian: "little", label: "CPU subtype (bit 31 = lib64; arm64e = 2, x86_64h = 8)" }),
-  u32("offset", { endian: "little", label: "file offset of the slice's Mach-O image" }),
-  u32("size", { endian: "little", label: "slice size in bytes" }),
-  u32("align", { endian: "little", label: "slice alignment as a power of two (14 = 16 KB)" }),
+  u32("cpusubtype", { endian: "big", label: "CPU subtype (bit 31 = lib64; arm64e = 2, x86_64h = 8)" }),
+  u32("offset", { endian: "big", label: "file offset of the slice's Mach-O image" }),
+  u32("size", { endian: "big", label: "slice size in bytes" }),
+  u32("align", { endian: "big", label: "slice alignment as a power of two (14 = 16 KB)" }),
 ]);
 
 const FatHeader = struct("FatHeader", [
-  u32("magic", { endian: "little", label: "0xCAFEBABE" }),
-  u32("nfatArch", { endian: "little", label: "number of architecture slices" }),
+  u32("magic", { endian: "big", label: "0xCAFEBABE" }),
+  u32("nfatArch", { endian: "big", label: "number of architecture slices" }),
 ]);
 
 export default definePack({
-  name: "Universal binary",
+  name: "Universal binary (3 slices)",
   endian: "big",
   pointerSize: 4,
   types: [FatArch, FatHeader],

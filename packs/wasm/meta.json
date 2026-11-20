@@ -3,8 +3,8 @@
   "name": "WebAssembly module",
   "version": "1.0.0",
   "category": "executable",
-  "order": 269,
-  "summary": "WebAssembly binary module: LEB128-driven sections, with type, function, export and code decoded.",
+  "order": 277,
+  "summary": "WebAssembly binary module",
   "description": "WebAssembly binary module: LEB128-driven sections, with type, function, export and code decoded.",
   "tags": [
     "executable",
@@ -20,6 +20,7 @@
   "source": {
     "provider": "nybble",
     "id": "wasm",
+    "format": "WASM",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/wasm",
     "license": "Nybble format registry"

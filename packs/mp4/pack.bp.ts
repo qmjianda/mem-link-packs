@@ -7,38 +7,38 @@
 // 覆盖：partial；未移植 12 项（见文件末尾）
 const Ftyp = struct("Ftyp", [
   str("majorBrand", { size: 4, label: "brand best describing the file (isom, mp42, qt  , M4A , heic, avif)" }),
-  u32("minorVersion", { endian: "little", label: "minor version of the major brand" }),
+  u32("minorVersion", { endian: "big", label: "minor version of the major brand" }),
 ]);
 
 const Mvhd = struct("Mvhd", [
-  u8("version", { endian: "little", label: "0 = 32-bit times, 1 = 64-bit times" }),
+  u8("version", { endian: "big", label: "0 = 32-bit times, 1 = 64-bit times" }),
   bytes("flags", { size: 3 }),
 ]);
 
 const Tkhd = struct("Tkhd", [
-  u8("version", { endian: "little", label: "0 = 32-bit times, 1 = 64-bit times" }),
+  u8("version", { endian: "big", label: "0 = 32-bit times, 1 = 64-bit times" }),
   bytes("flags", { size: 3, label: "0x000001 enabled, 0x000002 in movie, 0x000004 in preview" }),
 ]);
 
 const Mdhd = struct("Mdhd", [
-  u8("version", { endian: "little", label: "0 = 32-bit times, 1 = 64-bit times" }),
+  u8("version", { endian: "big", label: "0 = 32-bit times, 1 = 64-bit times" }),
   bytes("flags", { size: 3 }),
 ]);
 
 const Hdlr = struct("Hdlr", [
-  u8("version", { endian: "little" }),
+  u8("version", { endian: "big" }),
   bytes("flags", { size: 3 }),
-  u32("preDefined", { endian: "little" }),
+  u32("preDefined", { endian: "big" }),
   str("handlerType", { size: 4, label: "vide video, soun audio, hint, meta, text, subt subtitles" }),
   array("reserved", "u32", 3),
 ]);
 
 const LargeBox = struct("LargeBox", [
-  u64("largesize", { endian: "little", label: "64-bit box size, header included" }),
+  u64("largesize", { endian: "big", label: "64-bit box size, header included" }),
 ]);
 
 const Box = struct("Box", [
-  u32("size", { endian: "little", label: "box size including this header; 1 = 64-bit size follows, 0 = to end of file" }),
+  u32("size", { endian: "big", label: "box size including this header; 1 = 64-bit size follows, 0 = to end of file" }),
   str("type", { size: 4, label: "four-character box type" }),
 ]);
 
@@ -51,7 +51,7 @@ const Container2 = struct("Container2", [
 ]);
 
 const FullContainer = struct("FullContainer", [
-  u8("version", { endian: "little" }),
+  u8("version", { endian: "big" }),
   bytes("flags", { size: 3 }),
   record("first", Box, { label: "first child box" }),
 ]);

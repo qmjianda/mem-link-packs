@@ -3,8 +3,8 @@
   "name": "HFS+ volume header",
   "version": "1.0.0",
   "category": "system",
-  "order": 228,
-  "summary": "HFS+ / HFSX volume header at offset 1024: block counts, timestamps and the five special file forks.",
+  "order": 229,
+  "summary": "HFS+ or HFSX volume header",
   "description": "HFS+ / HFSX volume header at offset 1024: block counts, timestamps and the five special file forks.",
   "tags": [
     "filesystem",
@@ -22,6 +22,7 @@
   "source": {
     "provider": "nybble",
     "id": "hfsplus",
+    "format": "HFS+",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/hfsplus",
     "license": "Nybble format registry"

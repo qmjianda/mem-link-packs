@@ -7,18 +7,18 @@
 // 覆盖：complete
 const N64Rom = struct("N64Rom", [
   bytes("endianness", { size: 4, label: "80 37 12 40 in a native big-endian dump" }),
-  u32("clockRate", { endian: "little", label: "clock rate override for the PI bus; 0 means use the default" }),
-  u32("bootAddress", { endian: "little", label: "virtual address IPL3 loads the game to, usually 0x80000400" }),
-  u32("libultraVersion", { endian: "little", label: "release and revision of the libultra SDK the game was built with" }),
-  u32("crc1", { endian: "little", label: "first CIC check code over the first megabyte" }),
-  u32("crc2", { endian: "little", label: "second CIC check code" }),
+  u32("clockRate", { endian: "big", label: "clock rate override for the PI bus; 0 means use the default" }),
+  u32("bootAddress", { endian: "big", label: "virtual address IPL3 loads the game to, usually 0x80000400" }),
+  u32("libultraVersion", { endian: "big", label: "release and revision of the libultra SDK the game was built with" }),
+  u32("crc1", { endian: "big", label: "first CIC check code over the first megabyte" }),
+  u32("crc2", { endian: "big", label: "second CIC check code" }),
   bytes("unused1", { size: 8, label: "unused, zero" }),
   str("imageName", { size: 20, label: "internal game title, uppercase ASCII, space padded" }),
   bytes("unused2", { size: 7, label: "unused, zero" }),
-  char("mediaFormat", { endian: "little", label: "N for a cartridge, D for 64DD disk, C for a cartridge part of a disk pair" }),
+  char("mediaFormat", { endian: "big", label: "N for a cartridge, D for 64DD disk, C for a cartridge part of a disk pair" }),
   str("cartridgeId", { size: 2, label: "two-character game id, as a ROM database lists it" }),
-  char("countryCode", { endian: "little", label: "region the cartridge was sold in: E, J or P" }),
-  u8("version", { endian: "little", label: "revision of the game, counting from 0" }),
+  char("countryCode", { endian: "big", label: "region the cartridge was sold in: E, J or P" }),
+  u8("version", { endian: "big", label: "revision of the game, counting from 0" }),
 ]);
 
 export default definePack({

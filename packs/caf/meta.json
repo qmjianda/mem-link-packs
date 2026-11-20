@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "category": "media",
   "order": 209,
-  "summary": "Apple Core Audio Format: file header plus a walk of every chunk, decoding desc, pakt, data and info.",
+  "summary": "Apple Core Audio Format container",
   "description": "Apple Core Audio Format: file header plus a walk of every chunk, decoding desc, pakt, data and info.",
   "tags": [
     "audio",
@@ -21,6 +21,7 @@
   "source": {
     "provider": "nybble",
     "id": "caf",
+    "format": "CAF",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/caf",
     "license": "Nybble format registry"

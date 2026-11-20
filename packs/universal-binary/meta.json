@@ -1,0 +1,28 @@
+{
+  "id": "universal-binary",
+  "name": "Universal binary",
+  "version": "1.0.0",
+  "category": "executable",
+  "order": 239,
+  "summary": "Mach-O fat binary with two architecture slices (e.g. x86_64 + arm64)",
+  "description": "Apple fat / universal binary: the architecture slice table, with each slice's Mach-O magic peeked.",
+  "tags": [
+    "executable",
+    "macos",
+    "mach-o",
+    "universal",
+    "apple"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://github.com/apple-oss-distributions/xnu/blob/main/EXTERNAL_HEADERS/mach-o/fat.h",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "macho-fat",
+    "format": "Universal binary",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/macho-fat",
+    "license": "Nybble format registry"
+  }
+}

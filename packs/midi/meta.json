@@ -3,8 +3,8 @@
   "name": "MIDI file",
   "version": "1.0.0",
   "category": "media",
-  "order": 241,
-  "summary": "Standard MIDI File: the MThd header chunk and every MTrk track chunk.",
+  "order": 245,
+  "summary": "Standard MIDI File (SMF)",
   "description": "Standard MIDI File: the MThd header chunk and every MTrk track chunk.",
   "tags": [
     "audio",
@@ -19,6 +19,7 @@
   "source": {
     "provider": "nybble",
     "id": "midi",
+    "format": "MIDI",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/midi",
     "license": "Nybble format registry"

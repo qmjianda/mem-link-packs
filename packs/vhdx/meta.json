@@ -3,8 +3,8 @@
   "name": "VHDX disk image",
   "version": "1.0.0",
   "category": "system",
-  "order": 266,
-  "summary": "Hyper-V VHDX: file identifier, the two headers, region tables, disk metadata and the block allocation table.",
+  "order": 273,
+  "summary": "Hyper-V virtual hard disk v2 (VHDX)",
   "description": "Hyper-V VHDX: file identifier, the two headers, region tables, disk metadata and the block allocation table.",
   "tags": [
     "filesystem",
@@ -21,6 +21,7 @@
   "source": {
     "provider": "nybble",
     "id": "vhdx",
+    "format": "VHDX",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/vhdx",
     "license": "Nybble format registry"

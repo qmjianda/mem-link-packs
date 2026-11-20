@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "category": "archive",
   "order": 204,
-  "summary": "Unix ar archive: the global magic and the first member header, with its ASCII decimal fields.",
+  "summary": "Unix ar archive (static library, Debian .deb container)",
   "description": "Unix ar archive: the global magic and the first member header, with its ASCII decimal fields.",
   "tags": [
     "archive",
@@ -21,6 +21,7 @@
   "source": {
     "provider": "nybble",
     "id": "ar",
+    "format": "AR",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/ar",
     "license": "Nybble format registry"

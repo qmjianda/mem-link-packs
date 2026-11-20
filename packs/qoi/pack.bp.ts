@@ -7,10 +7,10 @@
 // 覆盖：partial；未移植 1 项（见文件末尾）
 const Qoi = struct("Qoi", [
   str("magic", { size: 4, label: "magic 'qoif'" }),
-  u32("width", { endian: "little", label: "image width in pixels (big-endian)" }),
-  u32("height", { endian: "little", label: "image height in pixels" }),
-  u8("channels", { endian: "little", label: "3 = RGB, 4 = RGBA" }),
-  u8("colorspace", { endian: "little", label: "0 = sRGB with linear alpha, 1 = all linear" }),
+  u32("width", { endian: "big", label: "image width in pixels (big-endian)" }),
+  u32("height", { endian: "big", label: "image height in pixels" }),
+  u8("channels", { endian: "big", label: "3 = RGB, 4 = RGBA" }),
+  u8("colorspace", { endian: "big", label: "0 = sRGB with linear alpha, 1 = all linear" }),
 ]);
 
 export default definePack({

@@ -217,7 +217,7 @@
       "version": "1.0.0",
       "category": "archive",
       "order": 200,
-      "summary": "7z signature header: version, CRCs, and the pointer to the (usually compressed) end header.",
+      "summary": "7-Zip archive signature header",
       "description": "7z signature header: version, CRCs, and the pointer to the (usually compressed) end header.",
       "tags": [
         "archive",
@@ -232,6 +232,7 @@
       "source": {
         "provider": "nybble",
         "id": "7z",
+        "format": "7Z",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/7z",
         "license": "Nybble format registry"
@@ -246,7 +247,7 @@
       "version": "1.0.0",
       "category": "media",
       "order": 201,
-      "summary": "AIFF (Audio IFF) FORM container header and first chunk.",
+      "summary": "Audio Interchange File Format (IFF container)",
       "description": "AIFF (Audio IFF) FORM container header and first chunk.",
       "tags": [
         "audio",
@@ -259,13 +260,14 @@
       "source": {
         "provider": "nybble",
         "id": "aiff",
+        "format": "AIFF",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/aiff",
         "license": "Nybble format registry"
       },
       "path": "packs/aiff/pack.bp.ts",
-      "sha256": "f44dbed30a35b68d9d7f35577f622d4f4348bc98d291c58a7d62638ea0c5816b",
-      "size": 983
+      "sha256": "016d8b694a2d5b4835ec51fd378b88e7183f415df15c2d0f1285d1ff07d706d0",
+      "size": 977
     },
     {
       "id": "androidboot",
@@ -273,7 +275,7 @@
       "version": "1.0.0",
       "category": "system",
       "order": 202,
-      "summary": "Android boot.img header, versions 0 through 2, with the kernel command line.",
+      "summary": "Android boot/recovery image header",
       "description": "Android boot.img header, versions 0 through 2, with the kernel command line.",
       "tags": [
         "firmware",
@@ -289,6 +291,7 @@
       "source": {
         "provider": "nybble",
         "id": "androidboot",
+        "format": "ANDROIDBOOT",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/androidboot",
         "license": "Nybble format registry"
@@ -303,7 +306,7 @@
       "version": "1.0.0",
       "category": "system",
       "order": 203,
-      "summary": "Apple File System container superblock, its object map, and the first volume superblock it maps to.",
+      "summary": "APFS container (NXSB), as a raw partition or image",
       "description": "Apple File System container superblock, its object map, and the first volume superblock it maps to.",
       "tags": [
         "filesystem",
@@ -320,6 +323,7 @@
       "source": {
         "provider": "nybble",
         "id": "apfs",
+        "format": "APFS",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/apfs",
         "license": "Nybble format registry"
@@ -334,7 +338,7 @@
       "version": "1.0.0",
       "category": "archive",
       "order": 204,
-      "summary": "Unix ar archive: the global magic and the first member header, with its ASCII decimal fields.",
+      "summary": "Unix ar archive (static library, Debian .deb container)",
       "description": "Unix ar archive: the global magic and the first member header, with its ASCII decimal fields.",
       "tags": [
         "archive",
@@ -350,6 +354,7 @@
       "source": {
         "provider": "nybble",
         "id": "ar",
+        "format": "AR",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/ar",
         "license": "Nybble format registry"
@@ -364,7 +369,7 @@
       "version": "1.0.0",
       "category": "media",
       "order": 205,
-      "summary": "NeXT/Sun .au audio header: encoding, sample rate, channels and the annotation field.",
+      "summary": "NeXT/Sun audio (.au / .snd)",
       "description": "NeXT/Sun .au audio header: encoding, sample rate, channels and the annotation field.",
       "tags": [
         "audio",
@@ -380,13 +385,14 @@
       "source": {
         "provider": "nybble",
         "id": "au",
+        "format": "AU",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/au",
         "license": "Nybble format registry"
       },
       "path": "packs/au/pack.bp.ts",
-      "sha256": "100bb6f586cda0d4005f685eb6bfd9e72246595f81e31bfded57d1d3fd0f5031",
-      "size": 1714
+      "sha256": "45f62a2123e0e77b1db98ccdf67a522c9af882d8c984f969ef631675133e92db",
+      "size": 1702
     },
     {
       "id": "avi",
@@ -408,6 +414,7 @@
       "source": {
         "provider": "nybble",
         "id": "avi",
+        "format": "AVI",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/avi",
         "license": "Nybble format registry"
@@ -422,7 +429,7 @@
       "version": "1.0.0",
       "category": "archive",
       "order": 207,
-      "summary": "bzip2 stream header: block size level, first block magic and its CRC.",
+      "summary": ".bz2 compressed stream",
       "description": "bzip2 stream header: block size level, first block magic and its CRC.",
       "tags": [
         "archive",
@@ -435,13 +442,14 @@
       "source": {
         "provider": "nybble",
         "id": "bzip2",
+        "format": "BZIP2",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/bzip2",
         "license": "Nybble format registry"
       },
       "path": "packs/bzip2/pack.bp.ts",
-      "sha256": "6ddd6120a66048380df829c3b73f2bc42c5656380d1b96ba6c77593b3c359b7f",
-      "size": 1135
+      "sha256": "47cf14ca1a259bf36300c6853fe3eab8f6a3e1a322db1f5211ed55614210a618",
+      "size": 1123
     },
     {
       "id": "cab",
@@ -449,7 +457,7 @@
       "version": "1.0.0",
       "category": "archive",
       "order": 208,
-      "summary": "Microsoft Cabinet (.cab): header with its optional reserve and chained-cabinet fields, the folder table, and the file table followed to its offset.",
+      "summary": "Microsoft Cabinet archive",
       "description": "Microsoft Cabinet (.cab): header with its optional reserve and chained-cabinet fields, the folder table, and the file table followed to its offset.",
       "tags": [
         "archive",
@@ -466,6 +474,7 @@
       "source": {
         "provider": "nybble",
         "id": "cab",
+        "format": "CAB",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/cab",
         "license": "Nybble format registry"
@@ -480,7 +489,7 @@
       "version": "1.0.0",
       "category": "media",
       "order": 209,
-      "summary": "Apple Core Audio Format: file header plus a walk of every chunk, decoding desc, pakt, data and info.",
+      "summary": "Apple Core Audio Format container",
       "description": "Apple Core Audio Format: file header plus a walk of every chunk, decoding desc, pakt, data and info.",
       "tags": [
         "audio",
@@ -497,13 +506,14 @@
       "source": {
         "provider": "nybble",
         "id": "caf",
+        "format": "CAF",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/caf",
         "license": "Nybble format registry"
       },
       "path": "packs/caf/pack.bp.ts",
-      "sha256": "a32a1f4545eb0abe8715b56dfbe9c334680dfce5a81b06f0a1f105ea6a9670a3",
-      "size": 3460
+      "sha256": "225ebd689d9b26414160dac8108d5d81b3951a2f25d4c6a7f292db9f119209b9",
+      "size": 3418
     },
     {
       "id": "cfb",
@@ -511,7 +521,7 @@
       "version": "1.0.0",
       "category": "archive",
       "order": 210,
-      "summary": "OLE2 / Compound File Binary header: sector sizes, the FAT and DIFAT chains, and the first directory sector.",
+      "summary": "Compound File Binary (OLE2: .doc, .xls, .ppt, .msi, .msg)",
       "description": "OLE2 / Compound File Binary header: sector sizes, the FAT and DIFAT chains, and the first directory sector.",
       "tags": [
         "archive",
@@ -529,6 +539,7 @@
       "source": {
         "provider": "nybble",
         "id": "cfb",
+        "format": "CFB",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/cfb",
         "license": "Nybble format registry"
@@ -543,7 +554,7 @@
       "version": "1.0.0",
       "category": "archive",
       "order": 211,
-      "summary": "Chrome extension package (CRX2 and CRX3): the signed header that precedes the zip.",
+      "summary": "Chrome / Chromium extension package",
       "description": "Chrome extension package (CRX2 and CRX3): the signed header that precedes the zip.",
       "tags": [
         "archive",
@@ -560,6 +571,7 @@
       "source": {
         "provider": "nybble",
         "id": "crx",
+        "format": "CRX",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/crx",
         "license": "Nybble format registry"
@@ -590,6 +602,7 @@
       "source": {
         "provider": "nybble",
         "id": "dds",
+        "format": "DDS",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/dds",
         "license": "Nybble format registry"
@@ -604,7 +617,7 @@
       "version": "1.0.0",
       "category": "executable",
       "order": 213,
-      "summary": "Android Dalvik executable (.dex) header with section table offsets.",
+      "summary": "Android Dalvik executable header",
       "description": "Android Dalvik executable (.dex) header with section table offsets.",
       "tags": [
         "executable",
@@ -618,6 +631,7 @@
       "source": {
         "provider": "nybble",
         "id": "dex",
+        "format": "DEX",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/dex",
         "license": "Nybble format registry"
@@ -632,7 +646,7 @@
       "version": "1.0.0",
       "category": "image",
       "order": 214,
-      "summary": "DICOM Part 10 file: the 128-byte preamble, the DICM magic, and the file meta group element by element.",
+      "summary": "DICOM Part 10 medical image file",
       "description": "DICOM Part 10 file: the 128-byte preamble, the DICM magic, and the file meta group element by element.",
       "tags": [
         "image",
@@ -648,6 +662,7 @@
       "source": {
         "provider": "nybble",
         "id": "dicom",
+        "format": "DICOM",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/dicom",
         "license": "Nybble format registry"
@@ -662,7 +677,7 @@
       "version": "1.0.0",
       "category": "system",
       "order": 215,
-      "summary": "Flattened device tree (.dtb / FIT): header, memory reservation map, the full structure block token walk and the strings block.",
+      "summary": "Flattened device tree blob (also U-Boot FIT images)",
       "description": "Flattened device tree (.dtb / FIT): header, memory reservation map, the full structure block token walk and the strings block.",
       "tags": [
         "firmware",
@@ -679,13 +694,14 @@
       "source": {
         "provider": "nybble",
         "id": "dtb",
+        "format": "DTB",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/dtb",
         "license": "Nybble format registry"
       },
       "path": "packs/dtb/pack.bp.ts",
-      "sha256": "9abcfbccf517927dfa12a7d3067c0a4b6bfd8aa27ba8671e37917389cf79b584",
-      "size": 3271
+      "sha256": "f2210b7923c0e882353121b54a42d731bfb80a96dbc8ac2930bf5941e8dddeae",
+      "size": 3229
     },
     {
       "id": "evtx",
@@ -693,7 +709,7 @@
       "version": "1.0.0",
       "category": "system",
       "order": 216,
-      "summary": "Windows EVTX event log: the file header and every 64 KiB chunk header, with the record numbering that survives rollover.",
+      "summary": "Windows Vista and later event log",
       "description": "Windows EVTX event log: the file header and every 64 KiB chunk header, with the record numbering that survives rollover.",
       "tags": [
         "system",
@@ -709,6 +725,7 @@
       "source": {
         "provider": "nybble",
         "id": "evtx",
+        "format": "EVTX",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/evtx",
         "license": "Nybble format registry"
@@ -723,7 +740,7 @@
       "version": "1.0.0",
       "category": "system",
       "order": 217,
-      "summary": "Linux ext2/ext3/ext4 superblock, read at its real home 1024 bytes into the volume.",
+      "summary": "ext2/3/4 filesystem superblock",
       "description": "Linux ext2/ext3/ext4 superblock, read at its real home 1024 bytes into the volume.",
       "tags": [
         "filesystem",
@@ -738,6 +755,7 @@
       "source": {
         "provider": "nybble",
         "id": "ext4",
+        "format": "EXT4",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/ext4",
         "license": "Nybble format registry"
@@ -747,12 +765,12 @@
       "size": 6959
     },
     {
-      "id": "fat",
-      "name": "FAT boot sector",
+      "id": "fat16",
+      "name": "FAT16",
       "version": "1.0.0",
       "category": "system",
       "order": 218,
-      "summary": "FAT12/16 and FAT32 boot sectors: the BIOS parameter block and the extended block that names the volume.",
+      "summary": "FAT12 / FAT16 boot sector (BPB + extended boot record)",
       "description": "FAT12/16 and FAT32 boot sectors: the BIOS parameter block and the extended block that names the volume.",
       "tags": [
         "filesystem",
@@ -768,20 +786,52 @@
       "source": {
         "provider": "nybble",
         "id": "fat",
+        "format": "FAT16",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/fat",
         "license": "Nybble format registry"
       },
-      "path": "packs/fat/pack.bp.ts",
+      "path": "packs/fat16/pack.bp.ts",
       "sha256": "e3acc46d96965b4b1f0d5e266321a728168b75a414fb7f80eae32173d4e578a1",
       "size": 2877
+    },
+    {
+      "id": "fat32",
+      "name": "FAT32",
+      "version": "1.0.0",
+      "category": "system",
+      "order": 219,
+      "summary": "FAT32 boot sector (BPB + FAT32 extended boot record)",
+      "description": "FAT12/16 and FAT32 boot sectors: the BIOS parameter block and the extended block that names the volume.",
+      "tags": [
+        "filesystem",
+        "fat",
+        "fat32",
+        "boot-sector",
+        "dos",
+        "removable"
+      ],
+      "author": "Nybble",
+      "license": "Free use / redistribution (Nybble registry)",
+      "homepage": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/fatgen103.doc",
+      "source": {
+        "provider": "nybble",
+        "id": "fat",
+        "format": "FAT32",
+        "version": "1.0.0",
+        "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/fat",
+        "license": "Nybble format registry"
+      },
+      "path": "packs/fat32/pack.bp.ts",
+      "sha256": "2a22e6eeca7ca501a92a9647cb6ed8721d5ed677652f917d66f9b68438e98211",
+      "size": 3227
     },
     {
       "id": "flac",
       "name": "FLAC audio",
       "version": "1.0.0",
       "category": "media",
-      "order": 219,
+      "order": 220,
       "summary": "FLAC lossless audio: magic and metadata-block stream, walked to the last block.",
       "description": "FLAC lossless audio: magic and metadata-block stream, walked to the last block.",
       "tags": [
@@ -796,21 +846,22 @@
       "source": {
         "provider": "nybble",
         "id": "flac",
+        "format": "FLAC",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/flac",
         "license": "Nybble format registry"
       },
       "path": "packs/flac/pack.bp.ts",
-      "sha256": "ac111311be7420afa51ab5da0cbfb0ac2612b04564ef73e917030c8b1fa21530",
-      "size": 1608
+      "sha256": "db72c90eec9afe74e9595a10e87eb70b06b3f19803501b4ed3be0a9e347b5898",
+      "size": 1599
     },
     {
       "id": "flv",
       "name": "FLV video",
       "version": "1.0.0",
       "category": "media",
-      "order": 220,
-      "summary": "Flash Video: header and the full tag stream, with audio, video and script tag headers decoded.",
+      "order": 221,
+      "summary": "Flash Video / F4V container",
       "description": "Flash Video: header and the full tag stream, with audio, video and script tag headers decoded.",
       "tags": [
         "video",
@@ -826,21 +877,22 @@
       "source": {
         "provider": "nybble",
         "id": "flv",
+        "format": "FLV",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/flv",
         "license": "Nybble format registry"
       },
       "path": "packs/flv/pack.bp.ts",
-      "sha256": "bd253062a0810394cc5dbea08e6b614629d7f3bdbc504aad689bbeba03673701",
-      "size": 3724
+      "sha256": "95f5ff098e21fc6bc6a6bdb85adec264cdfe8701b044b36777640378f78c142b",
+      "size": 3685
     },
     {
       "id": "gameboy",
       "name": "Game Boy ROM",
       "version": "1.0.0",
       "category": "game",
-      "order": 221,
-      "summary": "Game Boy and Game Boy Color cartridge header at 0x100: title, mapper, ROM and RAM sizes, and both checksums.",
+      "order": 222,
+      "summary": "Game Boy / Game Boy Color cartridge ROM",
       "description": "Game Boy and Game Boy Color cartridge header at 0x100: title, mapper, ROM and RAM sizes, and both checksums.",
       "tags": [
         "game",
@@ -856,6 +908,7 @@
       "source": {
         "provider": "nybble",
         "id": "gameboy",
+        "format": "GB",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/gameboy",
         "license": "Nybble format registry"
@@ -869,8 +922,8 @@
       "name": "Game Boy Advance ROM",
       "version": "1.0.0",
       "category": "game",
-      "order": 222,
-      "summary": "GBA cartridge header: entry branch, Nintendo logo, game and maker codes, and the header checksum.",
+      "order": 223,
+      "summary": "Game Boy Advance cartridge ROM",
       "description": "GBA cartridge header: entry branch, Nintendo logo, game and maker codes, and the header checksum.",
       "tags": [
         "game",
@@ -888,6 +941,7 @@
       "source": {
         "provider": "nybble",
         "id": "gba",
+        "format": "GBA",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/gba",
         "license": "Nybble format registry"
@@ -901,8 +955,8 @@
       "name": "GGUF model",
       "version": "1.0.0",
       "category": "data",
-      "order": 223,
-      "summary": "GGUF, the llama.cpp model file: metadata key/value pairs and the tensor directory.",
+      "order": 224,
+      "summary": "GGUF model file (llama.cpp / GGML), version 2 or 3",
       "description": "GGUF, the llama.cpp model file: metadata key/value pairs and the tensor directory.",
       "tags": [
         "ml",
@@ -920,6 +974,7 @@
       "source": {
         "provider": "nybble",
         "id": "gguf",
+        "format": "GGUF",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/gguf",
         "license": "Nybble format registry"
@@ -933,7 +988,7 @@
       "name": "glTF binary",
       "version": "1.0.0",
       "category": "model",
-      "order": 224,
+      "order": 225,
       "summary": "glTF binary (.glb) 3D asset: 12-byte header and a JSON/BIN chunk stream.",
       "description": "glTF binary (.glb) 3D asset: 12-byte header and a JSON/BIN chunk stream.",
       "tags": [
@@ -949,6 +1004,7 @@
       "source": {
         "provider": "nybble",
         "id": "glb",
+        "format": "GLB",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/glb",
         "license": "Nybble format registry"
@@ -962,8 +1018,8 @@
       "name": "GPT partition table",
       "version": "1.0.0",
       "category": "system",
-      "order": 225,
-      "summary": "GUID Partition Table header (after the protective MBR, at LBA 1).",
+      "order": 226,
+      "summary": "GUID Partition Table header",
       "description": "GUID Partition Table header (after the protective MBR, at LBA 1).",
       "tags": [
         "filesystem",
@@ -977,6 +1033,7 @@
       "source": {
         "provider": "nybble",
         "id": "gpt",
+        "format": "GPT",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/gpt",
         "license": "Nybble format registry"
@@ -990,8 +1047,8 @@
       "name": "gzip compressed",
       "version": "1.0.0",
       "category": "archive",
-      "order": 226,
-      "summary": "gzip member header, including the optional extra field, original file name and comment.",
+      "order": 227,
+      "summary": "gzip compressed data (RFC 1952)",
       "description": "gzip member header, including the optional extra field, original file name and comment.",
       "tags": [
         "archive",
@@ -1007,6 +1064,7 @@
       "source": {
         "provider": "nybble",
         "id": "gzip",
+        "format": "GZIP",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/gzip",
         "license": "Nybble format registry"
@@ -1020,8 +1078,8 @@
       "name": "HDF5 file",
       "version": "1.0.0",
       "category": "database",
-      "order": 227,
-      "summary": "HDF5 superblock, root group and its member index: the container behind NetCDF-4, MATLAB v7.3 and Keras .h5 files.",
+      "order": 228,
+      "summary": "Hierarchical Data Format 5, superblock versions 0 to 3",
       "description": "HDF5 superblock, root group and its member index: the container behind NetCDF-4, MATLAB v7.3 and Keras .h5 files.",
       "tags": [
         "database",
@@ -1039,6 +1097,7 @@
       "source": {
         "provider": "nybble",
         "id": "hdf5",
+        "format": "HDF5",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/hdf5",
         "license": "Nybble format registry"
@@ -1052,8 +1111,8 @@
       "name": "HFS+ volume header",
       "version": "1.0.0",
       "category": "system",
-      "order": 228,
-      "summary": "HFS+ / HFSX volume header at offset 1024: block counts, timestamps and the five special file forks.",
+      "order": 229,
+      "summary": "HFS+ or HFSX volume header",
       "description": "HFS+ / HFSX volume header at offset 1024: block counts, timestamps and the five special file forks.",
       "tags": [
         "filesystem",
@@ -1070,20 +1129,21 @@
       "source": {
         "provider": "nybble",
         "id": "hfsplus",
+        "format": "HFS+",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/hfsplus",
         "license": "Nybble format registry"
       },
       "path": "packs/hfsplus/pack.bp.ts",
-      "sha256": "1bc55d0ca8e49e7b3f1a757f1ef4df0d6d9091268ccd787a38c497de44739acf",
-      "size": 4931
+      "sha256": "facde82d716ba245f5d7a60b1e58beeea83ef2c17d502ec6564c806090b2ad0a",
+      "size": 4865
     },
     {
       "id": "icns",
       "name": "Apple icon image",
       "version": "1.0.0",
       "category": "image",
-      "order": 229,
+      "order": 230,
       "summary": "Apple .icns icon family: the file header and its stream of icon elements.",
       "description": "Apple .icns icon family: the file header and its stream of icon elements.",
       "tags": [
@@ -1099,21 +1159,22 @@
       "source": {
         "provider": "nybble",
         "id": "icns",
+        "format": "ICNS",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/icns",
         "license": "Nybble format registry"
       },
       "path": "packs/icns/pack.bp.ts",
-      "sha256": "2b68052cd5fa6bdf02730606924df47fd3c3adf9b4e37af0eaacc638c9f8adf7",
-      "size": 1303
+      "sha256": "f192c6bd3d62c9bfe6753150e7fef15687d5339a27c21ee471e674b87c40b049",
+      "size": 1297
     },
     {
       "id": "ico",
       "name": "Windows icon / cursor",
       "version": "1.0.0",
       "category": "image",
-      "order": 230,
-      "summary": "ICO / CUR icon directory and per-image entries.",
+      "order": 231,
+      "summary": "Windows icon file (directory + image entries)",
       "description": "ICO / CUR icon directory and per-image entries.",
       "tags": [
         "image",
@@ -1127,6 +1188,7 @@
       "source": {
         "provider": "nybble",
         "id": "ico",
+        "format": "ICO",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/ico",
         "license": "Nybble format registry"
@@ -1137,11 +1199,11 @@
     },
     {
       "id": "iso9660",
-      "name": "ISO 9660 image",
+      "name": "ISO9660",
       "version": "1.0.0",
       "category": "system",
-      "order": 231,
-      "summary": "ISO 9660 CD/DVD image: the primary volume descriptor at 32 KiB, its root directory record, and the El Torito boot record.",
+      "order": 232,
+      "summary": "ISO 9660 optical disc image",
       "description": "ISO 9660 CD/DVD image: the primary volume descriptor at 32 KiB, its root directory record, and the El Torito boot record.",
       "tags": [
         "filesystem",
@@ -1158,6 +1220,7 @@
       "source": {
         "provider": "nybble",
         "id": "iso9660",
+        "format": "ISO9660",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/iso9660",
         "license": "Nybble format registry"
@@ -1167,11 +1230,43 @@
       "size": 6080
     },
     {
+      "id": "el-torito",
+      "name": "El Torito",
+      "version": "1.0.0",
+      "category": "system",
+      "order": 233,
+      "summary": "El Torito bootable-CD boot record volume descriptor",
+      "description": "ISO 9660 CD/DVD image: the primary volume descriptor at 32 KiB, its root directory record, and the El Torito boot record.",
+      "tags": [
+        "filesystem",
+        "optical",
+        "cdrom",
+        "iso",
+        "boot",
+        "el-torito"
+      ],
+      "author": "Nybble",
+      "license": "Free use / redistribution (Nybble registry)",
+      "homepage": "https://www.ecma-international.org/wp-content/uploads/ECMA-119_4th_edition_june_2019.pdf",
+      "coverage": "partial",
+      "source": {
+        "provider": "nybble",
+        "id": "iso9660",
+        "format": "El Torito",
+        "version": "1.0.0",
+        "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/iso9660",
+        "license": "Nybble format registry"
+      },
+      "path": "packs/el-torito/pack.bp.ts",
+      "sha256": "583bef21ae43dfa02e2cb55cb318f50d6ada9fd04fdf9f888115f8f06f2c8789",
+      "size": 3395
+    },
+    {
       "id": "java-class",
       "name": "Java class file",
       "version": "1.0.0",
       "category": "executable",
-      "order": 232,
+      "order": 234,
       "summary": "Java .class: version, a tag-dispatched constant pool, access flags and class refs.",
       "description": "Java .class: version, a tag-dispatched constant pool, access flags and class refs.",
       "tags": [
@@ -1187,21 +1282,22 @@
       "source": {
         "provider": "nybble",
         "id": "java-class",
+        "format": "Java class",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/java-class",
         "license": "Nybble format registry"
       },
       "path": "packs/java-class/pack.bp.ts",
-      "sha256": "20a453c9caa7ff69df9d7cc9c995ab56b39ad3346d5501f13d63b77a10d4f2c3",
-      "size": 2977
+      "sha256": "048659441f3cf7e5b8322272722aaa63739371af6eb75923d3113be4861510d6",
+      "size": 2947
     },
     {
       "id": "jpegxl",
       "name": "JPEG XL image",
       "version": "1.0.0",
       "category": "image",
-      "order": 233,
-      "summary": "JPEG XL container: the signature box and a walk of every box, decoding ftyp, jxll, jxlp and brob.",
+      "order": 235,
+      "summary": "JPEG XL image, ISOBMFF container form",
       "description": "JPEG XL container: the signature box and a walk of every box, decoding ftyp, jxll, jxlp and brob.",
       "tags": [
         "image",
@@ -1218,21 +1314,22 @@
       "source": {
         "provider": "nybble",
         "id": "jpegxl",
+        "format": "JXL",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/jpegxl",
         "license": "Nybble format registry"
       },
       "path": "packs/jpegxl/pack.bp.ts",
-      "sha256": "500d058b26ca3b396c386c58fd8d0f487885d22df075daed32b283cf0b18badf",
-      "size": 2139
+      "sha256": "6957a62794fd006128d17a788e227eefdaaae3da359a4b5ca6c592977718c678",
+      "size": 2127
     },
     {
       "id": "las",
       "name": "LAS point cloud",
       "version": "1.0.0",
       "category": "model",
-      "order": 234,
-      "summary": "ASPRS LAS public header block: point format, scaling, bounding box and the 1.3 / 1.4 additions.",
+      "order": 236,
+      "summary": "ASPRS LAS lidar point cloud",
       "description": "ASPRS LAS public header block: point format, scaling, bounding box and the 1.3 / 1.4 additions.",
       "tags": [
         "model",
@@ -1249,6 +1346,7 @@
       "source": {
         "provider": "nybble",
         "id": "las",
+        "format": "LAS",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/las",
         "license": "Nybble format registry"
@@ -1262,8 +1360,8 @@
       "name": "Windows shortcut",
       "version": "1.0.0",
       "category": "system",
-      "order": 235,
-      "summary": "Windows .lnk ShellLinkHeader: timestamps, target attributes and link flags.",
+      "order": 237,
+      "summary": "Windows shell link (shortcut) header",
       "description": "Windows .lnk ShellLinkHeader: timestamps, target attributes and link flags.",
       "tags": [
         "windows",
@@ -1278,6 +1376,7 @@
       "source": {
         "provider": "nybble",
         "id": "lnk",
+        "format": "LNK",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/lnk",
         "license": "Nybble format registry"
@@ -1291,8 +1390,8 @@
       "name": "LZ4 frame",
       "version": "1.0.0",
       "category": "archive",
-      "order": 236,
-      "summary": "LZ4 frame: descriptor flags, block size, content size, and a walk of every block to the end mark.",
+      "order": 238,
+      "summary": "LZ4 frame format (lz4 CLI, .lz4 files)",
       "description": "LZ4 frame: descriptor flags, block size, content size, and a walk of every block to the end mark.",
       "tags": [
         "archive",
@@ -1306,6 +1405,7 @@
       "source": {
         "provider": "nybble",
         "id": "lz4",
+        "format": "LZ4",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/lz4",
         "license": "Nybble format registry"
@@ -1315,12 +1415,12 @@
       "size": 2783
     },
     {
-      "id": "macho-fat",
-      "name": "Mach-O universal binary",
+      "id": "universal-binary",
+      "name": "Universal binary",
       "version": "1.0.0",
       "category": "executable",
-      "order": 237,
-      "summary": "Apple fat / universal binary: the architecture slice table, with each slice's Mach-O magic peeked.",
+      "order": 239,
+      "summary": "Mach-O fat binary with two architecture slices (e.g. x86_64 + arm64)",
       "description": "Apple fat / universal binary: the architecture slice table, with each slice's Mach-O magic peeked.",
       "tags": [
         "executable",
@@ -1336,21 +1436,84 @@
       "source": {
         "provider": "nybble",
         "id": "macho-fat",
+        "format": "Universal binary",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/macho-fat",
         "license": "Nybble format registry"
       },
-      "path": "packs/macho-fat/pack.bp.ts",
-      "sha256": "2a1b8fbbbbb0381b283f63dc714362a4d7cd07c68e2c89b59150142c0f3e1055",
-      "size": 1759
+      "path": "packs/universal-binary/pack.bp.ts",
+      "sha256": "cd4a6660d71347817f2cce1f183b37510bfc40072649a0b8d90c2768dd79eb16",
+      "size": 1741
+    },
+    {
+      "id": "universal-binary-3-slices",
+      "name": "Universal binary (3 slices)",
+      "version": "1.0.0",
+      "category": "executable",
+      "order": 240,
+      "summary": "Mach-O fat binary with three architecture slices",
+      "description": "Apple fat / universal binary: the architecture slice table, with each slice's Mach-O magic peeked.",
+      "tags": [
+        "executable",
+        "macos",
+        "mach-o",
+        "universal",
+        "apple"
+      ],
+      "author": "Nybble",
+      "license": "Free use / redistribution (Nybble registry)",
+      "homepage": "https://github.com/apple-oss-distributions/xnu/blob/main/EXTERNAL_HEADERS/mach-o/fat.h",
+      "coverage": "partial",
+      "source": {
+        "provider": "nybble",
+        "id": "macho-fat",
+        "format": "Universal binary (3 slices)",
+        "version": "1.0.0",
+        "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/macho-fat",
+        "license": "Nybble format registry"
+      },
+      "path": "packs/universal-binary-3-slices/pack.bp.ts",
+      "sha256": "8520fba1c6fc76f4045c251d7c5021f94462ea73f0b19328c4e3c65dcd573cc3",
+      "size": 1752
+    },
+    {
+      "id": "universal-binary-64-bit-table",
+      "name": "Universal binary (64-bit table)",
+      "version": "1.0.0",
+      "category": "executable",
+      "order": 241,
+      "summary": "Mach-O fat binary with 64-bit slice offsets (FAT_MAGIC_64)",
+      "description": "Apple fat / universal binary: the architecture slice table, with each slice's Mach-O magic peeked.",
+      "tags": [
+        "executable",
+        "macos",
+        "mach-o",
+        "universal",
+        "apple"
+      ],
+      "author": "Nybble",
+      "license": "Free use / redistribution (Nybble registry)",
+      "homepage": "https://github.com/apple-oss-distributions/xnu/blob/main/EXTERNAL_HEADERS/mach-o/fat.h",
+      "coverage": "partial",
+      "source": {
+        "provider": "nybble",
+        "id": "macho-fat",
+        "format": "Universal binary (64-bit table)",
+        "version": "1.0.0",
+        "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/macho-fat",
+        "license": "Nybble format registry"
+      },
+      "path": "packs/universal-binary-64-bit-table/pack.bp.ts",
+      "sha256": "5ef9f5c2a8366f0de5cc1eb3e49680a140d443626328942d2bbe7af3b8b23e61",
+      "size": 1820
     },
     {
       "id": "macho",
       "name": "Mach-O executable",
       "version": "1.0.0",
       "category": "executable",
-      "order": 238,
-      "summary": "64-bit Mach-O header (macOS / iOS executables and libraries).",
+      "order": 242,
+      "summary": "64-bit Mach-O (little-endian: x86_64, arm64)",
       "description": "64-bit Mach-O header (macOS / iOS executables and libraries).",
       "tags": [
         "executable",
@@ -1364,6 +1527,7 @@
       "source": {
         "provider": "nybble",
         "id": "macho",
+        "format": "Mach-O 64",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/macho",
         "license": "Nybble format registry"
@@ -1377,8 +1541,8 @@
       "name": "Matroska / WebM video",
       "version": "1.0.0",
       "category": "media",
-      "order": 239,
-      "summary": "Matroska and WebM: the EBML element tree, with the segment info, tracks, clusters and cues decoded.",
+      "order": 243,
+      "summary": "Matroska container (.mkv, .mka, .webm)",
       "description": "Matroska and WebM: the EBML element tree, with the segment info, tracks, clusters and cues decoded.",
       "tags": [
         "video",
@@ -1396,21 +1560,22 @@
       "source": {
         "provider": "nybble",
         "id": "matroska",
+        "format": "MATROSKA",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/matroska",
         "license": "Nybble format registry"
       },
       "path": "packs/matroska/pack.bp.ts",
-      "sha256": "0a799405d1f753b97cca01dcd60df3108be3df8a2f1073260238b34ba06c3e04",
-      "size": 16122
+      "sha256": "bc1ec89e6adc594218cb087ba2406d9027126d812caff8d1c87de0e7a92fd598",
+      "size": 16110
     },
     {
       "id": "mbr",
       "name": "MBR partition table",
       "version": "1.0.0",
       "category": "system",
-      "order": 240,
-      "summary": "Master Boot Record: bootstrap, four primary partitions, boot signature.",
+      "order": 244,
+      "summary": "Master Boot Record (512-byte boot sector)",
       "description": "Master Boot Record: bootstrap, four primary partitions, boot signature.",
       "tags": [
         "filesystem",
@@ -1424,6 +1589,7 @@
       "source": {
         "provider": "nybble",
         "id": "mbr",
+        "format": "MBR",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/mbr",
         "license": "Nybble format registry"
@@ -1437,8 +1603,8 @@
       "name": "MIDI file",
       "version": "1.0.0",
       "category": "media",
-      "order": 241,
-      "summary": "Standard MIDI File: the MThd header chunk and every MTrk track chunk.",
+      "order": 245,
+      "summary": "Standard MIDI File (SMF)",
       "description": "Standard MIDI File: the MThd header chunk and every MTrk track chunk.",
       "tags": [
         "audio",
@@ -1453,21 +1619,22 @@
       "source": {
         "provider": "nybble",
         "id": "midi",
+        "format": "MIDI",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/midi",
         "license": "Nybble format registry"
       },
       "path": "packs/midi/pack.bp.ts",
-      "sha256": "deb7370d476ca5947f755e984043b76561b45c7fdf7a2d8eb20a543615926c44",
-      "size": 1717
+      "sha256": "d6f95be097dd35da2fb01e07a483fac8d74ede6ff2676f1a354e6c953560f1fc",
+      "size": 1705
     },
     {
       "id": "minidump",
       "name": "Windows minidump",
       "version": "1.0.0",
       "category": "system",
-      "order": 242,
-      "summary": "Windows minidump (.dmp): header, stream directory, and decoded system info, exception, thread, module, memory and misc-info streams.",
+      "order": 246,
+      "summary": "Windows minidump crash dump (MiniDumpWriteDump / WER / Breakpad / Crashpad)",
       "description": "Windows minidump (.dmp): header, stream directory, and decoded system info, exception, thread, module, memory and misc-info streams.",
       "tags": [
         "system",
@@ -1483,6 +1650,7 @@
       "source": {
         "provider": "nybble",
         "id": "minidump",
+        "format": "MDMP",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/minidump",
         "license": "Nybble format registry"
@@ -1496,8 +1664,8 @@
       "name": "MP3 (ID3v2 tag)",
       "version": "1.0.0",
       "category": "media",
-      "order": 243,
-      "summary": "ID3v2 tag at the start of an MP3: header, syncsafe size and every frame, with the common text frames decoded.",
+      "order": 247,
+      "summary": "MP3 audio with an ID3v2 tag (v2.2, v2.3 or v2.4)",
       "description": "ID3v2 tag at the start of an MP3: header, syncsafe size and every frame, with the common text frames decoded.",
       "tags": [
         "audio",
@@ -1513,21 +1681,22 @@
       "source": {
         "provider": "nybble",
         "id": "mp3",
+        "format": "MP3",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/mp3",
         "license": "Nybble format registry"
       },
       "path": "packs/mp3/pack.bp.ts",
-      "sha256": "75a5ca9b836d5df7b45f0ea6d49db4e445b20476533b8a1981a9434ef225c53e",
-      "size": 4089
+      "sha256": "554c02b7323e1322ad37328f23b60fc185f02dd4c6314a58766c0df2aa133367",
+      "size": 4059
     },
     {
       "id": "mp4",
       "name": "MP4 / ISO base media",
       "version": "1.0.0",
       "category": "media",
-      "order": 244,
-      "summary": "ISO base media (MP4, MOV, M4A, HEIC, AVIF): walks every top-level box and decodes ftyp, mvhd, tkhd, mdhd and hdlr.",
+      "order": 248,
+      "summary": "ISO base media file (MP4 / MOV / M4A / 3GP / HEIC / AVIF)",
       "description": "ISO base media (MP4, MOV, M4A, HEIC, AVIF): walks every top-level box and decodes ftyp, mvhd, tkhd, mdhd and hdlr.",
       "tags": [
         "video",
@@ -1545,21 +1714,22 @@
       "source": {
         "provider": "nybble",
         "id": "mp4",
+        "format": "MP4",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/mp4",
         "license": "Nybble format registry"
       },
       "path": "packs/mp4/pack.bp.ts",
-      "sha256": "2fa6ff55d03b5de3c06849c5a31218d37482b612d363cb5d9ddee75ba26a5bf3",
-      "size": 3699
+      "sha256": "99447c98c6f79137b7bb8dc1086fc63588a9a7486b3a5e3d4a17d8c8a7fe5f1f",
+      "size": 3672
     },
     {
       "id": "msf",
       "name": "PDB debug database",
       "version": "1.0.0",
       "category": "system",
-      "order": 245,
-      "summary": "Microsoft PDB / MSF 7.0 superblock: block size, the free block maps and where the stream directory lives.",
+      "order": 249,
+      "summary": "Microsoft program database (MSF 7.0 container)",
       "description": "Microsoft PDB / MSF 7.0 superblock: block size, the free block maps and where the stream directory lives.",
       "tags": [
         "system",
@@ -1576,6 +1746,7 @@
       "source": {
         "provider": "nybble",
         "id": "msf",
+        "format": "PDB",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/msf",
         "license": "Nybble format registry"
@@ -1589,8 +1760,8 @@
       "name": "Nintendo 64 ROM",
       "version": "1.0.0",
       "category": "game",
-      "order": 246,
-      "summary": "Nintendo 64 cartridge header: clock rate, boot address, the two CIC check codes and the cartridge id.",
+      "order": 250,
+      "summary": "Nintendo 64 cartridge ROM, big-endian (.z64)",
       "description": "Nintendo 64 cartridge header: clock rate, boot address, the two CIC check codes and the cartridge id.",
       "tags": [
         "game",
@@ -1608,21 +1779,22 @@
       "source": {
         "provider": "nybble",
         "id": "n64",
+        "format": "N64",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/n64",
         "license": "Nybble format registry"
       },
       "path": "packs/n64/pack.bp.ts",
-      "sha256": "58a768a60e0d4454f60d9971fd640907b40b2cc67f2611a301d323ce20605b91",
-      "size": 1834
+      "sha256": "a018bbc9dffcf9b08586d820a766abbb0c2311ab91b3a2961145bda108847328",
+      "size": 1810
     },
     {
       "id": "nifti",
       "name": "NIfTI-1 image",
       "version": "1.0.0",
       "category": "image",
-      "order": 247,
-      "summary": "NIfTI-1 348-byte header: dimensions, data type, scaling and both spatial transforms.",
+      "order": 251,
+      "summary": "NIfTI-1 neuroimaging volume (single file, .nii)",
       "description": "NIfTI-1 348-byte header: dimensions, data type, scaling and both spatial transforms.",
       "tags": [
         "image",
@@ -1637,6 +1809,7 @@
       "source": {
         "provider": "nybble",
         "id": "nifti",
+        "format": "NIfTI",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/nifti",
         "license": "Nybble format registry"
@@ -1650,8 +1823,8 @@
       "name": "NTFS boot sector",
       "version": "1.0.0",
       "category": "system",
-      "order": 248,
-      "summary": "NTFS boot sector: geometry, the clusters holding the MFT and its mirror, and the volume serial number.",
+      "order": 252,
+      "summary": "NTFS volume boot record",
       "description": "NTFS boot sector: geometry, the clusters holding the MFT and its mirror, and the volume serial number.",
       "tags": [
         "filesystem",
@@ -1666,6 +1839,7 @@
       "source": {
         "provider": "nybble",
         "id": "ntfs",
+        "format": "NTFS",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/ntfs",
         "license": "Nybble format registry"
@@ -1679,8 +1853,8 @@
       "name": "Ogg container",
       "version": "1.0.0",
       "category": "media",
-      "order": 249,
-      "summary": "Ogg first page: page header, segment table and the codec identification header (Vorbis, Opus, FLAC, Theora, Speex).",
+      "order": 253,
+      "summary": "Ogg bitstream page (Vorbis / Opus / FLAC / Theora / Speex)",
       "description": "Ogg first page: page header, segment table and the codec identification header (Vorbis, Opus, FLAC, Theora, Speex).",
       "tags": [
         "audio",
@@ -1698,6 +1872,7 @@
       "source": {
         "provider": "nybble",
         "id": "ogg",
+        "format": "OGG",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/ogg",
         "license": "Nybble format registry"
@@ -1711,8 +1886,8 @@
       "name": "OpenEXR image",
       "version": "1.0.0",
       "category": "image",
-      "order": 250,
-      "summary": "OpenEXR magic and version flags, then a walk of every header attribute by name, type and size.",
+      "order": 254,
+      "summary": "OpenEXR high dynamic range image",
       "description": "OpenEXR magic and version flags, then a walk of every header attribute by name, type and size.",
       "tags": [
         "image",
@@ -1728,6 +1903,7 @@
       "source": {
         "provider": "nybble",
         "id": "openexr",
+        "format": "EXR",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/openexr",
         "license": "Nybble format registry"
@@ -1741,8 +1917,8 @@
       "name": "PCAP capture",
       "version": "1.0.0",
       "category": "network",
-      "order": 251,
-      "summary": "libpcap / tcpdump capture file: global header + first packet record.",
+      "order": 255,
+      "summary": "libpcap capture (little-endian, microsecond)",
       "description": "libpcap / tcpdump capture file: global header + first packet record.",
       "tags": [
         "network",
@@ -1757,6 +1933,7 @@
       "source": {
         "provider": "nybble",
         "id": "pcap",
+        "format": "PCAP",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/pcap",
         "license": "Nybble format registry"
@@ -1770,8 +1947,8 @@
       "name": "pcapng capture",
       "version": "1.0.0",
       "category": "network",
-      "order": 252,
-      "summary": "pcapng capture: walks every block, decoding the common block types.",
+      "order": 256,
+      "summary": "Wireshark/dumpcap block-structured capture",
       "description": "pcapng capture: walks every block, decoding the common block types.",
       "tags": [
         "network",
@@ -1786,6 +1963,7 @@
       "source": {
         "provider": "nybble",
         "id": "pcapng",
+        "format": "PCAPNG",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/pcapng",
         "license": "Nybble format registry"
@@ -1799,8 +1977,8 @@
       "name": "Windows Prefetch",
       "version": "1.0.0",
       "category": "system",
-      "order": 253,
-      "summary": "Windows Prefetch (SCCA) header and the version-specific file information block: last run times and run count.",
+      "order": 257,
+      "summary": "Windows Prefetch file (SCCA)",
       "description": "Windows Prefetch (SCCA) header and the version-specific file information block: last run times and run count.",
       "tags": [
         "system",
@@ -1817,6 +1995,7 @@
       "source": {
         "provider": "nybble",
         "id": "prefetch",
+        "format": "Prefetch",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/prefetch",
         "license": "Nybble format registry"
@@ -1830,8 +2009,8 @@
       "name": "Photoshop document",
       "version": "1.0.0",
       "category": "image",
-      "order": 254,
-      "summary": "Photoshop PSD/PSB: the file header and the four length-prefixed sections that follow it.",
+      "order": 258,
+      "summary": "Adobe Photoshop document",
       "description": "Photoshop PSD/PSB: the file header and the four length-prefixed sections that follow it.",
       "tags": [
         "image",
@@ -1847,21 +2026,22 @@
       "source": {
         "provider": "nybble",
         "id": "psd",
+        "format": "PSD",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/psd",
         "license": "Nybble format registry"
       },
       "path": "packs/psd/pack.bp.ts",
-      "sha256": "dd2597b9db4ef8ae531360a6609449bac2ea6754be526881f09293aef0b7b889",
-      "size": 1535
+      "sha256": "9717ec472e7c5bd24bd0de5eb938402e5922c16a6154479a80cef6291a83ecbe",
+      "size": 1517
     },
     {
       "id": "qcow2",
       "name": "QCOW2 disk image",
       "version": "1.0.0",
       "category": "system",
-      "order": 255,
-      "summary": "QEMU copy-on-write v2/v3 image header: cluster size, the two-level L1/L2 map, refcounts and feature bits.",
+      "order": 259,
+      "summary": "QEMU copy-on-write disk image, version 2 or 3",
       "description": "QEMU copy-on-write v2/v3 image header: cluster size, the two-level L1/L2 map, refcounts and feature bits.",
       "tags": [
         "filesystem",
@@ -1879,20 +2059,21 @@
       "source": {
         "provider": "nybble",
         "id": "qcow2",
+        "format": "QCOW2",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/qcow2",
         "license": "Nybble format registry"
       },
       "path": "packs/qcow2/pack.bp.ts",
-      "sha256": "8795c048142707649e36bb6518b69505c69a4ff07863af989a01c5226d770574",
-      "size": 3264
+      "sha256": "08643b32f58de8e483901bc02027cae20d2c246c5160943577be3b5b18d3f79b",
+      "size": 3231
     },
     {
       "id": "qoi",
       "name": "QOI image",
       "version": "1.0.0",
       "category": "image",
-      "order": 256,
+      "order": 260,
       "summary": "QOI (Quite OK Image) header and encoded pixel stream.",
       "description": "QOI (Quite OK Image) header and encoded pixel stream.",
       "tags": [
@@ -1907,21 +2088,22 @@
       "source": {
         "provider": "nybble",
         "id": "qoi",
+        "format": "QOI",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/qoi",
         "license": "Nybble format registry"
       },
       "path": "packs/qoi/pack.bp.ts",
-      "sha256": "286a8b51ee311aad16381c462669aa304eb5ee3ae7f36bc61de6a17859fe14b3",
-      "size": 1071
+      "sha256": "d52678f8d158997a9869bd9d5d1a0ccc373a2d53ce509d49508113e8026e8d54",
+      "size": 1059
     },
     {
-      "id": "rar",
-      "name": "RAR archive",
+      "id": "rar5",
+      "name": "RAR5",
       "version": "1.0.0",
       "category": "archive",
-      "order": 257,
-      "summary": "RAR 5.0 (main header and first file header) and RAR 1.5-4.x (full block walk with decoded main and file headers).",
+      "order": 261,
+      "summary": "RAR 5.0 archive",
       "description": "RAR 5.0 (main header and first file header) and RAR 1.5-4.x (full block walk with decoded main and file headers).",
       "tags": [
         "archive",
@@ -1936,21 +2118,52 @@
       "source": {
         "provider": "nybble",
         "id": "rar",
+        "format": "RAR5",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/rar",
         "license": "Nybble format registry"
       },
-      "path": "packs/rar/pack.bp.ts",
+      "path": "packs/rar5/pack.bp.ts",
       "sha256": "a19304c815028a88040732aa7afa7688afa3937ef5b4974fd4e1d65dd21cf1a2",
       "size": 3255
+    },
+    {
+      "id": "rar4",
+      "name": "RAR4",
+      "version": "1.0.0",
+      "category": "archive",
+      "order": 262,
+      "summary": "RAR 1.5 - 4.x archive",
+      "description": "RAR 5.0 (main header and first file header) and RAR 1.5-4.x (full block walk with decoded main and file headers).",
+      "tags": [
+        "archive",
+        "compression",
+        "rar",
+        "winrar"
+      ],
+      "author": "Nybble",
+      "license": "Free use / redistribution (Nybble registry)",
+      "homepage": "https://www.rarlab.com/technote.htm",
+      "coverage": "partial",
+      "source": {
+        "provider": "nybble",
+        "id": "rar",
+        "format": "RAR4",
+        "version": "1.0.0",
+        "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/rar",
+        "license": "Nybble format registry"
+      },
+      "path": "packs/rar4/pack.bp.ts",
+      "sha256": "a60668e9a45613bb1f259e07417a51b70c7a3146d8157feeb3010e7af52b1211",
+      "size": 5929
     },
     {
       "id": "regf",
       "name": "Windows registry hive",
       "version": "1.0.0",
       "category": "system",
-      "order": 258,
-      "summary": "Windows registry hive: the base block, the hive bin chain, and the root key cell followed to its offset.",
+      "order": 263,
+      "summary": "Windows registry hive (SYSTEM, SOFTWARE, NTUSER.DAT, ...)",
       "description": "Windows registry hive: the base block, the hive bin chain, and the root key cell followed to its offset.",
       "tags": [
         "system",
@@ -1967,6 +2180,7 @@
       "source": {
         "provider": "nybble",
         "id": "regf",
+        "format": "REGF",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/regf",
         "license": "Nybble format registry"
@@ -1980,8 +2194,8 @@
       "name": "RPM package",
       "version": "1.0.0",
       "category": "archive",
-      "order": 259,
-      "summary": "RPM package: the 96-byte lead and the signature header, walking its index entries.",
+      "order": 264,
+      "summary": "RPM Package Manager package",
       "description": "RPM package: the 96-byte lead and the signature header, walking its index entries.",
       "tags": [
         "archive",
@@ -1998,21 +2212,22 @@
       "source": {
         "provider": "nybble",
         "id": "rpm",
+        "format": "RPM",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/rpm",
         "license": "Nybble format registry"
       },
       "path": "packs/rpm/pack.bp.ts",
-      "sha256": "f7e51639cd1d32d1609623e4c35ed4355f27f24590d805f1459afe930712927e",
-      "size": 2871
+      "sha256": "efec38324dee6db5bacb0ac9cc5a9adb35ef05e262cbf3ee353d571238b7d350",
+      "size": 2841
     },
     {
       "id": "squashfs",
       "name": "SquashFS superblock",
       "version": "1.0.0",
       "category": "system",
-      "order": 260,
-      "summary": "SquashFS superblock: the read-only filesystem found in most router and IoT firmware.",
+      "order": 265,
+      "summary": "SquashFS little-endian superblock (hsqs)",
       "description": "SquashFS superblock: the read-only filesystem found in most router and IoT firmware.",
       "tags": [
         "filesystem",
@@ -2027,6 +2242,7 @@
       "source": {
         "provider": "nybble",
         "id": "squashfs",
+        "format": "SQUASHFS",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/squashfs",
         "license": "Nybble format registry"
@@ -2040,8 +2256,8 @@
       "name": "TAR archive",
       "version": "1.0.0",
       "category": "archive",
-      "order": 261,
-      "summary": "POSIX ustar tar archive header (first 512-byte record).",
+      "order": 266,
+      "summary": "ustar tar archive header",
       "description": "POSIX ustar tar archive header (first 512-byte record).",
       "tags": [
         "archive",
@@ -2054,6 +2270,7 @@
       "source": {
         "provider": "nybble",
         "id": "tar",
+        "format": "TAR",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/tar",
         "license": "Nybble format registry"
@@ -2063,12 +2280,12 @@
       "size": 1756
     },
     {
-      "id": "tiff",
-      "name": "TIFF image",
+      "id": "tiff-le",
+      "name": "TIFF (LE)",
       "version": "1.0.0",
       "category": "image",
-      "order": 262,
-      "summary": "TIFF header + first image file directory (both byte orders).",
+      "order": 267,
+      "summary": "TIFF image, little-endian (II)",
       "description": "TIFF header + first image file directory (both byte orders).",
       "tags": [
         "image",
@@ -2082,21 +2299,51 @@
       "source": {
         "provider": "nybble",
         "id": "tiff",
+        "format": "TIFF (LE)",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/tiff",
         "license": "Nybble format registry"
       },
-      "path": "packs/tiff/pack.bp.ts",
+      "path": "packs/tiff-le/pack.bp.ts",
       "sha256": "cff826fcc323fc3124675d74ec12b9ca4f0390544d9ff5df94b58752cdf14803",
       "size": 1702
     },
     {
-      "id": "truetype",
-      "name": "TrueType / OpenType font",
+      "id": "tiff-be",
+      "name": "TIFF (BE)",
+      "version": "1.0.0",
+      "category": "image",
+      "order": 268,
+      "summary": "TIFF image, big-endian (MM)",
+      "description": "TIFF header + first image file directory (both byte orders).",
+      "tags": [
+        "image",
+        "raster",
+        "metadata"
+      ],
+      "author": "Nybble",
+      "license": "Free use / redistribution (Nybble registry)",
+      "homepage": "https://en.wikipedia.org/wiki/TIFF",
+      "coverage": "partial",
+      "source": {
+        "provider": "nybble",
+        "id": "tiff",
+        "format": "TIFF (BE)",
+        "version": "1.0.0",
+        "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/tiff",
+        "license": "Nybble format registry"
+      },
+      "path": "packs/tiff-be/pack.bp.ts",
+      "sha256": "66a2c27947bcd2c51e3ca0bd858451598a2fbf1e101def28eb3af1cfa29ffc35",
+      "size": 1675
+    },
+    {
+      "id": "ttf",
+      "name": "TTF",
       "version": "1.0.0",
       "category": "media",
-      "order": 263,
-      "summary": "SFNT font: header + table directory (TrueType and OpenType/CFF).",
+      "order": 269,
+      "summary": "TrueType font (sfnt version 0x00010000)",
       "description": "SFNT font: header + table directory (TrueType and OpenType/CFF).",
       "tags": [
         "font",
@@ -2111,21 +2358,52 @@
       "source": {
         "provider": "nybble",
         "id": "truetype",
+        "format": "TTF",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/truetype",
         "license": "Nybble format registry"
       },
-      "path": "packs/truetype/pack.bp.ts",
-      "sha256": "65cadc142b292eb718792c176eca2b028fa616a75f3620e9c69b2feae8f109db",
-      "size": 1691
+      "path": "packs/ttf/pack.bp.ts",
+      "sha256": "6f291be54a2529b0fb13c39782297d246b6e67a077130d3363ed8ed3d3ba5502",
+      "size": 1667
+    },
+    {
+      "id": "otf",
+      "name": "OTF",
+      "version": "1.0.0",
+      "category": "media",
+      "order": 270,
+      "summary": "OpenType font with CFF outlines (OTTO)",
+      "description": "SFNT font: header + table directory (TrueType and OpenType/CFF).",
+      "tags": [
+        "font",
+        "typography",
+        "sfnt",
+        "opentype"
+      ],
+      "author": "Nybble",
+      "license": "Free use / redistribution (Nybble registry)",
+      "homepage": "https://learn.microsoft.com/en-us/typography/opentype/spec/otff",
+      "coverage": "partial",
+      "source": {
+        "provider": "nybble",
+        "id": "truetype",
+        "format": "OTF",
+        "version": "1.0.0",
+        "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/truetype",
+        "license": "Nybble format registry"
+      },
+      "path": "packs/otf/pack.bp.ts",
+      "sha256": "d47cfc8e9936dbdc6036eea8458a443aa7be7d45b06b4087295d50e7f3665a2c",
+      "size": 1650
     },
     {
       "id": "uimage",
       "name": "U-Boot uImage",
       "version": "1.0.0",
       "category": "system",
-      "order": 264,
-      "summary": "U-Boot legacy image header: the 64-byte big-endian header on embedded kernels and ramdisks.",
+      "order": 271,
+      "summary": "U-Boot legacy image header",
       "description": "U-Boot legacy image header: the 64-byte big-endian header on embedded kernels and ramdisks.",
       "tags": [
         "firmware",
@@ -2140,21 +2418,22 @@
       "source": {
         "provider": "nybble",
         "id": "uimage",
+        "format": "UIMAGE",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/uimage",
         "license": "Nybble format registry"
       },
       "path": "packs/uimage/pack.bp.ts",
-      "sha256": "4b4f476fe3d1fc19522756c0c27eb03d9459474720ed65539e4b84601a8c0327",
-      "size": 2456
+      "sha256": "38b1586f7bbd4b79b8777a5ceeefb72c7c0b61dbe9e6ec5dafa621331e476514",
+      "size": 2435
     },
     {
       "id": "usdc",
       "name": "USD crate file",
       "version": "1.0.0",
       "category": "model",
-      "order": 265,
-      "summary": "Pixar USD binary crate bootstrap: the magic, version bytes and the offset of the table of contents.",
+      "order": 272,
+      "summary": "Pixar Universal Scene Description, binary crate format",
       "description": "Pixar USD binary crate bootstrap: the magic, version bytes and the offset of the table of contents.",
       "tags": [
         "model",
@@ -2170,6 +2449,7 @@
       "source": {
         "provider": "nybble",
         "id": "usdc",
+        "format": "USDC",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/usdc",
         "license": "Nybble format registry"
@@ -2183,8 +2463,8 @@
       "name": "VHDX disk image",
       "version": "1.0.0",
       "category": "system",
-      "order": 266,
-      "summary": "Hyper-V VHDX: file identifier, the two headers, region tables, disk metadata and the block allocation table.",
+      "order": 273,
+      "summary": "Hyper-V virtual hard disk v2 (VHDX)",
       "description": "Hyper-V VHDX: file identifier, the two headers, region tables, disk metadata and the block allocation table.",
       "tags": [
         "filesystem",
@@ -2201,6 +2481,7 @@
       "source": {
         "provider": "nybble",
         "id": "vhdx",
+        "format": "VHDX",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/vhdx",
         "license": "Nybble format registry"
@@ -2214,8 +2495,8 @@
       "name": "VMDK sparse disk",
       "version": "1.0.0",
       "category": "system",
-      "order": 267,
-      "summary": "VMware sparse extent header: capacity, grain size, the embedded text descriptor and the grain directory.",
+      "order": 274,
+      "summary": "VMware virtual disk, hosted sparse extent (KDMV)",
       "description": "VMware sparse extent header: capacity, grain size, the embedded text descriptor and the grain directory.",
       "tags": [
         "filesystem",
@@ -2232,6 +2513,7 @@
       "source": {
         "provider": "nybble",
         "id": "vmdk",
+        "format": "VMDK",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/vmdk",
         "license": "Nybble format registry"
@@ -2241,12 +2523,12 @@
       "size": 3382
     },
     {
-      "id": "wad",
-      "name": "Doom WAD",
+      "id": "iwad",
+      "name": "IWAD",
       "version": "1.0.0",
       "category": "game",
-      "order": 268,
-      "summary": "Doom WAD: the header and the full lump directory, followed to its offset.",
+      "order": 275,
+      "summary": "Doom IWAD, a complete game data file",
       "description": "Doom WAD: the header and the full lump directory, followed to its offset.",
       "tags": [
         "game",
@@ -2263,21 +2545,54 @@
       "source": {
         "provider": "nybble",
         "id": "wad",
+        "format": "IWAD",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/wad",
         "license": "Nybble format registry"
       },
-      "path": "packs/wad/pack.bp.ts",
+      "path": "packs/iwad/pack.bp.ts",
       "sha256": "7540ac854dd4dc98406cd606c34e13d15f34cf0776be91b58c2709ebb248d3fd",
       "size": 1434
+    },
+    {
+      "id": "pwad",
+      "name": "PWAD",
+      "version": "1.0.0",
+      "category": "game",
+      "order": 276,
+      "summary": "Doom PWAD, a patch loaded over an IWAD",
+      "description": "Doom WAD: the header and the full lump directory, followed to its offset.",
+      "tags": [
+        "game",
+        "archive",
+        "doom",
+        "id-software",
+        "gamedev",
+        "retro"
+      ],
+      "author": "Nybble",
+      "license": "Free use / redistribution (Nybble registry)",
+      "homepage": "https://doomwiki.org/wiki/WAD",
+      "coverage": "partial",
+      "source": {
+        "provider": "nybble",
+        "id": "wad",
+        "format": "PWAD",
+        "version": "1.0.0",
+        "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/wad",
+        "license": "Nybble format registry"
+      },
+      "path": "packs/pwad/pack.bp.ts",
+      "sha256": "3fc1cf9b17103ef887ea4ccf357a25a8fec1061add672be6ab3ae1dd9a143d40",
+      "size": 1363
     },
     {
       "id": "wasm",
       "name": "WebAssembly module",
       "version": "1.0.0",
       "category": "executable",
-      "order": 269,
-      "summary": "WebAssembly binary module: LEB128-driven sections, with type, function, export and code decoded.",
+      "order": 277,
+      "summary": "WebAssembly binary module",
       "description": "WebAssembly binary module: LEB128-driven sections, with type, function, export and code decoded.",
       "tags": [
         "executable",
@@ -2293,6 +2608,7 @@
       "source": {
         "provider": "nybble",
         "id": "wasm",
+        "format": "WASM",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/wasm",
         "license": "Nybble format registry"
@@ -2306,8 +2622,8 @@
       "name": "WebP image",
       "version": "1.0.0",
       "category": "image",
-      "order": 270,
-      "summary": "WebP RIFF container header and first chunk (VP8 / VP8L / VP8X).",
+      "order": 278,
+      "summary": "WebP image (RIFF container)",
       "description": "WebP RIFF container header and first chunk (VP8 / VP8L / VP8X).",
       "tags": [
         "image",
@@ -2320,6 +2636,7 @@
       "source": {
         "provider": "nybble",
         "id": "webp",
+        "format": "WebP",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/webp",
         "license": "Nybble format registry"
@@ -2333,8 +2650,8 @@
       "name": "WOFF web font",
       "version": "1.0.0",
       "category": "media",
-      "order": 271,
-      "summary": "Web Open Font Format wrapper header (WOFF 1.0).",
+      "order": 279,
+      "summary": "Web Open Font Format header",
       "description": "Web Open Font Format wrapper header (WOFF 1.0).",
       "tags": [
         "font",
@@ -2348,21 +2665,22 @@
       "source": {
         "provider": "nybble",
         "id": "woff",
+        "format": "WOFF",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/woff",
         "license": "Nybble format registry"
       },
       "path": "packs/woff/pack.bp.ts",
-      "sha256": "27c7785f62aa6b6ce87c50ac1b8ff9cd865fb3d80d59339bb68b246c084e761c",
-      "size": 1627
+      "sha256": "7c06cf8b9eab0db5c061aff0d239a5aeb69a2f1faefb56504b4e0bbd49f20dec",
+      "size": 1591
     },
     {
       "id": "woff2",
       "name": "WOFF2 font",
       "version": "1.0.0",
       "category": "media",
-      "order": 272,
-      "summary": "WOFF2 web font header: flavor, table count, compressed and decompressed sizes, metadata and private blocks.",
+      "order": 280,
+      "summary": "Web Open Font Format 2.0",
       "description": "WOFF2 web font header: flavor, table count, compressed and decompressed sizes, metadata and private blocks.",
       "tags": [
         "font",
@@ -2379,21 +2697,22 @@
       "source": {
         "provider": "nybble",
         "id": "woff2",
+        "format": "WOFF2",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/woff2",
         "license": "Nybble format registry"
       },
       "path": "packs/woff2/pack.bp.ts",
-      "sha256": "36a6715f631192139ffb94ea34fb345d839bcaf3ad229fb93a7e1e9535f429f3",
-      "size": 1856
+      "sha256": "b19a66a171e8727e3de03ea01ad0d750bded23b0c5f3a9272c2a8d13ebf5b994",
+      "size": 1817
     },
     {
       "id": "xz",
       "name": "XZ compressed",
       "version": "1.0.0",
       "category": "archive",
-      "order": 273,
-      "summary": "XZ stream header (check type) and the first block header: sizes, filter chain and properties.",
+      "order": 281,
+      "summary": ".xz compressed stream (LZMA2)",
       "description": "XZ stream header (check type) and the first block header: sizes, filter chain and properties.",
       "tags": [
         "archive",
@@ -2408,6 +2727,7 @@
       "source": {
         "provider": "nybble",
         "id": "xz",
+        "format": "XZ",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/xz",
         "license": "Nybble format registry"
@@ -2421,8 +2741,8 @@
       "name": "Zstandard",
       "version": "1.0.0",
       "category": "archive",
-      "order": 274,
-      "summary": "Zstandard frames: frame header (window, dictionary id, content size) and a walk of every block up to the checksum.",
+      "order": 282,
+      "summary": "Zstandard compressed frame(s)",
       "description": "Zstandard frames: frame header (window, dictionary id, content size) and a walk of every block up to the checksum.",
       "tags": [
         "archive",
@@ -2437,6 +2757,7 @@
       "source": {
         "provider": "nybble",
         "id": "zstd",
+        "format": "ZSTD",
         "version": "1.0.0",
         "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/zstd",
         "license": "Nybble format registry"

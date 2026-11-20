@@ -1,0 +1,29 @@
+{
+  "id": "fat32",
+  "name": "FAT32",
+  "version": "1.0.0",
+  "category": "system",
+  "order": 219,
+  "summary": "FAT32 boot sector (BPB + FAT32 extended boot record)",
+  "description": "FAT12/16 and FAT32 boot sectors: the BIOS parameter block and the extended block that names the volume.",
+  "tags": [
+    "filesystem",
+    "fat",
+    "fat32",
+    "boot-sector",
+    "dos",
+    "removable"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/fatgen103.doc",
+  "coverage": "complete",
+  "source": {
+    "provider": "nybble",
+    "id": "fat",
+    "format": "FAT32",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/fat",
+    "license": "Nybble format registry"
+  }
+}

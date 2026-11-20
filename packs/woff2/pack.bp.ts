@@ -7,19 +7,19 @@
 // 覆盖：complete
 const Woff2 = struct("Woff2", [
   str("signature", { size: 4, label: "wOF2" }),
-  u32("flavor", { endian: "little", label: "sfnt version of the font inside: 0x00010000 for TrueType, OTTO for CFF" }),
-  u32("length", { endian: "little", label: "total size of this file in bytes" }),
-  u16("numTables", { endian: "little", label: "tables in the directory that follows" }),
-  u16("reserved", { endian: "little", label: "reserved, zero" }),
-  u32("totalSfntSize", { endian: "little", label: "size of the rebuilt, uncompressed font" }),
-  u32("totalCompressedSize", { endian: "little", label: "size of the Brotli stream holding every table" }),
-  u16("majorVersion", { endian: "little", label: "font revision, major" }),
-  u16("minorVersion", { endian: "little", label: "font revision, minor" }),
-  u32("metaOffset", { endian: "little", label: "offset of the compressed XML metadata block, 0 if absent" }),
-  u32("metaLength", { endian: "little", label: "compressed length of that block" }),
-  u32("metaOrigLength", { endian: "little", label: "length of the metadata once decompressed" }),
-  u32("privOffset", { endian: "little", label: "offset of the private data block, 0 if absent" }),
-  u32("privLength", { endian: "little", label: "length of the private data block" }),
+  u32("flavor", { endian: "big", label: "sfnt version of the font inside: 0x00010000 for TrueType, OTTO for CFF" }),
+  u32("length", { endian: "big", label: "total size of this file in bytes" }),
+  u16("numTables", { endian: "big", label: "tables in the directory that follows" }),
+  u16("reserved", { endian: "big", label: "reserved, zero" }),
+  u32("totalSfntSize", { endian: "big", label: "size of the rebuilt, uncompressed font" }),
+  u32("totalCompressedSize", { endian: "big", label: "size of the Brotli stream holding every table" }),
+  u16("majorVersion", { endian: "big", label: "font revision, major" }),
+  u16("minorVersion", { endian: "big", label: "font revision, minor" }),
+  u32("metaOffset", { endian: "big", label: "offset of the compressed XML metadata block, 0 if absent" }),
+  u32("metaLength", { endian: "big", label: "compressed length of that block" }),
+  u32("metaOrigLength", { endian: "big", label: "length of the metadata once decompressed" }),
+  u32("privOffset", { endian: "big", label: "offset of the private data block, 0 if absent" }),
+  u32("privLength", { endian: "big", label: "length of the private data block" }),
 ]);
 
 export default definePack({

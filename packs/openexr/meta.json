@@ -3,8 +3,8 @@
   "name": "OpenEXR image",
   "version": "1.0.0",
   "category": "image",
-  "order": 250,
-  "summary": "OpenEXR magic and version flags, then a walk of every header attribute by name, type and size.",
+  "order": 254,
+  "summary": "OpenEXR high dynamic range image",
   "description": "OpenEXR magic and version flags, then a walk of every header attribute by name, type and size.",
   "tags": [
     "image",
@@ -20,6 +20,7 @@
   "source": {
     "provider": "nybble",
     "id": "openexr",
+    "format": "EXR",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/openexr",
     "license": "Nybble format registry"

@@ -3,8 +3,8 @@
   "name": "Nintendo 64 ROM",
   "version": "1.0.0",
   "category": "game",
-  "order": 246,
-  "summary": "Nintendo 64 cartridge header: clock rate, boot address, the two CIC check codes and the cartridge id.",
+  "order": 250,
+  "summary": "Nintendo 64 cartridge ROM, big-endian (.z64)",
   "description": "Nintendo 64 cartridge header: clock rate, boot address, the two CIC check codes and the cartridge id.",
   "tags": [
     "game",
@@ -23,6 +23,7 @@
   "source": {
     "provider": "nybble",
     "id": "n64",
+    "format": "N64",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/n64",
     "license": "Nybble format registry"

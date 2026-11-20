@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "category": "archive",
   "order": 207,
-  "summary": "bzip2 stream header: block size level, first block magic and its CRC.",
+  "summary": ".bz2 compressed stream",
   "description": "bzip2 stream header: block size level, first block magic and its CRC.",
   "tags": [
     "archive",
@@ -18,6 +18,7 @@
   "source": {
     "provider": "nybble",
     "id": "bzip2",
+    "format": "BZIP2",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/bzip2",
     "license": "Nybble format registry"

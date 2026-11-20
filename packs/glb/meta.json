@@ -3,7 +3,7 @@
   "name": "glTF binary",
   "version": "1.0.0",
   "category": "model",
-  "order": 224,
+  "order": 225,
   "summary": "glTF binary (.glb) 3D asset: 12-byte header and a JSON/BIN chunk stream.",
   "description": "glTF binary (.glb) 3D asset: 12-byte header and a JSON/BIN chunk stream.",
   "tags": [
@@ -19,6 +19,7 @@
   "source": {
     "provider": "nybble",
     "id": "glb",
+    "format": "GLB",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/glb",
     "license": "Nybble format registry"

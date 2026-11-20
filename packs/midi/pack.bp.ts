@@ -7,15 +7,15 @@
 // 覆盖：partial；未移植 2 项（见文件末尾）
 const MidiHeader = struct("MidiHeader", [
   str("type", { size: 4, label: "MThd" }),
-  u32("length", { endian: "little", label: "bytes of header data; always 6" }),
+  u32("length", { endian: "big", label: "bytes of header data; always 6" }),
   u16("format", { values: { "0": "SingleTrack", "1": "SimultaneousTracks", "2": "IndependentTracks" }, label: "how the tracks relate to each other" }),
-  u16("ntrks", { endian: "little", label: "number of track chunks (always 1 for format 0)" }),
-  i16("division", { endian: "little", label: "ticks per quarter note, or SMPTE when negative" }),
+  u16("ntrks", { endian: "big", label: "number of track chunks (always 1 for format 0)" }),
+  i16("division", { endian: "big", label: "ticks per quarter note, or SMPTE when negative" }),
 ]);
 
 const MidiTrack = struct("MidiTrack", [
   str("type", { size: 4, label: "MTrk" }),
-  u32("length", { endian: "little", label: "bytes of event data in this track" }),
+  u32("length", { endian: "big", label: "bytes of event data in this track" }),
 ]);
 
 const Midi = struct("Midi", [

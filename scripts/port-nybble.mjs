@@ -18,7 +18,7 @@
  * 生成物只依赖固定布局，可被现有 pack 加载器校验；不要手工编辑生成文件。
  */
 
-import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync, readdirSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 
 const CUSTOM_IDS = new Set([
@@ -543,7 +543,8 @@ class Converter {
       case 'prim': {
         const prim = ty.prim;
         const fn = prim.kind;
-        const opts = [`endian: ${jsString(ty.endian ?? prim.endian ?? 'little')}`];
+        const endian = ty.endian ?? prim.endian ?? this.pack.endian;
+        const opts = [`endian: ${jsString(endian)}`];
         if (field.desc) opts.push(`label: ${jsString(field.desc.slice(0, 120))}`);
         return `${fn}(${jsString(name)}, { ${opts.join(', ')} })`;
       }
@@ -756,8 +757,7 @@ class Converter {
   }
 }
 
-function convertPack(raw) {
-  const format = raw.formats[0] ?? {};
+function convertPack(raw, format) {
   const endian = format.endian === 'be' ? 'big' : 'little';
   let ast;
   try {
@@ -769,6 +769,7 @@ function convertPack(raw) {
 
   const pack = {
     ...raw,
+    formats: [format],
     endian,
     _structs: new Map(ast.structs.map((s) => [s.name, s])),
     _enums: new Map(ast.enums.map((e) => [e.name, e])),
@@ -782,6 +783,13 @@ function convertPack(raw) {
   } catch (e) {
     return { ok: false, error: e instanceof Error ? e.message : String(e) };
   }
+}
+
+function slugOf(text) {
+  return String(text ?? '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
 }
 
 /* ------------------------------------------------------------------- main */
@@ -806,37 +814,45 @@ function main() {
   const vendorFile = join(root, 'vendor', 'nybble-registry.json');
   const registry = JSON.parse(readFileSync(vendorFile, 'utf8'));
   const results = [];
+  const usedIds = new Set();
   for (const raw of registry.packs) {
     if (CUSTOM_IDS.has(raw.id) && !args.ids.includes(raw.id)) continue;
     if (args.ids.length && !args.ids.includes(raw.id)) continue;
-    const r = convertPack(raw);
-    results.push({ raw, r });
+    const formats = Array.isArray(raw.formats) && raw.formats.length ? raw.formats : [{}];
+    for (const format of formats) {
+      let id = formats.length === 1 ? raw.id : (slugOf(format.name) || raw.id);
+      if (usedIds.has(id)) id = `${raw.id}-${slugOf(format.name) || 'format'}`;
+      usedIds.add(id);
+      const r = convertPack(raw, format);
+      results.push({ raw, format, id, multi: formats.length > 1, r });
+    }
   }
 
   let ok = 0;
-  for (const { raw, r } of results) {
+  for (const { raw, format, id, r } of results) {
     if (r.ok) ok += 1;
     if (!r.ok) {
-      console.log(`✗ ${raw.id.padEnd(14)} ${r.error}`);
+      console.log(`✗ ${id.padEnd(18)} ${r.error}`);
       continue;
     }
-    console.log(`${r.coverage === 'complete' ? '✓' : '◐'} ${raw.id.padEnd(14)} ${String(r.types).padStart(2)} 类型 ${String(r.nodes).padStart(2)} 节点  ${r.skipped.length ? `跳过 ${r.skipped.length}` : ''}`);
+    console.log(`${r.coverage === 'complete' ? '✓' : '◐'} ${id.padEnd(18)} ${String(r.types).padStart(2)} 类型 ${String(r.nodes).padStart(2)} 节点  ${r.skipped.length ? `跳过 ${r.skipped.length}` : ''}${format.name ? ` · ${format.name}` : ''}`);
     if (args.report) for (const s of r.skipped.slice(0, 8)) console.log(`    · ${s}`);
   }
   console.log(`\n${ok}/${results.length} 个 pack 可生成`);
 
   if (!args.write) return;
   const packsDir = join(root, 'packs');
+  const written = new Set();
   let order = 200;
-  for (const { raw, r } of results) {
+  for (const { raw, format, id, multi, r } of results) {
     if (!r.ok) continue;
-    const dir = join(packsDir, raw.id);
+    const dir = join(packsDir, id);
     mkdirSync(dir, { recursive: true });
     writeFileSync(join(dir, 'pack.bp.ts'), r.code);
-    const summary = (raw.description || raw.formats[0]?.description || raw.name || raw.id).replace(/\s+/g, ' ').slice(0, 160);
+    const summary = (format.description || raw.description || raw.name || raw.id).replace(/\s+/g, ' ').slice(0, 160);
     const meta = {
-      id: raw.id,
-      name: raw.name || raw.id,
+      id,
+      name: multi ? (format.name || `${raw.name} · ${format.endian || ''}`) : (raw.name || raw.id),
       version: raw.version || '1.0.0',
       category: raw.category === 'audio' ? 'media' : raw.category === 'video' ? 'media' : raw.category === 'font' ? 'media' : raw.category === 'ml' ? 'data' : raw.category === 'model' ? 'model' : raw.category === 'filesystem' ? 'system' : raw.category === 'firmware' ? 'system' : raw.category === 'network' ? 'network' : raw.category === 'system' ? 'system' : raw.category === 'game' ? 'game' : raw.category === 'database' ? 'database' : raw.category === 'executable' ? 'executable' : raw.category === 'archive' ? 'archive' : raw.category === 'image' ? 'image' : 'other',
       order: order,
@@ -850,13 +866,27 @@ function main() {
       source: {
         provider: 'nybble',
         id: raw.id,
+        ...(format.name ? { format: format.name } : {}),
         version: raw.version || '1.0.0',
         url: `${NYBBLE_URL}/tree/main/formats/${raw.id}`,
         license: 'Nybble format registry',
       },
     };
     writeFileSync(join(dir, 'meta.json'), `${JSON.stringify(meta, null, 2)}\n`);
+    written.add(id);
     order += 1;
+  }
+  // 只清理「来源为 nybble 且本次未生成」的旧目录，不碰手工 pack。
+  for (const name of readdirSync(packsDir)) {
+    if (written.has(name)) continue;
+    const metaFile = join(packsDir, name, 'meta.json');
+    if (!existsSync(metaFile)) continue;
+    try {
+      const meta = JSON.parse(readFileSync(metaFile, 'utf8'));
+      if (meta.source?.provider === 'nybble') rmSync(join(packsDir, name), { recursive: true, force: true });
+    } catch {
+      /* 忽略坏 meta */
+    }
   }
   console.log(`✓ 已写入 ${packsDir}`);
 }

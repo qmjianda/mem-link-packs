@@ -3,8 +3,8 @@
   "name": "SquashFS superblock",
   "version": "1.0.0",
   "category": "system",
-  "order": 260,
-  "summary": "SquashFS superblock: the read-only filesystem found in most router and IoT firmware.",
+  "order": 265,
+  "summary": "SquashFS little-endian superblock (hsqs)",
   "description": "SquashFS superblock: the read-only filesystem found in most router and IoT firmware.",
   "tags": [
     "filesystem",
@@ -20,6 +20,7 @@
   "source": {
     "provider": "nybble",
     "id": "squashfs",
+    "format": "SQUASHFS",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/squashfs",
     "license": "Nybble format registry"

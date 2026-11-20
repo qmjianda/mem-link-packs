@@ -7,29 +7,29 @@
 // 覆盖：partial；未移植 1 项（见文件末尾）
 const RpmLead = struct("RpmLead", [
   bytes("magic", { size: 4, label: "ED AB EE DB" }),
-  u8("major", { endian: "little", label: "format major version, 3 or 4" }),
-  u8("minor", { endian: "little", label: "format minor version, 0" }),
+  u8("major", { endian: "big", label: "format major version, 3 or 4" }),
+  u8("minor", { endian: "big", label: "format minor version, 0" }),
   u16("type", { values: { "0": "Binary", "1": "Source" }, label: "binary or source package" }),
-  u16("archNum", { endian: "little", label: "architecture the package was built for, an rpm-internal number" }),
+  u16("archNum", { endian: "big", label: "architecture the package was built for, an rpm-internal number" }),
   str("name", { size: 66, label: "package name and version, NUL-padded" }),
-  u16("osNum", { endian: "little", label: "target operating system, an rpm-internal number (1 is Linux)" }),
+  u16("osNum", { endian: "big", label: "target operating system, an rpm-internal number (1 is Linux)" }),
   u16("signatureType", { values: { "5": "HeaderSignature" }, label: "how the signature is stored; always 5" }),
   bytes("reserved", { size: 16, label: "reserved, zero" }),
 ]);
 
 const RpmIndexEntry = struct("RpmIndexEntry", [
-  i32("tag", { endian: "little", label: "which piece of metadata this is" }),
+  i32("tag", { endian: "big", label: "which piece of metadata this is" }),
   u32("type", { values: { "0": "Null", "1": "Char", "2": "Int8", "3": "Int16", "4": "Int32", "5": "Int64", "6": "String", "7": "Bin", "8": "StringArray", "9": "I18nString" }, label: "how the value is stored" }),
-  i32("offset", { endian: "little", label: "offset of the value within the data blob" }),
-  u32("count", { endian: "little", label: "number of values of that type" }),
+  i32("offset", { endian: "big", label: "offset of the value within the data blob" }),
+  u32("count", { endian: "big", label: "number of values of that type" }),
 ]);
 
 const RpmHeader = struct("RpmHeader", [
   bytes("magic", { size: 3, label: "8E AD E8" }),
-  u8("version", { endian: "little", label: "header structure version, 1" }),
+  u8("version", { endian: "big", label: "header structure version, 1" }),
   bytes("reserved", { size: 4, label: "reserved, zero" }),
-  u32("numIndex", { endian: "little", label: "index entries that follow" }),
-  u32("dataSize", { endian: "little", label: "bytes of data blob after the index" }),
+  u32("numIndex", { endian: "big", label: "index entries that follow" }),
+  u32("dataSize", { endian: "big", label: "bytes of data blob after the index" }),
 ]);
 
 const Rpm = struct("Rpm", [

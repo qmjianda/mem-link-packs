@@ -3,8 +3,8 @@
   "name": "XZ compressed",
   "version": "1.0.0",
   "category": "archive",
-  "order": 273,
-  "summary": "XZ stream header (check type) and the first block header: sizes, filter chain and properties.",
+  "order": 281,
+  "summary": ".xz compressed stream (LZMA2)",
   "description": "XZ stream header (check type) and the first block header: sizes, filter chain and properties.",
   "tags": [
     "archive",
@@ -19,6 +19,7 @@
   "source": {
     "provider": "nybble",
     "id": "xz",
+    "format": "XZ",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/xz",
     "license": "Nybble format registry"

@@ -8,12 +8,12 @@
 - **应用入口**：mem-link 顶栏「Pack 商店」或节点库「Pack 商店」
 - **默认商店地址**：`https://cdn.jsdelivr.net/gh/qmjianda/mem-link-packs@main/index.json`
 
-当前目录包含 **369 个 pack**：
+当前目录包含 **377 个 pack**：
 
 | 来源 | 数量 | 许可 | 说明 |
 | --- | ---: | --- | --- |
 | 手工维护 | 10 | MIT | NES、SQLite、PNG、BMP、ZIP、GIF、ELF、PE、JPEG、WAV |
-| [Nybble format registry](https://github.com/itsmajdbuilds/binary-explorer-registry) | 75 | 上游声明可自由使用/再分发 | 覆盖 7z、APFS、DICOM、GGUF、HDF5、NTFS、TIFF、WASM 等 |
+| [Nybble format registry](https://github.com/itsmajdbuilds/binary-explorer-registry) | 83 | 上游声明可自由使用/再分发 | 覆盖 7z、APFS、DICOM、GGUF、HDF5、NTFS、TIFF、WASM 等 |
 | [ImHex-Patterns](https://github.com/WerWolv/ImHex-Patterns) | 284 | GPL-2.0-or-later | 固定布局移植，覆盖大量图像/音频/容器/文件系统/游戏格式 |
 
 > **部分布局**：mem-link 的静态结构无法表达所有上游特性（条件字段、repeat、
@@ -60,9 +60,9 @@
 
 | 分类 | 数量 | 分类 | 数量 |
 | --- | ---: | --- | ---: |
-| `image` 图像 | 39 | `archive` 压缩包 | 32 |
-| `system` 系统 | 31 | `executable` 可执行文件 | 30 |
-| `media` 媒体 | 30 | `game` 游戏 | 27 |
+| `image` 图像 | 40 | `archive` 压缩包 | 33 |
+| `system` 系统 | 33 | `executable` 可执行文件 | 32 |
+| `media` 媒体 | 31 | `game` 游戏 | 28 |
 | `model` 模型 | 11 | `data` 数据 | 6 |
 | `network` 网络 | 6 | `database` 数据库 | 5 |
 | `font` 字体 | 1 | `other` 其他 | 151 |

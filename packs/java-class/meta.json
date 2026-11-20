@@ -3,7 +3,7 @@
   "name": "Java class file",
   "version": "1.0.0",
   "category": "executable",
-  "order": 232,
+  "order": 234,
   "summary": "Java .class: version, a tag-dispatched constant pool, access flags and class refs.",
   "description": "Java .class: version, a tag-dispatched constant pool, access flags and class refs.",
   "tags": [
@@ -19,6 +19,7 @@
   "source": {
     "provider": "nybble",
     "id": "java-class",
+    "format": "Java class",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/java-class",
     "license": "Nybble format registry"

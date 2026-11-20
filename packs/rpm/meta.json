@@ -3,8 +3,8 @@
   "name": "RPM package",
   "version": "1.0.0",
   "category": "archive",
-  "order": 259,
-  "summary": "RPM package: the 96-byte lead and the signature header, walking its index entries.",
+  "order": 264,
+  "summary": "RPM Package Manager package",
   "description": "RPM package: the 96-byte lead and the signature header, walking its index entries.",
   "tags": [
     "archive",
@@ -21,6 +21,7 @@
   "source": {
     "provider": "nybble",
     "id": "rpm",
+    "format": "RPM",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/rpm",
     "license": "Nybble format registry"

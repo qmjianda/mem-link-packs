@@ -26,18 +26,18 @@ const FlvVideoTag = struct("FlvVideoTag", [
 ]);
 
 const FlvTag = struct("FlvTag", [
-  u32("previousTagSize", { endian: "little", label: "size of the tag before this one; 0 for the first" }),
+  u32("previousTagSize", { endian: "big", label: "size of the tag before this one; 0 for the first" }),
   u8("tagType", { values: { "8": "Audio", "9": "Video", "18": "ScriptData" }, label: "audio, video, or AMF script data" }),
-  u8("sizeHi", { endian: "little", label: "data size byte (high)" }),
-  u8("sizeMid", { endian: "little", label: "data size byte (mid)" }),
-  u8("sizeLo", { endian: "little", label: "data size byte (low)" }),
-  u8("timeHi", { endian: "little", label: "timestamp byte (high)" }),
-  u8("timeMid", { endian: "little", label: "timestamp byte (mid)" }),
-  u8("timeLo", { endian: "little", label: "timestamp byte (low)" }),
-  u8("timestampExt", { endian: "little", label: "the timestamp upper byte: the real value is 32-bit" }),
-  u8("streamIdHi", { endian: "little", label: "stream id byte (high), always 0" }),
-  u8("streamIdMid", { endian: "little", label: "stream id byte (mid), always 0" }),
-  u8("streamIdLo", { endian: "little", label: "stream id byte (low), always 0" }),
+  u8("sizeHi", { endian: "big", label: "data size byte (high)" }),
+  u8("sizeMid", { endian: "big", label: "data size byte (mid)" }),
+  u8("sizeLo", { endian: "big", label: "data size byte (low)" }),
+  u8("timeHi", { endian: "big", label: "timestamp byte (high)" }),
+  u8("timeMid", { endian: "big", label: "timestamp byte (mid)" }),
+  u8("timeLo", { endian: "big", label: "timestamp byte (low)" }),
+  u8("timestampExt", { endian: "big", label: "the timestamp upper byte: the real value is 32-bit" }),
+  u8("streamIdHi", { endian: "big", label: "stream id byte (high), always 0" }),
+  u8("streamIdMid", { endian: "big", label: "stream id byte (mid), always 0" }),
+  u8("streamIdLo", { endian: "big", label: "stream id byte (low), always 0" }),
 ]);
 
 const FlvHeaderFlags = struct("FlvHeaderFlags", [
@@ -47,9 +47,9 @@ const FlvHeaderFlags = struct("FlvHeaderFlags", [
 
 const Flv = struct("Flv", [
   str("signature", { size: 3, label: "FLV" }),
-  u8("version", { endian: "little", label: "1" }),
+  u8("version", { endian: "big", label: "1" }),
   record("flags", FlvHeaderFlags, { label: "which streams the file contains" }),
-  u32("dataOffset", { endian: "little", label: "header size in bytes; 9 in every version so far" }),
+  u32("dataOffset", { endian: "big", label: "header size in bytes; 9 in every version so far" }),
 ]);
 
 export default definePack({

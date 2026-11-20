@@ -1,0 +1,27 @@
+{
+  "id": "ttf",
+  "name": "TTF",
+  "version": "1.0.0",
+  "category": "media",
+  "order": 269,
+  "summary": "TrueType font (sfnt version 0x00010000)",
+  "description": "SFNT font: header + table directory (TrueType and OpenType/CFF).",
+  "tags": [
+    "font",
+    "typography",
+    "sfnt",
+    "opentype"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://learn.microsoft.com/en-us/typography/opentype/spec/otff",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "truetype",
+    "format": "TTF",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/truetype",
+    "license": "Nybble format registry"
+  }
+}

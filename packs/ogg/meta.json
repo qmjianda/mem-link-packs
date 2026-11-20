@@ -3,8 +3,8 @@
   "name": "Ogg container",
   "version": "1.0.0",
   "category": "media",
-  "order": 249,
-  "summary": "Ogg first page: page header, segment table and the codec identification header (Vorbis, Opus, FLAC, Theora, Speex).",
+  "order": 253,
+  "summary": "Ogg bitstream page (Vorbis / Opus / FLAC / Theora / Speex)",
   "description": "Ogg first page: page header, segment table and the codec identification header (Vorbis, Opus, FLAC, Theora, Speex).",
   "tags": [
     "audio",
@@ -22,6 +22,7 @@
   "source": {
     "provider": "nybble",
     "id": "ogg",
+    "format": "OGG",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/ogg",
     "license": "Nybble format registry"

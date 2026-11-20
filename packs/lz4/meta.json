@@ -3,8 +3,8 @@
   "name": "LZ4 frame",
   "version": "1.0.0",
   "category": "archive",
-  "order": 236,
-  "summary": "LZ4 frame: descriptor flags, block size, content size, and a walk of every block to the end mark.",
+  "order": 238,
+  "summary": "LZ4 frame format (lz4 CLI, .lz4 files)",
   "description": "LZ4 frame: descriptor flags, block size, content size, and a walk of every block to the end mark.",
   "tags": [
     "archive",
@@ -18,6 +18,7 @@
   "source": {
     "provider": "nybble",
     "id": "lz4",
+    "format": "LZ4",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/lz4",
     "license": "Nybble format registry"

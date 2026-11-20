@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "category": "archive",
   "order": 211,
-  "summary": "Chrome extension package (CRX2 and CRX3): the signed header that precedes the zip.",
+  "summary": "Chrome / Chromium extension package",
   "description": "Chrome extension package (CRX2 and CRX3): the signed header that precedes the zip.",
   "tags": [
     "archive",
@@ -21,6 +21,7 @@
   "source": {
     "provider": "nybble",
     "id": "crx",
+    "format": "CRX",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/crx",
     "license": "Nybble format registry"

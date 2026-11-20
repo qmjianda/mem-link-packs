@@ -3,8 +3,8 @@
   "name": "JPEG XL image",
   "version": "1.0.0",
   "category": "image",
-  "order": 233,
-  "summary": "JPEG XL container: the signature box and a walk of every box, decoding ftyp, jxll, jxlp and brob.",
+  "order": 235,
+  "summary": "JPEG XL image, ISOBMFF container form",
   "description": "JPEG XL container: the signature box and a walk of every box, decoding ftyp, jxll, jxlp and brob.",
   "tags": [
     "image",
@@ -21,6 +21,7 @@
   "source": {
     "provider": "nybble",
     "id": "jpegxl",
+    "format": "JXL",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/jpegxl",
     "license": "Nybble format registry"

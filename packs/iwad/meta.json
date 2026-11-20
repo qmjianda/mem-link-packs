@@ -1,0 +1,29 @@
+{
+  "id": "iwad",
+  "name": "IWAD",
+  "version": "1.0.0",
+  "category": "game",
+  "order": 275,
+  "summary": "Doom IWAD, a complete game data file",
+  "description": "Doom WAD: the header and the full lump directory, followed to its offset.",
+  "tags": [
+    "game",
+    "archive",
+    "doom",
+    "id-software",
+    "gamedev",
+    "retro"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://doomwiki.org/wiki/WAD",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "wad",
+    "format": "IWAD",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/wad",
+    "license": "Nybble format registry"
+  }
+}

@@ -7,18 +7,18 @@
 // 覆盖：complete
 const WoffHeader = struct("WoffHeader", [
   str("signature", { size: 4, label: "wOFF" }),
-  u32("flavor", { endian: "little", label: "sfnt version of the wrapped font" }),
-  u32("length", { endian: "little", label: "total WOFF file size" }),
-  u16("numTables", { endian: "little", label: "number of font tables" }),
-  u16("reserved", { endian: "little", label: "reserved (0)" }),
-  u32("totalSfntSize", { endian: "little", label: "size of the uncompressed font data" }),
-  u16("majorVersion", { endian: "little", label: "WOFF major version" }),
-  u16("minorVersion", { endian: "little", label: "WOFF minor version" }),
-  u32("metaOffset", { endian: "little", label: "offset to the metadata block" }),
-  u32("metaLength", { endian: "little", label: "compressed metadata length" }),
-  u32("metaOrigLength", { endian: "little", label: "uncompressed metadata length" }),
-  u32("privOffset", { endian: "little", label: "offset to the private data block" }),
-  u32("privLength", { endian: "little", label: "private data length" }),
+  u32("flavor", { endian: "big", label: "sfnt version of the wrapped font" }),
+  u32("length", { endian: "big", label: "total WOFF file size" }),
+  u16("numTables", { endian: "big", label: "number of font tables" }),
+  u16("reserved", { endian: "big", label: "reserved (0)" }),
+  u32("totalSfntSize", { endian: "big", label: "size of the uncompressed font data" }),
+  u16("majorVersion", { endian: "big", label: "WOFF major version" }),
+  u16("minorVersion", { endian: "big", label: "WOFF minor version" }),
+  u32("metaOffset", { endian: "big", label: "offset to the metadata block" }),
+  u32("metaLength", { endian: "big", label: "compressed metadata length" }),
+  u32("metaOrigLength", { endian: "big", label: "uncompressed metadata length" }),
+  u32("privOffset", { endian: "big", label: "offset to the private data block" }),
+  u32("privLength", { endian: "big", label: "private data length" }),
 ]);
 
 export default definePack({

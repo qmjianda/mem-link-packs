@@ -3,8 +3,8 @@
   "name": "MBR partition table",
   "version": "1.0.0",
   "category": "system",
-  "order": 240,
-  "summary": "Master Boot Record: bootstrap, four primary partitions, boot signature.",
+  "order": 244,
+  "summary": "Master Boot Record (512-byte boot sector)",
   "description": "Master Boot Record: bootstrap, four primary partitions, boot signature.",
   "tags": [
     "filesystem",
@@ -19,6 +19,7 @@
   "source": {
     "provider": "nybble",
     "id": "mbr",
+    "format": "MBR",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/mbr",
     "license": "Nybble format registry"

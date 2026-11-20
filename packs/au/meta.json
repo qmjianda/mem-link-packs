@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "category": "media",
   "order": 205,
-  "summary": "NeXT/Sun .au audio header: encoding, sample rate, channels and the annotation field.",
+  "summary": "NeXT/Sun audio (.au / .snd)",
   "description": "NeXT/Sun .au audio header: encoding, sample rate, channels and the annotation field.",
   "tags": [
     "audio",
@@ -20,6 +20,7 @@
   "source": {
     "provider": "nybble",
     "id": "au",
+    "format": "AU",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/au",
     "license": "Nybble format registry"

@@ -6,10 +6,10 @@
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
 // 覆盖：partial；未移植 9 项（见文件末尾）
 const Id3Syncsafe = struct("Id3Syncsafe", [
-  u8("b0", { endian: "little" }),
-  u8("b1", { endian: "little" }),
-  u8("b2", { endian: "little" }),
-  u8("b3", { endian: "little" }),
+  u8("b0", { endian: "big" }),
+  u8("b1", { endian: "big" }),
+  u8("b2", { endian: "big" }),
+  u8("b3", { endian: "big" }),
 ]);
 
 const Id3FrameFlags = struct("Id3FrameFlags", [
@@ -25,7 +25,7 @@ const Id3FrameFlags = struct("Id3FrameFlags", [
 
 const Id3v23Frame = struct("Id3v23Frame", [
   str("id", { size: 4, label: "frame id (TIT2 title, TPE1 artist, TALB album, APIC picture, ...)" }),
-  u32("size", { endian: "little", label: "body size, excluding this 10-byte header" }),
+  u32("size", { endian: "big", label: "body size, excluding this 10-byte header" }),
   record("flags", Id3FrameFlags, { label: "frame status and format flags" }),
 ]);
 
@@ -37,9 +37,9 @@ const Id3v24Frame = struct("Id3v24Frame", [
 
 const Id3v22Frame = struct("Id3v22Frame", [
   str("id", { size: 3, label: "frame id (TT2 title, TP1 artist, TAL album, PIC picture, ...)" }),
-  u8("s0", { endian: "little" }),
-  u8("s1", { endian: "little" }),
-  u8("s2", { endian: "little" }),
+  u8("s0", { endian: "big" }),
+  u8("s1", { endian: "big" }),
+  u8("s2", { endian: "big" }),
 ]);
 
 const Id3Flags = struct("Id3Flags", [
@@ -51,8 +51,8 @@ const Id3Flags = struct("Id3Flags", [
 
 const Id3v2 = struct("Id3v2", [
   str("magic", { size: 3, label: "always ID3" }),
-  u8("versionMajor", { endian: "little", label: "ID3v2 version: 2, 3 or 4" }),
-  u8("revision", { endian: "little", label: "revision (0)" }),
+  u8("versionMajor", { endian: "big", label: "ID3v2 version: 2, 3 or 4" }),
+  u8("revision", { endian: "big", label: "revision (0)" }),
   record("flags", Id3Flags, { label: "tag-level flags" }),
   record("sizeRaw", Id3Syncsafe, { label: "syncsafe tag size, excluding this header" }),
 ]);

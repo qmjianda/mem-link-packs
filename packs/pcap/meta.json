@@ -3,8 +3,8 @@
   "name": "PCAP capture",
   "version": "1.0.0",
   "category": "network",
-  "order": 251,
-  "summary": "libpcap / tcpdump capture file: global header + first packet record.",
+  "order": 255,
+  "summary": "libpcap capture (little-endian, microsecond)",
   "description": "libpcap / tcpdump capture file: global header + first packet record.",
   "tags": [
     "network",
@@ -19,6 +19,7 @@
   "source": {
     "provider": "nybble",
     "id": "pcap",
+    "format": "PCAP",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/pcap",
     "license": "Nybble format registry"

@@ -3,8 +3,8 @@
   "name": "LAS point cloud",
   "version": "1.0.0",
   "category": "model",
-  "order": 234,
-  "summary": "ASPRS LAS public header block: point format, scaling, bounding box and the 1.3 / 1.4 additions.",
+  "order": 236,
+  "summary": "ASPRS LAS lidar point cloud",
   "description": "ASPRS LAS public header block: point format, scaling, bounding box and the 1.3 / 1.4 additions.",
   "tags": [
     "model",
@@ -21,6 +21,7 @@
   "source": {
     "provider": "nybble",
     "id": "las",
+    "format": "LAS",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/las",
     "license": "Nybble format registry"

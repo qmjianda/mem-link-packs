@@ -3,8 +3,8 @@
   "name": "MP4 / ISO base media",
   "version": "1.0.0",
   "category": "media",
-  "order": 244,
-  "summary": "ISO base media (MP4, MOV, M4A, HEIC, AVIF): walks every top-level box and decodes ftyp, mvhd, tkhd, mdhd and hdlr.",
+  "order": 248,
+  "summary": "ISO base media file (MP4 / MOV / M4A / 3GP / HEIC / AVIF)",
   "description": "ISO base media (MP4, MOV, M4A, HEIC, AVIF): walks every top-level box and decodes ftyp, mvhd, tkhd, mdhd and hdlr.",
   "tags": [
     "video",
@@ -22,6 +22,7 @@
   "source": {
     "provider": "nybble",
     "id": "mp4",
+    "format": "MP4",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/mp4",
     "license": "Nybble format registry"

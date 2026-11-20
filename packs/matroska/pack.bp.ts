@@ -6,16 +6,16 @@
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
 // 覆盖：partial；未移植 293 项（见文件末尾）
 const EbmlIdShort = struct("EbmlIdShort", [
-  u8("value", { endian: "little", label: "the ID" }),
+  u8("value", { endian: "big", label: "the ID" }),
 ]);
 
 const EbmlVintShort = struct("EbmlVintShort", [
-  u8("byte", { endian: "little" }),
+  u8("byte", { endian: "big" }),
 ]);
 
 const EbmlUint24 = struct("EbmlUint24", [
-  u8("high", { endian: "little" }),
-  u16("low", { endian: "little" }),
+  u8("high", { endian: "big" }),
+  u16("low", { endian: "big" }),
 ]);
 
 const MkvBlockFlags = struct("MkvBlockFlags", [

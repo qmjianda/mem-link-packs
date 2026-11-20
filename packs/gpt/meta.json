@@ -3,8 +3,8 @@
   "name": "GPT partition table",
   "version": "1.0.0",
   "category": "system",
-  "order": 225,
-  "summary": "GUID Partition Table header (after the protective MBR, at LBA 1).",
+  "order": 226,
+  "summary": "GUID Partition Table header",
   "description": "GUID Partition Table header (after the protective MBR, at LBA 1).",
   "tags": [
     "filesystem",
@@ -19,6 +19,7 @@
   "source": {
     "provider": "nybble",
     "id": "gpt",
+    "format": "GPT",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/gpt",
     "license": "Nybble format registry"

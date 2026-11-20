@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "category": "executable",
   "order": 213,
-  "summary": "Android Dalvik executable (.dex) header with section table offsets.",
+  "summary": "Android Dalvik executable header",
   "description": "Android Dalvik executable (.dex) header with section table offsets.",
   "tags": [
     "executable",
@@ -19,6 +19,7 @@
   "source": {
     "provider": "nybble",
     "id": "dex",
+    "format": "DEX",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/dex",
     "license": "Nybble format registry"

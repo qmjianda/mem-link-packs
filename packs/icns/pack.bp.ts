@@ -7,12 +7,12 @@
 // 覆盖：partial；未移植 3 项（见文件末尾）
 const IcnsElement = struct("IcnsElement", [
   str("type", { size: 4, label: "element type: icon size and encoding, or 'TOC '" }),
-  u32("size", { endian: "little", label: "element size in bytes, this 8-byte header included" }),
+  u32("size", { endian: "big", label: "element size in bytes, this 8-byte header included" }),
 ]);
 
 const Icns = struct("Icns", [
   str("magic", { size: 4, label: "magic 'icns'" }),
-  u32("fileSize", { endian: "little", label: "total file size in bytes, this header included" }),
+  u32("fileSize", { endian: "big", label: "total file size in bytes, this header included" }),
 ]);
 
 export default definePack({

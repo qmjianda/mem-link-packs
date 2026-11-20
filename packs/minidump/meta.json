@@ -3,8 +3,8 @@
   "name": "Windows minidump",
   "version": "1.0.0",
   "category": "system",
-  "order": 242,
-  "summary": "Windows minidump (.dmp): header, stream directory, and decoded system info, exception, thread, module, memory and misc-info streams.",
+  "order": 246,
+  "summary": "Windows minidump crash dump (MiniDumpWriteDump / WER / Breakpad / Crashpad)",
   "description": "Windows minidump (.dmp): header, stream directory, and decoded system info, exception, thread, module, memory and misc-info streams.",
   "tags": [
     "system",
@@ -20,6 +20,7 @@
   "source": {
     "provider": "nybble",
     "id": "minidump",
+    "format": "MDMP",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/minidump",
     "license": "Nybble format registry"

@@ -3,8 +3,8 @@
   "name": "WOFF web font",
   "version": "1.0.0",
   "category": "media",
-  "order": 271,
-  "summary": "Web Open Font Format wrapper header (WOFF 1.0).",
+  "order": 279,
+  "summary": "Web Open Font Format header",
   "description": "Web Open Font Format wrapper header (WOFF 1.0).",
   "tags": [
     "font",
@@ -19,6 +19,7 @@
   "source": {
     "provider": "nybble",
     "id": "woff",
+    "format": "WOFF",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/woff",
     "license": "Nybble format registry"

@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "category": "archive",
   "order": 210,
-  "summary": "OLE2 / Compound File Binary header: sector sizes, the FAT and DIFAT chains, and the first directory sector.",
+  "summary": "Compound File Binary (OLE2: .doc, .xls, .ppt, .msi, .msg)",
   "description": "OLE2 / Compound File Binary header: sector sizes, the FAT and DIFAT chains, and the first directory sector.",
   "tags": [
     "archive",
@@ -22,6 +22,7 @@
   "source": {
     "provider": "nybble",
     "id": "cfb",
+    "format": "CFB",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/cfb",
     "license": "Nybble format registry"

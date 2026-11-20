@@ -3,8 +3,8 @@
   "name": "QCOW2 disk image",
   "version": "1.0.0",
   "category": "system",
-  "order": 255,
-  "summary": "QEMU copy-on-write v2/v3 image header: cluster size, the two-level L1/L2 map, refcounts and feature bits.",
+  "order": 259,
+  "summary": "QEMU copy-on-write disk image, version 2 or 3",
   "description": "QEMU copy-on-write v2/v3 image header: cluster size, the two-level L1/L2 map, refcounts and feature bits.",
   "tags": [
     "filesystem",
@@ -22,6 +22,7 @@
   "source": {
     "provider": "nybble",
     "id": "qcow2",
+    "format": "QCOW2",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/qcow2",
     "license": "Nybble format registry"

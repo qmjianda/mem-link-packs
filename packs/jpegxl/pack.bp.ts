@@ -7,15 +7,15 @@
 // 覆盖：partial；未移植 4 项（见文件末尾）
 const JxlFileType = struct("JxlFileType", [
   str("brand", { size: 4, label: "jxl " }),
-  u32("minorVersion", { endian: "little", label: "minor version of the brand" }),
+  u32("minorVersion", { endian: "big", label: "minor version of the brand" }),
 ]);
 
 const JxlLevel = struct("JxlLevel", [
-  u8("level", { endian: "little", label: "codestream level: 5 baseline, 10 for very large or high bit depth images" }),
+  u8("level", { endian: "big", label: "codestream level: 5 baseline, 10 for very large or high bit depth images" }),
 ]);
 
 const JxlPartialCodestream = struct("JxlPartialCodestream", [
-  u32("index", { endian: "little", label: "sequence number of this partial codestream; the high bit marks the last one" }),
+  u32("index", { endian: "big", label: "sequence number of this partial codestream; the high bit marks the last one" }),
 ]);
 
 const JxlBrotliBox = struct("JxlBrotliBox", [
@@ -23,7 +23,7 @@ const JxlBrotliBox = struct("JxlBrotliBox", [
 ]);
 
 const JxlBox = struct("JxlBox", [
-  u32("size", { endian: "little", label: "box size including this header; 1 = 64-bit size follows, 0 = to end of file" }),
+  u32("size", { endian: "big", label: "box size including this header; 1 = 64-bit size follows, 0 = to end of file" }),
   str("type", { size: 4, label: "four-character box type" }),
 ]);
 

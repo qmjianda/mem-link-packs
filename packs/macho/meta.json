@@ -3,8 +3,8 @@
   "name": "Mach-O executable",
   "version": "1.0.0",
   "category": "executable",
-  "order": 238,
-  "summary": "64-bit Mach-O header (macOS / iOS executables and libraries).",
+  "order": 242,
+  "summary": "64-bit Mach-O (little-endian: x86_64, arm64)",
   "description": "64-bit Mach-O header (macOS / iOS executables and libraries).",
   "tags": [
     "executable",
@@ -19,6 +19,7 @@
   "source": {
     "provider": "nybble",
     "id": "macho",
+    "format": "Mach-O 64",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/macho",
     "license": "Nybble format registry"

@@ -6,8 +6,8 @@
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
 // 覆盖：partial；未移植 12 项（见文件末尾）
 const FdtReserveEntry = struct("FdtReserveEntry", [
-  u64("address", { endian: "little", label: "physical start address" }),
-  u64("size", { endian: "little", label: "size in bytes (0 with address 0 terminates the map)" }),
+  u64("address", { endian: "big", label: "physical start address" }),
+  u64("size", { endian: "big", label: "size in bytes (0 with address 0 terminates the map)" }),
 ]);
 
 const FdtNameChunk = struct("FdtNameChunk", [
@@ -15,8 +15,8 @@ const FdtNameChunk = struct("FdtNameChunk", [
 ]);
 
 const FdtProp = struct("FdtProp", [
-  u32("len", { endian: "little", label: "property value length in bytes" }),
-  u32("nameOff", { endian: "little", label: "offset of the property name in the strings block" }),
+  u32("len", { endian: "big", label: "property value length in bytes" }),
+  u32("nameOff", { endian: "big", label: "offset of the property name in the strings block" }),
 ]);
 
 const FdtStructToken = struct("FdtStructToken", [
@@ -24,16 +24,16 @@ const FdtStructToken = struct("FdtStructToken", [
 ]);
 
 const Fdt = struct("Fdt", [
-  u32("magic", { endian: "little", label: "0xD00DFEED" }),
-  u32("totalSize", { endian: "little", label: "total size of the blob in bytes" }),
-  u32("offDtStruct", { endian: "little", label: "offset of the structure block" }),
-  u32("offDtStrings", { endian: "little", label: "offset of the strings block" }),
-  u32("offMemRsvmap", { endian: "little", label: "offset of the memory reservation map" }),
-  u32("version", { endian: "little", label: "format version (17)" }),
-  u32("lastCompVersion", { endian: "little", label: "lowest compatible version (16)" }),
-  u32("bootCpuidPhys", { endian: "little", label: "physical id of the boot CPU" }),
-  u32("sizeDtStrings", { endian: "little", label: "size of the strings block" }),
-  u32("sizeDtStruct", { endian: "little", label: "size of the structure block" }),
+  u32("magic", { endian: "big", label: "0xD00DFEED" }),
+  u32("totalSize", { endian: "big", label: "total size of the blob in bytes" }),
+  u32("offDtStruct", { endian: "big", label: "offset of the structure block" }),
+  u32("offDtStrings", { endian: "big", label: "offset of the strings block" }),
+  u32("offMemRsvmap", { endian: "big", label: "offset of the memory reservation map" }),
+  u32("version", { endian: "big", label: "format version (17)" }),
+  u32("lastCompVersion", { endian: "big", label: "lowest compatible version (16)" }),
+  u32("bootCpuidPhys", { endian: "big", label: "physical id of the boot CPU" }),
+  u32("sizeDtStrings", { endian: "big", label: "size of the strings block" }),
+  u32("sizeDtStruct", { endian: "big", label: "size of the structure block" }),
 ]);
 
 export default definePack({

@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "category": "system",
   "order": 217,
-  "summary": "Linux ext2/ext3/ext4 superblock, read at its real home 1024 bytes into the volume.",
+  "summary": "ext2/3/4 filesystem superblock",
   "description": "Linux ext2/ext3/ext4 superblock, read at its real home 1024 bytes into the volume.",
   "tags": [
     "filesystem",
@@ -20,6 +20,7 @@
   "source": {
     "provider": "nybble",
     "id": "ext4",
+    "format": "EXT4",
     "version": "1.0.0",
     "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/ext4",
     "license": "Nybble format registry"
