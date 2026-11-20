@@ -6,7 +6,7 @@
 
 - **目录**：[`index.json`](./index.json)
 - **应用入口**：mem-link 顶栏「Pack 商店」或节点库「Pack 商店」
-- **默认商店地址**：`https://raw.githubusercontent.com/qmjianda/mem-link-packs/main/index.json`
+- **默认商店地址**：`https://cdn.jsdelivr.net/gh/qmjianda/mem-link-packs@main/index.json`
 
 当前目录包含 **377 个 pack**：
 
