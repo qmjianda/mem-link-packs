@@ -14,7 +14,7 @@
 | --- | ---: | --- | --- |
 | 手工维护 | 10 | MIT | NES、SQLite、PNG、BMP、ZIP、GIF、ELF、PE、JPEG、WAV |
 | [Nybble format registry](https://github.com/itsmajdbuilds/binary-explorer-registry) | 83 | 上游声明可自由使用/再分发 | 覆盖 7z、APFS、DICOM、GGUF、HDF5、NTFS、TIFF、WASM 等 |
-| [ImHex-Patterns](https://github.com/WerWolv/ImHex-Patterns) | 284 | GPL-2.0-or-later | 固定布局移植，覆盖大量图像/音频/容器/文件系统/游戏格式 |
+| [ImHex-Patterns](https://github.com/WerWolv/ImHex-Patterns) | 284 | GPL-2.0-or-later | 固定布局移植，覆盖大量图像/音频/容器/文件系统/游戏格式；另有 28 个 pattern 只有条件/varint/运行时逻辑，没有可静态确定的字段，未生成 pack |
 
 > **部分布局**：mem-link 的静态结构无法表达所有上游特性（条件字段、repeat、
 > match、变长数组、指针跟随、运行时变换）。移植器保留能确定的固定前缀，并在
