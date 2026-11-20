@@ -877,15 +877,18 @@ function main() {
     order += 1;
   }
   // 只清理「来源为 nybble 且本次未生成」的旧目录，不碰手工 pack。
-  for (const name of readdirSync(packsDir)) {
-    if (written.has(name)) continue;
-    const metaFile = join(packsDir, name, 'meta.json');
-    if (!existsSync(metaFile)) continue;
-    try {
-      const meta = JSON.parse(readFileSync(metaFile, 'utf8'));
-      if (meta.source?.provider === 'nybble') rmSync(join(packsDir, name), { recursive: true, force: true });
-    } catch {
-      /* 忽略坏 meta */
+  // 带 id 过滤运行时不做清理，避免误删其它格式。
+  if (!args.ids.length) {
+    for (const name of readdirSync(packsDir)) {
+      if (written.has(name)) continue;
+      const metaFile = join(packsDir, name, 'meta.json');
+      if (!existsSync(metaFile)) continue;
+      try {
+        const meta = JSON.parse(readFileSync(metaFile, 'utf8'));
+        if (meta.source?.provider === 'nybble') rmSync(join(packsDir, name), { recursive: true, force: true });
+      } catch {
+        /* 忽略坏 meta */
+      }
     }
   }
   console.log(`✓ 已写入 ${packsDir}`);
