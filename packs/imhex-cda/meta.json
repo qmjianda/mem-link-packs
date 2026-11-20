@@ -1,0 +1,23 @@
+{
+  "id": "imhex-cda",
+  "name": "ImHex · Cda",
+  "version": "1.0.0",
+  "category": "media",
+  "coverage": "complete",
+  "summary": "Compact Disc Audio track",
+  "description": "Compact Disc Audio track",
+  "tags": [
+    "imhex",
+    "cda"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/cda.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "cda.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/cda.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1258
+}

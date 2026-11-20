@@ -1,0 +1,23 @@
+{
+  "id": "imhex-dex",
+  "name": "ImHex · Dex",
+  "version": "1.0.0",
+  "category": "executable",
+  "coverage": "partial",
+  "summary": "Dalvik EXecutable",
+  "description": "Dalvik EXecutable",
+  "tags": [
+    "imhex",
+    "dex"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/dex.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "dex.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/dex.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1269
+}

@@ -1,0 +1,28 @@
+{
+  "id": "regf",
+  "name": "Windows registry hive",
+  "version": "1.0.0",
+  "category": "system",
+  "order": 258,
+  "summary": "Windows registry hive: the base block, the hive bin chain, and the root key cell followed to its offset.",
+  "description": "Windows registry hive: the base block, the hive bin chain, and the root key cell followed to its offset.",
+  "tags": [
+    "system",
+    "windows",
+    "registry",
+    "hive",
+    "forensics",
+    "dfir"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://github.com/msuhanov/regf/blob/master/Windows%20registry%20file%20format%20specification.md",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "regf",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/regf",
+    "license": "Nybble format registry"
+  }
+}

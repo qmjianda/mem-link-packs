@@ -1,0 +1,23 @@
+{
+  "id": "imhex-pif",
+  "name": "ImHex · Pif",
+  "version": "1.0.0",
+  "category": "image",
+  "coverage": "complete",
+  "summary": "PIF Image",
+  "description": "PIF Image",
+  "tags": [
+    "imhex",
+    "pif"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pif.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "pif.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pif.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1406
+}

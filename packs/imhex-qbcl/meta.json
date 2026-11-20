@@ -1,0 +1,23 @@
+{
+  "id": "imhex-qbcl",
+  "name": "ImHex · Qbcl",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "complete",
+  "summary": "Qubicle voxel scene project",
+  "description": "Qubicle voxel scene project",
+  "tags": [
+    "imhex",
+    "qbcl"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/qbcl.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "qbcl.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/qbcl.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1417
+}

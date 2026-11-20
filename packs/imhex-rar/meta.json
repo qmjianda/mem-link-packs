@@ -1,0 +1,23 @@
+{
+  "id": "imhex-rar",
+  "name": "ImHex · Rar",
+  "version": "1.0.0",
+  "category": "archive",
+  "coverage": "partial",
+  "summary": "RAR archive file format",
+  "description": "RAR archive file format",
+  "tags": [
+    "imhex",
+    "rar"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/rar.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "rar.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/rar.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1420
+}

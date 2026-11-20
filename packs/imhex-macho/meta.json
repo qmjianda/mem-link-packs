@@ -1,0 +1,23 @@
+{
+  "id": "imhex-macho",
+  "name": "ImHex · Macho",
+  "version": "1.0.0",
+  "category": "executable",
+  "coverage": "partial",
+  "summary": "Mach-O executable",
+  "description": "Mach-O executable",
+  "tags": [
+    "imhex",
+    "macho"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/macho.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "macho.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/macho.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1363
+}

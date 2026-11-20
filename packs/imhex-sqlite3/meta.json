@@ -1,0 +1,23 @@
+{
+  "id": "imhex-sqlite3",
+  "name": "ImHex · Sqlite3",
+  "version": "1.0.0",
+  "category": "database",
+  "coverage": "partial",
+  "summary": "SQLite 3 database",
+  "description": "SQLite 3 database",
+  "tags": [
+    "imhex",
+    "sqlite3"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/sqlite3.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "sqlite3.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/sqlite3.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1438
+}

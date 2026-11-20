@@ -1,0 +1,28 @@
+{
+  "id": "caf",
+  "name": "CAF audio",
+  "version": "1.0.0",
+  "category": "media",
+  "order": 209,
+  "summary": "Apple Core Audio Format: file header plus a walk of every chunk, decoding desc, pakt, data and info.",
+  "description": "Apple Core Audio Format: file header plus a walk of every chunk, decoding desc, pakt, data and info.",
+  "tags": [
+    "audio",
+    "apple",
+    "macos",
+    "ios",
+    "chunked",
+    "container"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://developer.apple.com/library/archive/documentation/MusicAudio/Reference/CAFSpec/CAF_intro/CAF_intro.html",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "caf",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/caf",
+    "license": "Nybble format registry"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "dds",
+  "name": "DDS texture",
+  "version": "1.0.0",
+  "category": "image",
+  "order": 212,
+  "summary": "DirectDraw Surface texture: the 124-byte header, its pixel format, and the DX10 extension.",
+  "description": "DirectDraw Surface texture: the 124-byte header, its pixel format, and the DX10 extension.",
+  "tags": [
+    "image",
+    "texture",
+    "directx",
+    "microsoft",
+    "gamedev"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://learn.microsoft.com/en-us/windows/win32/direct3ddds/dds-header",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "dds",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/dds",
+    "license": "Nybble format registry"
+  }
+}

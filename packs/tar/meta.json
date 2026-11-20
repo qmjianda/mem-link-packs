@@ -1,0 +1,25 @@
+{
+  "id": "tar",
+  "name": "TAR archive",
+  "version": "1.0.0",
+  "category": "archive",
+  "order": 261,
+  "summary": "POSIX ustar tar archive header (first 512-byte record).",
+  "description": "POSIX ustar tar archive header (first 512-byte record).",
+  "tags": [
+    "archive",
+    "unix",
+    "tarball"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://en.wikipedia.org/wiki/Tar_(computing)",
+  "coverage": "complete",
+  "source": {
+    "provider": "nybble",
+    "id": "tar",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/tar",
+    "license": "Nybble format registry"
+  }
+}

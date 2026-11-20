@@ -1,0 +1,23 @@
+{
+  "id": "imhex-bplist",
+  "name": "ImHex · Bplist",
+  "version": "1.0.0",
+  "category": "executable",
+  "coverage": "partial",
+  "summary": "Apple binary property list",
+  "description": "Apple binary property list",
+  "tags": [
+    "imhex",
+    "bplist"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bplist.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "bplist.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bplist.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1249
+}

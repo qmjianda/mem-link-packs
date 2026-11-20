@@ -1,0 +1,23 @@
+{
+  "id": "imhex-mifare-mifare-4k",
+  "name": "ImHex · Mifare 4k",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "complete",
+  "summary": "MIFARE Classic EV1 4K (MF1S70yyX/V1), ISO/IEC 14443-3 Type A",
+  "description": "MIFARE Classic EV1 4K (MF1S70yyX/V1), ISO/IEC 14443-3 Type A",
+  "tags": [
+    "imhex",
+    "mifare-4k"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/mifare/mifare-4k.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "mifare/mifare-4k.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/mifare/mifare-4k.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1368
+}

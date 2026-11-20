@@ -1,0 +1,28 @@
+{
+  "id": "iso9660",
+  "name": "ISO 9660 image",
+  "version": "1.0.0",
+  "category": "system",
+  "order": 231,
+  "summary": "ISO 9660 CD/DVD image: the primary volume descriptor at 32 KiB, its root directory record, and the El Torito boot record.",
+  "description": "ISO 9660 CD/DVD image: the primary volume descriptor at 32 KiB, its root directory record, and the El Torito boot record.",
+  "tags": [
+    "filesystem",
+    "optical",
+    "cdrom",
+    "iso",
+    "boot",
+    "el-torito"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://www.ecma-international.org/wp-content/uploads/ECMA-119_4th_edition_june_2019.pdf",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "iso9660",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/iso9660",
+    "license": "Nybble format registry"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "imhex-bsp-goldsrc",
+  "name": "ImHex · Bsp Goldsrc",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "complete",
+  "summary": "GoldSrc engine map (Half-Life 1)",
+  "description": "GoldSrc engine map (Half-Life 1)",
+  "tags": [
+    "imhex",
+    "bsp-goldsrc"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bsp_goldsrc.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "bsp_goldsrc.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bsp_goldsrc.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1251
+}

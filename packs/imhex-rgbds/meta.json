@@ -1,0 +1,23 @@
+{
+  "id": "imhex-rgbds",
+  "name": "ImHex · Rgbds",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "Object files for the RGBDS Game Boy assembly toolchain",
+  "description": "Object files for the RGBDS Game Boy assembly toolchain",
+  "tags": [
+    "imhex",
+    "rgbds"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/rgbds.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "rgbds.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/rgbds.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1422
+}

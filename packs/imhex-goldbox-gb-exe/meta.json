@@ -1,0 +1,23 @@
+{
+  "id": "imhex-goldbox-gb-exe",
+  "name": "ImHex · GB EXE",
+  "version": "1.0.0",
+  "category": "game",
+  "coverage": "partial",
+  "summary": "Gold Box Games - Executable",
+  "description": "Gold Box Games - Executable",
+  "tags": [
+    "imhex",
+    "gb-exe"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/GoldBox/GB_EXE.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "GoldBox/GB_EXE.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/GoldBox/GB_EXE.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1216
+}

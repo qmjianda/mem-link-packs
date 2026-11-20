@@ -1,0 +1,23 @@
+{
+  "id": "imhex-stl",
+  "name": "ImHex · Stl",
+  "version": "1.0.0",
+  "category": "model",
+  "coverage": "partial",
+  "summary": "STL 3D Model",
+  "description": "STL 3D Model",
+  "tags": [
+    "imhex",
+    "stl"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/stl.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "stl.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/stl.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1440
+}

@@ -1,0 +1,12 @@
+{
+  "id": "bmp",
+  "name": "BMP",
+  "version": "1.0.0",
+  "category": "image",
+  "order": 40,
+  "summary": "BITMAPFILEHEADER 与 BITMAPINFOHEADER",
+  "description": "解析 Windows BMP 的 14 字节文件头和 40 字节 BITMAPINFOHEADER，提供像素数量计算节点。",
+  "tags": ["bmp", "bitmap", "image", "windows"],
+  "author": "qmjianda",
+  "license": "MIT"
+}

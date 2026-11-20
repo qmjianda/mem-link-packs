@@ -1,0 +1,23 @@
+{
+  "id": "imhex-coff",
+  "name": "ImHex · Coff",
+  "version": "1.0.0",
+  "category": "executable",
+  "coverage": "partial",
+  "summary": "Common Object File Format (COFF) executable",
+  "description": "Common Object File Format (COFF) executable",
+  "tags": [
+    "imhex",
+    "coff"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/coff.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "coff.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/coff.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1262
+}

@@ -1,0 +1,23 @@
+{
+  "id": "imhex-parquet",
+  "name": "ImHex · Parquet",
+  "version": "1.0.0",
+  "category": "data",
+  "coverage": "partial",
+  "summary": "Apache Parquet File Format",
+  "description": "Apache Parquet File Format",
+  "tags": [
+    "imhex",
+    "parquet"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/parquet.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "parquet.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/parquet.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1394
+}

@@ -1,0 +1,25 @@
+{
+  "id": "lz4",
+  "name": "LZ4 frame",
+  "version": "1.0.0",
+  "category": "archive",
+  "order": 236,
+  "summary": "LZ4 frame: descriptor flags, block size, content size, and a walk of every block to the end mark.",
+  "description": "LZ4 frame: descriptor flags, block size, content size, and a walk of every block to the end mark.",
+  "tags": [
+    "archive",
+    "compression",
+    "lz4"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://github.com/lz4/lz4/blob/dev/doc/lz4_Frame_format.md",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "lz4",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/lz4",
+    "license": "Nybble format registry"
+  }
+}

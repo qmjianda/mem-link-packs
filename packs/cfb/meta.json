@@ -1,0 +1,29 @@
+{
+  "id": "cfb",
+  "name": "Compound File Binary",
+  "version": "1.0.0",
+  "category": "archive",
+  "order": 210,
+  "summary": "OLE2 / Compound File Binary header: sector sizes, the FAT and DIFAT chains, and the first directory sector.",
+  "description": "OLE2 / Compound File Binary header: sector sizes, the FAT and DIFAT chains, and the first directory sector.",
+  "tags": [
+    "archive",
+    "container",
+    "microsoft",
+    "ole",
+    "windows",
+    "office",
+    "forensics"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-cfb/53989ce4-7b05-4f8d-829b-d08d6148375b",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "cfb",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/cfb",
+    "license": "Nybble format registry"
+  }
+}

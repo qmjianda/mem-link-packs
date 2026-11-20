@@ -1,0 +1,23 @@
+{
+  "id": "imhex-dfir-exfat",
+  "name": "ImHex · ExFAT",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "exFAT Filesystem (exFAT_v2.0)",
+  "description": "exFAT Filesystem (exFAT_v2.0)",
+  "tags": [
+    "imhex",
+    "exfat"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/DFIR/exFAT.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "DFIR/exFAT.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/DFIR/exFAT.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1213
+}

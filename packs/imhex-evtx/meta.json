@@ -1,0 +1,23 @@
+{
+  "id": "imhex-evtx",
+  "name": "ImHex · Evtx",
+  "version": "1.0.0",
+  "category": "system",
+  "coverage": "complete",
+  "summary": "MS Windows Vista Event Log",
+  "description": "MS Windows Vista Event Log",
+  "tags": [
+    "imhex",
+    "evtx"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/evtx.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "evtx.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/evtx.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1284
+}

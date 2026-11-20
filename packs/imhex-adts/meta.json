@@ -1,0 +1,23 @@
+{
+  "id": "imhex-adts",
+  "name": "ImHex · Adts",
+  "version": "1.0.0",
+  "category": "media",
+  "coverage": "complete",
+  "summary": "AAC ADTSn (Audio Data Transport Stream) Audio",
+  "description": "AAC ADTSn (Audio Data Transport Stream) Audio",
+  "tags": [
+    "imhex",
+    "adts"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/adts.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "adts.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/adts.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1229
+}

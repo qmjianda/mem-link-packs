@@ -1,0 +1,12 @@
+{
+  "id": "gif",
+  "name": "GIF",
+  "version": "1.0.0",
+  "category": "image",
+  "order": 60,
+  "summary": "GIF 文件头、图像描述符与图形控制扩展",
+  "description": "解析 GIF 87a/89a 的 13 字节逻辑屏幕描述符、10 字节图像描述符和 8 字节图形控制扩展。",
+  "tags": ["gif", "image", "animation", "palette"],
+  "author": "qmjianda",
+  "license": "MIT"
+}

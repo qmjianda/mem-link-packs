@@ -1,0 +1,23 @@
+{
+  "id": "imhex-ffx-all-ply-save-bin",
+  "name": "ImHex · Ply Save.Bin",
+  "version": "1.0.0",
+  "category": "game",
+  "coverage": "partial",
+  "summary": "Ply Save.Bin（移植自 ImHex Pattern Language）",
+  "description": "Ply Save.Bin 的 ImHex 固定布局移植。",
+  "tags": [
+    "imhex",
+    "ply-save-bin"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/all/ply_save.bin.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "ffx/all/ply_save.bin.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/all/ply_save.bin.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1294
+}

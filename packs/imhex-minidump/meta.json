@@ -1,0 +1,23 @@
+{
+  "id": "imhex-minidump",
+  "name": "ImHex · Minidump",
+  "version": "1.0.0",
+  "category": "system",
+  "coverage": "partial",
+  "summary": "Windows MiniDump",
+  "description": "Windows MiniDump",
+  "tags": [
+    "imhex",
+    "minidump"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/minidump.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "minidump.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/minidump.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1369
+}

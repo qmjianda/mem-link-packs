@@ -1,0 +1,23 @@
+{
+  "id": "imhex-rpm",
+  "name": "ImHex · Rpm",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "RPM package format",
+  "description": "RPM package format",
+  "tags": [
+    "imhex",
+    "rpm"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/rpm.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "rpm.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/rpm.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1425
+}

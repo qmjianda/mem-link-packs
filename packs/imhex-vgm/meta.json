@@ -1,0 +1,23 @@
+{
+  "id": "imhex-vgm",
+  "name": "ImHex · Vgm",
+  "version": "1.0.0",
+  "category": "media",
+  "coverage": "partial",
+  "summary": "VGM (Video Game Music) sound log",
+  "description": "VGM (Video Game Music) sound log",
+  "tags": [
+    "imhex",
+    "vgm"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/vgm.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "vgm.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/vgm.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1465
+}

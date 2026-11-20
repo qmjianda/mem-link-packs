@@ -1,0 +1,23 @@
+{
+  "id": "imhex-psafe3",
+  "name": "ImHex · Psafe3",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "Password Safe V3",
+  "description": "Password Safe V3",
+  "tags": [
+    "imhex",
+    "psafe3"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/psafe3.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "psafe3.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/psafe3.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1413
+}

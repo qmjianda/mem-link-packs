@@ -1,0 +1,27 @@
+{
+  "id": "evtx",
+  "name": "Windows event log",
+  "version": "1.0.0",
+  "category": "system",
+  "order": 216,
+  "summary": "Windows EVTX event log: the file header and every 64 KiB chunk header, with the record numbering that survives rollover.",
+  "description": "Windows EVTX event log: the file header and every 64 KiB chunk header, with the record numbering that survives rollover.",
+  "tags": [
+    "system",
+    "windows",
+    "event-log",
+    "forensics",
+    "dfir"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://learn.microsoft.com/openspecs/windows_protocols/ms-even6/",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "evtx",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/evtx",
+    "license": "Nybble format registry"
+  }
+}

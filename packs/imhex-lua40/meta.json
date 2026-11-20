@@ -1,0 +1,23 @@
+{
+  "id": "imhex-lua40",
+  "name": "ImHex · Lua40",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "Lua 4.0 bytecode",
+  "description": "Lua 4.0 bytecode",
+  "tags": [
+    "imhex",
+    "lua40"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/lua40.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "lua40.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/lua40.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1355
+}

@@ -1,0 +1,25 @@
+{
+  "id": "avi",
+  "name": "AVI video",
+  "version": "1.0.0",
+  "category": "media",
+  "order": 206,
+  "summary": "AVI (RIFF) container: header plus a first-level chunk walk.",
+  "description": "AVI (RIFF) container: header plus a first-level chunk walk.",
+  "tags": [
+    "video",
+    "riff",
+    "microsoft"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://en.wikipedia.org/wiki/Audio_Video_Interleave",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "avi",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/avi",
+    "license": "Nybble format registry"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "imhex-esp32-image",
+  "name": "ImHex · Esp32 Image",
+  "version": "1.0.0",
+  "category": "image",
+  "coverage": "partial",
+  "summary": "ESP32 Firmware Image Format",
+  "description": "ESP32 Firmware Image Format",
+  "tags": [
+    "imhex",
+    "esp32-image"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/esp32_image.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "esp32_image.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/esp32_image.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1282
+}

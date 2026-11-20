@@ -1,0 +1,23 @@
+{
+  "id": "imhex-nso",
+  "name": "ImHex · Nso",
+  "version": "1.0.0",
+  "category": "executable",
+  "coverage": "partial",
+  "summary": "Nintendo Switch NSO",
+  "description": "Nintendo Switch NSO",
+  "tags": [
+    "imhex",
+    "nso"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/nso.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "nso.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/nso.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1387
+}

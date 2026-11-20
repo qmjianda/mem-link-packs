@@ -1,0 +1,25 @@
+{
+  "id": "flac",
+  "name": "FLAC audio",
+  "version": "1.0.0",
+  "category": "media",
+  "order": 219,
+  "summary": "FLAC lossless audio: magic and metadata-block stream, walked to the last block.",
+  "description": "FLAC lossless audio: magic and metadata-block stream, walked to the last block.",
+  "tags": [
+    "audio",
+    "lossless",
+    "xiph"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://xiph.org/flac/format.html",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "flac",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/flac",
+    "license": "Nybble format registry"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "imhex-mo",
+  "name": "ImHex · Mo",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "complete",
+  "summary": "GNU Machine Object (MO) files containing translations for gettext",
+  "description": "GNU Machine Object (MO) files containing translations for gettext",
+  "tags": [
+    "imhex",
+    "mo"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/mo.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "mo.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/mo.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1370
+}

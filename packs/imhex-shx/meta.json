@@ -1,0 +1,23 @@
+{
+  "id": "imhex-shx",
+  "name": "ImHex · Shx",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "complete",
+  "summary": "ESRI shapefile indices",
+  "description": "ESRI shapefile indices",
+  "tags": [
+    "imhex",
+    "shx"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/shx.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "shx.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/shx.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1432
+}

@@ -1,0 +1,23 @@
+{
+  "id": "imhex-png",
+  "name": "ImHex · Png",
+  "version": "1.0.0",
+  "category": "image",
+  "coverage": "partial",
+  "summary": "PNG image",
+  "description": "PNG image",
+  "tags": [
+    "imhex",
+    "png"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/png.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "png.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/png.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1408
+}

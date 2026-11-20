@@ -1,0 +1,26 @@
+{
+  "id": "midi",
+  "name": "MIDI file",
+  "version": "1.0.0",
+  "category": "media",
+  "order": 241,
+  "summary": "Standard MIDI File: the MThd header chunk and every MTrk track chunk.",
+  "description": "Standard MIDI File: the MThd header chunk and every MTrk track chunk.",
+  "tags": [
+    "audio",
+    "midi",
+    "music",
+    "chunked"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://midi.org/standard-midi-files-specification",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "midi",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/midi",
+    "license": "Nybble format registry"
+  }
+}

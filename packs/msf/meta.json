@@ -1,0 +1,29 @@
+{
+  "id": "msf",
+  "name": "PDB debug database",
+  "version": "1.0.0",
+  "category": "system",
+  "order": 245,
+  "summary": "Microsoft PDB / MSF 7.0 superblock: block size, the free block maps and where the stream directory lives.",
+  "description": "Microsoft PDB / MSF 7.0 superblock: block size, the free block maps and where the stream directory lives.",
+  "tags": [
+    "system",
+    "windows",
+    "microsoft",
+    "debugging",
+    "symbols",
+    "pdb",
+    "executable"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://llvm.org/docs/PDB/MsfFile.html",
+  "coverage": "complete",
+  "source": {
+    "provider": "nybble",
+    "id": "msf",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/msf",
+    "license": "Nybble format registry"
+  }
+}

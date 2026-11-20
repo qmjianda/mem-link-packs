@@ -1,0 +1,23 @@
+{
+  "id": "imhex-ttf",
+  "name": "ImHex · Ttf",
+  "version": "1.0.0",
+  "category": "font",
+  "coverage": "partial",
+  "summary": "TrueType/OpenType font",
+  "description": "TrueType/OpenType font",
+  "tags": [
+    "imhex",
+    "ttf"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ttf.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "ttf.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ttf.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1450
+}

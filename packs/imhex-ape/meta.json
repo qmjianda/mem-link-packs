@@ -1,0 +1,23 @@
+{
+  "id": "imhex-ape",
+  "name": "ImHex · Ape",
+  "version": "1.0.0",
+  "category": "media",
+  "coverage": "partial",
+  "summary": "APE audio metadata",
+  "description": "APE audio metadata",
+  "tags": [
+    "imhex",
+    "ape"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ape.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "ape.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ape.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1234
+}

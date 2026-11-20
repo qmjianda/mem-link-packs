@@ -1,0 +1,26 @@
+/// <reference path="../../../types/memlink-bp.d.ts" />
+
+// 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
+// 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/mo.hexpat
+// 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
+// 覆盖：complete
+const strPtr = struct("strPtr", [
+  u32("length", {  }),
+  u32("offset", {  }),
+]);
+
+const file = struct("file", [
+  u32("magic", { endian: "big" }),
+]);
+
+export default definePack({
+  name: "GNU Machine Object (MO) files containing translations for gettext",
+  endian: "little",
+  pointerSize: 8,
+  types: [strPtr, file],
+  nodes: {
+    "entry": structNode(file, { label: "file（入口）" }),
+    "strPtr": structNode(strPtr, { label: "strPtr" }),
+  },
+});
+

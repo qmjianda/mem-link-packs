@@ -1,0 +1,26 @@
+{
+  "id": "mbr",
+  "name": "MBR partition table",
+  "version": "1.0.0",
+  "category": "system",
+  "order": 240,
+  "summary": "Master Boot Record: bootstrap, four primary partitions, boot signature.",
+  "description": "Master Boot Record: bootstrap, four primary partitions, boot signature.",
+  "tags": [
+    "filesystem",
+    "disk",
+    "partition",
+    "boot"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://en.wikipedia.org/wiki/Master_boot_record",
+  "coverage": "complete",
+  "source": {
+    "provider": "nybble",
+    "id": "mbr",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/mbr",
+    "license": "Nybble format registry"
+  }
+}

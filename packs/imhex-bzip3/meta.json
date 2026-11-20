@@ -1,0 +1,23 @@
+{
+  "id": "imhex-bzip3",
+  "name": "ImHex · Bzip3",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "complete",
+  "summary": "Parses BZip3 compression (file format) by Kamila Szewczyk",
+  "description": "Parses BZip3 compression (file format) by Kamila Szewczyk",
+  "tags": [
+    "imhex",
+    "bzip3"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bzip3.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "bzip3.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bzip3.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1253
+}

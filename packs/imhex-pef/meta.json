@@ -1,0 +1,23 @@
+{
+  "id": "imhex-pef",
+  "name": "ImHex · Pef",
+  "version": "1.0.0",
+  "category": "executable",
+  "coverage": "partial",
+  "summary": "Preffered Executable Format executable (for Mac OS 7.1.2 - Mac OS 10.4 / BeOS)",
+  "description": "Preffered Executable Format executable (for Mac OS 7.1.2 - Mac OS 10.4 / BeOS)",
+  "tags": [
+    "imhex",
+    "pef"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pef.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "pef.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pef.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1401
+}

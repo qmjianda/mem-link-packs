@@ -1,0 +1,26 @@
+{
+  "id": "7z",
+  "name": "7-Zip archive",
+  "version": "1.0.0",
+  "category": "archive",
+  "order": 200,
+  "summary": "7z signature header: version, CRCs, and the pointer to the (usually compressed) end header.",
+  "description": "7z signature header: version, CRCs, and the pointer to the (usually compressed) end header.",
+  "tags": [
+    "archive",
+    "compression",
+    "7zip",
+    "lzma"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://py7zr.readthedocs.io/en/latest/archive_format.html",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "7z",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/7z",
+    "license": "Nybble format registry"
+  }
+}

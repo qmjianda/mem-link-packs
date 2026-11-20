@@ -1,0 +1,23 @@
+{
+  "id": "imhex-fs",
+  "name": "ImHex · Fs",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "Drive File System",
+  "description": "Drive File System",
+  "tags": [
+    "imhex",
+    "fs"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/fs.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "fs.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/fs.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1319
+}

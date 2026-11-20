@@ -1,0 +1,23 @@
+{
+  "id": "imhex-goldbox-gb-ua-script",
+  "name": "ImHex · GB UA SCRIPT",
+  "version": "1.0.0",
+  "category": "game",
+  "coverage": "partial",
+  "summary": "Gold Box Games - UA Script",
+  "description": "Gold Box Games - UA Script",
+  "tags": [
+    "imhex",
+    "gb-ua-script"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/GoldBox/GB_UA_SCRIPT.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "GoldBox/GB_UA_SCRIPT.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/GoldBox/GB_UA_SCRIPT.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1219
+}

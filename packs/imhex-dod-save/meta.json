@@ -1,0 +1,23 @@
+{
+  "id": "imhex-dod-save",
+  "name": "ImHex · Dod Save",
+  "version": "1.0.0",
+  "category": "game",
+  "coverage": "partial",
+  "summary": "Dig Or Die Save File",
+  "description": "Dig Or Die Save File",
+  "tags": [
+    "imhex",
+    "dod-save"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/dod-save.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "dod-save.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/dod-save.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1273
+}

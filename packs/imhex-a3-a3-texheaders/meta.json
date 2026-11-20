@@ -1,0 +1,23 @@
+{
+  "id": "imhex-a3-a3-texheaders",
+  "name": "ImHex · A3 Texheaders",
+  "version": "1.0.0",
+  "category": "image",
+  "coverage": "partial",
+  "summary": "Arma 3 texture index file format",
+  "description": "Arma 3 texture index file format",
+  "tags": [
+    "imhex",
+    "a3-texheaders"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/a3/a3_texheaders.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "a3/a3_texheaders.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/a3/a3_texheaders.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1227
+}

@@ -1,0 +1,23 @@
+{
+  "id": "imhex-3ds",
+  "name": "ImHex · 3ds",
+  "version": "1.0.0",
+  "category": "model",
+  "coverage": "complete",
+  "summary": "Autodesk 3DS Max Model",
+  "description": "Autodesk 3DS Max Model",
+  "tags": [
+    "imhex",
+    "3ds"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/3ds.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "3ds.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/3ds.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1200
+}

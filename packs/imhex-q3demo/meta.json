@@ -1,0 +1,23 @@
+{
+  "id": "imhex-q3demo",
+  "name": "ImHex · Q3demo",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "Quake 3 Engine demo",
+  "description": "Quake 3 Engine demo",
+  "tags": [
+    "imhex",
+    "q3demo"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/q3demo.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "q3demo.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/q3demo.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1416
+}

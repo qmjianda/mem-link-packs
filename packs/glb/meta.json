@@ -1,0 +1,26 @@
+{
+  "id": "glb",
+  "name": "glTF binary",
+  "version": "1.0.0",
+  "category": "model",
+  "order": 224,
+  "summary": "glTF binary (.glb) 3D asset: 12-byte header and a JSON/BIN chunk stream.",
+  "description": "glTF binary (.glb) 3D asset: 12-byte header and a JSON/BIN chunk stream.",
+  "tags": [
+    "model",
+    "3d",
+    "gltf",
+    "khronos"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "glb",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/glb",
+    "license": "Nybble format registry"
+  }
+}

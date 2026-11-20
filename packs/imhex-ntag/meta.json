@@ -1,0 +1,23 @@
+{
+  "id": "imhex-ntag",
+  "name": "ImHex · Ntag",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "complete",
+  "summary": "NTAG213/NTAG215/NTAG216, NFC Forum Type 2 Tag compliant IC",
+  "description": "NTAG213/NTAG215/NTAG216, NFC Forum Type 2 Tag compliant IC",
+  "tags": [
+    "imhex",
+    "ntag"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ntag.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "ntag.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ntag.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1388
+}

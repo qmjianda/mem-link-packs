@@ -1,0 +1,28 @@
+{
+  "id": "rpm",
+  "name": "RPM package",
+  "version": "1.0.0",
+  "category": "archive",
+  "order": 259,
+  "summary": "RPM package: the 96-byte lead and the signature header, walking its index entries.",
+  "description": "RPM package: the 96-byte lead and the signature header, walking its index entries.",
+  "tags": [
+    "archive",
+    "package",
+    "linux",
+    "installer",
+    "cpio",
+    "redhat"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://rpm-software-management.github.io/rpm/manual/format.html",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "rpm",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/rpm",
+    "license": "Nybble format registry"
+  }
+}

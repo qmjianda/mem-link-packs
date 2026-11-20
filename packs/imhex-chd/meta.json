@@ -1,0 +1,23 @@
+{
+  "id": "imhex-chd",
+  "name": "ImHex · Chd",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "MAME Compressed Hunks of Data",
+  "description": "MAME Compressed Hunks of Data",
+  "tags": [
+    "imhex",
+    "chd"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/chd.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "chd.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/chd.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1259
+}

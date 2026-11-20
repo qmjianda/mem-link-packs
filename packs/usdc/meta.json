@@ -1,0 +1,28 @@
+{
+  "id": "usdc",
+  "name": "USD crate file",
+  "version": "1.0.0",
+  "category": "model",
+  "order": 265,
+  "summary": "Pixar USD binary crate bootstrap: the magic, version bytes and the offset of the table of contents.",
+  "description": "Pixar USD binary crate bootstrap: the magic, version bytes and the offset of the table of contents.",
+  "tags": [
+    "model",
+    "3d",
+    "usd",
+    "pixar",
+    "scene",
+    "vfx"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://openusd.org/release/glossary.html#crate-file-format",
+  "coverage": "complete",
+  "source": {
+    "provider": "nybble",
+    "id": "usdc",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/usdc",
+    "license": "Nybble format registry"
+  }
+}

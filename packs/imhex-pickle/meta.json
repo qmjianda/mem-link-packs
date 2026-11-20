@@ -1,0 +1,23 @@
+{
+  "id": "imhex-pickle",
+  "name": "ImHex · Pickle",
+  "version": "1.0.0",
+  "category": "executable",
+  "coverage": "partial",
+  "summary": "Python Binary Object Serialization Protocol",
+  "description": "Python Binary Object Serialization Protocol",
+  "tags": [
+    "imhex",
+    "pickle"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pickle.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "pickle.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pickle.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1405
+}

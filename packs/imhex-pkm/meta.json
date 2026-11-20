@@ -1,0 +1,23 @@
+{
+  "id": "imhex-pkm",
+  "name": "ImHex · Pkm",
+  "version": "1.0.0",
+  "category": "image",
+  "coverage": "complete",
+  "summary": "PKM (PacKMan) files containing ETC (Ericsson Texture Compression)",
+  "description": "PKM (PacKMan) files containing ETC (Ericsson Texture Compression)",
+  "tags": [
+    "imhex",
+    "pkm"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pkm.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "pkm.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pkm.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1407
+}

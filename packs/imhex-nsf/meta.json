@@ -1,0 +1,23 @@
+{
+  "id": "imhex-nsf",
+  "name": "ImHex · Nsf",
+  "version": "1.0.0",
+  "category": "game",
+  "coverage": "partial",
+  "summary": "NES Sound Format file",
+  "description": "NES Sound Format file",
+  "tags": [
+    "imhex",
+    "nsf"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/nsf.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "nsf.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/nsf.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1385
+}

@@ -1,0 +1,23 @@
+{
+  "id": "imhex-uf2",
+  "name": "ImHex · Uf2",
+  "version": "1.0.0",
+  "category": "network",
+  "coverage": "complete",
+  "summary": "USB Flashing Format (.uf2)",
+  "description": "USB Flashing Format (.uf2)",
+  "tags": [
+    "imhex",
+    "uf2"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/uf2.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "uf2.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/uf2.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1455
+}

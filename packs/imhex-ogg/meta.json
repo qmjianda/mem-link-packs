@@ -1,0 +1,23 @@
+{
+  "id": "imhex-ogg",
+  "name": "ImHex · Ogg",
+  "version": "1.0.0",
+  "category": "media",
+  "coverage": "partial",
+  "summary": "OGG Audio",
+  "description": "OGG Audio",
+  "tags": [
+    "imhex",
+    "ogg"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ogg.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "ogg.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ogg.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1389
+}

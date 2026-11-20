@@ -1,0 +1,23 @@
+{
+  "id": "imhex-arc",
+  "name": "ImHex · Arc",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "complete",
+  "summary": "Minecraft LCE ARC File",
+  "description": "Minecraft LCE ARC File",
+  "tags": [
+    "imhex",
+    "arc"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/arc.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "arc.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/arc.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1237
+}

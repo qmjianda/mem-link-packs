@@ -1,0 +1,23 @@
+{
+  "id": "imhex-ico",
+  "name": "ImHex · Ico",
+  "version": "1.0.0",
+  "category": "image",
+  "coverage": "complete",
+  "summary": "Windows Icon (.ico) or Cursor (.cur)",
+  "description": "Windows Icon (.ico) or Cursor (.cur)",
+  "tags": [
+    "imhex",
+    "ico"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ico.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "ico.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ico.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1338
+}

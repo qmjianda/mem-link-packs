@@ -1,0 +1,26 @@
+{
+  "id": "zstd",
+  "name": "Zstandard",
+  "version": "1.0.0",
+  "category": "archive",
+  "order": 274,
+  "summary": "Zstandard frames: frame header (window, dictionary id, content size) and a walk of every block up to the checksum.",
+  "description": "Zstandard frames: frame header (window, dictionary id, content size) and a walk of every block up to the checksum.",
+  "tags": [
+    "archive",
+    "compression",
+    "zstd",
+    "zstandard"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://www.rfc-editor.org/rfc/rfc8878",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "zstd",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/zstd",
+    "license": "Nybble format registry"
+  }
+}

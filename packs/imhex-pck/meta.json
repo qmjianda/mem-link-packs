@@ -1,0 +1,23 @@
+{
+  "id": "imhex-pck",
+  "name": "ImHex · Pck",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "Minecraft LCE .pck files",
+  "description": "Minecraft LCE .pck files",
+  "tags": [
+    "imhex",
+    "pck"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pck.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "pck.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pck.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1398
+}

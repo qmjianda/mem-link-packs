@@ -1,0 +1,26 @@
+{
+  "id": "pcap",
+  "name": "PCAP capture",
+  "version": "1.0.0",
+  "category": "network",
+  "order": 251,
+  "summary": "libpcap / tcpdump capture file: global header + first packet record.",
+  "description": "libpcap / tcpdump capture file: global header + first packet record.",
+  "tags": [
+    "network",
+    "capture",
+    "tcpdump",
+    "wireshark"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://wiki.wireshark.org/Development/LibpcapFileFormat",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "pcap",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/pcap",
+    "license": "Nybble format registry"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "imhex-a3-a3-rtm",
+  "name": "ImHex · A3 Rtm",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "Arma 3 RTM animation format (plain)",
+  "description": "Arma 3 RTM animation format (plain)",
+  "tags": [
+    "imhex",
+    "a3-rtm"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/a3/a3_rtm.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "a3/a3_rtm.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/a3/a3_rtm.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1226
+}

@@ -1,0 +1,27 @@
+{
+  "id": "nifti",
+  "name": "NIfTI-1 image",
+  "version": "1.0.0",
+  "category": "image",
+  "order": 247,
+  "summary": "NIfTI-1 348-byte header: dimensions, data type, scaling and both spatial transforms.",
+  "description": "NIfTI-1 348-byte header: dimensions, data type, scaling and both spatial transforms.",
+  "tags": [
+    "image",
+    "medical",
+    "neuroimaging",
+    "volume",
+    "science"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://nifti.nimh.nih.gov/nifti-1/documentation/nifti1fields",
+  "coverage": "complete",
+  "source": {
+    "provider": "nybble",
+    "id": "nifti",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/nifti",
+    "license": "Nybble format registry"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "vmdk",
+  "name": "VMDK sparse disk",
+  "version": "1.0.0",
+  "category": "system",
+  "order": 267,
+  "summary": "VMware sparse extent header: capacity, grain size, the embedded text descriptor and the grain directory.",
+  "description": "VMware sparse extent header: capacity, grain size, the embedded text descriptor and the grain directory.",
+  "tags": [
+    "filesystem",
+    "disk",
+    "virtualization",
+    "vmware",
+    "virtualbox",
+    "sparse"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://github.com/libyal/libvmdk/blob/main/documentation/VMWare%20Virtual%20Disk%20Format%20(VMDK).asciidoc",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "vmdk",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/vmdk",
+    "license": "Nybble format registry"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "imhex-ktx",
+  "name": "ImHex · Ktx",
+  "version": "1.0.0",
+  "category": "image",
+  "coverage": "partial",
+  "summary": "Khronos TeXture 1.0",
+  "description": "Khronos TeXture 1.0",
+  "tags": [
+    "imhex",
+    "ktx"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ktx.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "ktx.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ktx.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1351
+}

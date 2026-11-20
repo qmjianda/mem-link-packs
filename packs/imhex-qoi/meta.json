@@ -1,0 +1,23 @@
+{
+  "id": "imhex-qoi",
+  "name": "ImHex · Qoi",
+  "version": "1.0.0",
+  "category": "image",
+  "coverage": "partial",
+  "summary": "QOI image",
+  "description": "QOI image",
+  "tags": [
+    "imhex",
+    "qoi"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/qoi.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "qoi.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/qoi.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1418
+}

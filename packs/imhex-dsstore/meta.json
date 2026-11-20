@@ -1,0 +1,23 @@
+{
+  "id": "imhex-dsstore",
+  "name": "ImHex · Dsstore",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "complete",
+  "summary": "macOS .DS_Store",
+  "description": "macOS .DS_Store",
+  "tags": [
+    "imhex",
+    "dsstore"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/dsstore.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "dsstore.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/dsstore.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1278
+}

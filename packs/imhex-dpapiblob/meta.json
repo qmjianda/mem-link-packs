@@ -1,0 +1,23 @@
+{
+  "id": "imhex-dpapiblob",
+  "name": "ImHex · Dpapiblob",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "DPAPI Blob",
+  "description": "DPAPI Blob",
+  "tags": [
+    "imhex",
+    "dpapiblob"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/dpapiblob.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "dpapiblob.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/dpapiblob.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1276
+}

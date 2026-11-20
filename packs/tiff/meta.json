@@ -1,0 +1,25 @@
+{
+  "id": "tiff",
+  "name": "TIFF image",
+  "version": "1.0.0",
+  "category": "image",
+  "order": 262,
+  "summary": "TIFF header + first image file directory (both byte orders).",
+  "description": "TIFF header + first image file directory (both byte orders).",
+  "tags": [
+    "image",
+    "raster",
+    "metadata"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://en.wikipedia.org/wiki/TIFF",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "tiff",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/tiff",
+    "license": "Nybble format registry"
+  }
+}

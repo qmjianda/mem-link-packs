@@ -1,0 +1,29 @@
+{
+  "id": "ogg",
+  "name": "Ogg container",
+  "version": "1.0.0",
+  "category": "media",
+  "order": 249,
+  "summary": "Ogg first page: page header, segment table and the codec identification header (Vorbis, Opus, FLAC, Theora, Speex).",
+  "description": "Ogg first page: page header, segment table and the codec identification header (Vorbis, Opus, FLAC, Theora, Speex).",
+  "tags": [
+    "audio",
+    "container",
+    "vorbis",
+    "opus",
+    "flac",
+    "theora",
+    "xiph"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://www.xiph.org/ogg/doc/framing.html",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "ogg",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/ogg",
+    "license": "Nybble format registry"
+  }
+}

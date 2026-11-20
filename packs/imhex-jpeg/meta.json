@@ -1,0 +1,23 @@
+{
+  "id": "imhex-jpeg",
+  "name": "ImHex · Jpeg",
+  "version": "1.0.0",
+  "category": "image",
+  "coverage": "partial",
+  "summary": "JPEG Image",
+  "description": "JPEG Image",
+  "tags": [
+    "imhex",
+    "jpeg"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/jpeg.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "jpeg.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/jpeg.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1348
+}

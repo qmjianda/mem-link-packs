@@ -1,0 +1,23 @@
+{
+  "id": "imhex-bmp",
+  "name": "ImHex · Bmp",
+  "version": "1.0.0",
+  "category": "image",
+  "coverage": "partial",
+  "summary": "OS2/Windows Bitmap",
+  "description": "OS2/Windows Bitmap",
+  "tags": [
+    "imhex",
+    "bmp"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bmp.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "bmp.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bmp.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1248
+}

@@ -1,0 +1,23 @@
+{
+  "id": "imhex-bloodborne-save",
+  "name": "ImHex · Bloodborne Save",
+  "version": "1.0.0",
+  "category": "game",
+  "coverage": "partial",
+  "summary": "Bloodborne Save file",
+  "description": "Bloodborne Save file",
+  "tags": [
+    "imhex",
+    "bloodborne-save"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bloodborne_save.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "bloodborne_save.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bloodborne_save.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1247
+}

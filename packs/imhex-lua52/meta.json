@@ -1,0 +1,23 @@
+{
+  "id": "imhex-lua52",
+  "name": "ImHex · Lua52",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "complete",
+  "summary": "Lua 5.2 bytecode",
+  "description": "Lua 5.2 bytecode",
+  "tags": [
+    "imhex",
+    "lua52"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/lua52.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "lua52.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/lua52.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1358
+}

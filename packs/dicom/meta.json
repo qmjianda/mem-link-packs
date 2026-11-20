@@ -1,0 +1,27 @@
+{
+  "id": "dicom",
+  "name": "DICOM image",
+  "version": "1.0.0",
+  "category": "image",
+  "order": 214,
+  "summary": "DICOM Part 10 file: the 128-byte preamble, the DICM magic, and the file meta group element by element.",
+  "description": "DICOM Part 10 file: the 128-byte preamble, the DICM magic, and the file meta group element by element.",
+  "tags": [
+    "image",
+    "medical",
+    "dicom",
+    "healthcare",
+    "imaging"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_7.html",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "dicom",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/dicom",
+    "license": "Nybble format registry"
+  }
+}

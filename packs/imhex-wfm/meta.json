@@ -1,0 +1,23 @@
+{
+  "id": "imhex-wfm",
+  "name": "ImHex · Wfm",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "complete",
+  "summary": "Tektronix waveform file",
+  "description": "Tektronix waveform file",
+  "tags": [
+    "imhex",
+    "wfm"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/wfm.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "wfm.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/wfm.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1471
+}

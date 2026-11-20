@@ -1,0 +1,23 @@
+{
+  "id": "imhex-webp",
+  "name": "ImHex · Webp",
+  "version": "1.0.0",
+  "category": "image",
+  "coverage": "partial",
+  "summary": "Google WebP",
+  "description": "Google WebP",
+  "tags": [
+    "imhex",
+    "webp"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/webp.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "webp.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/webp.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1470
+}

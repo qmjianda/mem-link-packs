@@ -1,0 +1,12 @@
+{
+  "id": "png",
+  "name": "PNG",
+  "version": "1.0.0",
+  "category": "image",
+  "order": 30,
+  "summary": "PNG 签名、块头与 IHDR 图像参数",
+  "description": "解析 PNG 文件签名、通用块头、IHDR 数据以及常见的签名 + IHDR 组合头。所有整数按大端读取。",
+  "tags": ["png", "image", "ihdr", "chunk"],
+  "author": "qmjianda",
+  "license": "MIT"
+}

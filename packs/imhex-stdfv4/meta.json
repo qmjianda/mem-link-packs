@@ -1,0 +1,23 @@
+{
+  "id": "imhex-stdfv4",
+  "name": "ImHex · Stdfv4",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "STDFv4 (Standard Test Data Format)",
+  "description": "STDFv4 (Standard Test Data Format)",
+  "tags": [
+    "imhex",
+    "stdfv4"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/stdfv4.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "stdfv4.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/stdfv4.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1439
+}

@@ -1,0 +1,12 @@
+{
+  "id": "pe",
+  "name": "PE",
+  "version": "1.0.0",
+  "category": "executable",
+  "order": 80,
+  "summary": "DOS 头、PE/COFF 头、PE32/PE32+ 可选头与节头",
+  "description": "解析 Windows PE 文件的 DOS 头、PE 签名、COFF 文件头、PE32/PE32+ 可选头、数据目录和节头，并提供 PE 头偏移计算。",
+  "tags": ["pe", "exe", "dll", "coff", "windows", "executable"],
+  "author": "qmjianda",
+  "license": "MIT"
+}

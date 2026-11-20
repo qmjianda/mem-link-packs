@@ -1,0 +1,71 @@
+/// <reference path="../../../types/memlink-bp.d.ts" />
+
+// 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
+// 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/nds.hexpat
+// 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
+// 覆盖：complete
+const NDSHeader = struct("NDSHeader", [
+  bytes("gameTitle", { size: 12 }),
+  bytes("gameCode", { size: 4 }),
+  bytes("makerCode", { size: 2 }),
+  u8("unitCode", {  }),
+  u8("encryptionSeedSelect", {  }),
+  u8("deviceCapacity", {  }),
+  bytes("reserved1", { size: 7 }),
+  u8("reserved2", {  }),
+  u8("region", { values: { "0": "Normal", "128": "China", "64": "Korea" } }),
+  u8("romVersion", {  }),
+  u8("autoStart", {  }),
+  bytes("arm9RomOffset", { size: 4 }),
+  bytes("arm9EntryAddress", { size: 4 }),
+  bytes("arm9RamAddress", { size: 4 }),
+  bytes("arm9Size", { size: 4 }),
+  bytes("arm7RomOffset", { size: 4 }),
+  bytes("arm7EntryAddress", { size: 4 }),
+  bytes("arm7RamAddress", { size: 4 }),
+  bytes("arm7Size", { size: 4 }),
+  bytes("fntOffset", { size: 4 }),
+  bytes("fntSize", { size: 4 }),
+  bytes("fatOffset", { size: 4 }),
+  bytes("fatSize", { size: 4 }),
+  bytes("arm9OverlayOffset", { size: 4 }),
+  bytes("arm9OverlaySize", { size: 4 }),
+  bytes("arm7OverlayOffset", { size: 4 }),
+  bytes("arm7OverlaySize", { size: 4 }),
+  bytes("portSetting1", { size: 4 }),
+  bytes("portSetting2", { size: 4 }),
+  bytes("iconTitleOffset", { size: 4 }),
+  bytes("secureAreaChecksum", { size: 2 }),
+  bytes("secureAreaDelay", { size: 2 }),
+  bytes("arm9AutoLoadListRamAddress", { size: 4 }),
+  bytes("arm7AutoLoadListRamAddress", { size: 4 }),
+  bytes("secureAreaDisable", { size: 8 }),
+  bytes("totalUsedRomSize", { size: 4 }),
+  bytes("romHeaderSize", { size: 4 }),
+  bytes("unknown", { size: 4 }),
+  bytes("reserved3", { size: 8 }),
+  bytes("nandEndOfRomArea", { size: 2 }),
+  bytes("nandStartOfRWArea", { size: 2 }),
+  bytes("reserved4", { size: 24 }),
+  bytes("reserved5", { size: 16 }),
+  bytes("nintendoLogo", { size: 156 }),
+  bytes("nintendoLogoChecksum", { size: 2 }),
+  bytes("headerChecksum", { size: 2 }),
+  bytes("debugRomOffset", { size: 4 }),
+  bytes("debugSize", { size: 4 }),
+  bytes("debugRamAddress", { size: 4 }),
+  bytes("reserved6", { size: 4 }),
+  bytes("reserved7", { size: 144 }),
+  bytes("reserved8", { size: 3584 }),
+]);
+
+export default definePack({
+  name: "DS Cartridge Header",
+  endian: "little",
+  pointerSize: 8,
+  types: [NDSHeader],
+  nodes: {
+    "entry": structNode(NDSHeader, { label: "NDSHeader（入口）" }),
+  },
+});
+

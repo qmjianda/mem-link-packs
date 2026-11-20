@@ -1,0 +1,23 @@
+{
+  "id": "imhex-selinux",
+  "name": "ImHex · Selinux",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "SE Linux module",
+  "description": "SE Linux module",
+  "tags": [
+    "imhex",
+    "selinux"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/selinux.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "selinux.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/selinux.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1428
+}

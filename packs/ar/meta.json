@@ -1,0 +1,28 @@
+{
+  "id": "ar",
+  "name": "Unix ar archive",
+  "version": "1.0.0",
+  "category": "archive",
+  "order": 204,
+  "summary": "Unix ar archive: the global magic and the first member header, with its ASCII decimal fields.",
+  "description": "Unix ar archive: the global magic and the first member header, with its ASCII decimal fields.",
+  "tags": [
+    "archive",
+    "unix",
+    "linux",
+    "static-library",
+    "deb",
+    "package"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://man7.org/linux/man-pages/man5/ar.5.html",
+  "coverage": "complete",
+  "source": {
+    "provider": "nybble",
+    "id": "ar",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/ar",
+    "license": "Nybble format registry"
+  }
+}

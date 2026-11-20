@@ -1,0 +1,25 @@
+{
+  "id": "aiff",
+  "name": "AIFF audio",
+  "version": "1.0.0",
+  "category": "media",
+  "order": 201,
+  "summary": "AIFF (Audio IFF) FORM container header and first chunk.",
+  "description": "AIFF (Audio IFF) FORM container header and first chunk.",
+  "tags": [
+    "audio",
+    "iff",
+    "apple"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://en.wikipedia.org/wiki/Audio_Interchange_File_Format",
+  "coverage": "complete",
+  "source": {
+    "provider": "nybble",
+    "id": "aiff",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/aiff",
+    "license": "Nybble format registry"
+  }
+}

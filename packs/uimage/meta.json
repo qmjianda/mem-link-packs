@@ -1,0 +1,27 @@
+{
+  "id": "uimage",
+  "name": "U-Boot uImage",
+  "version": "1.0.0",
+  "category": "system",
+  "order": 264,
+  "summary": "U-Boot legacy image header: the 64-byte big-endian header on embedded kernels and ramdisks.",
+  "description": "U-Boot legacy image header: the 64-byte big-endian header on embedded kernels and ramdisks.",
+  "tags": [
+    "firmware",
+    "embedded",
+    "u-boot",
+    "kernel",
+    "bootloader"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://source.denx.de/u-boot/u-boot/-/blob/master/include/image.h",
+  "coverage": "complete",
+  "source": {
+    "provider": "nybble",
+    "id": "uimage",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/uimage",
+    "license": "Nybble format registry"
+  }
+}

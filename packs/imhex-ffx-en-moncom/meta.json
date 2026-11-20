@@ -1,0 +1,23 @@
+{
+  "id": "imhex-ffx-en-moncom",
+  "name": "ImHex · Moncom",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "Moncom（移植自 ImHex Pattern Language）",
+  "description": "Moncom 的 ImHex 固定布局移植。",
+  "tags": [
+    "imhex",
+    "moncom"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/en/moncom.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "ffx/en/moncom.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/en/moncom.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1301
+}

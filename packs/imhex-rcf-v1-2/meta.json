@@ -1,0 +1,23 @@
+{
+  "id": "imhex-rcf-v1-2",
+  "name": "ImHex · Rcf V1 2",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "complete",
+  "summary": "Radcore Cement Library file header (.rcf) v1.2",
+  "description": "Radcore Cement Library file header (.rcf) v1.2",
+  "tags": [
+    "imhex",
+    "rcf-v1-2"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/rcf_v1_2.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "rcf_v1_2.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/rcf_v1_2.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1421
+}

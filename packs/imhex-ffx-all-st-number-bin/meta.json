@@ -1,0 +1,23 @@
+{
+  "id": "imhex-ffx-all-st-number-bin",
+  "name": "ImHex · St Number.Bin",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "St Number.Bin（移植自 ImHex Pattern Language）",
+  "description": "St Number.Bin 的 ImHex 固定布局移植。",
+  "tags": [
+    "imhex",
+    "st-number-bin"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/all/st_number.bin.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "ffx/all/st_number.bin.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/all/st_number.bin.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1296
+}

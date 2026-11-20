@@ -1,0 +1,23 @@
+{
+  "id": "imhex-vbmeta",
+  "name": "ImHex · Vbmeta",
+  "version": "1.0.0",
+  "category": "image",
+  "coverage": "partial",
+  "summary": "Android VBMeta image",
+  "description": "Android VBMeta image",
+  "tags": [
+    "imhex",
+    "vbmeta"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/vbmeta.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "vbmeta.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/vbmeta.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1462
+}

@@ -1,0 +1,23 @@
+{
+  "id": "imhex-dpapimasterkey",
+  "name": "ImHex · Dpapimasterkey",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "DPAPIMasterKey",
+  "description": "DPAPIMasterKey",
+  "tags": [
+    "imhex",
+    "dpapimasterkey"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/dpapimasterkey.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "dpapimasterkey.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/dpapimasterkey.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1277
+}

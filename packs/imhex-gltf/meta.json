@@ -1,0 +1,23 @@
+{
+  "id": "imhex-gltf",
+  "name": "ImHex · Gltf",
+  "version": "1.0.0",
+  "category": "executable",
+  "coverage": "partial",
+  "summary": "GL Transmission Format binary 3D model (.glb)",
+  "description": "GL Transmission Format binary 3D model (.glb)",
+  "tags": [
+    "imhex",
+    "gltf"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/gltf.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "gltf.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/gltf.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1326
+}

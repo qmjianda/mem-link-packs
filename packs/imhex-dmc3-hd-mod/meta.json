@@ -1,0 +1,23 @@
+{
+  "id": "imhex-dmc3-hd-mod",
+  "name": "ImHex · Dmc3 Hd Mod",
+  "version": "1.0.0",
+  "category": "media",
+  "coverage": "complete",
+  "summary": "Devil May Cry 3 HD .mod 3D model file",
+  "description": "Devil May Cry 3 HD .mod 3D model file",
+  "tags": [
+    "imhex",
+    "dmc3-hd-mod"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/dmc3_hd_mod.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "dmc3_hd_mod.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/dmc3_hd_mod.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1271
+}

@@ -1,0 +1,23 @@
+{
+  "id": "imhex-spore-spore-pdr",
+  "name": "ImHex · Spore Pdr",
+  "version": "1.0.0",
+  "category": "executable",
+  "coverage": "complete",
+  "summary": "Spore EAPd Resource (Binary Patch)",
+  "description": "Spore EAPd Resource (Binary Patch)",
+  "tags": [
+    "imhex",
+    "spore-pdr"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/Spore/spore-pdr.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "Spore/spore-pdr.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/Spore/spore-pdr.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1221
+}

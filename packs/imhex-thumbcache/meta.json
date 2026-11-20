@@ -1,0 +1,23 @@
+{
+  "id": "imhex-thumbcache",
+  "name": "ImHex · Thumbcache",
+  "version": "1.0.0",
+  "category": "system",
+  "coverage": "partial",
+  "summary": "Windows thumbcache files",
+  "description": "Windows thumbcache files",
+  "tags": [
+    "imhex",
+    "thumbcache"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/thumbcache.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "thumbcache.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/thumbcache.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1447
+}

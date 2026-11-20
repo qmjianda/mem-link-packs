@@ -1,0 +1,12 @@
+{
+  "id": "nes",
+  "name": "NES ROM",
+  "version": "1.0.0",
+  "category": "game",
+  "order": 10,
+  "summary": "iNES / NES 2.0 文件头、mapper 编号与 PRG/CHR 大小",
+  "description": "解析 NES / Famicom ROM 的 16 字节 iNES 文件头，包含 NES 2.0 扩展字段、mapper 拼接和 PRG/CHR 容量计算。",
+  "tags": ["nes", "famicom", "ines", "rom", "mapper"],
+  "author": "qmjianda",
+  "license": "MIT"
+}

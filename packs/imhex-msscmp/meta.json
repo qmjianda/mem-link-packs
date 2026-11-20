@@ -1,0 +1,23 @@
+{
+  "id": "imhex-msscmp",
+  "name": "ImHex · Msscmp",
+  "version": "1.0.0",
+  "category": "archive",
+  "coverage": "complete",
+  "summary": "MSSCMP (Miles Sound System Compressed Archive)",
+  "description": "MSSCMP (Miles Sound System Compressed Archive)",
+  "tags": [
+    "imhex",
+    "msscmp"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/msscmp.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "msscmp.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/msscmp.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1375
+}

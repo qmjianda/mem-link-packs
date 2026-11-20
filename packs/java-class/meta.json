@@ -1,0 +1,26 @@
+{
+  "id": "java-class",
+  "name": "Java class file",
+  "version": "1.0.0",
+  "category": "executable",
+  "order": 232,
+  "summary": "Java .class: version, a tag-dispatched constant pool, access flags and class refs.",
+  "description": "Java .class: version, a tag-dispatched constant pool, access flags and class refs.",
+  "tags": [
+    "executable",
+    "java",
+    "jvm",
+    "bytecode"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://docs.oracle.com/javase/specs/jvms/se17/html/jvms-4.html",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "java-class",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/java-class",
+    "license": "Nybble format registry"
+  }
+}

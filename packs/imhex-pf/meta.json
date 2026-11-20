@@ -1,0 +1,23 @@
+{
+  "id": "imhex-pf",
+  "name": "ImHex · Pf",
+  "version": "1.0.0",
+  "category": "system",
+  "coverage": "partial",
+  "summary": "Parse forensically relevant parts of Windows Prefetch(*.pf) (only uncompressed SCCA version)",
+  "description": "Parse forensically relevant parts of Windows Prefetch(*.pf) (only uncompressed SCCA version)",
+  "tags": [
+    "imhex",
+    "pf"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pf.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "pf.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pf.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1403
+}

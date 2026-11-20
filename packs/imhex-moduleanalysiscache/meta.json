@@ -1,0 +1,23 @@
+{
+  "id": "imhex-moduleanalysiscache",
+  "name": "ImHex · Moduleanalysiscache",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "complete",
+  "summary": "PSModuleCacheFile (ModuleAnalysisCache)",
+  "description": "PSModuleCacheFile (ModuleAnalysisCache)",
+  "tags": [
+    "imhex",
+    "moduleanalysiscache"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/moduleanalysiscache.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "moduleanalysiscache.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/moduleanalysiscache.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1371
+}

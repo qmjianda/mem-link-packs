@@ -1,0 +1,23 @@
+{
+  "id": "imhex-mp4",
+  "name": "ImHex · Mp4",
+  "version": "1.0.0",
+  "category": "media",
+  "coverage": "partial",
+  "summary": "MPEG-4 Part 14 digital multimedia container (MP4)",
+  "description": "MPEG-4 Part 14 digital multimedia container (MP4)",
+  "tags": [
+    "imhex",
+    "mp4"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/mp4.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "mp4.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/mp4.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1372
+}

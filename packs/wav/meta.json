@@ -1,0 +1,12 @@
+{
+  "id": "wav",
+  "name": "WAV",
+  "version": "1.0.0",
+  "category": "media",
+  "order": 100,
+  "summary": "RIFF/WAVE 头、fmt 块、data 块与时长",
+  "description": "解析标准 44 字节 WAV 文件头、RIFF 头、fmt 块和 data 块，并提供按 byteRate 计算时长的节点。",
+  "tags": ["wav", "wave", "riff", "audio", "pcm"],
+  "author": "qmjianda",
+  "license": "MIT"
+}

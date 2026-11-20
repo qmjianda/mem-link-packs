@@ -1,0 +1,23 @@
+{
+  "id": "imhex-ubiquiti",
+  "name": "ImHex · Ubiquiti",
+  "version": "1.0.0",
+  "category": "image",
+  "coverage": "complete",
+  "summary": "Ubiquiti Firmware (update) image",
+  "description": "Ubiquiti Firmware (update) image",
+  "tags": [
+    "imhex",
+    "ubiquiti"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ubiquiti.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "ubiquiti.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ubiquiti.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1451
+}

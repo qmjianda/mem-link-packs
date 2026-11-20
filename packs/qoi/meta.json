@@ -1,0 +1,25 @@
+{
+  "id": "qoi",
+  "name": "QOI image",
+  "version": "1.0.0",
+  "category": "image",
+  "order": 256,
+  "summary": "QOI (Quite OK Image) header and encoded pixel stream.",
+  "description": "QOI (Quite OK Image) header and encoded pixel stream.",
+  "tags": [
+    "image",
+    "lossless",
+    "graphics"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://qoiformat.org/",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "qoi",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/qoi",
+    "license": "Nybble format registry"
+  }
+}

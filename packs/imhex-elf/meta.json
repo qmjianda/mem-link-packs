@@ -1,0 +1,23 @@
+{
+  "id": "imhex-elf",
+  "name": "ImHex · Elf",
+  "version": "1.0.0",
+  "category": "executable",
+  "coverage": "partial",
+  "summary": "Executable and Linkable Format executable (ELF)",
+  "description": "Executable and Linkable Format executable (ELF)",
+  "tags": [
+    "imhex",
+    "elf"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/elf.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "elf.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/elf.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1281
+}

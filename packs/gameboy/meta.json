@@ -1,0 +1,28 @@
+{
+  "id": "gameboy",
+  "name": "Game Boy ROM",
+  "version": "1.0.0",
+  "category": "game",
+  "order": 221,
+  "summary": "Game Boy and Game Boy Color cartridge header at 0x100: title, mapper, ROM and RAM sizes, and both checksums.",
+  "description": "Game Boy and Game Boy Color cartridge header at 0x100: title, mapper, ROM and RAM sizes, and both checksums.",
+  "tags": [
+    "game",
+    "rom",
+    "nintendo",
+    "gameboy",
+    "emulation",
+    "cartridge"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://gbdev.io/pandocs/The_Cartridge_Header.html",
+  "coverage": "complete",
+  "source": {
+    "provider": "nybble",
+    "id": "gameboy",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/gameboy",
+    "license": "Nybble format registry"
+  }
+}

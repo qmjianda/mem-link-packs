@@ -1,0 +1,23 @@
+{
+  "id": "imhex-fs-mbr",
+  "name": "ImHex · Mbr",
+  "version": "1.0.0",
+  "category": "system",
+  "coverage": "complete",
+  "summary": "Master boot record - IBM",
+  "description": "Master boot record - IBM",
+  "tags": [
+    "imhex",
+    "mbr"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/fs/mbr.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "fs/mbr.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/fs/mbr.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1315
+}

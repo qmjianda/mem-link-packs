@@ -1,0 +1,26 @@
+{
+  "id": "truetype",
+  "name": "TrueType / OpenType font",
+  "version": "1.0.0",
+  "category": "media",
+  "order": 263,
+  "summary": "SFNT font: header + table directory (TrueType and OpenType/CFF).",
+  "description": "SFNT font: header + table directory (TrueType and OpenType/CFF).",
+  "tags": [
+    "font",
+    "typography",
+    "sfnt",
+    "opentype"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://learn.microsoft.com/en-us/typography/opentype/spec/otff",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "truetype",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/truetype",
+    "license": "Nybble format registry"
+  }
+}

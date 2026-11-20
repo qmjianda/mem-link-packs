@@ -1,0 +1,23 @@
+{
+  "id": "imhex-fdt",
+  "name": "ImHex · Fdt",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "Flat Linux Device Tree blob",
+  "description": "Flat Linux Device Tree blob",
+  "tags": [
+    "imhex",
+    "fdt"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/fdt.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "fdt.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/fdt.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1288
+}

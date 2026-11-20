@@ -1,0 +1,23 @@
+{
+  "id": "imhex-magic",
+  "name": "ImHex · Magic",
+  "version": "1.0.0",
+  "category": "database",
+  "coverage": "partial",
+  "summary": "file / libmagic Magic Database",
+  "description": "file / libmagic Magic Database",
+  "tags": [
+    "imhex",
+    "magic"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/magic.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "magic.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/magic.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1364
+}

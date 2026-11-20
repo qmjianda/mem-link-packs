@@ -1,0 +1,29 @@
+{
+  "id": "woff2",
+  "name": "WOFF2 font",
+  "version": "1.0.0",
+  "category": "media",
+  "order": 272,
+  "summary": "WOFF2 web font header: flavor, table count, compressed and decompressed sizes, metadata and private blocks.",
+  "description": "WOFF2 web font header: flavor, table count, compressed and decompressed sizes, metadata and private blocks.",
+  "tags": [
+    "font",
+    "woff",
+    "web",
+    "typography",
+    "sfnt",
+    "brotli",
+    "compression"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://www.w3.org/TR/WOFF2/",
+  "coverage": "complete",
+  "source": {
+    "provider": "nybble",
+    "id": "woff2",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/woff2",
+    "license": "Nybble format registry"
+  }
+}

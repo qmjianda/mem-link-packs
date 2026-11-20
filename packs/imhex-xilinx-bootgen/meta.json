@@ -1,0 +1,23 @@
+{
+  "id": "imhex-xilinx-bootgen",
+  "name": "ImHex · Xilinx Bootgen",
+  "version": "1.0.0",
+  "category": "image",
+  "coverage": "partial",
+  "summary": "Xilinx Zynq UltraScale+ Boot Image",
+  "description": "Xilinx Zynq UltraScale+ Boot Image",
+  "tags": [
+    "imhex",
+    "xilinx-bootgen"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/xilinx_bootgen.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "xilinx_bootgen.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/xilinx_bootgen.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1478
+}

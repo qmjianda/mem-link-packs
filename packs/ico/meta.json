@@ -1,0 +1,25 @@
+{
+  "id": "ico",
+  "name": "Windows icon / cursor",
+  "version": "1.0.0",
+  "category": "image",
+  "order": 230,
+  "summary": "ICO / CUR icon directory and per-image entries.",
+  "description": "ICO / CUR icon directory and per-image entries.",
+  "tags": [
+    "image",
+    "icon",
+    "windows"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://en.wikipedia.org/wiki/ICO_(file_format)",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "ico",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/ico",
+    "license": "Nybble format registry"
+  }
+}

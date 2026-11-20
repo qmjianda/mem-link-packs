@@ -1,0 +1,23 @@
+{
+  "id": "imhex-ffx-all-a-abilities-bin",
+  "name": "ImHex · A Abilities.Bin",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "A Abilities.Bin（移植自 ImHex Pattern Language）",
+  "description": "A Abilities.Bin 的 ImHex 固定布局移植。",
+  "tags": [
+    "imhex",
+    "a-abilities-bin"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/all/a_abilities.bin.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "ffx/all/a_abilities.bin.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/all/a_abilities.bin.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1290
+}

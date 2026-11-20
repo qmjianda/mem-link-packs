@@ -1,0 +1,23 @@
+{
+  "id": "imhex-gif",
+  "name": "ImHex · Gif",
+  "version": "1.0.0",
+  "category": "image",
+  "coverage": "partial",
+  "summary": "GIF image",
+  "description": "GIF image",
+  "tags": [
+    "imhex",
+    "gif"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/gif.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "gif.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/gif.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1325
+}

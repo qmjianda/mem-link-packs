@@ -1,0 +1,23 @@
+{
+  "id": "imhex-gtasa-save",
+  "name": "ImHex · Gtasa Save",
+  "version": "1.0.0",
+  "category": "game",
+  "coverage": "complete",
+  "summary": "GTA San Andreas Save Game",
+  "description": "GTA San Andreas Save Game",
+  "tags": [
+    "imhex",
+    "gtasa-save"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/gtasa_save.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "gtasa_save.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/gtasa_save.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1329
+}

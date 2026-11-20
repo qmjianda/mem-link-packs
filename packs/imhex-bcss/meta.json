@@ -1,0 +1,23 @@
+{
+  "id": "imhex-bcss",
+  "name": "ImHex · Bcss",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "BeyondCompare Snapshot (BCSS) file",
+  "description": "BeyondCompare Snapshot (BCSS) file",
+  "tags": [
+    "imhex",
+    "bcss"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bcss.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "bcss.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bcss.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1242
+}

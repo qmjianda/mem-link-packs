@@ -1,0 +1,23 @@
+{
+  "id": "imhex-pe",
+  "name": "ImHex · Pe",
+  "version": "1.0.0",
+  "category": "executable",
+  "coverage": "partial",
+  "summary": "Microsoft PE Portable Executable (exe/dll)",
+  "description": "Microsoft PE Portable Executable (exe/dll)",
+  "tags": [
+    "imhex",
+    "pe"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pe.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "pe.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pe.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1400
+}

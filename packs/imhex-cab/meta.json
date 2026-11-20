@@ -1,0 +1,23 @@
+{
+  "id": "imhex-cab",
+  "name": "ImHex · Cab",
+  "version": "1.0.0",
+  "category": "archive",
+  "coverage": "partial",
+  "summary": "Microsoft Cabinet (CAB) Files",
+  "description": "Microsoft Cabinet (CAB) Files",
+  "tags": [
+    "imhex",
+    "cab"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/cab.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "cab.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/cab.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1254
+}

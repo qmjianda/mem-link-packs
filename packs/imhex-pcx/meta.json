@@ -1,0 +1,23 @@
+{
+  "id": "imhex-pcx",
+  "name": "ImHex · Pcx",
+  "version": "1.0.0",
+  "category": "image",
+  "coverage": "complete",
+  "summary": "PCX Image",
+  "description": "PCX Image",
+  "tags": [
+    "imhex",
+    "pcx"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pcx.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "pcx.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pcx.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1399
+}

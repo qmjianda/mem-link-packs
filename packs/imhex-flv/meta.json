@@ -1,0 +1,23 @@
+{
+  "id": "imhex-flv",
+  "name": "ImHex · Flv",
+  "version": "1.0.0",
+  "category": "media",
+  "coverage": "complete",
+  "summary": "flv Archive",
+  "description": "flv Archive",
+  "tags": [
+    "imhex",
+    "flv"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/flv.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "flv.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/flv.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1310
+}

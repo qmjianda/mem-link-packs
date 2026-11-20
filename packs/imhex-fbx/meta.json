@@ -1,0 +1,23 @@
+{
+  "id": "imhex-fbx",
+  "name": "ImHex · Fbx",
+  "version": "1.0.0",
+  "category": "executable",
+  "coverage": "partial",
+  "summary": "Kaydara FBX Binary",
+  "description": "Kaydara FBX Binary",
+  "tags": [
+    "imhex",
+    "fbx"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/fbx.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "fbx.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/fbx.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1287
+}

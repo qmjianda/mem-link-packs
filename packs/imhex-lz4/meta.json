@@ -1,0 +1,23 @@
+{
+  "id": "imhex-lz4",
+  "name": "ImHex · Lz4",
+  "version": "1.0.0",
+  "category": "archive",
+  "coverage": "complete",
+  "summary": "LZ4 Frame Format",
+  "description": "LZ4 Frame Format",
+  "tags": [
+    "imhex",
+    "lz4"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/lz4.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "lz4.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/lz4.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1361
+}

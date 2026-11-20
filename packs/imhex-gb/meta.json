@@ -1,0 +1,23 @@
+{
+  "id": "imhex-gb",
+  "name": "ImHex · Gb",
+  "version": "1.0.0",
+  "category": "game",
+  "coverage": "partial",
+  "summary": "Gameboy ROM",
+  "description": "Gameboy ROM",
+  "tags": [
+    "imhex",
+    "gb"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/gb.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "gb.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/gb.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1320
+}

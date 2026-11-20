@@ -1,0 +1,23 @@
+{
+  "id": "imhex-ccvxl",
+  "name": "ImHex · Ccvxl",
+  "version": "1.0.0",
+  "category": "model",
+  "coverage": "complete",
+  "summary": "Command and Conquer Voxel Model",
+  "description": "Command and Conquer Voxel Model",
+  "tags": [
+    "imhex",
+    "ccvxl"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ccvxl.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "ccvxl.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ccvxl.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1257
+}

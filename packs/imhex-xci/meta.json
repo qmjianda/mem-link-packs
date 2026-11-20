@@ -1,0 +1,23 @@
+{
+  "id": "imhex-xci",
+  "name": "ImHex · Xci",
+  "version": "1.0.0",
+  "category": "executable",
+  "coverage": "complete",
+  "summary": "Nintendo Switch XCI cartridge ROM",
+  "description": "Nintendo Switch XCI cartridge ROM",
+  "tags": [
+    "imhex",
+    "xci"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/xci.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "xci.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/xci.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1474
+}

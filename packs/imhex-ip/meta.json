@@ -1,0 +1,23 @@
+{
+  "id": "imhex-ip",
+  "name": "ImHex · Ip",
+  "version": "1.0.0",
+  "category": "network",
+  "coverage": "partial",
+  "summary": "Ethernet II Frames (IP Packets)",
+  "description": "Ethernet II Frames (IP Packets)",
+  "tags": [
+    "imhex",
+    "ip"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ip.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "ip.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ip.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1343
+}

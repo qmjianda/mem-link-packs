@@ -1,0 +1,27 @@
+{
+  "id": "openexr",
+  "name": "OpenEXR image",
+  "version": "1.0.0",
+  "category": "image",
+  "order": 250,
+  "summary": "OpenEXR magic and version flags, then a walk of every header attribute by name, type and size.",
+  "description": "OpenEXR magic and version flags, then a walk of every header attribute by name, type and size.",
+  "tags": [
+    "image",
+    "hdr",
+    "vfx",
+    "raster",
+    "film"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://openexr.com/en/latest/OpenEXRFileLayout.html",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "openexr",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/openexr",
+    "license": "Nybble format registry"
+  }
+}

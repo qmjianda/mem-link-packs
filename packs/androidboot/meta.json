@@ -1,0 +1,27 @@
+{
+  "id": "androidboot",
+  "name": "Android boot image",
+  "version": "1.0.0",
+  "category": "system",
+  "order": 202,
+  "summary": "Android boot.img header, versions 0 through 2, with the kernel command line.",
+  "description": "Android boot.img header, versions 0 through 2, with the kernel command line.",
+  "tags": [
+    "firmware",
+    "android",
+    "boot",
+    "mobile",
+    "kernel"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://source.android.com/docs/core/architecture/bootloader/boot-image-header",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "androidboot",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/androidboot",
+    "license": "Nybble format registry"
+  }
+}

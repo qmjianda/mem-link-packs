@@ -1,0 +1,131 @@
+/// <reference path="../../../types/memlink-bp.d.ts" />
+
+// 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
+// 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/nacp.hexpat
+// 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
+// 覆盖：complete
+const ApplicationTitle = struct("ApplicationTitle", [
+  str("name", { size: 512 }),
+  str("publisher", { size: 256 }),
+]);
+
+const ApplicationNeighborDetectionClientConfiguration = struct("ApplicationNeighborDetectionClientConfiguration", [
+  bytes("send_group_configuration", { size: 24 }),
+  bytes("receivable_group_configurations", { size: 384 }),
+]);
+
+const ApplicationJitConfiguration = struct("ApplicationJitConfiguration", [
+  u64("flags", {  }),
+  u64("memory_size", {  }),
+]);
+
+const SupportedLanguages = struct("SupportedLanguages", [
+  bits("american_english", 1, { at: 0, bit: 0, unit: 4, label: "american_english" }),
+  bits("british_english", 1, { at: 0, bit: 1, unit: 4, label: "british_english" }),
+  bits("japanese", 1, { at: 0, bit: 2, unit: 4, label: "japanese" }),
+  bits("french", 1, { at: 0, bit: 3, unit: 4, label: "french" }),
+  bits("herman", 1, { at: 0, bit: 4, unit: 4, label: "herman" }),
+  bits("latin_american_spanish", 1, { at: 0, bit: 5, unit: 4, label: "latin_american_spanish" }),
+  bits("spanish", 1, { at: 0, bit: 6, unit: 4, label: "spanish" }),
+  bits("italian", 1, { at: 0, bit: 7, unit: 4, label: "italian" }),
+  bits("dutch", 1, { at: 0, bit: 8, unit: 4, label: "dutch" }),
+  bits("canadian_french", 1, { at: 0, bit: 9, unit: 4, label: "canadian_french" }),
+  bits("portuguese", 1, { at: 0, bit: 10, unit: 4, label: "portuguese" }),
+  bits("russian", 1, { at: 0, bit: 11, unit: 4, label: "russian" }),
+  bits("korean", 1, { at: 0, bit: 12, unit: 4, label: "korean" }),
+  bits("traditional_chinese", 1, { at: 0, bit: 13, unit: 4, label: "traditional_chinese" }),
+  bits("simplified_chinese", 1, { at: 0, bit: 14, unit: 4, label: "simplified_chinese" }),
+]);
+
+const Nacp = struct("Nacp", [
+  record("american_english_title", ApplicationTitle),
+  record("british_english_title", ApplicationTitle),
+  record("japanese_title", ApplicationTitle),
+  record("french_title", ApplicationTitle),
+  record("herman_title", ApplicationTitle),
+  record("latin_american_spanish_title", ApplicationTitle),
+  record("spanish_title", ApplicationTitle),
+  record("italian_title", ApplicationTitle),
+  record("dutch_title", ApplicationTitle),
+  record("canadian_french_title", ApplicationTitle),
+  record("portuguese_title", ApplicationTitle),
+  record("russian_title", ApplicationTitle),
+  record("korean_title", ApplicationTitle),
+  record("traditional_chinese_title", ApplicationTitle),
+  record("simplified_chinese_title", ApplicationTitle),
+  record("reserved_title", ApplicationTitle),
+  str("isbn", { size: 37 }),
+  bool("startup_user_account", {  }),
+  bool("user_account_switch_lock", {  }),
+  u8("add_on_content_registration_type", {  }),
+  u32("attribute_flag", {  }),
+  record("supported_language_flag", SupportedLanguages),
+  u32("parential_control_flag", {  }),
+  bool("screenshot", {  }),
+  u8("video_capture", { values: { "0": "Disabled", "1": "Enabled", "2": "Automatic" } }),
+  bool("data_loss_confirmation", {  }),
+  u8("play_log_policy", { values: { "0": "All", "1": "LogOnly", "2": "None", "3": "InputFlagSet" } }),
+  u64("presence_group_id", {  }),
+  str("rating_age", { size: 32 }),
+  str("display_version", { size: 16 }),
+  u64("add_on_content_base_id", {  }),
+  u64("save_data_owner_id", {  }),
+  u64("user_account_save_data_size", {  }),
+  u64("user_account_save_data_journal_size", {  }),
+  u64("device_save_data_size", {  }),
+  u64("device_save_data_journal_size", {  }),
+  u64("bcat_delivery_cache_storage_size", {  }),
+  u64("application_error_code_category", {  }),
+  array("local_communication_id", "u64", 8),
+  u8("logo_type", {  }),
+  u8("logo_handling", {  }),
+  u8("runtime_add_on_content_install", {  }),
+  u8("runtime_parameter_delivery", {  }),
+  pad(2),
+  bool("crash_report", {  }),
+  bool("hdcp", {  }),
+  u64("pseudo_device_id_seed", {  }),
+  bytes("bcat_passprase", { size: 65 }),
+  bool("startup_user_account_option", {  }),
+  bytes("user_accout_save_data_operation", { size: 6 }),
+  u64("user_account_save_data_size_max", {  }),
+  u64("user_account_save_data_journal_size_max", {  }),
+  u64("device_save_data_size_max", {  }),
+  u64("device_save_data_journal_size_max", {  }),
+  u64("temporary_storage_size", {  }),
+  u64("cache_storage_size", {  }),
+  u64("cache_storage_journal_size", {  }),
+  u64("cache_storage_data_and_journal_size_max", {  }),
+  u16("cache_storage_index_max", {  }),
+  pad(6),
+  array("play_log_queryable_application_id", "u64", 16),
+  u8("play_log_query_capability", { values: { "0": "None", "1": "WhiteList", "2": "All" } }),
+  bool("repair", {  }),
+  u8("program_index", {  }),
+  bool("requires_network_service_license_on_launch", {  }),
+  pad(4),
+  record("neighbor_detection_client_configuration", ApplicationNeighborDetectionClientConfiguration),
+  record("jit_configuration", ApplicationJitConfiguration),
+  array("required_add_on_contents_set_binary_descriptor", "u16", 32),
+  bool("play_report_permission", {  }),
+  bool("crash_screenshot_for_prod", {  }),
+  bool("crash_screenshot_for_dev", {  }),
+  pad(5),
+  array("accessible_launch_required_version", "u64", 8),
+  pad(3000),
+]);
+
+export default definePack({
+  name: "Nintendo Switch NACP",
+  endian: "little",
+  pointerSize: 8,
+  types: [ApplicationTitle, ApplicationNeighborDetectionClientConfiguration, ApplicationJitConfiguration, SupportedLanguages, Nacp],
+  nodes: {
+    "entry": structNode(Nacp, { label: "Nacp（入口）" }),
+    "ApplicationTitle": structNode(ApplicationTitle, { label: "ApplicationTitle" }),
+    "ApplicationNeighborDetectionClientConfiguration": structNode(ApplicationNeighborDetectionClientConfiguration, { label: "ApplicationNeighborDetectionClientConfiguration" }),
+    "ApplicationJitConfiguration": structNode(ApplicationJitConfiguration, { label: "ApplicationJitConfiguration" }),
+    "SupportedLanguages": structNode(SupportedLanguages, { label: "SupportedLanguages" }),
+  },
+});
+

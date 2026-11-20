@@ -1,0 +1,23 @@
+{
+  "id": "imhex-wintec-tes",
+  "name": "ImHex · Wintec Tes",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "complete",
+  "summary": "Wintec TES GPS log",
+  "description": "Wintec TES GPS log",
+  "tags": [
+    "imhex",
+    "wintec-tes"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/wintec_tes.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "wintec_tes.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/wintec_tes.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1472
+}

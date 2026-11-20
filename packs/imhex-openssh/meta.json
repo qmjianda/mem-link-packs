@@ -1,0 +1,23 @@
+{
+  "id": "imhex-openssh",
+  "name": "ImHex · Openssh",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "OpenSSH private key",
+  "description": "OpenSSH private key",
+  "tags": [
+    "imhex",
+    "openssh"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/openssh.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "openssh.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/openssh.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1390
+}

@@ -1,0 +1,12 @@
+{
+  "id": "jpeg",
+  "name": "JPEG",
+  "version": "1.0.0",
+  "category": "image",
+  "order": 90,
+  "summary": "JPEG 标记、JFIF APP0、SOF0 与 SOS 段",
+  "description": "解析 JPEG 标记流中的 SOI、通用段头、JFIF APP0、SOF0 帧头和 SOS 扫描头（常见 3 分量布局）。",
+  "tags": ["jpeg", "jpg", "image", "jfif", "exif"],
+  "author": "qmjianda",
+  "license": "MIT"
+}

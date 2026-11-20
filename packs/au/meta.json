@@ -1,0 +1,27 @@
+{
+  "id": "au",
+  "name": "Sun AU audio",
+  "version": "1.0.0",
+  "category": "media",
+  "order": 205,
+  "summary": "NeXT/Sun .au audio header: encoding, sample rate, channels and the annotation field.",
+  "description": "NeXT/Sun .au audio header: encoding, sample rate, channels and the annotation field.",
+  "tags": [
+    "audio",
+    "unix",
+    "pcm",
+    "telephony",
+    "next"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://en.wikipedia.org/wiki/Au_file_format",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "au",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/au",
+    "license": "Nybble format registry"
+  }
+}

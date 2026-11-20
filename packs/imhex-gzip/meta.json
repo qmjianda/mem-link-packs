@@ -1,0 +1,23 @@
+{
+  "id": "imhex-gzip",
+  "name": "ImHex · Gzip",
+  "version": "1.0.0",
+  "category": "archive",
+  "coverage": "partial",
+  "summary": "GZip compressed data",
+  "description": "GZip compressed data",
+  "tags": [
+    "imhex",
+    "gzip"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/gzip.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "gzip.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/gzip.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1331
+}

@@ -1,0 +1,28 @@
+{
+  "id": "las",
+  "name": "LAS point cloud",
+  "version": "1.0.0",
+  "category": "model",
+  "order": 234,
+  "summary": "ASPRS LAS public header block: point format, scaling, bounding box and the 1.3 / 1.4 additions.",
+  "description": "ASPRS LAS public header block: point format, scaling, bounding box and the 1.3 / 1.4 additions.",
+  "tags": [
+    "model",
+    "3d",
+    "lidar",
+    "point-cloud",
+    "geospatial",
+    "science"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://www.asprs.org/wp-content/uploads/2019/07/LAS_1_4_r15.pdf",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "las",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/las",
+    "license": "Nybble format registry"
+  }
+}

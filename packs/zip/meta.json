@@ -1,0 +1,12 @@
+{
+  "id": "zip",
+  "name": "ZIP",
+  "version": "1.0.0",
+  "category": "archive",
+  "order": 50,
+  "summary": "本地文件头、中央目录项、EOCD 与数据描述符",
+  "description": "解析 ZIP 归档的 local file header、central directory header、EOCD 和数据描述符，含通用标志位与 EOCD 偏移计算。",
+  "tags": ["zip", "archive", "deflate", "central-directory"],
+  "author": "qmjianda",
+  "license": "MIT"
+}

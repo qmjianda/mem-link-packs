@@ -1,0 +1,23 @@
+{
+  "id": "imhex-fs-exfat",
+  "name": "ImHex · Exfat",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "Extensible File Allocation Table (exFAT)",
+  "description": "Extensible File Allocation Table (exFAT)",
+  "tags": [
+    "imhex",
+    "exfat"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/fs/exfat.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "fs/exfat.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/fs/exfat.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1312
+}

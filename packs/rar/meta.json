@@ -1,0 +1,26 @@
+{
+  "id": "rar",
+  "name": "RAR archive",
+  "version": "1.0.0",
+  "category": "archive",
+  "order": 257,
+  "summary": "RAR 5.0 (main header and first file header) and RAR 1.5-4.x (full block walk with decoded main and file headers).",
+  "description": "RAR 5.0 (main header and first file header) and RAR 1.5-4.x (full block walk with decoded main and file headers).",
+  "tags": [
+    "archive",
+    "compression",
+    "rar",
+    "winrar"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://www.rarlab.com/technote.htm",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "rar",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/rar",
+    "license": "Nybble format registry"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/qmjianda/mem-link-packs/main/store.schema.json",
+  "title": "mem-link pack store index",
+  "type": "object",
+  "required": ["format", "packs"],
+  "properties": {
+    "format": { "const": "memlink-pack-store/1" },
+    "name": { "type": "string" },
+    "description": { "type": "string" },
+    "homepage": { "type": "string" },
+    "updatedAt": { "type": "string" },
+    "packs": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/pack" }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "properties": {
+        "provider": { "type": "string" },
+        "id": { "type": "string" },
+        "path": { "type": "string" },
+        "url": { "type": "string" },
+        "license": { "type": "string" }
+      }
+    },
+    "pack": {
+      "type": "object",
+      "required": ["id", "name", "version", "category", "summary", "path"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "name": { "type": "string" },
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+(?:[-+][0-9A-Za-z.-]+)?$"
+        },
+        "category": { "type": "string" },
+        "order": { "type": "number" },
+        "summary": { "type": "string" },
+        "description": { "type": "string" },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "author": { "type": "string" },
+        "license": { "type": "string" },
+        "homepage": { "type": "string" },
+        "featured": { "type": "boolean" },
+        "coverage": { "enum": ["complete", "partial"] },
+        "source": { "$ref": "#/$defs/source" },
+        "path": { "type": "string", "pattern": "\\.bp\\.ts$" },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "size": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

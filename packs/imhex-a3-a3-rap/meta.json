@@ -1,0 +1,23 @@
+{
+  "id": "imhex-a3-a3-rap",
+  "name": "ImHex · A3 Rap",
+  "version": "1.0.0",
+  "category": "executable",
+  "coverage": "partial",
+  "summary": "Arma 3 binary configuration format",
+  "description": "Arma 3 binary configuration format",
+  "tags": [
+    "imhex",
+    "a3-rap"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/a3/a3_rap.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "a3/a3_rap.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/a3/a3_rap.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1225
+}

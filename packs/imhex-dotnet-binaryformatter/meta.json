@@ -1,0 +1,23 @@
+{
+  "id": "imhex-dotnet-binaryformatter",
+  "name": "ImHex · Dotnet Binaryformatter",
+  "version": "1.0.0",
+  "category": "executable",
+  "coverage": "partial",
+  "summary": ".NET BinaryFormatter (System.Runtime.Serialization.Formatters.Binary, obsolete)",
+  "description": ".NET BinaryFormatter (System.Runtime.Serialization.Formatters.Binary, obsolete)",
+  "tags": [
+    "imhex",
+    "dotnet-binaryformatter"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/dotnet_binaryformatter.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "dotnet_binaryformatter.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/dotnet_binaryformatter.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1275
+}

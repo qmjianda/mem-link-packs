@@ -1,0 +1,12 @@
+{
+  "id": "sqlite",
+  "name": "SQLite 3",
+  "version": "1.0.0",
+  "category": "database",
+  "order": 20,
+  "summary": "数据库头、B-tree 页头、freelist、WAL 与 varint",
+  "description": "解析 SQLite 3 数据库的 100 字节文件头、B-tree 叶子/内部页头、freelist trunk、WAL 文件头，并提供 varint 与页地址计算节点。",
+  "tags": ["sqlite", "database", "btree", "wal", "varint"],
+  "author": "qmjianda",
+  "license": "MIT"
+}

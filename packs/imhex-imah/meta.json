@@ -1,0 +1,23 @@
+{
+  "id": "imhex-imah",
+  "name": "ImHex · Imah",
+  "version": "1.0.0",
+  "category": "system",
+  "coverage": "complete",
+  "summary": "DJI Encrypted/Signed Firmware (IM*H)",
+  "description": "DJI Encrypted/Signed Firmware (IM*H)",
+  "tags": [
+    "imhex",
+    "imah"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/imah.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "imah.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/imah.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1341
+}

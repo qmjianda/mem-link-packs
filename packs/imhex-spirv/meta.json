@@ -1,0 +1,23 @@
+{
+  "id": "imhex-spirv",
+  "name": "ImHex · Spirv",
+  "version": "1.0.0",
+  "category": "executable",
+  "coverage": "complete",
+  "summary": "Khronos Group SPIR-V",
+  "description": "Khronos Group SPIR-V",
+  "tags": [
+    "imhex",
+    "spirv"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/spirv.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "spirv.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/spirv.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1437
+}

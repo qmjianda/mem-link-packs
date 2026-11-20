@@ -1,0 +1,23 @@
+{
+  "id": "imhex-protobuf",
+  "name": "ImHex · Protobuf",
+  "version": "1.0.0",
+  "category": "data",
+  "coverage": "partial",
+  "summary": "Google Protobuf wire encoding (.pb)",
+  "description": "Google Protobuf wire encoding (.pb)",
+  "tags": [
+    "imhex",
+    "protobuf"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/protobuf.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "protobuf.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/protobuf.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1412
+}

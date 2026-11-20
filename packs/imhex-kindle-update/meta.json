@@ -1,0 +1,23 @@
+{
+  "id": "imhex-kindle-update",
+  "name": "ImHex · Kindle Update",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "complete",
+  "summary": "Kindle Update Package",
+  "description": "Kindle Update Package",
+  "tags": [
+    "imhex",
+    "kindle-update"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/kindle_update.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "kindle_update.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/kindle_update.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1350
+}

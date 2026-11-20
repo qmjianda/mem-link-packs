@@ -1,0 +1,23 @@
+{
+  "id": "imhex-tga",
+  "name": "ImHex · Tga",
+  "version": "1.0.0",
+  "category": "image",
+  "coverage": "partial",
+  "summary": "Truevision TGA/TARGA image",
+  "description": "Truevision TGA/TARGA image",
+  "tags": [
+    "imhex",
+    "tga"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/tga.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "tga.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/tga.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1446
+}

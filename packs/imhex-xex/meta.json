@@ -1,0 +1,23 @@
+{
+  "id": "imhex-xex",
+  "name": "ImHex · Xex",
+  "version": "1.0.0",
+  "category": "executable",
+  "coverage": "partial",
+  "summary": "Atari 8-bit binary format (.xex)",
+  "description": "Atari 8-bit binary format (.xex)",
+  "tags": [
+    "imhex",
+    "xex"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/xex.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "xex.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/xex.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1475
+}

@@ -1,0 +1,27 @@
+{
+  "id": "flv",
+  "name": "FLV video",
+  "version": "1.0.0",
+  "category": "media",
+  "order": 220,
+  "summary": "Flash Video: header and the full tag stream, with audio, video and script tag headers decoded.",
+  "description": "Flash Video: header and the full tag stream, with audio, video and script tag headers decoded.",
+  "tags": [
+    "video",
+    "audio",
+    "flash",
+    "container",
+    "streaming"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://rtmp.veriskope.com/pdf/video_file_format_spec_v10_1.pdf",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "flv",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/flv",
+    "license": "Nybble format registry"
+  }
+}

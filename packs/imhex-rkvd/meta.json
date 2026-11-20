@@ -1,0 +1,23 @@
+{
+  "id": "imhex-rkvd",
+  "name": "ImHex · Rkvd",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "complete",
+  "summary": "Rockchip Vendor Storage",
+  "description": "Rockchip Vendor Storage",
+  "tags": [
+    "imhex",
+    "rkvd"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/rkvd.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "rkvd.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/rkvd.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1423
+}

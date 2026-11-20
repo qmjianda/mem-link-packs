@@ -1,0 +1,23 @@
+{
+  "id": "imhex-ffx-all-mon-bin",
+  "name": "ImHex · Mon.Bin",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "Mon.Bin（移植自 ImHex Pattern Language）",
+  "description": "Mon.Bin 的 ImHex 固定布局移植。",
+  "tags": [
+    "imhex",
+    "mon-bin"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/all/mon.bin.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "ffx/all/mon.bin.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/all/mon.bin.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1293
+}

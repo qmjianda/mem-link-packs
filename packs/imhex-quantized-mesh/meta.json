@@ -1,0 +1,23 @@
+{
+  "id": "imhex-quantized-mesh",
+  "name": "ImHex · Quantized Mesh",
+  "version": "1.0.0",
+  "category": "model",
+  "coverage": "partial",
+  "summary": "Cesium quantized-mesh terrain",
+  "description": "Cesium quantized-mesh terrain",
+  "tags": [
+    "imhex",
+    "quantized-mesh"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/quantized-mesh.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "quantized-mesh.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/quantized-mesh.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1419
+}

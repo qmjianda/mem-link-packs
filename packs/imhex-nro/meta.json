@@ -1,0 +1,23 @@
+{
+  "id": "imhex-nro",
+  "name": "ImHex · Nro",
+  "version": "1.0.0",
+  "category": "executable",
+  "coverage": "complete",
+  "summary": "Nintendo Switch NRO",
+  "description": "Nintendo Switch NRO",
+  "tags": [
+    "imhex",
+    "nro"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/nro.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "nro.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/nro.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1384
+}

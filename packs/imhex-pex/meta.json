@@ -1,0 +1,23 @@
+{
+  "id": "imhex-pex",
+  "name": "ImHex · Pex",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "Bethesda Papyrus executable compiled script file",
+  "description": "Bethesda Papyrus executable compiled script file",
+  "tags": [
+    "imhex",
+    "pex"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pex.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "pex.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pex.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1402
+}

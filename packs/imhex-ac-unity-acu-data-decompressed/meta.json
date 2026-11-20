@@ -1,0 +1,23 @@
+{
+  "id": "imhex-ac-unity-acu-data-decompressed",
+  "name": "ImHex · Acu Data Decompressed",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "complete",
+  "summary": "Assassin's Creed: Unity's Decompressed .data file",
+  "description": "Assassin's Creed: Unity's Decompressed .data file",
+  "tags": [
+    "imhex",
+    "acu-data-decompressed"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/AC Unity/acu_data_decompressed.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "AC Unity/acu_data_decompressed.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/AC Unity/acu_data_decompressed.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1202
+}

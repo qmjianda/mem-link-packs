@@ -1,0 +1,23 @@
+{
+  "id": "imhex-uefi",
+  "name": "ImHex · Uefi",
+  "version": "1.0.0",
+  "category": "system",
+  "coverage": "complete",
+  "summary": "UEFI efivars",
+  "description": "UEFI efivars",
+  "tags": [
+    "imhex",
+    "uefi"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/uefi.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "uefi.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/uefi.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1452
+}

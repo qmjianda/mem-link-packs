@@ -1,0 +1,23 @@
+{
+  "id": "imhex-ccpal",
+  "name": "ImHex · Ccpal",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "complete",
+  "summary": "Command and Conquer Voxel Palette",
+  "description": "Command and Conquer Voxel Palette",
+  "tags": [
+    "imhex",
+    "ccpal"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ccpal.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "ccpal.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ccpal.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1256
+}

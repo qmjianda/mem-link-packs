@@ -1,0 +1,29 @@
+{
+  "id": "matroska",
+  "name": "Matroska / WebM video",
+  "version": "1.0.0",
+  "category": "media",
+  "order": 239,
+  "summary": "Matroska and WebM: the EBML element tree, with the segment info, tracks, clusters and cues decoded.",
+  "description": "Matroska and WebM: the EBML element tree, with the segment info, tracks, clusters and cues decoded.",
+  "tags": [
+    "video",
+    "audio",
+    "container",
+    "matroska",
+    "mkv",
+    "webm",
+    "ebml"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://www.matroska.org/technical/elements.html",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "matroska",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/matroska",
+    "license": "Nybble format registry"
+  }
+}

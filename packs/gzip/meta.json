@@ -1,0 +1,27 @@
+{
+  "id": "gzip",
+  "name": "gzip compressed",
+  "version": "1.0.0",
+  "category": "archive",
+  "order": 226,
+  "summary": "gzip member header, including the optional extra field, original file name and comment.",
+  "description": "gzip member header, including the optional extra field, original file name and comment.",
+  "tags": [
+    "archive",
+    "compression",
+    "gzip",
+    "deflate",
+    "unix"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://www.rfc-editor.org/rfc/rfc1952",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "gzip",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/gzip",
+    "license": "Nybble format registry"
+  }
+}

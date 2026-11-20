@@ -1,0 +1,28 @@
+{
+  "id": "apfs",
+  "name": "APFS container",
+  "version": "1.0.0",
+  "category": "system",
+  "order": 203,
+  "summary": "Apple File System container superblock, its object map, and the first volume superblock it maps to.",
+  "description": "Apple File System container superblock, its object map, and the first volume superblock it maps to.",
+  "tags": [
+    "filesystem",
+    "apple",
+    "macos",
+    "ios",
+    "apfs",
+    "forensics"
+  ],
+  "author": "Nybble",
+  "license": "Free use / redistribution (Nybble registry)",
+  "homepage": "https://developer.apple.com/support/downloads/Apple-File-System-Reference.pdf",
+  "coverage": "partial",
+  "source": {
+    "provider": "nybble",
+    "id": "apfs",
+    "version": "1.0.0",
+    "url": "https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/apfs",
+    "license": "Nybble format registry"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "imhex-hinf-luas",
+  "name": "ImHex · Hinf Luas",
+  "version": "1.0.0",
+  "category": "other",
+  "coverage": "partial",
+  "summary": "Halo Infinite HavokScript 5.1 \"luas",
+  "description": "Halo Infinite HavokScript 5.1 \"luas",
+  "tags": [
+    "imhex",
+    "hinf-luas"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/hinf_luas.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "hinf_luas.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/hinf_luas.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1332
+}

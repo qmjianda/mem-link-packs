@@ -1,0 +1,23 @@
+{
+  "id": "imhex-dds",
+  "name": "ImHex · Dds",
+  "version": "1.0.0",
+  "category": "image",
+  "coverage": "partial",
+  "summary": "DirectDraw Surface",
+  "description": "DirectDraw Surface",
+  "tags": [
+    "imhex",
+    "dds"
+  ],
+  "author": "ImHex-Patterns contributors",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/dds.hexpat",
+  "source": {
+    "provider": "imhex",
+    "path": "dds.hexpat",
+    "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/dds.hexpat",
+    "license": "GPL-2.0-or-later"
+  },
+  "order": 1268
+}
