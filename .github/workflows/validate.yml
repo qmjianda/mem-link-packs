@@ -14,3 +14,7 @@ jobs:
           node-version: 22
       - name: Check generated index
         run: node scripts/build-index.mjs --check
+      - name: Purge jsDelivr cache
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          curl -fsS "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/*" >/dev/null || true
