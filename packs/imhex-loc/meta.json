@@ -11,13 +11,13 @@
     "loc"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/loc.hexpat",
   "source": {
     "provider": "imhex",
     "path": "loc.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/loc.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1354
 }

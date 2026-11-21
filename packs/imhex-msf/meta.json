@@ -11,13 +11,13 @@
     "msf"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/msf.hexpat",
   "source": {
     "provider": "imhex",
     "path": "msf.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/msf.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1373
 }

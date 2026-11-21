@@ -11,13 +11,13 @@
     "gb-geo"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/GoldBox/GB_GEO.hexpat",
   "source": {
     "provider": "imhex",
     "path": "GoldBox/GB_GEO.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/GoldBox/GB_GEO.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1217
 }

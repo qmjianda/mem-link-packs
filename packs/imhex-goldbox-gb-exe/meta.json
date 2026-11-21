@@ -11,13 +11,13 @@
     "gb-exe"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/GoldBox/GB_EXE.hexpat",
   "source": {
     "provider": "imhex",
     "path": "GoldBox/GB_EXE.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/GoldBox/GB_EXE.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1216
 }

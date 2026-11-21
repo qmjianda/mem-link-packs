@@ -11,13 +11,13 @@
     "valve-vpk"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/valve_vpk.hexpat",
   "source": {
     "provider": "imhex",
     "path": "valve_vpk.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/valve_vpk.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1461
 }

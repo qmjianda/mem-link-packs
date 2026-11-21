@@ -11,7 +11,7 @@
  *   - 遇到 if/match/try/while/动态数组/指针表达式等无法在静态布局中表达的内容，
  *     停止该 struct 的后续字段，保留已经确定的前缀，并在 meta.coverage 标注 partial。
  *
- * 上游 ImHex-Patterns 为 GPL-2.0-or-later；生成文件保留来源与许可标注。
+ * 上游 ImHex-Patterns 为 GPL-2.0-only；生成文件保留来源与许可标注。
  * 不要手工编辑生成文件。
  */
 
@@ -19,6 +19,8 @@ import { readFileSync, writeFileSync, mkdirSync, readdirSync, statSync, existsSy
 import { join, resolve, basename } from 'node:path';
 
 const IMHEX_URL = 'https://github.com/WerWolv/ImHex-Patterns/blob/master';
+/** GPL-2.0 §2(a)：修改后的文件要注明修改事实与日期。 */
+const GENERATED_AT = new Date().toISOString().slice(0, 10);
 const PRIMS = {
   u8: { kind: 'u8', size: 1 },
   s8: { kind: 'i8', size: 1 },
@@ -960,8 +962,9 @@ class Converter {
       '/// <reference path="../../../types/memlink-bp.d.ts" />',
       '',
       '// 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。',
+      `// 修改：${GENERATED_AT} 由上游 .hexpat 静态移植为 mem-link pack（非上游原文件）。`,
       `// 上游：${IMHEX_URL}/${this.pack.relPath}`,
-      `// 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。`,
+      `// 许可：GPL-2.0-only（ImHex-Patterns）；生成物按同一许可分发。`,
       `// 覆盖：${coverage}${this.helperNodes.length ? `；含 ${this.helperNodes.length} 个动态辅助节点` : ''}${this.notes.length ? `；未移植 ${this.notes.length} 项（见文件末尾）` : ''}`,
       '',
     ].join('\n');
@@ -1070,13 +1073,13 @@ function convertFile(file, srcRoot, root) {
       description: (pre.description || `${base} 的 ImHex 固定布局移植。`).slice(0, 400),
       tags: ['imhex', slugOf(file)],
       author: 'ImHex-Patterns contributors',
-      license: 'GPL-2.0-or-later',
+      license: 'GPL-2.0-only',
       homepage: `${IMHEX_URL}/${relPath}`,
       source: {
         provider: 'imhex',
         path: relPath,
         url: `${IMHEX_URL}/${relPath}`,
-        license: 'GPL-2.0-or-later',
+        license: 'GPL-2.0-only',
       },
     },
   };

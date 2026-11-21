@@ -11,13 +11,13 @@
     "adts"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/adts.hexpat",
   "source": {
     "provider": "imhex",
     "path": "adts.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/adts.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1229
 }

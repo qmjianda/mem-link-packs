@@ -11,13 +11,13 @@
     "max-v104"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/max_v104.hexpat",
   "source": {
     "provider": "imhex",
     "path": "max_v104.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/max_v104.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1365
 }

@@ -11,13 +11,13 @@
     "uefi-boot-entry"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/uefi_boot_entry.hexpat",
   "source": {
     "provider": "imhex",
     "path": "uefi_boot_entry.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/uefi_boot_entry.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1453
 }

@@ -12,13 +12,13 @@
     "notepad-cache"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/notepad-cache.hexpat",
   "source": {
     "provider": "imhex",
     "path": "notepad-cache.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/notepad-cache.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1381
 }

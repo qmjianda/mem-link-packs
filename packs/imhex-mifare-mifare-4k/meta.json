@@ -11,13 +11,13 @@
     "mifare-4k"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/mifare/mifare-4k.hexpat",
   "source": {
     "provider": "imhex",
     "path": "mifare/mifare-4k.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/mifare/mifare-4k.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1368
 }

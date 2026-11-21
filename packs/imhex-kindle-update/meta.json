@@ -11,13 +11,13 @@
     "kindle-update"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/kindle_update.hexpat",
   "source": {
     "provider": "imhex",
     "path": "kindle_update.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/kindle_update.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1350
 }

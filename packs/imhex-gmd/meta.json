@@ -11,13 +11,13 @@
     "gmd"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/gmd.hexpat",
   "source": {
     "provider": "imhex",
     "path": "gmd.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/gmd.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1327
 }

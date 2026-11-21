@@ -11,13 +11,13 @@
     "utils"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/utils.hexpat",
   "source": {
     "provider": "imhex",
     "path": "ffx/utils.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/utils.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1305
 }

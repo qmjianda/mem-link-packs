@@ -11,13 +11,13 @@
     "tiff"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/tiff.hexpat",
   "source": {
     "provider": "imhex",
     "path": "tiff.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/tiff.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1448
 }

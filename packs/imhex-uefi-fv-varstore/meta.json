@@ -11,13 +11,13 @@
     "uefi-fv-varstore"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/uefi_fv_varstore.hexpat",
   "source": {
     "provider": "imhex",
     "path": "uefi_fv_varstore.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/uefi_fv_varstore.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1454
 }

@@ -11,13 +11,13 @@
     "amd-ucode-container"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/amd_ucode_container.hexpat",
   "source": {
     "provider": "imhex",
     "path": "amd_ucode_container.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/amd_ucode_container.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1231
 }

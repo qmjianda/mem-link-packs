@@ -11,13 +11,13 @@
     "lua51"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/lua51.hexpat",
   "source": {
     "provider": "imhex",
     "path": "lua51.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/lua51.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1357
 }

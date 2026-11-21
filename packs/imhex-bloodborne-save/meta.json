@@ -11,13 +11,13 @@
     "bloodborne-save"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bloodborne_save.hexpat",
   "source": {
     "provider": "imhex",
     "path": "bloodborne_save.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bloodborne_save.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1247
 }

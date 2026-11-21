@@ -11,13 +11,13 @@
     "mon-bin"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/all/mon.bin.hexpat",
   "source": {
     "provider": "imhex",
     "path": "ffx/all/mon.bin.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/all/mon.bin.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1293
 }

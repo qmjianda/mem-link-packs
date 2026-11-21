@@ -11,13 +11,13 @@
     "ape"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ape.hexpat",
   "source": {
     "provider": "imhex",
     "path": "ape.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ape.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1234
 }

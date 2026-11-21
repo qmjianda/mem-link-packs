@@ -11,13 +11,13 @@
     "pfs0"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pfs0.hexpat",
   "source": {
     "provider": "imhex",
     "path": "pfs0.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pfs0.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1404
 }

@@ -11,13 +11,13 @@
     "roblox-pack"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/roblox_pack.hexpat",
   "source": {
     "provider": "imhex",
     "path": "roblox_pack.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/roblox_pack.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1424
 }

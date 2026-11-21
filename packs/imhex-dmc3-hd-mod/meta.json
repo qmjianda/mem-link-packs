@@ -11,13 +11,13 @@
     "dmc3-hd-mod"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/dmc3_hd_mod.hexpat",
   "source": {
     "provider": "imhex",
     "path": "dmc3_hd_mod.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/dmc3_hd_mod.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1271
 }

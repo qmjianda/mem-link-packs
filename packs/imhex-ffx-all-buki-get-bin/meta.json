@@ -11,13 +11,13 @@
     "buki-get-bin"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/all/buki_get.bin.hexpat",
   "source": {
     "provider": "imhex",
     "path": "ffx/all/buki_get.bin.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/all/buki_get.bin.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1292
 }

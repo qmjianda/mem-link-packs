@@ -11,13 +11,13 @@
     "esp8266"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/esp8266.hexpat",
   "source": {
     "provider": "imhex",
     "path": "esp8266.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/esp8266.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1283
 }

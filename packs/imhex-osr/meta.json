@@ -11,13 +11,13 @@
     "osr"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/osr.hexpat",
   "source": {
     "provider": "imhex",
     "path": "osr.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/osr.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1393
 }

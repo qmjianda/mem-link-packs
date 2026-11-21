@@ -11,13 +11,13 @@
     "sphere-grid-layout-dat"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/all/sphere_grid_layout.dat.hexpat",
   "source": {
     "provider": "imhex",
     "path": "ffx/all/sphere_grid_layout.dat.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/all/sphere_grid_layout.dat.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1295
 }

@@ -11,13 +11,13 @@
     "ntfs"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/DFIR/NTFS.hexpat",
   "source": {
     "provider": "imhex",
     "path": "DFIR/NTFS.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/DFIR/NTFS.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1212
 }

@@ -11,13 +11,13 @@
     "hinf-luas"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/hinf_luas.hexpat",
   "source": {
     "provider": "imhex",
     "path": "hinf_luas.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/hinf_luas.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1332
 }

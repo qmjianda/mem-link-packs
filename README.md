@@ -15,7 +15,7 @@
 | --- | ---: | --- | --- |
 | 手工维护 | 10 | MIT | NES、SQLite、PNG、BMP、ZIP、GIF、ELF、PE、JPEG、WAV |
 | [Nybble format registry](https://github.com/itsmajdbuilds/binary-explorer-registry) | 83 | 上游声明可自由使用/再分发 | 覆盖 7z、APFS、DICOM、GGUF、HDF5、NTFS、TIFF、WASM 等 |
-| [ImHex-Patterns](https://github.com/WerWolv/ImHex-Patterns) | 284 | GPL-2.0-or-later | 固定布局移植，覆盖大量图像/音频/容器/文件系统/游戏格式；另有 28 个 pattern 只有条件/varint/运行时逻辑，没有可静态确定的字段，未生成 pack |
+| [ImHex-Patterns](https://github.com/WerWolv/ImHex-Patterns) | 284 | GPL-2.0-only | 固定布局移植，覆盖大量图像/音频/容器/文件系统/游戏格式；另有 28 个 pattern 只有条件/varint/运行时逻辑，没有可静态确定的字段，未生成 pack |
 
 > **部分布局**：mem-link 的静态结构无法表达所有上游特性（条件字段、repeat、
 > match、变长数组、指针跟随、运行时变换）。移植器保留能确定的固定前缀，并把
@@ -54,7 +54,7 @@
 ├── vendor/
 │   └── nybble-registry.json    # 固定版本的 Nybble registry 快照
 ├── licenses/
-│   └── GPL-2.0-or-later.txt    # ImHex 派生 pack 的许可
+│   └── GPL-2.0-only.txt        # ImHex 派生 pack 的许可
 └── store.schema.json           # index.json 的 JSON Schema
 ```
 
@@ -133,10 +133,11 @@ node node_modules/vitest/vitest.mjs run tests/store-packs.test.ts
 - 手工 pack：MIT（见 [`LICENSE`](./LICENSE)）。
 - Nybble 派生 pack：来源与作者写在各自 `meta.json` 的 `source` 中；上游
   [registry README](https://github.com/itsmajdbuilds/binary-explorer-registry#license)
-  声明除非 pack 另有说明，可自由使用与再分发。
-- ImHex 派生 pack：`GPL-2.0-or-later`，完整文本见
-  [`licenses/GPL-2.0-or-later.txt`](./licenses/GPL-2.0-or-later.txt)。生成文件保留
-  上游路径与许可声明。
+  原文声明：除非 pack 另有说明，registry 中的 pack 可自由使用与再分发。
+- ImHex 派生 pack：`GPL-2.0-only`（上游 GitHub 识别为 GPL-2.0，不是
+  `or-later`），完整文本见
+  [`licenses/GPL-2.0-only.txt`](./licenses/GPL-2.0-only.txt)。生成的
+  `pack.bp.ts` 头部保留上游路径、修改日期与许可，文件末尾列出未移植项。
 - 上游快照与提交号见 [`NOTICE.md`](./NOTICE.md)。
 
 ## 安全

@@ -12,13 +12,13 @@
     "save"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bastion/save.hexpat",
   "source": {
     "provider": "imhex",
     "path": "bastion/save.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bastion/save.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1241
 }

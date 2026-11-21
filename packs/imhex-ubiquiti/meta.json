@@ -11,13 +11,13 @@
     "ubiquiti"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ubiquiti.hexpat",
   "source": {
     "provider": "imhex",
     "path": "ubiquiti.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ubiquiti.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1451
 }

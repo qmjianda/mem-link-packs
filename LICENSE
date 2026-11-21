@@ -25,6 +25,8 @@ SOFTWARE.
 
 - packs/ 下的格式 pack 按各自 meta.json 中的 license 字段分发。
   - 手工维护的核心 pack：MIT。
-  - 来自 Nybble format registry 的 pack：按上游声明可自由使用与再分发。
-  - 来自 ImHex-Patterns 的 pack：GPL-2.0-or-later，见 licenses/GPL-2.0-or-later.txt。
+  - 来自 Nybble format registry 的 pack：按上游 README 声明可自由使用与再分发
+    （除非该 pack 另有说明）。
+  - 来自 ImHex-Patterns 的 pack：GPL-2.0-only（上游识别为 GPL-2.0，不是
+    or-later），见 licenses/GPL-2.0-only.txt。
 - scripts/ 与生成工具：MIT。

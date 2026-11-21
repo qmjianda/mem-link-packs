@@ -11,13 +11,13 @@
     "unity-web-data"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/unity_web_data.hexpat",
   "source": {
     "provider": "imhex",
     "path": "unity_web_data.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/unity_web_data.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1458
 }

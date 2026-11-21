@@ -11,13 +11,13 @@
     "fas-oskasoftware-old"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/fas_oskasoftware_old.hexpat",
   "source": {
     "provider": "imhex",
     "path": "fas_oskasoftware_old.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/fas_oskasoftware_old.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1286
 }

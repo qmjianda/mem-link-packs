@@ -11,13 +11,13 @@
     "rcf-v1-2"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/rcf_v1_2.hexpat",
   "source": {
     "provider": "imhex",
     "path": "rcf_v1_2.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/rcf_v1_2.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1421
 }

@@ -11,13 +11,13 @@
     "ebu-stl"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ebu_stl.hexpat",
   "source": {
     "provider": "imhex",
     "path": "ebu_stl.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ebu_stl.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1280
 }

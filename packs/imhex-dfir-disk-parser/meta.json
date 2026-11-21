@@ -11,13 +11,13 @@
     "disk-parser"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/DFIR/DISK_PARSER.hexpat",
   "source": {
     "provider": "imhex",
     "path": "DFIR/DISK_PARSER.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/DFIR/DISK_PARSER.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1210
 }

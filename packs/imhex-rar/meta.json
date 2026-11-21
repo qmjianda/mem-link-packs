@@ -12,13 +12,13 @@
     "rar"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/rar.hexpat",
   "source": {
     "provider": "imhex",
     "path": "rar.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/rar.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1420
 }

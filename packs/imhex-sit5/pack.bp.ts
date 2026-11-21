@@ -1,8 +1,9 @@
 /// <reference path="../../../types/memlink-bp.d.ts" />
 
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
+// 修改：2026-11-21 由上游 .hexpat 静态移植为 mem-link pack（非上游原文件）。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/sit5.hexpat
-// 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
+// 许可：GPL-2.0-only（ImHex-Patterns）；生成物按同一许可分发。
 // 覆盖：partial；未移植 3 项（见文件末尾）
 const v5_Flags1 = struct("v5_Flags1", [
   bits("folder", 1, { at: 0, bit: 1, unit: 1, label: "folder" }),

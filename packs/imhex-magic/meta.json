@@ -11,13 +11,13 @@
     "magic"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/magic.hexpat",
   "source": {
     "provider": "imhex",
     "path": "magic.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/magic.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1364
 }

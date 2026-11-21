@@ -11,13 +11,13 @@
     "xilinx-bootgen"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/xilinx_bootgen.hexpat",
   "source": {
     "provider": "imhex",
     "path": "xilinx_bootgen.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/xilinx_bootgen.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1478
 }

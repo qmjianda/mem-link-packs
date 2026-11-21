@@ -12,13 +12,13 @@
     "notepad-state"
   ],
   "author": "ImHex-Patterns contributors",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-2.0-only",
   "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/notepad-state.hexpat",
   "source": {
     "provider": "imhex",
     "path": "notepad-state.hexpat",
     "url": "https://github.com/WerWolv/ImHex-Patterns/blob/master/notepad-state.hexpat",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-only"
   },
   "order": 1382
 }
