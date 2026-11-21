@@ -1,11 +1,13 @@
 {
   "id": "elf",
   "name": "ELF",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "category": "executable",
+  "coverage": "partial",
+  "helpers": 4,
   "order": 70,
-  "summary": "ELF32/ELF64 文件头、程序头与节头",
-  "description": "解析 ELF 可执行文件和目标文件的 e_ident、32/64 位文件头、程序头与节头，默认按小端读取。",
+  "summary": "ELF32/ELF64 文件头、程序头/节头及可跟随偏移的数组节点",
+  "description": "解析 ELF 可执行文件和目标文件的 e_ident、32/64 位文件头、程序头与节头，并提供按 phoff/shoff 文件偏移展开程序头表/节头表的数组节点；默认按小端读取。",
   "tags": ["elf", "executable", "linux", "program-header", "section-header"],
   "author": "qmjianda",
   "license": "MIT"

@@ -154,5 +154,21 @@ export default definePack({
     section32: structNode(SectionHeader32, { label: 'ELF32 节头（40 B）' }),
     ident: structNode(ElfIdent, { label: 'ELF e_ident（16 B）' }),
     class: is64,
+    programHeaders64: arrayNode(ProgramHeader64, {
+      offset: true, label: 'ELF64 程序头表',
+      description: '文件偏移接 ELF64 文件头的 phoff，数量接 phnum；每项 56 B。',
+    }),
+    programHeaders32: arrayNode(ProgramHeader32, {
+      offset: true, label: 'ELF32 程序头表',
+      description: '文件偏移接 ELF32 文件头的 phoff，数量接 phnum；每项 32 B。',
+    }),
+    sectionHeaders64: arrayNode(SectionHeader64, {
+      offset: true, label: 'ELF64 节头表',
+      description: '文件偏移接 ELF64 文件头的 shoff，数量接 shnum；每项 64 B。',
+    }),
+    sectionHeaders32: arrayNode(SectionHeader32, {
+      offset: true, label: 'ELF32 节头表',
+      description: '文件偏移接 ELF32 文件头的 shoff，数量接 shnum；每项 40 B。',
+    }),
   },
 });

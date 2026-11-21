@@ -122,7 +122,7 @@ function referenceFor(meta, source, pack, defaultStoreUrl) {
     const params = {};
     if (def.kind === 'struct' || def.kind === 'list') params.address = '0x0';
     if (def.kind === 'array') {
-      params.address = '0x0';
+      params[def.offset ? 'offset' : 'address'] = '0x0';
       if (def.count == null) params.count = '2';
     }
     const x = 640 + (i % cols) * 380;

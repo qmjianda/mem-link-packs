@@ -159,11 +159,11 @@
     {
       "id": "elf",
       "name": "ELF",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "category": "executable",
       "order": 70,
-      "summary": "ELF32/ELF64 文件头、程序头与节头",
-      "description": "解析 ELF 可执行文件和目标文件的 e_ident、32/64 位文件头、程序头与节头，默认按小端读取。",
+      "summary": "ELF32/ELF64 文件头、程序头/节头及可跟随偏移的数组节点",
+      "description": "解析 ELF 可执行文件和目标文件的 e_ident、32/64 位文件头、程序头与节头，并提供按 phoff/shoff 文件偏移展开程序头表/节头表的数组节点；默认按小端读取。",
       "tags": [
         "elf",
         "executable",
@@ -173,13 +173,15 @@
       ],
       "author": "qmjianda",
       "license": "MIT",
+      "coverage": "partial",
+      "helpers": 4,
       "path": "packs/elf/pack.bp.ts",
-      "sha256": "3eec3b02a116e5f294b4d64731e2c0bb6e03d7b4940f6fd944aa56e49fb56337",
-      "size": 7459,
+      "sha256": "6bfbee83d4ec5b881f24c907338035309884f68e8b404e814b86d3112d2532d0",
+      "size": 8277,
       "reference": {
         "path": "packs/elf/reference.blueprint.json",
-        "sha256": "d6dcdb31db4a3c7e3720e025900c693da07d936fce27a16dff8fed6f3b0f0f63",
-        "size": 10611
+        "sha256": "c488d983657d8f3fb7670df7b3d8e1e2779826a885e6eec3ae13077e525089ad",
+        "size": 12258
       }
     },
     {
