@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/DFIR/exFAT.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 2 项（见文件末尾）
+// 覆盖：partial；未移植 1 项（见文件末尾）
 const Entry_Flags = struct("Entry_Flags", [
   bits("TypeCode", 5, { at: 0, bit: 0, unit: 1, label: "TypeCode" }),
   bits("Importance", 1, { at: 0, bit: 5, unit: 1, label: "Importance" }),
@@ -167,5 +167,4 @@ export default definePack({
 /*
 未移植项：
 - FileName_Entry.FileName: 类型 char16 不可移植
-- u64: 位域没有可移植的固定成员
 */

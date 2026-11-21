@@ -16,6 +16,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://py7zr.readthedocs.io/en/latest/archive_format.html",
   "coverage": "partial",
+  "helpers": 4,
   "source": {
     "provider": "nybble",
     "id": "7z",

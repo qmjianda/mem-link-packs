@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/webp.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 4 项（见文件末尾）
+// 覆盖：partial；未移植 3 项（见文件末尾）
 const RiffHeader = struct("RiffHeader", [
   str("ckID", { size: 4 }),
   u32("ckSize", {  }),
@@ -79,5 +79,4 @@ export default definePack({
 - OneBase.value: 类型 u24 不可移植
 - WebPVP8XData.canvasWidth: 类型 OneBase 不可移植
 - WebPANMFData.frameX: 类型 u24 不可移植
-- u32: 位域没有可移植的固定成员
 */

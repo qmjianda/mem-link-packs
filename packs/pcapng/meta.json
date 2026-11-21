@@ -16,6 +16,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://pcapng.com/",
   "coverage": "partial",
+  "helpers": 8,
   "source": {
     "provider": "nybble",
     "id": "pcapng",

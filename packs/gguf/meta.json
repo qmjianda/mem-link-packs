@@ -19,6 +19,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://github.com/ggml-org/ggml/blob/master/docs/gguf.md",
   "coverage": "partial",
+  "helpers": 5,
   "source": {
     "provider": "nybble",
     "id": "gguf",

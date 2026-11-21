@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/glb
 // 原始 pack：glb · glTF binary v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 2 项（见文件末尾）
+// 覆盖：partial；含 1 个动态辅助节点
 const GlbChunk = struct("GlbChunk", [
   u32("length", { endian: "little", label: "chunk data length in bytes" }),
   str("chunkType", { size: 4, label: "JSON structure chunk, or the BIN binary buffer chunk" }),
@@ -24,12 +24,12 @@ export default definePack({
   nodes: {
     "entry": structNode(Glb, { label: "Glb（入口）" }),
     "GlbChunk": structNode(GlbChunk, { label: "GlbChunk" }),
+    "list_Glb_chunks": listNode(GlbChunk, {
+      label: "Glb.chunks（重复元素）",
+      description: "Nybble repeat 字段；address 指向第一个元素，next 按元素大小前进",
+      next: (e) => {  return e.addr + GlbChunk.size; },
+      max: 4096,
+    }),
   },
 });
 
-
-/*
-未移植项：
-- GlbChunk.data: match 联合类型未移植，后续布局在此停止
-- Glb.chunks: repeat 字段未移植，后续布局在此停止
-*/

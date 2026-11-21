@@ -17,6 +17,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://learn.microsoft.com/openspecs/windows_protocols/ms-even6/",
   "coverage": "partial",
+  "helpers": 1,
   "source": {
     "provider": "nybble",
     "id": "evtx",

@@ -3,7 +3,7 @@
   "name": "ImHex · Thumbcache",
   "version": "1.0.0",
   "category": "system",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "Windows thumbcache files",
   "description": "Windows thumbcache files",
   "tags": [

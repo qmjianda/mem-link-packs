@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/xgstexture.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 2 项（见文件末尾）
+// 覆盖：complete
 const XGSTextureFlags = struct("XGSTextureFlags", [
   bits("Mips", 2, { at: 0, bit: 0, unit: 4, label: "Mips" }),
   bits("Twiddle", 2, { at: 0, bit: 2, unit: 4, label: "Twiddle" }),
@@ -26,9 +26,3 @@ export default definePack({
   },
 });
 
-
-/*
-未移植项：
-- XGSTextureHeader: 位域没有可移植的固定成员
-- u8: 位域没有可移植的固定成员
-*/

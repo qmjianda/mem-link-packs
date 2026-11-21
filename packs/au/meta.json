@@ -17,6 +17,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://en.wikipedia.org/wiki/Au_file_format",
   "coverage": "partial",
+  "helpers": 1,
   "source": {
     "provider": "nybble",
     "id": "au",

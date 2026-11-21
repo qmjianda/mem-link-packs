@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/lz4
 // 原始 pack：lz4 · LZ4 frame v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 5 项（见文件末尾）
+// 覆盖：partial；含 2 个动态辅助节点；未移植 5 项（见文件末尾）
 const Lz4BlockSize = struct("Lz4BlockSize", [
   bits("size", 31, { at: 0, bit: 0, unit: 4, label: "size" }),
   bits("uncompressed", 1, { at: 0, bit: 31, unit: 4, label: "uncompressed" }),
@@ -50,15 +50,27 @@ export default definePack({
     "flags_Lz4Flags": structNode(Lz4Flags, { label: "位域 Lz4Flags" }),
     "flags_Lz4BlockDescriptor": structNode(Lz4BlockDescriptor, { label: "位域 Lz4BlockDescriptor" }),
     "flags_Lz4BlockSize": structNode(Lz4BlockSize, { label: "位域 Lz4BlockSize" }),
+    "list_Lz4Frame_blocks": listNode(Lz4Block, {
+      label: "Lz4Frame.blocks（重复元素）",
+      description: "Nybble repeat 字段；address 指向第一个元素，next 按元素大小前进",
+      next: (e) => { if ((e.value["dataLen"] == 0)) return null; return e.addr + Lz4Block.size; },
+      max: 4096,
+    }),
+    "list_Lz4Frame_checkedBlocks": listNode(Lz4CheckedBlock, {
+      label: "Lz4Frame.checkedBlocks（重复元素）",
+      description: "Nybble repeat 字段；address 指向第一个元素，next 按元素大小前进",
+      next: (e) => { if ((e.value["dataLen"] == 0)) return null; return e.addr + Lz4CheckedBlock.size; },
+      max: 4096,
+    }),
   },
 });
 
 
 /*
 未移植项：
-- Lz4Block.dataLen: computed 字段未移植
 - Lz4Block.data: 变长字节块未移植
-- Lz4CheckedBlock.dataLen: computed 字段未移植
+- Lz4Block.dataLen: computed 表达式依赖非标量字段，未生成 calc 辅助节点
 - Lz4CheckedBlock.data: 变长字节块未移植
+- Lz4CheckedBlock.dataLen: computed 表达式依赖非标量字段，未生成 calc 辅助节点
 - Lz4Frame.contentSize: 条件字段未移植，后续布局在此停止
 */

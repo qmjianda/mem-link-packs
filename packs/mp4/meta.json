@@ -19,6 +19,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://www.iso.org/standard/83102.html",
   "coverage": "partial",
+  "helpers": 15,
   "source": {
     "provider": "nybble",
     "id": "mp4",

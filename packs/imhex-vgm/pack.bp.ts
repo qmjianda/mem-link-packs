@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/vgm.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 4 项（见文件末尾）
+// 覆盖：partial；未移植 2 项（见文件末尾）
 const VGMVersion = struct("VGMVersion", [
   bits("bugfix", 4, { at: 0, bit: 0, unit: 4, label: "bugfix" }),
   bits("minor", 4, { at: 0, bit: 4, unit: 4, label: "minor" }),
@@ -91,6 +91,4 @@ export default definePack({
 未移植项：
 - Header: 基类 baseHeader 不可移植
 - VGM.header: 类型 Header 不可移植
-- u32: 位域没有可移植的固定成员
-- VGM: 位域没有可移植的固定成员
 */

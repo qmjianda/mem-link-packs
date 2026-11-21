@@ -19,6 +19,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://www.xiph.org/ogg/doc/framing.html",
   "coverage": "partial",
+  "helpers": 9,
   "source": {
     "provider": "nybble",
     "id": "ogg",

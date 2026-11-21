@@ -3,7 +3,7 @@
   "name": "ImHex · Ttf",
   "version": "1.0.0",
   "category": "font",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "TrueType/OpenType font",
   "description": "TrueType/OpenType font",
   "tags": [

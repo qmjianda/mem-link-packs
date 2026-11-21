@@ -15,6 +15,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://en.wikipedia.org/wiki/Audio_Video_Interleave",
   "coverage": "partial",
+  "helpers": 1,
   "source": {
     "provider": "nybble",
     "id": "avi",

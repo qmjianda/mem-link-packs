@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/ico
 // 原始 pack：ico · Windows icon / cursor v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 1 项（见文件末尾）
+// 覆盖：partial；含 1 个动态辅助节点
 const IconDirEntry = struct("IconDirEntry", [
   u8("width", { endian: "little", label: "image width in px (0 means 256)" }),
   u8("height", { endian: "little", label: "image height in px (0 means 256)" }),
@@ -30,11 +30,10 @@ export default definePack({
   nodes: {
     "entry": structNode(Ico, { label: "Ico（入口）" }),
     "IconDirEntry": structNode(IconDirEntry, { label: "IconDirEntry" }),
+    "array_Ico_entries": arrayNode(IconDirEntry, {
+      label: "Ico.entries（动态数组）",
+      description: "count 来自 Ico.count；address 指向数组首元素",
+    }),
   },
 });
 
-
-/*
-未移植项：
-- Ico.entries: 动态数组长度（field）未移植
-*/

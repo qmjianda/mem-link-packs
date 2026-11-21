@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/qoi.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 4 项（见文件末尾）
+// 覆盖：partial；未移植 2 项（见文件末尾）
 const qoi_header_t = struct("qoi_header_t", [
   str("magic", { size: 4 }),
   u32("width", {  }),
@@ -70,6 +70,4 @@ export default definePack({
 未移植项：
 - qoi_header_t.channels: 类型 channels_t 不可移植
 - qoi_file_t.header: 类型 header_t 不可移植
-- u8: 位域没有可移植的固定成员
-- qoi_file_t: 位域没有可移植的固定成员
 */

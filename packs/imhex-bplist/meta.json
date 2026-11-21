@@ -3,7 +3,7 @@
   "name": "ImHex · Bplist",
   "version": "1.0.0",
   "category": "executable",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "Apple binary property list",
   "description": "Apple binary property list",
   "tags": [

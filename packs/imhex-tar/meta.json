@@ -3,7 +3,7 @@
   "name": "ImHex · Tar",
   "version": "1.0.0",
   "category": "archive",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "GNU Tar",
   "description": "GNU Tar",
   "tags": [

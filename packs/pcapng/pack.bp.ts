@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/pcapng
 // 原始 pack：pcapng · pcapng capture v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 6 项（见文件末尾）
+// 覆盖：partial；含 8 个动态辅助节点；未移植 4 项（见文件末尾）
 const PcapngShb = struct("PcapngShb", [
   u32("byteOrderMagic", { endian: "little", label: "0x1A2B3C4D; byte-swapped in a big-endian section" }),
   u16("versionMajor", { endian: "little", label: "major version (1)" }),
@@ -59,6 +59,26 @@ export default definePack({
     "PcapngNrb": structNode(PcapngNrb, { label: "PcapngNrb" }),
     "PcapngIsb": structNode(PcapngIsb, { label: "PcapngIsb" }),
     "PcapngBlock": structNode(PcapngBlock, { label: "PcapngBlock" }),
+    "calc_PcapngBlock_bodyLen": calcNode({
+      label: "PcapngBlock.bodyLen（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "blockLength": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (Number(inputs["blockLength"] ?? 0) - 12) }),
+    }),
+    "ptr_PcapngBlock_decoded": calcNode({
+      label: "PcapngBlock.decoded（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs.base ?? 0) + 8 }),
+    }),
+    "match_PcapngBlock_decoded_168627466": structNode(PcapngShb, { label: "PcapngBlock.decoded · match 168627466" }),
+    "match_PcapngBlock_decoded_1": structNode(PcapngIdb, { label: "PcapngBlock.decoded · match 1" }),
+    "match_PcapngBlock_decoded_3": structNode(PcapngSpb, { label: "PcapngBlock.decoded · match 3" }),
+    "match_PcapngBlock_decoded_4": structNode(PcapngNrb, { label: "PcapngBlock.decoded · match 4" }),
+    "match_PcapngBlock_decoded_5": structNode(PcapngIsb, { label: "PcapngBlock.decoded · match 5" }),
+    "match_PcapngBlock_decoded_6": structNode(PcapngEpb, { label: "PcapngBlock.decoded · match 6" }),
   },
 });
 
@@ -66,9 +86,7 @@ export default definePack({
 /*
 未移植项：
 - PcapngEpb.packetData: 变长字节块未移植
-- PcapngBlock.bodyLen: computed 字段未移植
 - PcapngBlock.body: 变长字节块未移植
-- Pcapng.blocks: repeat 字段未移植，后续布局在此停止
 - Pcapng: 没有可移植的固定前缀字段
 - 入口 struct Pcapng 没有可移植字段，改用 PcapngShb
 */

@@ -15,6 +15,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://en.wikipedia.org/wiki/TIFF",
   "coverage": "partial",
+  "helpers": 3,
   "source": {
     "provider": "nybble",
     "id": "tiff",

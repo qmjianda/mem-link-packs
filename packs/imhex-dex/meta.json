@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "category": "executable",
   "coverage": "partial",
+  "helpers": 1,
   "summary": "Dalvik EXecutable",
   "description": "Dalvik EXecutable",
   "tags": [

@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/midi
 // 原始 pack：midi · MIDI file v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 2 项（见文件末尾）
+// 覆盖：partial；含 1 个动态辅助节点；未移植 1 项（见文件末尾）
 const MidiHeader = struct("MidiHeader", [
   str("type", { size: 4, label: "MThd" }),
   u32("length", { endian: "big", label: "bytes of header data; always 6" }),
@@ -31,6 +31,12 @@ export default definePack({
     "entry": structNode(Midi, { label: "Midi（入口）" }),
     "MidiHeader": structNode(MidiHeader, { label: "MidiHeader" }),
     "MidiTrack": structNode(MidiTrack, { label: "MidiTrack" }),
+    "list_Midi_tracks": listNode(MidiTrack, {
+      label: "Midi.tracks（重复元素）",
+      description: "Nybble repeat 字段；address 指向第一个元素，next 按元素大小前进",
+      next: (e) => {  return e.addr + MidiTrack.size; },
+      max: 4096,
+    }),
   },
 });
 
@@ -38,5 +44,4 @@ export default definePack({
 /*
 未移植项：
 - MidiTrack.events: 变长字节块未移植
-- Midi.tracks: repeat 字段未移植，后续布局在此停止
 */

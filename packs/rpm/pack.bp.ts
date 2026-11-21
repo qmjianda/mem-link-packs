@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/rpm
 // 原始 pack：rpm · RPM package v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 1 项（见文件末尾）
+// 覆盖：partial；含 1 个动态辅助节点
 const RpmLead = struct("RpmLead", [
   bytes("magic", { size: 4, label: "ED AB EE DB" }),
   u8("major", { endian: "big", label: "format major version, 3 or 4" }),
@@ -47,11 +47,10 @@ export default definePack({
     "RpmLead": structNode(RpmLead, { label: "RpmLead" }),
     "RpmIndexEntry": structNode(RpmIndexEntry, { label: "RpmIndexEntry" }),
     "RpmHeader": structNode(RpmHeader, { label: "RpmHeader" }),
+    "array_RpmHeader_index": arrayNode(RpmIndexEntry, {
+      label: "RpmHeader.index（动态数组）",
+      description: "count 来自 RpmHeader.numIndex；address 指向数组首元素",
+    }),
   },
 });
 
-
-/*
-未移植项：
-- RpmHeader.index: 动态数组长度（field）未移植
-*/

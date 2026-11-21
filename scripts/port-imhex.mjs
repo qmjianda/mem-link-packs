@@ -702,6 +702,9 @@ class Converter {
     this.converting = new Set();
     this.notes = [];
     this.complete = true;
+    this.helperNodes = [];
+    this.helperIds = new Set();
+    this.needVarint = false;
   }
 
   ref(name) {
@@ -712,6 +715,27 @@ class Converter {
   note(msg) {
     this.notes.push(msg);
     this.complete = false;
+  }
+
+  helperNote(msg) {
+    this.notes.push(msg);
+  }
+
+  addHelper(id, code) {
+    let key = sanitize(id);
+    for (let i = 2; this.helperIds.has(key); i += 1) key = `${sanitize(id)}_${i}`;
+    this.helperIds.add(key);
+    this.helperNodes.push({ id: key, code });
+  }
+
+  addVarintHelper() {
+    if (this.needVarint) return;
+    this.needVarint = true;
+    this.addHelper(
+      'read_varint',
+      `calcNode({\n      label: '读 Varint / LEB128',\n      description: '按地址解码 1–9 字节无符号 LEB128；有符号字段请用 sLEB128 变体',\n      inputs: { address: 'number' },\n      outputs: { value: 'number', bytes: 'number' },\n      run: ({ address }, ctx) => {\n        let value = 0;\n        for (let i = 0; i < 9; i += 1) {\n          const b = ctx.mem.u8(Number(address) + i);\n          if (i === 8) return { value: value * 256 + b, bytes: 9 };\n          value = value * 128 + (b & 0x7f);\n          if ((b & 0x80) === 0) return { value, bytes: i + 1 };\n        }\n        return { value, bytes: 9 };\n      },\n    })`,
+    );
+    this.helperNote('varint/LEB128: 已生成 read_varint 辅助节点');
   }
 
   resolve(name) {
@@ -776,7 +800,18 @@ class Converter {
     const resolved = this.resolve(name);
     if (this.converted.has(`bf:${resolved}`)) return this.converted.get(`bf:${resolved}`);
     const def = this.bitfieldOf(resolved);
-    if (!def || !def.members.length) {
+    if (!def) return null;
+    if (!def.members.length) {
+      if (def.total > 0 && def.total <= 64) {
+        const size = Math.ceil(def.total / 8);
+        const kind = size === 1 ? 'u8' : size === 2 ? 'u16' : size === 4 ? 'u32' : size === 8 ? 'u64' : null;
+        const field = kind
+          ? `${kind}('value', { endian: ${jsString(this.pack.endian)} })`
+          : `bytes('value', { size: ${size} })`;
+        const entry = { ref: this.ref(resolved), def, code: `struct(${jsString(resolved)}, [\n  ${field},\n])` };
+        this.converted.set(`bf:${resolved}`, entry);
+        return entry;
+      }
       this.note(`${resolved}: 位域没有可移植的固定成员`);
       this.converted.set(`bf:${resolved}`, null);
       return null;
@@ -816,6 +851,11 @@ class Converter {
       const reprName = this.resolve(enumDef.repr);
       const reprPrim = PRIMS[reprName] ?? PRIMS[enumDef.repr];
       if (!reprPrim) {
+        const sized = ({ u24: 3, u128: 16 })[reprName] ?? ({ u24: 3, u128: 16 })[enumDef.repr];
+        if (sized) {
+          this.helperNote(`${parent}.${name}: 枚举底层 ${enumDef.repr} 按 ${sized} 字节原始值读取，数值映射不可用`);
+          return `bytes(${jsString(name)}, { size: ${sized}${desc ? `, label: ${jsString(desc)}` : ''} })`;
+        }
         this.note(`${parent}.${name}: 枚举底层类型 ${enumDef.repr} 不支持`);
         return null;
       }
@@ -838,6 +878,11 @@ class Converter {
       return `record(${jsString(name)}, ${struct.ref}${desc ? `, { label: ${jsString(desc)} }` : ''})`;
     }
 
+    if (/varint|LEB128|vint/i.test(resolved)) {
+      this.addVarintHelper();
+      this.note(`${parent}.${name}: 变长 ${resolved} 已生成 read_varint 辅助节点，静态布局在此停止`);
+      return null;
+    }
     this.note(`${parent}.${name}: 类型 ${resolved} 不可移植`);
     return null;
   }
@@ -904,15 +949,20 @@ class Converter {
     }
 
     const types = defs.map((d) => d.ref).join(', ');
-    const nodeCode = nodes.map((n) => `    ${jsString(n.id)}: structNode(${n.ref}, { label: ${jsString(n.label)} }),`).join('\n');
-    const coverage = this.complete && !this.notes.length ? 'complete' : 'partial';
+    const nodeLines = nodes.map((n) => `    ${jsString(n.id)}: structNode(${n.ref}, { label: ${jsString(n.label)} }),`);
+    for (const h of this.helperNodes) {
+      const id = this.helperIds.has(h.id) ? h.id : sanitize(h.id);
+      nodeLines.push(`    ${jsString(id)}: ${h.code},`);
+    }
+    const nodeCode = nodeLines.join('\n');
+    const coverage = this.complete && !this.notes.length && !this.helperNodes.length ? 'complete' : 'partial';
     const header = [
       '/// <reference path="../../../types/memlink-bp.d.ts" />',
       '',
       '// 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。',
       `// 上游：${IMHEX_URL}/${this.pack.relPath}`,
       `// 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。`,
-      `// 覆盖：${coverage}${this.notes.length ? `；未移植 ${this.notes.length} 项（见文件末尾）` : ''}`,
+      `// 覆盖：${coverage}${this.helperNodes.length ? `；含 ${this.helperNodes.length} 个动态辅助节点` : ''}${this.notes.length ? `；未移植 ${this.notes.length} 项（见文件末尾）` : ''}`,
       '',
     ].join('\n');
     const footer = this.notes.length
@@ -922,8 +972,9 @@ class Converter {
       code: `${header}${defs.map((d) => `const ${d.ref} = ${d.code};`).join('\n\n')}\n\nexport default definePack({\n  name: ${jsString(this.pack.name)},\n  endian: ${jsString(this.pack.endian)},\n  pointerSize: 8,\n  types: [${types}],\n  nodes: {\n${nodeCode}\n  },\n});\n${footer}`,
       coverage,
       notes: this.notes.slice(),
+      helpers: this.helperNodes.length,
       types: defs.length,
-      nodes: nodes.length,
+      nodes: nodes.length + this.helperNodes.length,
     };
   }
 }
@@ -1014,6 +1065,7 @@ function convertFile(file, srcRoot, root) {
       version: '1.0.0',
       category: categoryOf(base, pre.description, relPath),
       coverage: out.coverage,
+      ...(out.helpers ? { helpers: out.helpers } : {}),
       summary: (pre.description || `${base}（移植自 ImHex Pattern Language）`).slice(0, 160),
       description: (pre.description || `${base} 的 ImHex 固定布局移植。`).slice(0, 400),
       tags: ['imhex', slugOf(file)],

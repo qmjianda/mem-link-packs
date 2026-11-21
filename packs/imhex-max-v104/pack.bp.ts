@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/max_v104.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 3 项（见文件末尾）
+// 覆盖：complete
 const IniOptions = struct("IniOptions", [
   i32("world", {  }),
   i32("turn_timer", {  }),
@@ -247,10 +247,3 @@ export default definePack({
   },
 });
 
-
-/*
-未移植项：
-- u16: 位域没有可移植的固定成员
-- bool: 位域没有可移植的固定成员
-- SaveFile: 位域没有可移植的固定成员
-*/

@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/dicom
 // 原始 pack：dicom · DICOM image v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 5 项（见文件末尾）
+// 覆盖：partial；含 1 个动态辅助节点；未移植 4 项（见文件末尾）
 const DicomGroupLength = struct("DicomGroupLength", [
   u16("group", { endian: "little", label: "0x0002, the file meta group" }),
   u16("element", { endian: "little", label: "0x0000, the group length element" }),
@@ -46,6 +46,13 @@ export default definePack({
     "DicomGroupLength": structNode(DicomGroupLength, { label: "DicomGroupLength" }),
     "DicomMetaVersion": structNode(DicomMetaVersion, { label: "DicomMetaVersion" }),
     "DicomElement": structNode(DicomElement, { label: "DicomElement" }),
+    "ptr_Dicom_decoded": calcNode({
+      label: "Dicom.decoded（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs.base ?? 0) + 158 }),
+    }),
   },
 });
 
@@ -53,8 +60,7 @@ export default definePack({
 /*
 未移植项：
 - DicomElement.value: 变长字节块未移植
-- DicomMetaElements.elements: repeat 字段未移植，后续布局在此停止
 - DicomMetaElements: 没有可移植的固定前缀字段
-- Dicom.restLen: computed 字段未移植
 - Dicom.metaGroup: 变长字节块未移植
+- Dicom.restLen: computed 表达式依赖非标量字段，未生成 calc 辅助节点
 */

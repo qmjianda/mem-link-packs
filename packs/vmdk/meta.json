@@ -18,6 +18,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://github.com/libyal/libvmdk/blob/main/documentation/VMWare%20Virtual%20Disk%20Format%20(VMDK).asciidoc",
   "coverage": "partial",
+  "helpers": 12,
   "source": {
     "provider": "nybble",
     "id": "vmdk",

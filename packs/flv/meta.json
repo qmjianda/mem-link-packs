@@ -17,6 +17,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://rtmp.veriskope.com/pdf/video_file_format_spec_v10_1.pdf",
   "coverage": "partial",
+  "helpers": 6,
   "source": {
     "provider": "nybble",
     "id": "flv",

@@ -16,6 +16,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://docs.oracle.com/javase/specs/jvms/se17/html/jvms-4.html",
   "coverage": "partial",
+  "helpers": 16,
   "source": {
     "provider": "nybble",
     "id": "java-class",

@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/mp4
 // 原始 pack：mp4 · MP4 / ISO base media v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 12 项（见文件末尾）
+// 覆盖：partial；含 15 个动态辅助节点；未移植 16 项（见文件末尾）
 const Ftyp = struct("Ftyp", [
   str("majorBrand", { size: 4, label: "brand best describing the file (isom, mp42, qt  , M4A , heic, avif)" }),
   u32("minorVersion", { endian: "big", label: "minor version of the major brand" }),
@@ -72,6 +72,45 @@ export default definePack({
     "Container2": structNode(Container2, { label: "Container2" }),
     "FullContainer": structNode(FullContainer, { label: "FullContainer" }),
     "Box": structNode(Box, { label: "Box" }),
+    "calc_LargeBox_bodyLen": calcNode({
+      label: "LargeBox.bodyLen（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "largesize": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (Number(inputs["largesize"] ?? 0) - 16) }),
+    }),
+    "calc_Box_bodyLen": calcNode({
+      label: "Box.bodyLen（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "size": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (Number(inputs["size"] ?? 0) - 8) }),
+    }),
+    "ptr_Box_decoded": calcNode({
+      label: "Box.decoded（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs.base ?? 0) + 8 }),
+    }),
+    "match_Box_decoded_ftyp": structNode(Ftyp, { label: "Box.decoded · match ftyp" }),
+    "match_Box_decoded_mvhd": structNode(Mvhd, { label: "Box.decoded · match mvhd" }),
+    "match_Box_decoded_tkhd": structNode(Tkhd, { label: "Box.decoded · match tkhd" }),
+    "match_Box_decoded_mdhd": structNode(Mdhd, { label: "Box.decoded · match mdhd" }),
+    "match_Box_decoded_hdlr": structNode(Hdlr, { label: "Box.decoded · match hdlr" }),
+    "ptr_Container2_second": calcNode({
+      label: "Container2.second（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "secondPos": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs.base ?? 0) + Number(inputs["secondPos"] ?? 0) }),
+    }),
+    "ptrtarget_Container2_second": structNode(Box, { label: "指针目标 · Container2.second" }),
+    "match_Box_decoded_moov": structNode(Container2, { label: "Box.decoded · match moov" }),
+    "match_Box_decoded_trak": structNode(Container2, { label: "Box.decoded · match trak" }),
+    "match_Box_decoded_mdia": structNode(Container2, { label: "Box.decoded · match mdia" }),
+    "match_Box_decoded_minf": structNode(Container2, { label: "Box.decoded · match minf" }),
+    "match_Box_decoded_meta": structNode(FullContainer, { label: "Box.decoded · match meta" }),
   },
 });
 
@@ -82,12 +121,16 @@ export default definePack({
 - Tkhd.creationTime: 条件字段未移植，后续布局在此停止
 - Mdhd.creationTime: 条件字段未移植，后续布局在此停止
 - Hdlr.name: cstring 变长字段未移植，后续布局在此停止
-- LargeBox.bodyLen: computed 字段未移植
 - LargeBox.body: 变长字节块未移植
 - Box.large: 条件字段未移植，后续布局在此停止
-- Container2.secondPos: computed 字段未移植
-- Container2.second: 指针字段（at +…）未移植
-- IsoMedia.boxes: repeat 字段未移植，后续布局在此停止
+- Container2.secondPos: computed 表达式依赖非标量字段，未生成 calc 辅助节点
+- 循环引用 Container
+- 循环引用 Container
+- 循环引用 Container
+- 循环引用 Container
+- 循环引用 Container
+- 循环引用 Container
+- 循环引用 Container
 - IsoMedia: 没有可移植的固定前缀字段
 - 入口 struct IsoMedia 没有可移植字段，改用 Ftyp
 */

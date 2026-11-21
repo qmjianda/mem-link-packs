@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/gvas.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 5 项（见文件末尾）
+// 覆盖：partial；未移植 3 项（见文件末尾）
 const FString = struct("FString", [
   i32("length", {  }),
 ]);
@@ -132,6 +132,4 @@ export default definePack({
 - Guid.integer: 类型 u128 不可移植
 - FCustomVersion.key: 类型 Guid 不可移植
 - FPropertyTag.auto: 类型 const 不可移植
-- FSaveGameHeader: 位域没有可移植的固定成员
-- SaveGameFile: 位域没有可移植的固定成员
 */

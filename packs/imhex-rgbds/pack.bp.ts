@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/rgbds.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 11 项（见文件末尾）
+// 覆盖：partial；未移植 5 项（见文件末尾）
 const fstack_Node = struct("fstack_Node", [
   u32("parentID", {  }),
   u32("parentLineNo", {  }),
@@ -52,10 +52,4 @@ export default definePack({
 - sect_Patch.type: 类型 PatchType 不可移植
 - sect_Section.name: 类型 std_string_NullString 不可移植
 - assert_Assertion.type: 类型 Type 不可移植
-- char: 位域没有可移植的固定成员
-- u32: 位域没有可移植的固定成员
-- Node: 位域没有可移植的固定成员
-- Symbol: 位域没有可移植的固定成员
-- Section: 位域没有可移植的固定成员
-- Assertion: 位域没有可移植的固定成员
 */

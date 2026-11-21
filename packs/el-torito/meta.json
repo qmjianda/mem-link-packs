@@ -18,6 +18,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://www.ecma-international.org/wp-content/uploads/ECMA-119_4th_edition_june_2019.pdf",
   "coverage": "partial",
+  "helpers": 3,
   "source": {
     "provider": "nybble",
     "id": "iso9660",

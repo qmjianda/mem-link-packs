@@ -3,7 +3,7 @@
   "name": "ImHex · Stl",
   "version": "1.0.0",
   "category": "model",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "STL 3D Model",
   "description": "STL 3D Model",
   "tags": [

@@ -19,6 +19,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://support.hdfgroup.org/documentation/hdf5/latest/_f_m_t3.html",
   "coverage": "partial",
+  "helpers": 19,
   "source": {
     "provider": "nybble",
     "id": "hdf5",

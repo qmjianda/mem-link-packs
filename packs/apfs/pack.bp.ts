@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/apfs
 // 原始 pack：apfs · APFS container v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 10 项（见文件末尾）
+// 覆盖：partial；含 14 个动态辅助节点；未移植 1 项（见文件末尾）
 const ApfsObjectType = struct("ApfsObjectType", [
   bits("type", 16, { at: 0, bit: 0, unit: 4, label: "type" }),
   bits("nonpersistent", 1, { at: 0, bit: 27, unit: 4, label: "nonpersistent" }),
@@ -193,20 +193,79 @@ export default definePack({
     "flags_ApfsContainerFeatures": structNode(ApfsContainerFeatures, { label: "位域 ApfsContainerFeatures" }),
     "flags_ApfsIncompatibleFeatures": structNode(ApfsIncompatibleFeatures, { label: "位域 ApfsIncompatibleFeatures" }),
     "flags_ApfsVolumeIncompatibleFeatures": structNode(ApfsVolumeIncompatibleFeatures, { label: "位域 ApfsVolumeIncompatibleFeatures" }),
+    "calc_ApfsOmapValue_volumeAt": calcNode({
+      label: "ApfsOmapValue.volumeAt（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "paddr": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (Number(inputs["paddr"] ?? 0) * 4096) }),
+    }),
+    "ptr_ApfsOmapValue_volume": calcNode({
+      label: "ApfsOmapValue.volume（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "volumeAt": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["volumeAt"] ?? 0) }),
+    }),
+    "ptrtarget_ApfsOmapValue_volume": structNode(ApfsVolume, { label: "指针目标 · ApfsOmapValue.volume" }),
+    "calc_ApfsOmapRoot_keyAt": calcNode({
+      label: "ApfsOmapRoot.keyAt（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "tableOffset": "number", "tableLength": "number", "firstKeyOffset": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (((56 + Number(inputs["tableOffset"] ?? 0)) + Number(inputs["tableLength"] ?? 0)) + Number(inputs["firstKeyOffset"] ?? 0)) }),
+    }),
+    "calc_ApfsOmapRoot_valueAt": calcNode({
+      label: "ApfsOmapRoot.valueAt（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "firstValueOffset": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: ((4096 - 40) - Number(inputs["firstValueOffset"] ?? 0)) }),
+    }),
+    "ptr_ApfsOmapRoot_firstKey": calcNode({
+      label: "ApfsOmapRoot.firstKey（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "keyAt": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs.base ?? 0) + Number(inputs["keyAt"] ?? 0) }),
+    }),
+    "ptrtarget_ApfsOmapRoot_firstKey": structNode(ApfsOmapMapping, { label: "指针目标 · ApfsOmapRoot.firstKey" }),
+    "ptr_ApfsOmapRoot_firstValue": calcNode({
+      label: "ApfsOmapRoot.firstValue（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "valueAt": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs.base ?? 0) + Number(inputs["valueAt"] ?? 0) }),
+    }),
+    "ptrtarget_ApfsOmapRoot_firstValue": structNode(ApfsOmapValue, { label: "指针目标 · ApfsOmapRoot.firstValue" }),
+    "calc_Apfs_omapAt": calcNode({
+      label: "Apfs.omapAt（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "omapOid": "number", "blockSize": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (Number(inputs["omapOid"] ?? 0) * Number(inputs["blockSize"] ?? 0)) }),
+    }),
+    "ptr_Apfs_omap": calcNode({
+      label: "Apfs.omap（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "omapAt": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["omapAt"] ?? 0) }),
+    }),
+    "ptrtarget_Apfs_omap": structNode(ApfsOmap, { label: "指针目标 · Apfs.omap" }),
+    "ptr_Apfs_omapTree": calcNode({
+      label: "Apfs.omapTree（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "omapTreeAt": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["omapTreeAt"] ?? 0) }),
+    }),
+    "ptrtarget_Apfs_omapTree": structNode(ApfsOmapRoot, { label: "指针目标 · Apfs.omapTree" }),
   },
 });
 
 
 /*
 未移植项：
-- ApfsOmapValue.volumeAt: computed 字段未移植
-- ApfsOmapValue.volume: 指针字段（at …）未移植
-- ApfsOmapRoot.keyAt: computed 字段未移植
-- ApfsOmapRoot.valueAt: computed 字段未移植
-- ApfsOmapRoot.firstKey: 指针字段（at +…）未移植
-- ApfsOmapRoot.firstValue: 指针字段（at +…）未移植
-- Apfs.omapAt: computed 字段未移植
-- Apfs.omap: 指针字段（at …）未移植
-- Apfs.omapTreeAt: computed 字段未移植
-- Apfs.omapTree: 指针字段（at …）未移植
+- Apfs.omapTreeAt: computed 表达式依赖非标量字段，未生成 calc 辅助节点
 */

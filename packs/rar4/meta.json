@@ -16,6 +16,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://www.rarlab.com/technote.htm",
   "coverage": "partial",
+  "helpers": 6,
   "source": {
     "provider": "nybble",
     "id": "rar",

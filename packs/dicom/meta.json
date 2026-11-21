@@ -17,6 +17,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_7.html",
   "coverage": "partial",
+  "helpers": 1,
   "source": {
     "provider": "nybble",
     "id": "dicom",

@@ -17,6 +17,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://webassembly.github.io/spec/core/binary/index.html",
   "coverage": "partial",
+  "helpers": 4,
   "source": {
     "provider": "nybble",
     "id": "wasm",

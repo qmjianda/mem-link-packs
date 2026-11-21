@@ -3,7 +3,7 @@
   "name": "ImHex · Nso",
   "version": "1.0.0",
   "category": "executable",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "Nintendo Switch NSO",
   "description": "Nintendo Switch NSO",
   "tags": [

@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "category": "game",
   "coverage": "partial",
+  "helpers": 1,
   "summary": "Save（移植自 ImHex Pattern Language）",
   "description": "Save 的 ImHex 固定布局移植。",
   "tags": [

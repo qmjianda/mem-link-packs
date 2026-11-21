@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/fs/refs.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 3 项（见文件末尾）
+// 覆盖：partial；未移植 2 项（见文件末尾）
 const ReFS_Version = struct("ReFS_Version", [
   u8("Major", {  }),
   u8("Minor", {  }),
@@ -139,5 +139,4 @@ export default definePack({
 未移植项：
 - META_HEADERS.blockNo: 类型 u128 不可移植
 - SUPERBLOCK.GUID: 类型 type_GUID 不可移植
-- REFS_FILE_SYSTEM: 位域没有可移植的固定成员
 */

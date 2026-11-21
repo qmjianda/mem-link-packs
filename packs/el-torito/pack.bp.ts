@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/iso9660
 // 原始 pack：iso9660 · ISO 9660 image v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 2 项（见文件末尾）
+// 覆盖：partial；含 3 个动态辅助节点
 const ElToritoValidationEntry = struct("ElToritoValidationEntry", [
   u8("headerId", { endian: "little", label: "1" }),
   u8("platformId", { values: { "0": "X86", "1": "PowerPc", "2": "Mac", "239": "Efi" }, label: "firmware the entries that follow are for" }),
@@ -52,12 +52,21 @@ export default definePack({
     "ElToritoValidationEntry": structNode(ElToritoValidationEntry, { label: "ElToritoValidationEntry" }),
     "ElToritoInitialEntry": structNode(ElToritoInitialEntry, { label: "ElToritoInitialEntry" }),
     "ElToritoBootCatalog": structNode(ElToritoBootCatalog, { label: "ElToritoBootCatalog" }),
+    "calc_ElTorito_catalogOffset": calcNode({
+      label: "ElTorito.catalogOffset（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "catalogSector": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (Number(inputs["catalogSector"] ?? 0) * 2048) }),
+    }),
+    "ptr_ElTorito_catalog": calcNode({
+      label: "ElTorito.catalog（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "catalogOffset": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["catalogOffset"] ?? 0) }),
+    }),
+    "ptrtarget_ElTorito_catalog": structNode(ElToritoBootCatalog, { label: "指针目标 · ElTorito.catalog" }),
   },
 });
 
-
-/*
-未移植项：
-- ElTorito.catalogOffset: computed 字段未移植
-- ElTorito.catalog: 指针字段（at …）未移植
-*/

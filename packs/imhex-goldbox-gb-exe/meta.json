@@ -3,7 +3,7 @@
   "name": "ImHex · GB EXE",
   "version": "1.0.0",
   "category": "game",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "Gold Box Games - Executable",
   "description": "Gold Box Games - Executable",
   "tags": [

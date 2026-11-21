@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/truetype
 // 原始 pack：truetype · TrueType / OpenType font v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 1 项（见文件末尾）
+// 覆盖：partial；含 1 个动态辅助节点
 const TableRecord = struct("TableRecord", [
   str("tag", { size: 4, label: "table tag (e.g. glyf, cmap, head, name)" }),
   u32("checksum", { endian: "big", label: "checksum for this table" }),
@@ -28,11 +28,10 @@ export default definePack({
   nodes: {
     "entry": structNode(SfntFont, { label: "SfntFont（入口）" }),
     "TableRecord": structNode(TableRecord, { label: "TableRecord" }),
+    "array_SfntFont_tables": arrayNode(TableRecord, {
+      label: "SfntFont.tables（动态数组）",
+      description: "count 来自 SfntFont.numTables；address 指向数组首元素",
+    }),
   },
 });
 
-
-/*
-未移植项：
-- SfntFont.tables: 动态数组长度（field）未移植
-*/

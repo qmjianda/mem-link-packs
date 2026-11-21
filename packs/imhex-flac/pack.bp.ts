@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/flac.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 6 项（见文件末尾）
+// 覆盖：partial；未移植 5 项（见文件末尾）
 const METADATA_BLOCK_HEADER = struct("METADATA_BLOCK_HEADER", [
   bits("lastMetadataBlock", 1, { at: 0, bit: 0, unit: 4, label: "lastMetadataBlock" }),
   bits("blockType", 7, { at: 0, bit: 1, unit: 4, label: "blockType" }),
@@ -160,5 +160,4 @@ export default definePack({
 - SUBFRAME_VERBATIM: 位域没有可移植的固定成员
 - SUBFRAME_FIXED_VALUE: 位域没有可移植的固定成员
 - SUBFRAME_LPC_VALUE: 位域没有可移植的固定成员
-- u32: 位域没有可移植的固定成员
 */

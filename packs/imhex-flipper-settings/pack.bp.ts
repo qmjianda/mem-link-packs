@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/flipper_settings.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 2 项（见文件末尾）
+// 覆盖：partial；未移植 1 项（见文件末尾）
 const SavedStructHeader = struct("SavedStructHeader", [
   u8("magic", {  }),
   u8("version", {  }),
@@ -60,5 +60,4 @@ export default definePack({
 /*
 未移植项：
 - DesktopSettings.pin_code: 类型 PinCode 不可移植
-- FlipperSettings: 位域没有可移植的固定成员
 */

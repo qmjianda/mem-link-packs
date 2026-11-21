@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/fs/pattern.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 1 项（见文件末尾）
+// 覆盖：partial；未移植 2 项（见文件末尾）
 const DiskTimeStamp = struct("DiskTimeStamp", [
   u8("seconds", {  }),
   u8("minutes", {  }),
@@ -22,6 +22,10 @@ const GPTAttributes = struct("GPTAttributes", [
   bits("shadow_copy", 1, { at: 0, bit: 61, unit: 8, label: "shadow_copy" }),
   bits("hidden", 1, { at: 0, bit: 62, unit: 8, label: "hidden" }),
   bits("no_drive_letter", 1, { at: 0, bit: 63, unit: 8, label: "no_drive_letter" }),
+]);
+
+const GPTEntry = struct("GPTEntry", [
+  bytes("partitionType", { size: 16 }),
 ]);
 
 const PartitionEntry = struct("PartitionEntry", [
@@ -49,12 +53,13 @@ export default definePack({
   name: "Drive File System",
   endian: "little",
   pointerSize: 8,
-  types: [DiskTimeStamp, CHS, GPTAttributes, PartitionEntry, MasterBootRecord],
+  types: [DiskTimeStamp, CHS, GPTAttributes, GPTEntry, PartitionEntry, MasterBootRecord],
   nodes: {
     "entry": structNode(MasterBootRecord, { label: "MasterBootRecord（入口）" }),
     "DiskTimeStamp": structNode(DiskTimeStamp, { label: "DiskTimeStamp" }),
     "CHS": structNode(CHS, { label: "CHS" }),
     "GPTAttributes": structNode(GPTAttributes, { label: "GPTAttributes" }),
+    "GPTEntry": structNode(GPTEntry, { label: "GPTEntry" }),
     "PartitionEntry": structNode(PartitionEntry, { label: "PartitionEntry" }),
   },
 });
@@ -62,5 +67,6 @@ export default definePack({
 
 /*
 未移植项：
-- GPTEntry.partitionType: 枚举底层类型 u128 不支持
+- GPTEntry.partitionType: 枚举底层 u128 按 16 字节原始值读取，数值映射不可用
+- GPTEntry.partitionTypeGuid: 类型 type_GUID 不可移植
 */

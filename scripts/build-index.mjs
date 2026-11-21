@@ -136,6 +136,7 @@ function build(root) {
       ...(meta.homepage ? { homepage: String(meta.homepage) } : {}),
       ...(meta.featured === true ? { featured: true } : {}),
       ...(coverage === 'partial' ? { coverage } : {}),
+      ...(Number.isFinite(meta.helpers) && meta.helpers > 0 ? { helpers: meta.helpers } : {}),
       ...(sourceInfo ? { source: sourceInfo } : {}),
       path: `packs/${id}/pack.bp.ts`,
       sha256,

@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/qcow2
 // 原始 pack：qcow2 · QCOW2 disk image v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 1 项（见文件末尾）
+// 覆盖：partial；含 2 个动态辅助节点；未移植 1 项（见文件末尾）
 const Qcow2IncompatibleFeatures = struct("Qcow2IncompatibleFeatures", [
   bits("dirty", 1, { at: 0, bit: 0, unit: 8, label: "dirty" }),
   bits("corrupt", 1, { at: 0, bit: 1, unit: 8, label: "corrupt" }),
@@ -38,16 +38,31 @@ const Qcow2 = struct("Qcow2", [
   u64("snapshotsOffset", { endian: "big", label: "offset of the snapshot table" }),
 ]);
 
+const Elem_u64 = struct("u64Value", [
+  u64('value', { endian: "big" }),
+]);
+
 export default definePack({
   name: "QCOW2",
   endian: "big",
   pointerSize: 4,
-  types: [Qcow2IncompatibleFeatures, Qcow2CompatibleFeatures, Qcow2AutoclearFeatures, Qcow2],
+  types: [Qcow2IncompatibleFeatures, Qcow2CompatibleFeatures, Qcow2AutoclearFeatures, Qcow2, Elem_u64],
   nodes: {
     "entry": structNode(Qcow2, { label: "Qcow2（入口）" }),
     "flags_Qcow2IncompatibleFeatures": structNode(Qcow2IncompatibleFeatures, { label: "位域 Qcow2IncompatibleFeatures" }),
     "flags_Qcow2CompatibleFeatures": structNode(Qcow2CompatibleFeatures, { label: "位域 Qcow2CompatibleFeatures" }),
     "flags_Qcow2AutoclearFeatures": structNode(Qcow2AutoclearFeatures, { label: "位域 Qcow2AutoclearFeatures" }),
+    "ptr_Qcow2_l1Table": calcNode({
+      label: "Qcow2.l1Table（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "l1TableOffset": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["l1TableOffset"] ?? 0) }),
+    }),
+    "array_Qcow2_l1Table": arrayNode(Elem_u64, {
+      label: "Qcow2.l1Table（动态数组）",
+      description: "count 来自 Qcow2.l1Size；address 指向数组首元素",
+    }),
   },
 });
 

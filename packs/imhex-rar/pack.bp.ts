@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/rar.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 10 项（见文件末尾）
+// 覆盖：partial；含 1 个动态辅助节点；未移植 10 项（见文件末尾）
 const LocatorRecordFlags = struct("LocatorRecordFlags", [
   bits("quickOpenRecordOffsetIsPresent", 1, { at: 0, bit: 0, unit: 1, label: "quickOpenRecordOffsetIsPresent" }),
   bits("recoveryRecordOffsetIsPresent", 1, { at: 0, bit: 1, unit: 1, label: "recoveryRecordOffsetIsPresent" }),
@@ -136,20 +136,36 @@ export default definePack({
     "EOAHeaderFlags": structNode(EOAHeaderFlags, { label: "EOAHeaderFlags" }),
     "EndOfArchiveHeader": structNode(EndOfArchiveHeader, { label: "EndOfArchiveHeader" }),
     "Header": structNode(Header, { label: "Header" }),
+    "read_varint": calcNode({
+      label: '读 Varint / LEB128',
+      description: '按地址解码 1–9 字节无符号 LEB128；有符号字段请用 sLEB128 变体',
+      inputs: { address: 'number' },
+      outputs: { value: 'number', bytes: 'number' },
+      run: ({ address }, ctx) => {
+        let value = 0;
+        for (let i = 0; i < 9; i += 1) {
+          const b = ctx.mem.u8(Number(address) + i);
+          if (i === 8) return { value: value * 256 + b, bytes: 9 };
+          value = value * 128 + (b & 0x7f);
+          if ((b & 0x80) === 0) return { value, bytes: i + 1 };
+        }
+        return { value, bytes: 9 };
+      },
+    }),
   },
 });
 
 
 /*
 未移植项：
-- MainHeaderExtraRecord.size: 类型 vint 不可移植
-- EncryptionHeader.encryptionVersion: 类型 vint 不可移植
-- FileEncryptionRecord.encryptionVersion: 类型 vint 不可移植
-- FileHashRecord.hashType: 类型 vint 不可移植
-- FileVersionRecord.flags: 类型 vint 不可移植
+- varint/LEB128: 已生成 read_varint 辅助节点
+- MainHeaderExtraRecord.size: 变长 vint 已生成 read_varint 辅助节点，静态布局在此停止
+- EncryptionHeader.encryptionVersion: 变长 vint 已生成 read_varint 辅助节点，静态布局在此停止
+- FileEncryptionRecord.encryptionVersion: 变长 vint 已生成 read_varint 辅助节点，静态布局在此停止
+- FileHashRecord.hashType: 变长 vint 已生成 read_varint 辅助节点，静态布局在此停止
+- FileVersionRecord.flags: 变长 vint 已生成 read_varint 辅助节点，静态布局在此停止
 - RedirectionRecord.type: 枚举底层类型 vint 不支持
-- FSHeaderExtraRecord.size: 类型 vint 不可移植
-- CompressionInformation.value: 类型 vint 不可移植
-- Header.headerSize: 类型 vint 不可移植
-- RARv5: 位域没有可移植的固定成员
+- FSHeaderExtraRecord.size: 变长 vint 已生成 read_varint 辅助节点，静态布局在此停止
+- CompressionInformation.value: 变长 vint 已生成 read_varint 辅助节点，静态布局在此停止
+- Header.headerSize: 变长 vint 已生成 read_varint 辅助节点，静态布局在此停止
 */

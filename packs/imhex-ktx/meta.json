@@ -3,7 +3,7 @@
   "name": "ImHex · Ktx",
   "version": "1.0.0",
   "category": "image",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "Khronos TeXture 1.0",
   "description": "Khronos TeXture 1.0",
   "tags": [

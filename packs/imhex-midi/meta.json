@@ -3,7 +3,7 @@
   "name": "ImHex · Midi",
   "version": "1.0.0",
   "category": "media",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "MIDI Musical Instrument Digital Interface",
   "description": "MIDI Musical Instrument Digital Interface",
   "tags": [

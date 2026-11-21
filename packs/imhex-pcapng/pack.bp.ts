@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/pcapng.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 2 项（见文件末尾）
+// 覆盖：partial；未移植 1 项（见文件末尾）
 const Version = struct("Version", [
   u16("major", {  }),
   u16("minor", {  }),
@@ -68,5 +68,4 @@ export default definePack({
 /*
 未移植项：
 - Block.block_type: 类型 BlockType 不可移植
-- Block: 位域没有可移植的固定成员
 */

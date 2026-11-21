@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/hdf5
 // 原始 pack：hdf5 · HDF5 file v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 10 项（见文件末尾）
+// 覆盖：partial；含 19 个动态辅助节点；未移植 4 项（见文件末尾）
 const HdfMessageV1 = struct("HdfMessageV1", [
   u16("type", { values: { "0": "Nil", "1": "Dataspace", "2": "LinkInfo", "3": "Datatype", "4": "FillValueOld", "5": "FillValue", "6": "Link", "7": "ExternalFiles", "8": "DataLayout", "9": "Bogus", "10": "GroupInfo", "11": "FilterPipeline", "12": "Attribute", "13": "ObjectComment", "14": "ModificationTimeOld", "15": "SharedMessageTable", "16": "Continuation", "17": "SymbolTable", "18": "ModificationTime", "19": "BtreeKValues", "20": "DriverInfo", "21": "AttributeInfo", "22": "ReferenceCount", "23": "FileSpaceInfo" }, label: "what the message describes" }),
   u16("size", { endian: "little", label: "bytes of message data" }),
@@ -152,6 +152,73 @@ export default definePack({
     "HdfSuperblockV2": structNode(HdfSuperblockV2, { label: "HdfSuperblockV2" }),
     "flags_HdfConsistencyFlags": structNode(HdfConsistencyFlags, { label: "位域 HdfConsistencyFlags" }),
     "flags_HdfObjectHeaderFlags": structNode(HdfObjectHeaderFlags, { label: "位域 HdfObjectHeaderFlags" }),
+    "ptr_HdfLocalHeap_names": calcNode({
+      label: "HdfLocalHeap.names（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "dataSegmentAddress": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["dataSegmentAddress"] ?? 0) }),
+    }),
+    "ptr_HdfSymbolTableEntry_objectHeader": calcNode({
+      label: "HdfSymbolTableEntry.objectHeader（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "objectHeaderAddress": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["objectHeaderAddress"] ?? 0) }),
+    }),
+    "ptrtarget_HdfSymbolTableEntry_objectHeader": structNode(HdfObjectHeaderV1, { label: "指针目标 · HdfSymbolTableEntry.objectHeader" }),
+    "ptr_HdfSymbolTableEntry_btree": calcNode({
+      label: "HdfSymbolTableEntry.btree（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "btreeAddress": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["btreeAddress"] ?? 0) }),
+    }),
+    "ptr_HdfGroupBtreeEntry_childSignature": calcNode({
+      label: "HdfGroupBtreeEntry.childSignature（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "child": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["child"] ?? 0) }),
+    }),
+    "ptr_HdfGroupBtreeEntry_node": calcNode({
+      label: "HdfGroupBtreeEntry.node（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "child": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["child"] ?? 0) }),
+    }),
+    "match_HdfGroupBtreeEntry_node_SNOD": structNode(HdfSymbolNode, { label: "HdfGroupBtreeEntry.node · match SNOD" }),
+    "match_HdfGroupBtreeEntry_node_TREE": structNode(HdfBtreeV1, { label: "HdfGroupBtreeEntry.node · match TREE" }),
+    "array_HdfBtreeV1_entries": arrayNode(HdfGroupBtreeEntry, {
+      label: "HdfBtreeV1.entries（动态数组）",
+      description: "count 来自 HdfBtreeV1.entriesUsed；address 指向数组首元素",
+    }),
+    "ptrtarget_HdfSymbolTableEntry_btree": structNode(HdfBtreeV1, { label: "指针目标 · HdfSymbolTableEntry.btree" }),
+    "ptr_HdfSymbolTableEntry_heap": calcNode({
+      label: "HdfSymbolTableEntry.heap（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "heapAddress": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["heapAddress"] ?? 0) }),
+    }),
+    "ptrtarget_HdfSymbolTableEntry_heap": structNode(HdfLocalHeap, { label: "指针目标 · HdfSymbolTableEntry.heap" }),
+    "array_HdfSymbolNode_entries": arrayNode(HdfSymbolTableEntry, {
+      label: "HdfSymbolNode.entries（动态数组）",
+      description: "count 来自 HdfSymbolNode.numSymbols；address 指向数组首元素",
+    }),
+    "ptr_HdfSuperblockV2_rootObjectHeader": calcNode({
+      label: "HdfSuperblockV2.rootObjectHeader（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "rootObjectHeaderAddress": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["rootObjectHeaderAddress"] ?? 0) }),
+    }),
+    "ptrtarget_HdfSuperblockV2_rootObjectHeader": structNode(HdfObjectHeaderV2, { label: "指针目标 · HdfSuperblockV2.rootObjectHeader" }),
+    "match_Hdf5_superblock_0": structNode(HdfSuperblockV0, { label: "Hdf5.superblock · match 0" }),
+    "match_Hdf5_superblock_1": structNode(HdfSuperblockV1, { label: "Hdf5.superblock · match 1" }),
+    "match_Hdf5_superblock_2": structNode(HdfSuperblockV2, { label: "Hdf5.superblock · match 2" }),
+    "match_Hdf5_superblock_3": structNode(HdfSuperblockV2, { label: "Hdf5.superblock · match 3" }),
   },
 });
 
@@ -160,12 +227,6 @@ export default definePack({
 未移植项：
 - HdfMessageV1.data: 变长字节块未移植
 - HdfObjectHeaderV2.accessTime: 条件字段未移植，后续布局在此停止
-- HdfLocalHeap.names: 指针字段（at …）未移植
-- HdfSymbolNode.entries: 动态数组长度（field）未移植
 - HdfSymbolTableEntry.btreeAddress: 条件字段未移植，后续布局在此停止
 - HdfBtreeV1.firstKey: 条件字段未移植，后续布局在此停止
-- HdfGroupBtreeEntry.childSignature: 指针字段（at …）未移植
-- HdfGroupBtreeEntry.node: 指针字段（at …）未移植
-- HdfSuperblockV2.rootObjectHeader: 指针字段（at …）未移植
-- Hdf5.superblock: match 联合类型未移植，后续布局在此停止
 */

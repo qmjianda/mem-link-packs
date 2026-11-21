@@ -3,7 +3,7 @@
   "name": "ImHex · Bgcode",
   "version": "1.0.0",
   "category": "executable",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "Prusa Binary G-Code",
   "description": "Prusa Binary G-Code",
   "tags": [

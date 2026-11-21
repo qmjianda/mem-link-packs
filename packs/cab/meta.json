@@ -18,6 +18,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://learn.microsoft.com/windows/win32/msi/cabinet-files",
   "coverage": "partial",
+  "helpers": 3,
   "source": {
     "provider": "nybble",
     "id": "cab",

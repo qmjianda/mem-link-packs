@@ -23,6 +23,14 @@ const Index = struct("Index", [
   u32("count", {  }),
 ]);
 
+const Header = struct("Header", [
+  bytes("magic", { size: 3 }),
+  u8("version", {  }),
+  bytes("reserved", { size: 4 }),
+  u32("amount", {  }),
+  u32("size", {  }),
+]);
+
 const RPM = struct("RPM", [
   record("lead", Lead),
 ]);
@@ -31,16 +39,17 @@ export default definePack({
   name: "RPM package format",
   endian: "big",
   pointerSize: 8,
-  types: [Lead, Index, RPM],
+  types: [Lead, Index, Header, RPM],
   nodes: {
     "entry": structNode(RPM, { label: "RPM（入口）" }),
     "Lead": structNode(Lead, { label: "Lead" }),
     "Index": structNode(Index, { label: "Index" }),
+    "Header": structNode(Header, { label: "Header" }),
   },
 });
 
 
 /*
 未移植项：
-- Header.magic: 枚举底层类型 u24 不支持
+- Header.magic: 枚举底层 u24 按 3 字节原始值读取，数值映射不可用
 */

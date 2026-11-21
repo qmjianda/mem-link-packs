@@ -3,7 +3,7 @@
   "name": "ImHex · Quantized Mesh",
   "version": "1.0.0",
   "category": "model",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "Cesium quantized-mesh terrain",
   "description": "Cesium quantized-mesh terrain",
   "tags": [

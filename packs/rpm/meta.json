@@ -18,6 +18,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://rpm-software-management.github.io/rpm/manual/format.html",
   "coverage": "partial",
+  "helpers": 1,
   "source": {
     "provider": "nybble",
     "id": "rpm",

@@ -18,6 +18,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://developer.apple.com/support/downloads/Apple-File-System-Reference.pdf",
   "coverage": "partial",
+  "helpers": 14,
   "source": {
     "provider": "nybble",
     "id": "apfs",

@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/iso9660
 // 原始 pack：iso9660 · ISO 9660 image v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 1 项（见文件末尾）
+// 覆盖：partial；含 1 个动态辅助节点
 const IsoFileFlags = struct("IsoFileFlags", [
   bits("hidden", 1, { at: 0, bit: 0, unit: 1, label: "hidden" }),
   bits("directory", 1, { at: 0, bit: 1, unit: 1, label: "directory" }),
@@ -76,21 +76,24 @@ const Iso9660 = struct("Iso9660", [
   record("pvd", IsoPrimaryVolumeDescriptor, { label: "the primary volume descriptor, at sector 16" }),
 ]);
 
+const Elem_char = struct("charValue", [
+  char('value', { endian: "little" }),
+]);
+
 export default definePack({
   name: "ISO9660",
   endian: "little",
   pointerSize: 4,
-  types: [IsoFileFlags, IsoDirectoryRecord, IsoPrimaryVolumeDescriptor, Iso9660],
+  types: [IsoFileFlags, IsoDirectoryRecord, IsoPrimaryVolumeDescriptor, Iso9660, Elem_char],
   nodes: {
     "entry": structNode(Iso9660, { label: "Iso9660（入口）" }),
     "IsoDirectoryRecord": structNode(IsoDirectoryRecord, { label: "IsoDirectoryRecord" }),
     "IsoPrimaryVolumeDescriptor": structNode(IsoPrimaryVolumeDescriptor, { label: "IsoPrimaryVolumeDescriptor" }),
     "flags_IsoFileFlags": structNode(IsoFileFlags, { label: "位域 IsoFileFlags" }),
+    "array_IsoDirectoryRecord_name": arrayNode(Elem_char, {
+      label: "IsoDirectoryRecord.name（动态数组）",
+      description: "count 来自 IsoDirectoryRecord.nameLength；address 指向数组首元素",
+    }),
   },
 });
 
-
-/*
-未移植项：
-- IsoDirectoryRecord.name: 动态数组长度（field）未移植
-*/

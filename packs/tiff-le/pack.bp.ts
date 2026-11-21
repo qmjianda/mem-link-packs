@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/tiff
 // 原始 pack：tiff · TIFF image v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 2 项（见文件末尾）
+// 覆盖：partial；含 3 个动态辅助节点
 const TiffEntry = struct("TiffEntry", [
   u16("tag", { endian: "little", label: "field tag (identifies the metadata field)" }),
   u16("fieldType", { endian: "little", label: "1=byte 2=ascii 3=short 4=long 5=rational" }),
@@ -31,12 +31,18 @@ export default definePack({
     "entry": structNode(Tiff, { label: "Tiff（入口）" }),
     "TiffEntry": structNode(TiffEntry, { label: "TiffEntry" }),
     "TiffIfd": structNode(TiffIfd, { label: "TiffIfd" }),
+    "array_TiffIfd_entries": arrayNode(TiffEntry, {
+      label: "TiffIfd.entries（动态数组）",
+      description: "count 来自 TiffIfd.numEntries；address 指向数组首元素",
+    }),
+    "ptr_Tiff_ifd": calcNode({
+      label: "Tiff.ifd（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "ifdOffset": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["ifdOffset"] ?? 0) }),
+    }),
+    "ptrtarget_Tiff_ifd": structNode(TiffIfd, { label: "指针目标 · Tiff.ifd" }),
   },
 });
 
-
-/*
-未移植项：
-- TiffIfd.entries: 动态数组长度（field）未移植
-- Tiff.ifd: 指针字段（at …）未移植
-*/

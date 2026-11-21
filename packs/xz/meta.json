@@ -16,6 +16,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://tukaani.org/xz/xz-file-format.txt",
   "coverage": "partial",
+  "helpers": 5,
   "source": {
     "provider": "nybble",
     "id": "xz",

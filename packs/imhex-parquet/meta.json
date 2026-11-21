@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "category": "data",
   "coverage": "partial",
+  "helpers": 1,
   "summary": "Apache Parquet File Format",
   "description": "Apache Parquet File Format",
   "tags": [

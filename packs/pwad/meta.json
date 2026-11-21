@@ -18,6 +18,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://doomwiki.org/wiki/WAD",
   "coverage": "partial",
+  "helpers": 2,
   "source": {
     "provider": "nybble",
     "id": "wad",

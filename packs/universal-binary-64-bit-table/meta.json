@@ -17,6 +17,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://github.com/apple-oss-distributions/xnu/blob/main/EXTERNAL_HEADERS/mach-o/fat.h",
   "coverage": "partial",
+  "helpers": 2,
   "source": {
     "provider": "nybble",
     "id": "macho-fat",

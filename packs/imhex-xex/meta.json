@@ -3,7 +3,7 @@
   "name": "ImHex · Xex",
   "version": "1.0.0",
   "category": "executable",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "Atari 8-bit binary format (.xex)",
   "description": "Atari 8-bit binary format (.xex)",
   "tags": [

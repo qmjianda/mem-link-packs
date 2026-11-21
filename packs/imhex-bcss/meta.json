@@ -3,7 +3,7 @@
   "name": "ImHex · Bcss",
   "version": "1.0.0",
   "category": "other",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "BeyondCompare Snapshot (BCSS) file",
   "description": "BeyondCompare Snapshot (BCSS) file",
   "tags": [

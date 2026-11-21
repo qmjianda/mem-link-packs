@@ -221,8 +221,8 @@ class Parser {
     const line = this.peek(-1)?.line ?? 0;
 
     if (this.eat('=')) {
-      this.parseExpr();
-      return { kind: 'computed', name, desc: this.eatDesc(), line };
+      const expr = this.parseExpr();
+      return { kind: 'computed', name, expr, desc: this.eatDesc(), line };
     }
 
     let pointer = null;
@@ -307,14 +307,24 @@ class Parser {
       const path = [this.ident()];
       while (this.eat('.')) path.push(this.ident());
       this.expect('{', '`{`');
-      let depth = 1;
-      while (depth > 0) {
-        const p = this.next();
-        if (p.t === '{') depth += 1;
-        else if (p.t === '}') depth -= 1;
-        else if (p.t === 'eof') throw new Error('match 没有结束的 }');
+      const arms = [];
+      let fallback = null;
+      while (!this.at('}') && !this.at('eof')) {
+        const p = this.peek();
+        if (p.t === 'int' || p.t === 'string') {
+          const key = this.next().v;
+          this.expect('=>', '`=>`');
+          arms.push({ key, ty: this.parseType() });
+        } else if (p.t === 'ident' && p.v === 'default') {
+          this.next();
+          this.expect('=>', '`=>`');
+          fallback = this.parseType();
+        } else {
+          throw new Error(`line ${p.line}: match 分支期望数字、字符串或 default`);
+        }
       }
-      return { kind: 'match', path };
+      this.expect('}', '`}`');
+      return { kind: 'match', path, arms, default: fallback };
     }
 
     const first = this.ident();
@@ -382,34 +392,39 @@ class Parser {
     return { path, op, value };
   }
 
-  // 只消费表达式，不保留 AST（computed 字段不产生字节）
+  // 表达式 AST：computed 字段用 calcNode 暴露
   parseExpr() {
-    this.parseTerm();
+    let lhs = this.parseTerm();
     while (this.at('+') || this.at('-')) {
-      this.next();
-      this.parseTerm();
+      const op = this.next().t;
+      const rhs = this.parseTerm();
+      lhs = { kind: 'bin', op, lhs, rhs };
     }
+    return lhs;
   }
 
   parseTerm() {
-    this.parseFactor();
+    let lhs = this.parseFactor();
     while (this.at('*') || this.at('/') || this.at('%')) {
-      this.next();
-      this.parseFactor();
+      const op = this.next().t;
+      const rhs = this.parseFactor();
+      lhs = { kind: 'bin', op, lhs, rhs };
     }
+    return lhs;
   }
 
   parseFactor() {
     if (this.eat('(')) {
-      this.parseExpr();
+      const expr = this.parseExpr();
       this.expect(')', '`)`');
-      return;
+      return expr;
     }
     const p = this.next();
-    if (p.t === 'int') return;
+    if (p.t === 'int') return { kind: 'int', value: p.v };
     if (p.t === 'ident') {
-      while (this.eat('.')) this.ident();
-      return;
+      const path = [p.v];
+      while (this.eat('.')) path.push(this.ident());
+      return { kind: 'path', path };
     }
     throw new Error(`line ${p.line}: 表达式里期望数字、字段名或 (，实际是 ${p.t}`);
   }
@@ -462,8 +477,15 @@ class Converter {
     this.converted = new Map();
     this.converting = new Set();
     this.skipped = [];
+    this.helperNotes = [];
     this.complete = true;
     this.defs = [];
+    /** 动态部分生成的辅助节点（calc / list / array / 变体 struct） */
+    this.helperNodes = [];
+    this.helperIds = new Set();
+    this.extraTypeDefs = [];
+    this.needPath = false;
+    this.needVarint = false;
   }
 
   typeRef(name) {
@@ -474,6 +496,242 @@ class Converter {
   note(msg) {
     this.skipped.push(msg);
     this.complete = false;
+  }
+
+  helperNote(msg) {
+    this.helperNotes.push(msg);
+  }
+
+  addHelper(id, code) {
+    let key = sanitizeIdent(id);
+    for (let i = 2; this.helperIds.has(key); i += 1) key = `${sanitizeIdent(id)}_${i}`;
+    this.helperIds.add(key);
+    this.helperNodes.push({ id: key, code });
+  }
+
+  addExtraType(ref, code) {
+    if (this.extraTypeDefs.some((t) => t.ref === ref)) return;
+    this.extraTypeDefs.push({ ref, code: `const ${ref} = ${code};` });
+  }
+
+  enumRef(name, enumDef) {
+    const ref = this.typeRef(name);
+    const values = enumDef.variants.map((v) => `${jsString(String(v.value))}: ${jsString(v.name)}`).join(', ');
+    this.addExtraType(
+      ref,
+      `struct(${jsString(name)}, [\n  ${PRIMS[enumDef.repr]?.kind ?? enumDef.repr}('value', { values: { ${values} } }),\n])`,
+    );
+    return ref;
+  }
+
+  fieldOf(def, name) {
+    return def.fields.find((f) => (f.kind === 'field' || f.kind === 'computed') && f.name === name);
+  }
+
+  numericField(def, name) {
+    const f = this.fieldOf(def, name);
+    if (!f) return null;
+    if (f.kind === 'computed') return f;
+    if (this.isNumericType(f.ty)) return f;
+    return null;
+  }
+
+  isNumericType(ty) {
+    if (ty.kind === 'prim' || ty.kind === 'varint') return true;
+    if (ty.kind === 'named') return this.pack._enums.has(ty.name);
+    return false;
+  }
+
+  /** 把表达式编译成 calcNode 的 JS；inputs 已按字段名注入。 */
+  emitExpr(expr, inputFor) {
+    if (expr.kind === 'int') return String(expr.value);
+    if (expr.kind === 'path') {
+      const root = expr.path[0];
+      const key = inputFor(root);
+      if (!key) return null;
+      if (expr.path.length === 1) return `Number(inputs[${jsString(key)}] ?? 0)`;
+      this.needPath = true;
+      return `Number(__nybblePath(inputs[${jsString(key)}], ${JSON.stringify(expr.path.slice(1))}) ?? 0)`;
+    }
+    if (expr.kind === 'bin') {
+      const lhs = this.emitExpr(expr.lhs, inputFor);
+      const rhs = this.emitExpr(expr.rhs, inputFor);
+      if (lhs == null || rhs == null) return null;
+      return `(${lhs} ${expr.op} ${rhs})`;
+    }
+    return null;
+  }
+
+  addComputedHelper(structName, def, field) {
+    if (!field.expr) return;
+    const inputs = {};
+    const names = new Map();
+    const inputFor = (root) => {
+      if (names.has(root)) return names.get(root);
+      const f = this.numericField(def, root);
+      if (!f) return null;
+      let key = sanitizeIdent(root);
+      for (let i = 2; Object.values(inputs).includes(key); i += 1) key = `${sanitizeIdent(root)}_${i}`;
+      names.set(root, key);
+      inputs[key] = 'number';
+      return key;
+    };
+    const expr = this.emitExpr(field.expr, inputFor);
+    if (expr == null) {
+      this.note(`${structName}.${field.name}: computed 表达式依赖非标量字段，未生成 calc 辅助节点`);
+      return;
+    }
+    this.addHelper(
+      `calc_${structName}_${field.name}`,
+      `calcNode({\n      label: ${jsString(`${structName}.${field.name}（计算）`)},\n      description: ${jsString('Nybble computed 字段；输入来自同一结构体的字段端口')},\n      inputs: { ${Object.entries(inputs).map(([k, v]) => `${jsString(k)}: ${jsString(v)}`).join(', ')} },\n      outputs: { value: 'number' },\n      run: (inputs) => ({ value: ${expr} }),\n    })`,
+    );
+    this.helperNote(`${structName}.${field.name}: computed 已生成 calc 辅助节点`);
+  }
+
+  addPointerHelper(structName, def, field) {
+    if (!field.pointer) return;
+    const inputs = { base: 'number' };
+    let offsetExpr = null;
+    const off = field.pointer.offset;
+    if (off.kind === 'fixed') offsetExpr = String(off.value);
+    else if (off.kind === 'field') {
+      const f = this.numericField(def, off.name);
+      if (!f) {
+        this.note(`${structName}.${field.name}: 指针偏移字段 ${off.name} 非标量，未生成地址 calc 节点`);
+      } else {
+        const key = sanitizeIdent(off.name);
+        inputs[key] = 'number';
+        offsetExpr = `Number(inputs[${jsString(key)}] ?? 0)`;
+      }
+    }
+    if (offsetExpr != null) {
+      const address = field.pointer.relative
+        ? `Number(inputs.base ?? 0) + ${offsetExpr}`
+        : offsetExpr;
+      this.addHelper(
+        `ptr_${structName}_${field.name}`,
+        `calcNode({\n      label: ${jsString(`${structName}.${field.name}（指针地址）`)},\n      description: ${jsString('把结构体基址与指针字段/常量相加，接到目标结构节点的 address')},\n      inputs: { ${Object.entries(inputs).map(([k, v]) => `${jsString(k)}: ${jsString(v)}`).join(', ')} },\n      outputs: { address: 'number' },\n      run: (inputs) => ({ address: ${address} }),\n    })`,
+      );
+      this.helperNote(`${structName}.${field.name}: 指针已生成地址 calc 辅助节点`);
+    }
+    if (field.ty.kind === 'named') {
+      let targetRef = this.pack._structs.has(field.ty.name) ? (this.convertStruct(field.ty.name)?.ref ?? null) : null;
+      if (!targetRef && this.pack._bitfields.has(field.ty.name)) targetRef = this.convertBitfield(field.ty.name).ref;
+      const enumDef = this.pack._enums.get(field.ty.name);
+      if (!targetRef && enumDef) targetRef = this.enumRef(field.ty.name, enumDef);
+      if (targetRef) {
+        this.addHelper(
+          `ptrtarget_${structName}_${field.name}`,
+          `structNode(${targetRef}, { label: ${jsString(`指针目标 · ${structName}.${field.name}`)} })`,
+        );
+      }
+    }
+  }
+
+  conditionExpr(condition, valueExpr) {
+    if (!condition) return null;
+    const { path, op, value } = condition;
+    let target;
+    if (path.length === 1) target = `${valueExpr}[${jsString(path[0])}]`;
+    else {
+      this.needPath = true;
+      target = `__nybblePath(${valueExpr}[${jsString(path[0])}], ${JSON.stringify(path.slice(1))})`;
+    }
+    if (!op) return `Boolean(${target})`;
+    return `(${target} ${op} ${typeof value === 'string' ? jsString(value) : value})`;
+  }
+
+  elementRef(ty, owner) {
+    if (ty.kind === 'named') {
+      const s = this.pack._structs.has(ty.name) ? this.convertStruct(ty.name) : null;
+      if (s) return s.ref;
+      if (this.pack._bitfields.has(ty.name)) return this.convertBitfield(ty.name).ref;
+      const enumDef = this.pack._enums.get(ty.name);
+      if (enumDef) return this.enumRef(ty.name, enumDef);
+      this.note(`${owner}: 元素类型 ${ty.name} 不可移植`);
+      return null;
+    }
+    if (ty.kind === 'prim') {
+      const kind = ty.prim.kind;
+      const ref = `Elem_${sanitizeIdent(kind)}`;
+      const fn = kind;
+      const endian = ty.endian ?? ty.prim.endian ?? this.pack.endian;
+      this.addExtraType(ref, `struct(${jsString(`${kind}Value`)}, [\n  ${fn}('value', { endian: ${jsString(endian)} }),\n])`);
+      return ref;
+    }
+    this.note(`${owner}: 元素类型 ${ty.kind} 不可移植`);
+    return null;
+  }
+
+  addRepeatHelper(structName, field) {
+    const ty = field.ty;
+    if (ty.kind !== 'repeat') return;
+    const ref = this.elementRef(ty.elem, `${structName}.${field.name}`);
+    if (!ref) return;
+    const stop = ty.guard?.kind === 'condition' ? this.conditionExpr(ty.guard.condition, 'e.value') : null;
+    const body = stop ? `if (${stop}) return null;` : '';
+    this.addHelper(
+      `list_${structName}_${field.name}`,
+      `listNode(${ref}, {\n      label: ${jsString(`${structName}.${field.name}（重复元素）`)},\n      description: ${jsString('Nybble repeat 字段；address 指向第一个元素，next 按元素大小前进')},\n      next: (e) => { ${body} return e.addr + ${ref}.size; },\n      max: 4096,\n    })`,
+    );
+    this.helperNote(`${structName}.${field.name}: repeat 已生成 list 辅助节点`);
+  }
+
+  addArrayHelper(structName, field) {
+    const ty = field.ty;
+    if (ty.kind !== 'array' || ty.len.kind !== 'field') return;
+    const ref = this.elementRef(ty.elem, `${structName}.${field.name}`);
+    if (!ref) return;
+    this.addHelper(
+      `array_${structName}_${field.name}`,
+      `arrayNode(${ref}, {\n      label: ${jsString(`${structName}.${field.name}（动态数组）`)},\n      description: ${jsString(`count 来自 ${structName}.${ty.len.name}；address 指向数组首元素`)},\n    })`,
+    );
+    this.helperNote(`${structName}.${field.name}: 动态数组已生成 array 辅助节点（count 接到 ${ty.len.name}）`);
+  }
+
+  addMatchHelper(structName, field) {
+    const ty = field.ty;
+    if (ty.kind !== 'match') return;
+    const variants = [...ty.arms, ...(ty.default ? [{ key: 'default', ty: ty.default }] : [])];
+    let added = 0;
+    for (const arm of variants) {
+      if (arm.ty.kind !== 'named') continue;
+      let targetRef = this.pack._structs.has(arm.ty.name) ? (this.convertStruct(arm.ty.name)?.ref ?? null) : null;
+      if (!targetRef && this.pack._bitfields.has(arm.ty.name)) targetRef = this.convertBitfield(arm.ty.name).ref;
+      const enumDef = this.pack._enums.get(arm.ty.name);
+      if (!targetRef && enumDef) targetRef = this.enumRef(arm.ty.name, enumDef);
+      if (!targetRef) continue;
+      this.addHelper(
+        `match_${structName}_${field.name}_${String(arm.key)}`,
+        `structNode(${targetRef}, { label: ${jsString(`${structName}.${field.name} · match ${String(arm.key)}`)} })`,
+      );
+      added += 1;
+    }
+    if (added) this.helperNote(`${structName}.${field.name}: match 已生成 ${added} 个变体节点`);
+  }
+
+  addVarintHelper() {
+    if (this.needVarint) return;
+    this.needVarint = true;
+    this.addHelper(
+      'read_varint',
+      `calcNode({\n      label: '读 Varint',\n      description: '按地址解码 1–9 字节 varint（LEB128）',\n      inputs: { address: 'number' },\n      outputs: { value: 'number', bytes: 'number' },\n      run: ({ address }, ctx) => {\n        let value = 0;\n        for (let i = 0; i < 9; i += 1) {\n          const b = ctx.mem.u8(Number(address) + i);\n          if (i === 8) return { value: value * 256 + b, bytes: 9 };\n          value = value * 128 + (b & 0x7f);\n          if ((b & 0x80) === 0) return { value, bytes: i + 1 };\n        }\n        return { value, bytes: 9 };\n      },\n    })`,
+    );
+  }
+
+  addHelpersForStruct(structName, def) {
+    for (const field of def.fields) {
+      if (field.kind === 'computed') this.addComputedHelper(structName, def, field);
+      else if (field.kind === 'field') {
+        if (field.pointer) this.addPointerHelper(structName, def, field);
+        const ty = field.ty;
+        if (ty.kind === 'repeat') this.addRepeatHelper(structName, field);
+        else if (ty.kind === 'array' && ty.len.kind === 'field') this.addArrayHelper(structName, field);
+        else if (ty.kind === 'match') this.addMatchHelper(structName, field);
+        else if (ty.kind === 'varint' || (ty.kind === 'array' && ty.elem.kind === 'varint')) this.addVarintHelper();
+        else if (ty.kind === 'named' && /varint|LEB128|vint/i.test(ty.name)) this.addVarintHelper();
+      }
+    }
   }
 
   /** 返回 `{ ref, def, __fields }`；ref 是生成的类型变量名。 */
@@ -493,14 +751,8 @@ class Converter {
     let stopped = false;
     for (const field of def.fields) {
       if (stopped) break;
-      if (field.kind === 'computed') {
-        this.note(`${name}.${field.name}: computed 字段未移植`);
-        continue;
-      }
-      if (field.pointer) {
-        this.note(`${name}.${field.name}: 指针字段（at ${field.pointer.relative ? '+' : ''}…）未移植`);
-        continue;
-      }
+      if (field.kind === 'computed') continue;
+      if (field.pointer) continue;
       if (field.condition) {
         this.note(`${name}.${field.name}: 条件字段未移植，后续布局在此停止`);
         stopped = true;
@@ -525,6 +777,7 @@ class Converter {
 
     const entry = { ref: this.typeRef(name), def, __fields: fields };
     this.converted.set(name, entry);
+    this.addHelpersForStruct(name, def);
     return entry;
   }
 
@@ -557,7 +810,7 @@ class Converter {
         return `bytes(${jsString(name)}, { size: ${ty.len.value}${label} })`;
       }
       case 'array': {
-        if (ty.len.kind !== 'fixed') { this.note(`${parent}.${name}: 动态数组长度（${ty.len.kind}）未移植`); return null; }
+        if (ty.len.kind !== 'fixed') { if (ty.len.kind !== 'field') this.note(`${parent}.${name}: 动态数组长度（${ty.len.kind}）未移植`); return null; }
         const count = ty.len.value;
         const elem = ty.elem;
         if (elem.kind === 'prim' && elem.prim.kind === 'char') {
@@ -610,16 +863,13 @@ class Converter {
         return null;
       }
       case 'repeat':
-        this.note(`${parent}.${name}: repeat 字段未移植，后续布局在此停止`);
         return null;
       case 'match':
-        this.note(`${parent}.${name}: match 联合类型未移植，后续布局在此停止`);
         return null;
       case 'cstring':
         this.note(`${parent}.${name}: cstring 变长字段未移植，后续布局在此停止`);
         return null;
       case 'varint':
-        this.note(`${parent}.${name}: varint 变长字段未移植，后续布局在此停止`);
         return null;
       default:
         this.note(`${parent}.${name}: 未知类型 ${ty.kind}`);
@@ -721,11 +971,20 @@ class Converter {
       nodes.push({ id, ref: conv.ref, label: `位域 ${name}` });
     }
 
-    const typeCodes = defs.map((d) => d.code ?? this.structCode(d)).join('\n\n');
-    const uniqueNodes = nodes.map((n) => `    ${jsString(n.id)}: structNode(${n.ref}, { label: ${jsString(n.label)} }),`);
+    const allDefs = [...defs, ...this.extraTypeDefs];
+    const helperCode = this.needPath
+      ? `function __nybblePath(value, keys) {\n  let cur = value;\n  for (const k of keys) {\n    if (cur == null) return undefined;\n    cur = cur[k];\n  }\n  return cur;\n}\n\n`
+      : '';
+    const typeCodes = `${helperCode}${allDefs.map((d) => d.code ?? this.structCode(d)).join('\n\n')}`;
+    const nodeCodes = nodes.map((n) => `    ${jsString(n.id)}: structNode(${n.ref}, { label: ${jsString(n.label)} }),`);
+    for (const h of this.helperNodes) {
+      const id = uniqueName(h.id, nodeIds);
+      nodeCodes.push(`    ${jsString(id)}: ${h.code},`);
+    }
+    const uniqueNodes = nodeCodes;
 
     const source = this.pack;
-    const coverage = this.complete && !this.skipped.length ? 'complete' : 'partial';
+    const coverage = this.complete && !this.skipped.length && !this.helperNodes.length ? 'complete' : 'partial';
     const header = [
       '/// <reference path="../../../types/memlink-bp.d.ts" />',
       '',
@@ -733,20 +992,21 @@ class Converter {
       `// 上游：${NYBBLE_URL}/tree/main/formats/${source.id}`,
       `// 原始 pack：${source.id} · ${source.name} v${source.version} · 作者 ${source.author}`,
       '// 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。',
-      `// 覆盖：${coverage}${this.skipped.length ? `；未移植 ${this.skipped.length} 项（见文件末尾）` : ''}`,
+      `// 覆盖：${coverage}${this.helperNodes.length ? `；含 ${this.helperNodes.length} 个动态辅助节点` : ''}${this.skipped.length ? `；未移植 ${this.skipped.length} 项（见文件末尾）` : ''}`,
       '',
     ].join('\n');
     const footer = this.skipped.length
       ? `\n\n/*\n未移植项：\n${this.skipped.map((s) => `- ${s.replace(/\bexport\b/gi, '导出')}`).join('\n')}\n*/\n`
       : '\n';
-    const code = `${header}${typeCodes}\n\nexport default definePack({\n  name: ${jsString(source.formats[0]?.name ?? source.name)},\n  endian: ${jsString(source.endian)},\n  pointerSize: ${source.formats[0]?.endian === 'be' ? 4 : 4},\n  types: [${defs.map((d) => d.ref).join(', ')}],\n  nodes: {\n${uniqueNodes.join('\n')}\n  },\n});\n${footer}`;
+    const code = `${header}${typeCodes}\n\nexport default definePack({\n  name: ${jsString(source.formats[0]?.name ?? source.name)},\n  endian: ${jsString(source.endian)},\n  pointerSize: 4,\n  types: [${allDefs.map((d) => d.ref).join(', ')}],\n  nodes: {\n${uniqueNodes.join('\n')}\n  },\n});\n${footer}`;
 
     return {
       code,
       entry: entryName,
       coverage,
       skipped: this.skipped.slice(),
-      types: defs.length,
+      helpers: this.helperNodes.length,
+      types: allDefs.length,
       nodes: uniqueNodes.length,
     };
   }
@@ -863,6 +1123,7 @@ function main() {
       license: 'Free use / redistribution (Nybble registry)',
       homepage: raw.homepage || '',
       coverage: r.coverage,
+      ...(r.helpers ? { helpers: r.helpers } : {}),
       source: {
         provider: 'nybble',
         id: raw.id,

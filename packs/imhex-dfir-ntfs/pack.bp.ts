@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/DFIR/NTFS.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 10 项（见文件末尾）
+// 覆盖：partial；未移植 6 项（见文件末尾）
 const RUNLIST_HEADER = struct("RUNLIST_HEADER", [
   bits("SE_Offset", 4, { at: 0, bit: 0, unit: 1, label: "SE_Offset" }),
   bits("Length", 4, { at: 0, bit: 4, unit: 1, label: "Length" }),
@@ -388,8 +388,4 @@ export default definePack({
 - OBJECT_ID_ATTR.object_id: 类型 type_GUID 不可移植
 - ACCESS_ALLOWED_OBJECT_ACE.object_type: 类型 type_GUID 不可移植
 - LOG_CLIENT_RECORD.client_name: 类型 char16 不可移植
-- u64: 位域没有可移植的固定成员
-- u32: 位域没有可移植的固定成员
-- u8: 位域没有可移植的固定成员
-- str: 位域没有可移植的固定成员
 */

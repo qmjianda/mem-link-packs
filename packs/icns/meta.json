@@ -16,6 +16,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://en.wikipedia.org/wiki/Apple_Icon_Image_format",
   "coverage": "partial",
+  "helpers": 2,
   "source": {
     "provider": "nybble",
     "id": "icns",

@@ -17,6 +17,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://id3.org/id3v2.3.0",
   "coverage": "partial",
+  "helpers": 52,
   "source": {
     "provider": "nybble",
     "id": "mp3",

@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "category": "archive",
   "coverage": "partial",
+  "helpers": 1,
   "summary": "RAR archive file format",
   "description": "RAR archive file format",
   "tags": [

@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/cab
 // 原始 pack：cab · Microsoft Cabinet v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 2 项（见文件末尾）
+// 覆盖：partial；含 3 个动态辅助节点；未移植 2 项（见文件末尾）
 const CabCompression = struct("CabCompression", [
   bits("method", 4, { at: 0, bit: 0, unit: 2, label: "method" }),
   bits("windowBits", 5, { at: 0, bit: 8, unit: 2, label: "windowBits" }),
@@ -58,6 +58,21 @@ export default definePack({
     "CabFile": structNode(CabFile, { label: "CabFile" }),
     "flags_CabFlags": structNode(CabFlags, { label: "位域 CabFlags" }),
     "flags_CabCompression": structNode(CabCompression, { label: "位域 CabCompression" }),
+    "array_Cab_folders": arrayNode(CabFolder, {
+      label: "Cab.folders（动态数组）",
+      description: "count 来自 Cab.cFolders；address 指向数组首元素",
+    }),
+    "ptr_Cab_files": calcNode({
+      label: "Cab.files（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "coffFiles": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["coffFiles"] ?? 0) }),
+    }),
+    "array_Cab_files": arrayNode(CabFile, {
+      label: "Cab.files（动态数组）",
+      description: "count 来自 Cab.cFiles；address 指向数组首元素",
+    }),
   },
 });
 

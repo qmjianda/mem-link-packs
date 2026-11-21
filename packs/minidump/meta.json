@@ -17,6 +17,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://learn.microsoft.com/windows/win32/api/minidumpapiset/",
   "coverage": "partial",
+  "helpers": 27,
   "source": {
     "provider": "nybble",
     "id": "minidump",

@@ -3,7 +3,7 @@
   "name": "ImHex · Pickle",
   "version": "1.0.0",
   "category": "executable",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "Python Binary Object Serialization Protocol",
   "description": "Python Binary Object Serialization Protocol",
   "tags": [

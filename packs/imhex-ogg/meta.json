@@ -3,7 +3,7 @@
   "name": "ImHex · Ogg",
   "version": "1.0.0",
   "category": "media",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "OGG Audio",
   "description": "OGG Audio",
   "tags": [

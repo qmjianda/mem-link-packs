@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "category": "data",
   "coverage": "partial",
+  "helpers": 1,
   "summary": "Google Protobuf wire encoding (.pb)",
   "description": "Google Protobuf wire encoding (.pb)",
   "tags": [

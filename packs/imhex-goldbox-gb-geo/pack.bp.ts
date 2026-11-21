@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/GoldBox/GB_GEO.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 9 项（见文件末尾）
+// 覆盖：partial；未移植 6 项（见文件末尾）
 const WALL_NE = struct("WALL_NE", [
   bits("WallID_East", 4, { at: 0, bit: 0, unit: 1, label: "WallID_East" }),
   bits("WallID_North", 4, { at: 0, bit: 4, unit: 1, label: "WallID_North" }),
@@ -266,7 +266,4 @@ export default definePack({
 - ART_COMBAT_OVERLAND.CombatArt_Overland: 类型 IMG_COMBAT_OUT 不可移植
 - HDR.WallSlot: 类型 ART_WALLSLOT 不可移植
 - GRID: 位域没有可移植的固定成员
-- u8: 位域没有可移植的固定成员
-- u16: 位域没有可移植的固定成员
-- GEO: 位域没有可移植的固定成员
 */

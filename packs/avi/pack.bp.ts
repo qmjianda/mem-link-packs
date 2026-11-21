@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/avi
 // 原始 pack：avi · AVI video v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 2 项（见文件末尾）
+// 覆盖：partial；含 1 个动态辅助节点；未移植 1 项（见文件末尾）
 const RiffChunk = struct("RiffChunk", [
   str("id", { size: 4, label: "chunk FourCC (LIST, movi, idx1, ...)" }),
   u32("size", { endian: "little", label: "payload size in bytes" }),
@@ -24,6 +24,12 @@ export default definePack({
   nodes: {
     "entry": structNode(Avi, { label: "Avi（入口）" }),
     "RiffChunk": structNode(RiffChunk, { label: "RiffChunk" }),
+    "list_Avi_chunks": listNode(RiffChunk, {
+      label: "Avi.chunks（重复元素）",
+      description: "Nybble repeat 字段；address 指向第一个元素，next 按元素大小前进",
+      next: (e) => {  return e.addr + RiffChunk.size; },
+      max: 4096,
+    }),
   },
 });
 
@@ -31,5 +37,4 @@ export default definePack({
 /*
 未移植项：
 - RiffChunk.data: 变长字节块未移植
-- Avi.chunks: repeat 字段未移植，后续布局在此停止
 */

@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/openexr
 // 原始 pack：openexr · OpenEXR image v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 4 项（见文件末尾）
+// 覆盖：partial；未移植 3 项（见文件末尾）
 const ExrVersion = struct("ExrVersion", [
   bits("version", 8, { at: 0, bit: 0, unit: 4, label: "version" }),
   bits("tiled", 1, { at: 0, bit: 9, unit: 4, label: "tiled" }),
@@ -32,8 +32,7 @@ export default definePack({
 
 /*
 未移植项：
-- ExrAttribute.firstByte: 指针字段（at +…）未移植
 - ExrAttribute.name: cstring 变长字段未移植，后续布局在此停止
 - ExrAttribute: 没有可移植的固定前缀字段
-- Exr.attributes: repeat 字段未移植，后续布局在此停止
+- Exr.attributes: 元素类型 ExrAttribute 不可移植
 */

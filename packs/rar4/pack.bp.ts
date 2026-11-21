@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/rar
 // 原始 pack：rar · RAR archive v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 3 项（见文件末尾）
+// 覆盖：partial；含 6 个动态辅助节点；未移植 2 项（见文件末尾）
 const Rar4MainFlags = struct("Rar4MainFlags", [
   bits("volume", 1, { at: 0, bit: 0, unit: 2, label: "volume" }),
   bits("comment", 1, { at: 0, bit: 1, unit: 2, label: "comment" }),
@@ -88,6 +88,35 @@ export default definePack({
     "flags_Rar4BlockFlags": structNode(Rar4BlockFlags, { label: "位域 Rar4BlockFlags" }),
     "flags_Rar4MainFlags": structNode(Rar4MainFlags, { label: "位域 Rar4MainFlags" }),
     "flags_Rar4FileFlags": structNode(Rar4FileFlags, { label: "位域 Rar4FileFlags" }),
+    "calc_Rar4Block_restShort": calcNode({
+      label: "Rar4Block.restShort（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "headSize": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (Number(inputs["headSize"] ?? 0) - 7) }),
+    }),
+    "calc_Rar4Block_restLong": calcNode({
+      label: "Rar4Block.restLong（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "headSize": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (Number(inputs["headSize"] ?? 0) - 11) }),
+    }),
+    "ptr_Rar4Block_decoded": calcNode({
+      label: "Rar4Block.decoded（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs.base ?? 0) + 0 }),
+    }),
+    "match_Rar4Block_decoded_115": structNode(Rar4MainHeader, { label: "Rar4Block.decoded · match 115" }),
+    "match_Rar4Block_decoded_116": structNode(Rar4FileHeader, { label: "Rar4Block.decoded · match 116" }),
+    "list_Rar4_blocks": listNode(Rar4Block, {
+      label: "Rar4.blocks（重复元素）",
+      description: "Nybble repeat 字段；address 指向第一个元素，next 按元素大小前进",
+      next: (e) => { if ((e.value["type"] == 123)) return null; return e.addr + Rar4Block.size; },
+      max: 4096,
+    }),
   },
 });
 
@@ -96,5 +125,4 @@ export default definePack({
 未移植项：
 - Rar4FileHeader.highPackSize: 条件字段未移植，后续布局在此停止
 - Rar4Block.addSize: 条件字段未移植，后续布局在此停止
-- Rar4.blocks: repeat 字段未移植，后续布局在此停止
 */

@@ -15,6 +15,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://en.wikipedia.org/wiki/ICO_(file_format)",
   "coverage": "partial",
+  "helpers": 1,
   "source": {
     "provider": "nybble",
     "id": "ico",

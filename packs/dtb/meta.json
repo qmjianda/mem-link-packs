@@ -18,6 +18,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://www.devicetree.org/specifications/",
   "coverage": "partial",
+  "helpers": 9,
   "source": {
     "provider": "nybble",
     "id": "dtb",

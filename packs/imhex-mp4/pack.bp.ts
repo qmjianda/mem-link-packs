@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/mp4.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 4 项（见文件末尾）
+// 覆盖：partial；未移植 3 项（见文件末尾）
 const FixedPoint16 = struct("FixedPoint16", [
   u8("integer", {  }),
   u8("fraction", {  }),
@@ -243,5 +243,4 @@ export default definePack({
 - FullBox.flags: 类型 u24 不可移植
 - Avc1Box.reserved: 类型 u48 不可移植
 - Mp4aBox.reserved: 类型 u48 不可移植
-- Box: 位域没有可移植的固定成员
 */

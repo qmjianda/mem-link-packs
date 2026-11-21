@@ -3,7 +3,7 @@
   "name": "ImHex · Bmp",
   "version": "1.0.0",
   "category": "image",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "OS2/Windows Bitmap",
   "description": "OS2/Windows Bitmap",
   "tags": [

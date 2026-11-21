@@ -18,6 +18,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://developer.apple.com/library/archive/documentation/MusicAudio/Reference/CAFSpec/CAF_intro/CAF_intro.html",
   "coverage": "partial",
+  "helpers": 6,
   "source": {
     "provider": "nybble",
     "id": "caf",

@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/macho-fat
 // 原始 pack：macho-fat · Mach-O universal binary v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 2 项（见文件末尾）
+// 覆盖：partial；含 2 个动态辅助节点
 const FatArch = struct("FatArch", [
   i32("cputype", { values: { "1": "Vax", "6": "Mc680x0", "7": "X86", "16777223": "X86_64", "10": "Mc98000", "11": "Hppa", "12": "Arm", "16777228": "Arm64", "33554444": "Arm64_32", "13": "Mc88000", "14": "Sparc", "15": "I860", "18": "PowerPC", "16777234": "PowerPC64" }, label: "CPU family of this slice" }),
   u32("cpusubtype", { endian: "big", label: "CPU subtype (bit 31 = lib64; arm64e = 2, x86_64h = 8)" }),
@@ -26,12 +26,17 @@ export default definePack({
   nodes: {
     "entry": structNode(FatHeader, { label: "FatHeader（入口）" }),
     "FatArch": structNode(FatArch, { label: "FatArch" }),
+    "ptr_FatArch_sliceMagic": calcNode({
+      label: "FatArch.sliceMagic（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "offset": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["offset"] ?? 0) }),
+    }),
+    "array_FatHeader_archs": arrayNode(FatArch, {
+      label: "FatHeader.archs（动态数组）",
+      description: "count 来自 FatHeader.nfatArch；address 指向数组首元素",
+    }),
   },
 });
 
-
-/*
-未移植项：
-- FatArch.sliceMagic: 指针字段（at …）未移植
-- FatHeader.archs: 动态数组长度（field）未移植
-*/

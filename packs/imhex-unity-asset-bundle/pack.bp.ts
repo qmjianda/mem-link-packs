@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/unity-asset-bundle.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 2 项（见文件末尾）
+// 覆盖：complete
 const v1_Level = struct("v1_Level", [
   u32("compressedSize", {  }),
   u32("decompressedSize", {  }),
@@ -38,9 +38,3 @@ export default definePack({
   },
 });
 
-
-/*
-未移植项：
-- std_mem_Section: 位域没有可移植的固定成员
-- AssetBundle: 位域没有可移植的固定成员
-*/

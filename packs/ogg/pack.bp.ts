@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/ogg
 // 原始 pack：ogg · Ogg container v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 1 项（见文件末尾）
+// 覆盖：partial；含 9 个动态辅助节点
 const VorbisBlocksizes = struct("VorbisBlocksizes", [
   bits("blocksize0", 4, { at: 0, bit: 0, unit: 1, label: "blocksize0" }),
   bits("blocksize1", 4, { at: 0, bit: 4, unit: 1, label: "blocksize1" }),
@@ -85,11 +85,15 @@ const OggPage = struct("OggPage", [
   u8("pageSegments", { endian: "little", label: "number of segment table entries" }),
 ]);
 
+const Elem_u8 = struct("u8Value", [
+  u8('value', { endian: "little" }),
+]);
+
 export default definePack({
   name: "OGG",
   endian: "little",
   pointerSize: 4,
-  types: [VorbisBlocksizes, VorbisIdentification, OpusHead, OggFlacIdentification, TheoraIdentification, SpeexHeader, OggHeaderType, OggPage],
+  types: [VorbisBlocksizes, VorbisIdentification, OpusHead, OggFlacIdentification, TheoraIdentification, SpeexHeader, OggHeaderType, OggPage, Elem_u8],
   nodes: {
     "entry": structNode(OggPage, { label: "OggPage（入口）" }),
     "VorbisIdentification": structNode(VorbisIdentification, { label: "VorbisIdentification" }),
@@ -99,11 +103,36 @@ export default definePack({
     "SpeexHeader": structNode(SpeexHeader, { label: "SpeexHeader" }),
     "flags_OggHeaderType": structNode(OggHeaderType, { label: "位域 OggHeaderType" }),
     "flags_VorbisBlocksizes": structNode(VorbisBlocksizes, { label: "位域 VorbisBlocksizes" }),
+    "array_OggPage_segmentTable": arrayNode(Elem_u8, {
+      label: "OggPage.segmentTable（动态数组）",
+      description: "count 来自 OggPage.pageSegments；address 指向数组首元素",
+    }),
+    "calc_OggPage_payloadOffset": calcNode({
+      label: "OggPage.payloadOffset（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "pageSegments": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (27 + Number(inputs["pageSegments"] ?? 0)) }),
+    }),
+    "ptr_OggPage_packetType": calcNode({
+      label: "OggPage.packetType（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "payloadOffset": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs.base ?? 0) + Number(inputs["payloadOffset"] ?? 0) }),
+    }),
+    "ptr_OggPage_identification": calcNode({
+      label: "OggPage.identification（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "payloadOffset": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs.base ?? 0) + Number(inputs["payloadOffset"] ?? 0) }),
+    }),
+    "match_OggPage_identification_1": structNode(VorbisIdentification, { label: "OggPage.identification · match 1" }),
+    "match_OggPage_identification_79": structNode(OpusHead, { label: "OggPage.identification · match 79" }),
+    "match_OggPage_identification_127": structNode(OggFlacIdentification, { label: "OggPage.identification · match 127" }),
+    "match_OggPage_identification_128": structNode(TheoraIdentification, { label: "OggPage.identification · match 128" }),
+    "match_OggPage_identification_83": structNode(SpeexHeader, { label: "OggPage.identification · match 83" }),
   },
 });
 
-
-/*
-未移植项：
-- OggPage.segmentTable: 动态数组长度（field）未移植
-*/

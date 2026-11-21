@@ -18,6 +18,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://github.com/msuhanov/regf/blob/master/Windows%20registry%20file%20format%20specification.md",
   "coverage": "partial",
+  "helpers": 8,
   "source": {
     "provider": "nybble",
     "id": "regf",

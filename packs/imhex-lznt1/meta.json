@@ -3,7 +3,7 @@
   "name": "ImHex · Lznt1",
   "version": "1.0.0",
   "category": "other",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "LZNT1",
   "description": "LZNT1",
   "tags": [

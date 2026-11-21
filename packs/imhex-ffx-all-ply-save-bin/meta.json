@@ -3,7 +3,7 @@
   "name": "ImHex · Ply Save.Bin",
   "version": "1.0.0",
   "category": "game",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "Ply Save.Bin（移植自 ImHex Pattern Language）",
   "description": "Ply Save.Bin 的 ImHex 固定布局移植。",
   "tags": [

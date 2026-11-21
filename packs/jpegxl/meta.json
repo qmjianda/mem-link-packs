@@ -18,6 +18,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://jpeg.org/jpegxl/",
   "coverage": "partial",
+  "helpers": 6,
   "source": {
     "provider": "nybble",
     "id": "jpegxl",

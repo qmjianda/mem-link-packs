@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/bloodborne_save.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 6 项（见文件末尾）
+// 覆盖：partial；未移植 4 项（见文件末尾）
 const Dungeon = struct("Dungeon", [
   pad(1),
   u8("AreaDepth", {  }),
@@ -62,6 +62,4 @@ export default definePack({
 - Bosses.ClericBeast: 类型 ClericBeast 不可移植
 - Save.Flags: 类型 Flags 不可移植
 - Player.Stats: 类型 Stats 不可移植
-- Player: 位域没有可移植的固定成员
-- Save: 位域没有可移植的固定成员
 */

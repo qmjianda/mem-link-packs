@@ -3,7 +3,7 @@
   "name": "ImHex · Buki Get.Bin",
   "version": "1.0.0",
   "category": "other",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "Buki Get.Bin（移植自 ImHex Pattern Language）",
   "description": "Buki Get.Bin 的 ImHex 固定布局移植。",
   "tags": [

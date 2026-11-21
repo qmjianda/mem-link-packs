@@ -3,7 +3,7 @@
   "name": "ImHex · Xgstexture",
   "version": "1.0.0",
   "category": "image",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "Exient XGS Engine Texture",
   "description": "Exient XGS Engine Texture",
   "tags": [

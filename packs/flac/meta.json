@@ -15,6 +15,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://xiph.org/flac/format.html",
   "coverage": "partial",
+  "helpers": 2,
   "source": {
     "provider": "nybble",
     "id": "flac",

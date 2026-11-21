@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/xilinx_bootgen.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 4 项（见文件末尾）
+// 覆盖：partial；未移植 3 项（见文件末尾）
 const zynqmp_AuthenticationCertificationHeader = struct("zynqmp_AuthenticationCertificationHeader", [
   bits("public_algorithm", 2, { at: 0, bit: 0, unit: 4, label: "public_algorithm" }),
   bits("hash_algorithm", 2, { at: 0, bit: 2, unit: 4, label: "hash_algorithm" }),
@@ -85,5 +85,4 @@ export default definePack({
 - zynqmp_AuthenticationCertificates.authentication_header: 类型 AuthenticationCertificationHeader 不可移植
 - zynqmp_RegisterInitializationTable.register_initialization_pairs: 类型 RegisterInitializationTablePair 不可移植
 - zynqmp_BootHeader.arm_vector_table: 类型 ArmVectorTable 不可移植
-- zynqmp_DeviceBootImage: 位域没有可移植的固定成员
 */

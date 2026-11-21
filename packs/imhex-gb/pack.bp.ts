@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/gb.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 3 项（见文件末尾）
+// 覆盖：partial；未移植 1 项（见文件末尾）
 const CGB = struct("CGB", [
   bits("PGB_MODE", 2, { at: 0, bit: 2, unit: 1, label: "PGB_MODE" }),
   bits("CGB_ONLY", 1, { at: 0, bit: 6, unit: 1, label: "CGB_ONLY" }),
@@ -59,6 +59,4 @@ export default definePack({
 /*
 未移植项：
 - CartridgeStart.header: 类型 Header 不可移植
-- romBank16K: 位域没有可移植的固定成员
-- romBank32K: 位域没有可移植的固定成员
 */

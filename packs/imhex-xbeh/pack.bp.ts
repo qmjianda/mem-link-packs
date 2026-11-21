@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/xbeh.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 1 项（见文件末尾）
+// 覆盖：complete
 const AllowedMedia = struct("AllowedMedia", [
   bits("HardDisk", 1, { at: 0, bit: 0, unit: 4, label: "HardDisk" }),
   bits("DVD_X2", 1, { at: 0, bit: 1, unit: 4, label: "DVD_X2" }),
@@ -98,8 +98,3 @@ export default definePack({
   },
 });
 
-
-/*
-未移植项：
-- XBEH: 位域没有可移植的固定成员
-*/

@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/minidump
 // 原始 pack：minidump · Windows minidump v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 15 项（见文件末尾）
+// 覆盖：partial；含 27 个动态辅助节点；未移植 2 项（见文件末尾）
 const Location = struct("Location", [
   u32("dataSize", { endian: "little", label: "size in bytes" }),
   u32("rva", { endian: "little", label: "file offset" }),
@@ -214,6 +214,96 @@ export default definePack({
     "Directory": structNode(Directory, { label: "Directory" }),
     "flags_MinidumpType": structNode(MinidumpType, { label: "位域 MinidumpType" }),
     "flags_MiscInfoFlags": structNode(MiscInfoFlags, { label: "位域 MiscInfoFlags" }),
+    "ptr_SystemInfo_csdVersion": calcNode({
+      label: "SystemInfo.csdVersion（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "csdVersionRva": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["csdVersionRva"] ?? 0) }),
+    }),
+    "ptrtarget_SystemInfo_csdVersion": structNode(MinidumpString, { label: "指针目标 · SystemInfo.csdVersion" }),
+    "ptr_Module_name": calcNode({
+      label: "Module.name（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "moduleNameRva": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["moduleNameRva"] ?? 0) }),
+    }),
+    "ptrtarget_Module_name": structNode(MinidumpString, { label: "指针目标 · Module.name" }),
+    "array_ModuleList_modules": arrayNode(Module, {
+      label: "ModuleList.modules（动态数组）",
+      description: "count 来自 ModuleList.numberOfModules；address 指向数组首元素",
+    }),
+    "array_ThreadList_threads": arrayNode(Thread, {
+      label: "ThreadList.threads（动态数组）",
+      description: "count 来自 ThreadList.numberOfThreads；address 指向数组首元素",
+    }),
+    "array_MemoryList_ranges": arrayNode(MemoryDescriptor, {
+      label: "MemoryList.ranges（动态数组）",
+      description: "count 来自 MemoryList.numberOfMemoryRanges；address 指向数组首元素",
+    }),
+    "array_Memory64List_ranges": arrayNode(Memory64Descriptor, {
+      label: "Memory64List.ranges（动态数组）",
+      description: "count 来自 Memory64List.numberOfMemoryRanges；address 指向数组首元素",
+    }),
+    "ptr_UnloadedModule_name": calcNode({
+      label: "UnloadedModule.name（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "moduleNameRva": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["moduleNameRva"] ?? 0) }),
+    }),
+    "ptrtarget_UnloadedModule_name": structNode(MinidumpString, { label: "指针目标 · UnloadedModule.name" }),
+    "array_UnloadedModuleList_entries": arrayNode(UnloadedModule, {
+      label: "UnloadedModuleList.entries（动态数组）",
+      description: "count 来自 UnloadedModuleList.numberOfEntries；address 指向数组首元素",
+    }),
+    "ptr_ThreadName_name": calcNode({
+      label: "ThreadName.name（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "rvaOfThreadName": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["rvaOfThreadName"] ?? 0) }),
+    }),
+    "ptrtarget_ThreadName_name": structNode(MinidumpString, { label: "指针目标 · ThreadName.name" }),
+    "array_ThreadNames_names": arrayNode(ThreadName, {
+      label: "ThreadNames.names（动态数组）",
+      description: "count 来自 ThreadNames.numberOfThreadNames；address 指向数组首元素",
+    }),
+    "calc_MiscInfo_restLen": calcNode({
+      label: "MiscInfo.restLen（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "sizeOfInfo": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (Number(inputs["sizeOfInfo"] ?? 0) - 24) }),
+    }),
+    "ptr_Directory_stream": calcNode({
+      label: "Directory.stream（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "rva": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["rva"] ?? 0) }),
+    }),
+    "match_Directory_stream_3": structNode(ThreadList, { label: "Directory.stream · match 3" }),
+    "match_Directory_stream_4": structNode(ModuleList, { label: "Directory.stream · match 4" }),
+    "match_Directory_stream_5": structNode(MemoryList, { label: "Directory.stream · match 5" }),
+    "match_Directory_stream_6": structNode(ExceptionStream, { label: "Directory.stream · match 6" }),
+    "match_Directory_stream_7": structNode(SystemInfo, { label: "Directory.stream · match 7" }),
+    "match_Directory_stream_9": structNode(Memory64List, { label: "Directory.stream · match 9" }),
+    "match_Directory_stream_14": structNode(UnloadedModuleList, { label: "Directory.stream · match 14" }),
+    "match_Directory_stream_15": structNode(MiscInfo, { label: "Directory.stream · match 15" }),
+    "match_Directory_stream_24": structNode(ThreadNames, { label: "Directory.stream · match 24" }),
+    "ptr_Minidump_directory": calcNode({
+      label: "Minidump.directory（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "streamDirectoryRva": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["streamDirectoryRva"] ?? 0) }),
+    }),
+    "array_Minidump_directory": arrayNode(Directory, {
+      label: "Minidump.directory（动态数组）",
+      description: "count 来自 Minidump.numberOfStreams；address 指向数组首元素",
+    }),
   },
 });
 
@@ -221,18 +311,5 @@ export default definePack({
 /*
 未移植项：
 - MinidumpString.text: 变长字节块未移植
-- SystemInfo.csdVersion: 指针字段（at …）未移植
-- Module.name: 指针字段（at …）未移植
-- ModuleList.modules: 动态数组长度（field）未移植
-- ThreadList.threads: 动态数组长度（field）未移植
-- MemoryList.ranges: 动态数组长度（field）未移植
-- Memory64List.ranges: 动态数组长度（field）未移植
-- UnloadedModule.name: 指针字段（at …）未移植
-- UnloadedModuleList.entries: 动态数组长度（field）未移植
-- ThreadName.name: 指针字段（at …）未移植
-- ThreadNames.names: 动态数组长度（field）未移植
-- MiscInfo.restLen: computed 字段未移植
 - MiscInfo.rest: 变长字节块未移植
-- Directory.stream: 指针字段（at …）未移植
-- Minidump.directory: 指针字段（at …）未移植
 */

@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/id3.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 7 项（见文件末尾）
+// 覆盖：partial；未移植 6 项（见文件末尾）
 const v1_Tag = struct("v1_Tag", [
   str("header", { size: 3 }),
   str("title", { size: 30 }),
@@ -89,5 +89,4 @@ export default definePack({
 - v2_StringData.encoding: 类型 TextEncoding 不可移植
 - v2_Frame.id: 类型 FrameId 不可移植
 - v2_Tag.header: 类型 TagHeader 不可移植
-- v2_Tag: 位域没有可移植的固定成员
 */

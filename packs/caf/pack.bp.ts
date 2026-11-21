@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/caf
 // 原始 pack：caf · CAF audio v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 2 项（见文件末尾）
+// 覆盖：partial；含 6 个动态辅助节点；未移植 1 项（见文件末尾）
 const CafFormatFlags = struct("CafFormatFlags", [
   bits("isFloat", 1, { at: 0, bit: 0, unit: 4, label: "isFloat" }),
   bits("isLittleEndian", 1, { at: 0, bit: 1, unit: 4, label: "isLittleEndian" }),
@@ -59,6 +59,23 @@ export default definePack({
     "CafInfo": structNode(CafInfo, { label: "CafInfo" }),
     "CafChunk": structNode(CafChunk, { label: "CafChunk" }),
     "flags_CafFormatFlags": structNode(CafFormatFlags, { label: "位域 CafFormatFlags" }),
+    "ptr_CafChunk_decoded": calcNode({
+      label: "CafChunk.decoded（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs.base ?? 0) + 12 }),
+    }),
+    "match_CafChunk_decoded_desc": structNode(CafAudioDescription, { label: "CafChunk.decoded · match desc" }),
+    "match_CafChunk_decoded_pakt": structNode(CafPacketTable, { label: "CafChunk.decoded · match pakt" }),
+    "match_CafChunk_decoded_data": structNode(CafData, { label: "CafChunk.decoded · match data" }),
+    "match_CafChunk_decoded_info": structNode(CafInfo, { label: "CafChunk.decoded · match info" }),
+    "list_Caf_chunks": listNode(CafChunk, {
+      label: "Caf.chunks（重复元素）",
+      description: "Nybble repeat 字段；address 指向第一个元素，next 按元素大小前进",
+      next: (e) => {  return e.addr + CafChunk.size; },
+      max: 4096,
+    }),
   },
 });
 
@@ -66,5 +83,4 @@ export default definePack({
 /*
 未移植项：
 - CafChunk.data: 变长字节块未移植
-- Caf.chunks: repeat 字段未移植，后续布局在此停止
 */

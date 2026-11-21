@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/dod-save.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 8 项（见文件末尾）
+// 覆盖：partial；未移植 7 项（见文件末尾）
 const Color24 = struct("Color24", [
   u8("r", {  }),
   u8("g", {  }),
@@ -165,5 +165,4 @@ export default definePack({
 - Unit.code_name: 类型 String 不可移植
 - SpecieKilled.code_name: 类型 String 不可移植
 - VarsField.fieldName: 类型 String 不可移植
-- MaybeCompressedSaveData: 位域没有可移植的固定成员
 */

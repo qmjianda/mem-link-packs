@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/fs.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 4 项（见文件末尾）
+// 覆盖：partial；未移植 3 项（见文件末尾）
 const DiskTimeStamp = struct("DiskTimeStamp", [
   u8("seconds", {  }),
   u8("minutes", {  }),
@@ -122,5 +122,4 @@ export default definePack({
 - fat32_EntryStatusOrSequenceNumber.entryStatus: 类型 EntryStatus 不可移植
 - fat32_DirEntry.attributes: 类型 Attributes 不可移植
 - fat32_VFATDirEntry.entryStatusOrSequenceNumber: 类型 EntryStatusOrSequenceNumber 不可移植
-- u64: 位域没有可移植的固定成员
 */

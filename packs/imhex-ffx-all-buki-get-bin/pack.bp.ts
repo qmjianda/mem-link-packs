@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/all/buki_get.bin.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 2 项（见文件末尾）
+// 覆盖：complete
 const GearProps = struct("GearProps", [
   bits("flag1", 1, { at: 0, bit: 0, unit: 1, label: "flag1" }),
   bits("hidden", 1, { at: 0, bit: 1, unit: 1, label: "hidden" }),
@@ -33,9 +33,3 @@ export default definePack({
   },
 });
 
-
-/*
-未移植项：
-- u16: 位域没有可移植的固定成员
-- u32: 位域没有可移植的固定成员
-*/

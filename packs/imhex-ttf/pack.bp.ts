@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/ttf.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 5 项（见文件末尾）
+// 覆盖：complete
 const TableDirectory = struct("TableDirectory", [
   str("tag", { size: 4 }),
   u32("checkSum", {  }),
@@ -513,12 +513,3 @@ export default definePack({
   },
 });
 
-
-/*
-未移植项：
-- u64: 位域没有可移植的固定成员
-- u16: 位域没有可移植的固定成员
-- s16: 位域没有可移植的固定成员
-- u32: 位域没有可移植的固定成员
-- bool: 位域没有可移植的固定成员
-*/

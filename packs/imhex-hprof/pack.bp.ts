@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/hprof.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 8 项（见文件末尾）
+// 覆盖：partial；未移植 7 项（见文件末尾）
 const LoadClass = struct("LoadClass", [
   u32("classSerialNumber", {  }),
 ]);
@@ -143,5 +143,4 @@ export default definePack({
 - InstanceField.fieldNameStringId: 类型 ID 不可移植
 - StartThread.threadObjectId: 类型 ID 不可移植
 - HPROF.header: 类型 Header 不可移植
-- HPROF: 位域没有可移植的固定成员
 */

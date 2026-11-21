@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/cfb
 // 原始 pack：cfb · Compound File Binary v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 4 项（见文件末尾）
+// 覆盖：partial；含 6 个动态辅助节点
 const CfbDirectoryEntry = struct("CfbDirectoryEntry", [
   bytes("name", { size: 64, label: "entry name, UTF-16LE, NUL-terminated" }),
   u16("nameLength", { endian: "little", label: "bytes of name in use, terminator included" }),
@@ -55,14 +55,36 @@ export default definePack({
     "entry": structNode(Cfb, { label: "Cfb（入口）" }),
     "CfbDirectoryEntry": structNode(CfbDirectoryEntry, { label: "CfbDirectoryEntry" }),
     "CfbDirectorySector": structNode(CfbDirectorySector, { label: "CfbDirectorySector" }),
+    "calc_Cfb_dirOffsetV3": calcNode({
+      label: "Cfb.dirOffsetV3（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "firstDirSector": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: ((Number(inputs["firstDirSector"] ?? 0) * 512) + 512) }),
+    }),
+    "calc_Cfb_dirOffsetV4": calcNode({
+      label: "Cfb.dirOffsetV4（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "firstDirSector": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: ((Number(inputs["firstDirSector"] ?? 0) * 4096) + 4096) }),
+    }),
+    "ptr_Cfb_rootDirectoryV3": calcNode({
+      label: "Cfb.rootDirectoryV3（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "dirOffsetV3": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["dirOffsetV3"] ?? 0) }),
+    }),
+    "ptrtarget_Cfb_rootDirectoryV3": structNode(CfbDirectorySector, { label: "指针目标 · Cfb.rootDirectoryV3" }),
+    "ptr_Cfb_rootDirectoryV4": calcNode({
+      label: "Cfb.rootDirectoryV4（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "dirOffsetV4": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["dirOffsetV4"] ?? 0) }),
+    }),
+    "ptrtarget_Cfb_rootDirectoryV4": structNode(CfbDirectorySector, { label: "指针目标 · Cfb.rootDirectoryV4" }),
   },
 });
 
-
-/*
-未移植项：
-- Cfb.dirOffsetV3: computed 字段未移植
-- Cfb.dirOffsetV4: computed 字段未移植
-- Cfb.rootDirectoryV3: 指针字段（at …）未移植
-- Cfb.rootDirectoryV4: 指针字段（at …）未移植
-*/

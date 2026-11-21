@@ -19,6 +19,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://www.matroska.org/technical/elements.html",
   "coverage": "partial",
+  "helpers": 5,
   "source": {
     "provider": "nybble",
     "id": "matroska",

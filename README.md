@@ -17,9 +17,10 @@
 | [ImHex-Patterns](https://github.com/WerWolv/ImHex-Patterns) | 284 | GPL-2.0-or-later | 固定布局移植，覆盖大量图像/音频/容器/文件系统/游戏格式；另有 28 个 pattern 只有条件/varint/运行时逻辑，没有可静态确定的字段，未生成 pack |
 
 > **部分布局**：mem-link 的静态结构无法表达所有上游特性（条件字段、repeat、
-> match、变长数组、指针跟随、运行时变换）。移植器保留能确定的固定前缀，并在
-> `pack.bp.ts` 末尾列出「未移植项」；这些 pack 在目录里标记为 `coverage: partial`，
-> 应用商店显示「部分布局」。完整的固定头部仍然可以直接用于查看字节。
+> match、变长数组、指针跟随、运行时变换）。移植器保留能确定的固定前缀，并把
+> 动态部分尽量生成成 `calcNode` / `listNode` / `arrayNode` / 变体 `structNode`。
+> 当前 377 个 pack 中 192 个完整、185 个部分布局；其中 59 个部分布局带有
+> 321 个动态辅助节点。`pack.bp.ts` 末尾仍列出无法自动覆盖的项。
 
 ## 安装
 

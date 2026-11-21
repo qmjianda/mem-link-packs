@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/protobuf.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 4 项（见文件末尾）
+// 覆盖：partial；含 1 个动态辅助节点；未移植 5 项（见文件末尾）
 const ZigZag32 = struct("ZigZag32", [
   u32("value", {  }),
 ]);
@@ -34,14 +34,31 @@ export default definePack({
     "ZigZag64": structNode(ZigZag64, { label: "ZigZag64" }),
     "_64Bit": structNode(_64Bit, { label: "_64Bit" }),
     "_32Bit": structNode(_32Bit, { label: "_32Bit" }),
+    "read_varint": calcNode({
+      label: '读 Varint / LEB128',
+      description: '按地址解码 1–9 字节无符号 LEB128；有符号字段请用 sLEB128 变体',
+      inputs: { address: 'number' },
+      outputs: { value: 'number', bytes: 'number' },
+      run: ({ address }, ctx) => {
+        let value = 0;
+        for (let i = 0; i < 9; i += 1) {
+          const b = ctx.mem.u8(Number(address) + i);
+          if (i === 8) return { value: value * 256 + b, bytes: 9 };
+          value = value * 128 + (b & 0x7f);
+          if ((b & 0x80) === 0) return { value, bytes: i + 1 };
+        }
+        return { value, bytes: 9 };
+      },
+    }),
   },
 });
 
 
 /*
 未移植项：
-- Key.keyDec: 类型 type_uLEB128 不可移植
-- LengthDelimited.length: 类型 type_uLEB128 不可移植
-- _LEB128.uLEB128: 类型 type_uLEB128 不可移植
+- varint/LEB128: 已生成 read_varint 辅助节点
+- Key.keyDec: 变长 type_uLEB128 已生成 read_varint 辅助节点，静态布局在此停止
+- LengthDelimited.length: 变长 type_uLEB128 已生成 read_varint 辅助节点，静态布局在此停止
+- _LEB128.uLEB128: 变长 type_uLEB128 已生成 read_varint 辅助节点，静态布局在此停止
 - Field.key: 类型 Key 不可移植
 */

@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/fs/exfat.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 7 项（见文件末尾）
+// 覆盖：partial；未移植 3 项（见文件末尾）
 const VolumeLabelEntry = struct("VolumeLabelEntry", [
   u8("entryType", {  }),
   u8("characterCount", {  }),
@@ -75,8 +75,4 @@ export default definePack({
 - OemParameter.parameters: 类型 Parameter 不可移植
 - BootRegion.bootSector: 类型 BootSector 不可移植
 - FileNameEntry.name: 类型 char16 不可移植
-- u64: 位域没有可移植的固定成员
-- BootRegion: 位域没有可移植的固定成员
-- FatChain: 位域没有可移植的固定成员
-- DirectoryEntryChain: 位域没有可移植的固定成员
 */

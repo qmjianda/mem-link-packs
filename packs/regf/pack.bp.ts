@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/regf
 // 原始 pack：regf · Windows registry hive v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 8 项（见文件末尾）
+// 覆盖：partial；含 8 个动态辅助节点；未移植 1 项（见文件末尾）
 const RegfKeyFlags = struct("RegfKeyFlags", [
   bits("volatile", 1, { at: 0, bit: 0, unit: 2, label: "volatile" }),
   bits("hiveExit", 1, { at: 0, bit: 1, unit: 2, label: "hiveExit" }),
@@ -67,28 +67,71 @@ const Regf = struct("Regf", [
   u32("bootRecover", { endian: "little", label: "set during boot, zero in a hive at rest" }),
 ]);
 
+const Elem_char = struct("charValue", [
+  char('value', { endian: "little" }),
+]);
+
 export default definePack({
   name: "REGF",
   endian: "little",
   pointerSize: 4,
-  types: [RegfKeyFlags, RegfNamedKey, RegfHbin, Regf],
+  types: [RegfKeyFlags, RegfNamedKey, RegfHbin, Regf, Elem_char],
   nodes: {
     "entry": structNode(Regf, { label: "Regf（入口）" }),
     "RegfNamedKey": structNode(RegfNamedKey, { label: "RegfNamedKey" }),
     "RegfHbin": structNode(RegfHbin, { label: "RegfHbin" }),
     "flags_RegfKeyFlags": structNode(RegfKeyFlags, { label: "位域 RegfKeyFlags" }),
+    "array_RegfNamedKey_keyName": arrayNode(Elem_char, {
+      label: "RegfNamedKey.keyName（动态数组）",
+      description: "count 来自 RegfNamedKey.keyNameLength；address 指向数组首元素",
+    }),
+    "calc_RegfHbin_cellsLen": calcNode({
+      label: "RegfHbin.cellsLen（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "size": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (Number(inputs["size"] ?? 0) - 32) }),
+    }),
+    "calc_Regf_rootCellPos": calcNode({
+      label: "Regf.rootCellPos（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "rootCellOffset": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (Number(inputs["rootCellOffset"] ?? 0) + 4096) }),
+    }),
+    "calc_Regf_rootKeyPos": calcNode({
+      label: "Regf.rootKeyPos（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "rootCellOffset": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (Number(inputs["rootCellOffset"] ?? 0) + 4100) }),
+    }),
+    "ptr_Regf_rootCellSize": calcNode({
+      label: "Regf.rootCellSize（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "rootCellPos": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["rootCellPos"] ?? 0) }),
+    }),
+    "ptr_Regf_rootKey": calcNode({
+      label: "Regf.rootKey（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "rootKeyPos": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["rootKeyPos"] ?? 0) }),
+    }),
+    "ptrtarget_Regf_rootKey": structNode(RegfNamedKey, { label: "指针目标 · Regf.rootKey" }),
+    "list_Regf_bins": listNode(RegfHbin, {
+      label: "Regf.bins（重复元素）",
+      description: "Nybble repeat 字段；address 指向第一个元素，next 按元素大小前进",
+      next: (e) => {  return e.addr + RegfHbin.size; },
+      max: 4096,
+    }),
   },
 });
 
 
 /*
 未移植项：
-- RegfNamedKey.keyName: 动态数组长度（field）未移植
-- RegfHbin.cellsLen: computed 字段未移植
 - RegfHbin.cells: 变长字节块未移植
-- Regf.rootCellPos: computed 字段未移植
-- Regf.rootKeyPos: computed 字段未移植
-- Regf.rootCellSize: 指针字段（at …）未移植
-- Regf.rootKey: 指针字段（at …）未移植
-- Regf.bins: repeat 字段未移植，后续布局在此停止
 */

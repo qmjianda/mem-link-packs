@@ -3,7 +3,7 @@
   "name": "ImHex · Dds",
   "version": "1.0.0",
   "category": "image",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "DirectDraw Surface",
   "description": "DirectDraw Surface",
   "tags": [

@@ -3,7 +3,7 @@
   "name": "ImHex · Snes",
   "version": "1.0.0",
   "category": "game",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "Super Nintendo Entertainment System ROM header",
   "description": "Super Nintendo Entertainment System ROM header",
   "tags": [

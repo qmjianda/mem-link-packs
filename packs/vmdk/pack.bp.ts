@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/vmdk
 // 原始 pack：vmdk · VMDK sparse disk v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 10 项（见文件末尾）
+// 覆盖：partial；含 12 个动态辅助节点
 const VmdkFirstTable = struct("VmdkFirstTable", [
   u32("sector", { endian: "little", label: "sector of the first grain table" }),
 ]);
@@ -38,29 +38,94 @@ const Vmdk = struct("Vmdk", [
   bytes("pad", { size: 433 }),
 ]);
 
+const Elem_u32 = struct("u32Value", [
+  u32('value', { endian: "little" }),
+]);
+
 export default definePack({
   name: "VMDK",
   endian: "little",
   pointerSize: 4,
-  types: [VmdkFirstTable, VmdkFlags, Vmdk],
+  types: [VmdkFirstTable, VmdkFlags, Vmdk, Elem_u32],
   nodes: {
     "entry": structNode(Vmdk, { label: "Vmdk（入口）" }),
     "VmdkFirstTable": structNode(VmdkFirstTable, { label: "VmdkFirstTable" }),
     "flags_VmdkFlags": structNode(VmdkFlags, { label: "位域 VmdkFlags" }),
+    "calc_VmdkFirstTable_start": calcNode({
+      label: "VmdkFirstTable.start（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "sector": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (Number(inputs["sector"] ?? 0) * 512) }),
+    }),
+    "ptr_VmdkFirstTable_table": calcNode({
+      label: "VmdkFirstTable.table（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "start": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["start"] ?? 0) }),
+    }),
+    "calc_Vmdk_descriptorStart": calcNode({
+      label: "Vmdk.descriptorStart（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "descriptorOffset": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (Number(inputs["descriptorOffset"] ?? 0) * 512) }),
+    }),
+    "calc_Vmdk_descriptorBytes": calcNode({
+      label: "Vmdk.descriptorBytes（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "descriptorSize": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (Number(inputs["descriptorSize"] ?? 0) * 512) }),
+    }),
+    "ptr_Vmdk_descriptor": calcNode({
+      label: "Vmdk.descriptor（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "descriptorStart": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["descriptorStart"] ?? 0) }),
+    }),
+    "calc_Vmdk_grainsPerTable": calcNode({
+      label: "Vmdk.grainsPerTable（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "grainSize": "number", "numGtesPerGt": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (Number(inputs["grainSize"] ?? 0) * Number(inputs["numGtesPerGt"] ?? 0)) }),
+    }),
+    "calc_Vmdk_gdEntries": calcNode({
+      label: "Vmdk.gdEntries（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "capacity": "number", "grainsPerTable": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (((Number(inputs["capacity"] ?? 0) + Number(inputs["grainsPerTable"] ?? 0)) - 1) / Number(inputs["grainsPerTable"] ?? 0)) }),
+    }),
+    "calc_Vmdk_gdStart": calcNode({
+      label: "Vmdk.gdStart（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "gdOffset": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (Number(inputs["gdOffset"] ?? 0) * 512) }),
+    }),
+    "ptr_Vmdk_grainDirectory": calcNode({
+      label: "Vmdk.grainDirectory（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "gdStart": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["gdStart"] ?? 0) }),
+    }),
+    "array_Vmdk_grainDirectory": arrayNode(Elem_u32, {
+      label: "Vmdk.grainDirectory（动态数组）",
+      description: "count 来自 Vmdk.gdEntries；address 指向数组首元素",
+    }),
+    "ptr_Vmdk_firstGrainTable": calcNode({
+      label: "Vmdk.firstGrainTable（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "gdStart": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["gdStart"] ?? 0) }),
+    }),
+    "ptrtarget_Vmdk_firstGrainTable": structNode(VmdkFirstTable, { label: "指针目标 · Vmdk.firstGrainTable" }),
   },
 });
 
-
-/*
-未移植项：
-- VmdkFirstTable.start: computed 字段未移植
-- VmdkFirstTable.table: 指针字段（at …）未移植
-- Vmdk.descriptorStart: computed 字段未移植
-- Vmdk.descriptorBytes: computed 字段未移植
-- Vmdk.descriptor: 指针字段（at …）未移植
-- Vmdk.grainsPerTable: computed 字段未移植
-- Vmdk.gdEntries: computed 字段未移植
-- Vmdk.gdStart: computed 字段未移植
-- Vmdk.grainDirectory: 指针字段（at …）未移植
-- Vmdk.firstGrainTable: 指针字段（at …）未移植
-*/

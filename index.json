@@ -229,6 +229,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://py7zr.readthedocs.io/en/latest/archive_format.html",
       "coverage": "partial",
+      "helpers": 4,
       "source": {
         "provider": "nybble",
         "id": "7z",
@@ -238,8 +239,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/7z/pack.bp.ts",
-      "sha256": "704aec64207707a8a8d1c0b2824ae7d7db87568c6cca476338abc9c7837389a7",
-      "size": 1455
+      "sha256": "38731ec5525f9a48516c5f3778335d627867cce8bea8c6a3f9c8577c14dd2872",
+      "size": 3120
     },
     {
       "id": "aiff",
@@ -320,6 +321,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://developer.apple.com/support/downloads/Apple-File-System-Reference.pdf",
       "coverage": "partial",
+      "helpers": 14,
       "source": {
         "provider": "nybble",
         "id": "apfs",
@@ -329,8 +331,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/apfs/pack.bp.ts",
-      "sha256": "1fde2c3012bab25f01038c80aadec77e4891dfe9cb99d040f32268320ead4078",
-      "size": 12162
+      "sha256": "4345addc0b90692542b052d881a7e6907c23e91f61589d0ad4f86032c21f379f",
+      "size": 15801
     },
     {
       "id": "ar",
@@ -382,6 +384,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://en.wikipedia.org/wiki/Au_file_format",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "nybble",
         "id": "au",
@@ -391,8 +394,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/au/pack.bp.ts",
-      "sha256": "45f62a2123e0e77b1db98ccdf67a522c9af882d8c984f969ef631675133e92db",
-      "size": 1702
+      "sha256": "12776eacb1043024a1d4ad55f57e0e7df756a092faa56bb15d20b1b313629075",
+      "size": 2026
     },
     {
       "id": "avi",
@@ -411,6 +414,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://en.wikipedia.org/wiki/Audio_Video_Interleave",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "nybble",
         "id": "avi",
@@ -420,8 +424,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/avi/pack.bp.ts",
-      "sha256": "bce73da4980e4b6958e38f19f3589d86715b027967bd1d4f44824fe4a4bbfe51",
-      "size": 1218
+      "sha256": "02edb500b33f2b9ded65524f236ca21186f6ae05aa8214fa30c30849d71c15bc",
+      "size": 1460
     },
     {
       "id": "bzip2",
@@ -471,6 +475,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://learn.microsoft.com/windows/win32/msi/cabinet-files",
       "coverage": "partial",
+      "helpers": 3,
       "source": {
         "provider": "nybble",
         "id": "cab",
@@ -480,8 +485,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/cab/pack.bp.ts",
-      "sha256": "a55947397648ae1958f60ceaf3eb9d85fe0cf265e89ef72ff6bf888ae71c4d55",
-      "size": 3526
+      "sha256": "99698b05ec1f49006dc50def425427a5f29018355f786a768efa772325e69cb3",
+      "size": 4272
     },
     {
       "id": "caf",
@@ -503,6 +508,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://developer.apple.com/library/archive/documentation/MusicAudio/Reference/CAFSpec/CAF_intro/CAF_intro.html",
       "coverage": "partial",
+      "helpers": 6,
       "source": {
         "provider": "nybble",
         "id": "caf",
@@ -512,8 +518,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/caf/pack.bp.ts",
-      "sha256": "225ebd689d9b26414160dac8108d5d81b3951a2f25d4c6a7f292db9f119209b9",
-      "size": 3418
+      "sha256": "2868d9ede4d5f4c4362876ece7b8fc47fff8bdea3a8d6923072bf2ec61769a78",
+      "size": 4429
     },
     {
       "id": "cfb",
@@ -536,6 +542,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-cfb/53989ce4-7b05-4f8d-829b-d08d6148375b",
       "coverage": "partial",
+      "helpers": 6,
       "source": {
         "provider": "nybble",
         "id": "cfb",
@@ -545,8 +552,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/cfb/pack.bp.ts",
-      "sha256": "9feaecaa2900040ccca7c9810ecff0467d809105ae189956d6bcb122ac5e7233",
-      "size": 4296
+      "sha256": "16208d4fc9ead0c1225092f57288efdca19d9565943fcbbe972b7fe88742b520",
+      "size": 5778
     },
     {
       "id": "crx",
@@ -599,6 +606,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://learn.microsoft.com/en-us/windows/win32/direct3ddds/dds-header",
       "coverage": "partial",
+      "helpers": 2,
       "source": {
         "provider": "nybble",
         "id": "dds",
@@ -608,8 +616,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/dds/pack.bp.ts",
-      "sha256": "67f4ae39d6efa7dd7f57c509ba54a391f41e5759d4f65b68bb63b34c17bda8ef",
-      "size": 6230
+      "sha256": "7c69a27492502162f7a0eb894b19458b0c240f6bd7fb6f8073fbaf1f89af7824",
+      "size": 6670
     },
     {
       "id": "dex",
@@ -659,6 +667,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_7.html",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "nybble",
         "id": "dicom",
@@ -668,8 +677,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/dicom/pack.bp.ts",
-      "sha256": "e6177799ec1c9b95767a88deb712625a11270142bb457d58b8bdedce1185d5a9",
-      "size": 2923
+      "sha256": "7a9badc16bcfcf7d1ed780bfe46cf1954c9f8049a881cedb95ff98a95c8ed78f",
+      "size": 3261
     },
     {
       "id": "dtb",
@@ -691,6 +700,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://www.devicetree.org/specifications/",
       "coverage": "partial",
+      "helpers": 9,
       "source": {
         "provider": "nybble",
         "id": "dtb",
@@ -700,8 +710,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/dtb/pack.bp.ts",
-      "sha256": "f2210b7923c0e882353121b54a42d731bfb80a96dbc8ac2930bf5941e8dddeae",
-      "size": 3229
+      "sha256": "3555dccfec82029744e8495b85e520904a2afd95fc8c6fde4bdcbad9ce6688ac",
+      "size": 5794
     },
     {
       "id": "evtx",
@@ -722,6 +732,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://learn.microsoft.com/openspecs/windows_protocols/ms-even6/",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "nybble",
         "id": "evtx",
@@ -731,8 +742,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/evtx/pack.bp.ts",
-      "sha256": "695dab09156e7a5f841a3f813a8cf11fae373a7aab2f0658917797c105470f2f",
-      "size": 3492
+      "sha256": "871739b6058cf462ddb628c467942c8ac06bbcd4d6033f69e9f43a5e1af81931",
+      "size": 3673
     },
     {
       "id": "ext4",
@@ -843,6 +854,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://xiph.org/flac/format.html",
       "coverage": "partial",
+      "helpers": 2,
       "source": {
         "provider": "nybble",
         "id": "flac",
@@ -852,8 +864,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/flac/pack.bp.ts",
-      "sha256": "db72c90eec9afe74e9595a10e87eb70b06b3f19803501b4ed3be0a9e347b5898",
-      "size": 1599
+      "sha256": "50d38b42e42991eaa7d57b5610bde1ab457c10f90aa32d60e75902420fdf5f85",
+      "size": 2476
     },
     {
       "id": "flv",
@@ -874,6 +886,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://rtmp.veriskope.com/pdf/video_file_format_spec_v10_1.pdf",
       "coverage": "partial",
+      "helpers": 6,
       "source": {
         "provider": "nybble",
         "id": "flv",
@@ -883,8 +896,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/flv/pack.bp.ts",
-      "sha256": "95f5ff098e21fc6bc6a6bdb85adec264cdfe8701b044b36777640378f78c142b",
-      "size": 3685
+      "sha256": "af2ef47121c79f8fc36753d6cda11741104d3a4a85ec771da2bbdd14a667d7ab",
+      "size": 5266
     },
     {
       "id": "gameboy",
@@ -971,6 +984,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://github.com/ggml-org/ggml/blob/master/docs/gguf.md",
       "coverage": "partial",
+      "helpers": 5,
       "source": {
         "provider": "nybble",
         "id": "gguf",
@@ -980,8 +994,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/gguf/pack.bp.ts",
-      "sha256": "d337ee29aafaa15e411fe3d96818bf83f2104b14c2e72089adafbb11511d144e",
-      "size": 2677
+      "sha256": "18de61aabd464fd4b1f7a711a00cc06dfc81293f0ed2980ecebfa95d9e782929",
+      "size": 3295
     },
     {
       "id": "glb",
@@ -1001,6 +1015,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "nybble",
         "id": "glb",
@@ -1010,8 +1025,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/glb/pack.bp.ts",
-      "sha256": "644a5709fdeb5f7d7c49f365f8f9cc9cf93f0e51d2515aeb0442fb5846189e02",
-      "size": 1300
+      "sha256": "fa8bd127a1c2c4b1df4a77b3ccfaae732b9ad7c5147c3b923a7d3268d557e93d",
+      "size": 1406
     },
     {
       "id": "gpt",
@@ -1094,6 +1109,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://support.hdfgroup.org/documentation/hdf5/latest/_f_m_t3.html",
       "coverage": "partial",
+      "helpers": 19,
       "source": {
         "provider": "nybble",
         "id": "hdf5",
@@ -1103,8 +1119,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/hdf5/pack.bp.ts",
-      "sha256": "732eccbca8293cb5332ed79e7c249c0ec56a64ee058875ab0c32755a9469c904",
-      "size": 10516
+      "sha256": "b4bad1972288155c6c4a6a1cf2af00cb8d43178634a92eb4e239a291b9d9abc3",
+      "size": 14594
     },
     {
       "id": "hfsplus",
@@ -1156,6 +1172,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://en.wikipedia.org/wiki/Apple_Icon_Image_format",
       "coverage": "partial",
+      "helpers": 2,
       "source": {
         "provider": "nybble",
         "id": "icns",
@@ -1165,8 +1182,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/icns/pack.bp.ts",
-      "sha256": "f192c6bd3d62c9bfe6753150e7fef15687d5339a27c21ee471e674b87c40b049",
-      "size": 1297
+      "sha256": "59c97c80ae1011813ab3b98f23629c395aae60f8be65f295fab4526bb256f1f8",
+      "size": 1830
     },
     {
       "id": "ico",
@@ -1185,6 +1202,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://en.wikipedia.org/wiki/ICO_(file_format)",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "nybble",
         "id": "ico",
@@ -1194,8 +1212,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/ico/pack.bp.ts",
-      "sha256": "6749e127b9ed2c36ad263b030eed6cd8ff652c9db3391d7b960eb460aa127bff",
-      "size": 1801
+      "sha256": "1d621fc171ef03f124f876d1efdd26210f668848cdbcdefec720b490ec8d2fc1",
+      "size": 1897
     },
     {
       "id": "iso9660",
@@ -1217,6 +1235,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://www.ecma-international.org/wp-content/uploads/ECMA-119_4th_edition_june_2019.pdf",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "nybble",
         "id": "iso9660",
@@ -1226,8 +1245,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/iso9660/pack.bp.ts",
-      "sha256": "da88845151cdeb2c838ac333c67993eb59b30c175d42f6dff5702024bbd74701",
-      "size": 6080
+      "sha256": "4fd51ece097f75eee5dbfe51a7b5b4098530317b23cfe74ac4a214c4a99da3bb",
+      "size": 6300
     },
     {
       "id": "el-torito",
@@ -1249,6 +1268,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://www.ecma-international.org/wp-content/uploads/ECMA-119_4th_edition_june_2019.pdf",
       "coverage": "partial",
+      "helpers": 3,
       "source": {
         "provider": "nybble",
         "id": "iso9660",
@@ -1258,8 +1278,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/el-torito/pack.bp.ts",
-      "sha256": "583bef21ae43dfa02e2cb55cb318f50d6ada9fd04fdf9f888115f8f06f2c8789",
-      "size": 3395
+      "sha256": "31c55f696024bccc965745a56ad0e4129ebe1d13c590382fd92f2817e6c32650",
+      "size": 4113
     },
     {
       "id": "java-class",
@@ -1279,6 +1299,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://docs.oracle.com/javase/specs/jvms/se17/html/jvms-4.html",
       "coverage": "partial",
+      "helpers": 16,
       "source": {
         "provider": "nybble",
         "id": "java-class",
@@ -1288,8 +1309,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/java-class/pack.bp.ts",
-      "sha256": "048659441f3cf7e5b8322272722aaa63739371af6eb75923d3113be4861510d6",
-      "size": 2947
+      "sha256": "6734a84b7a2d0e72f01fb49abf5fdfad47c8423d5629422c5cfbb5eec288f247",
+      "size": 4762
     },
     {
       "id": "jpegxl",
@@ -1311,6 +1332,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://jpeg.org/jpegxl/",
       "coverage": "partial",
+      "helpers": 6,
       "source": {
         "provider": "nybble",
         "id": "jpegxl",
@@ -1320,8 +1342,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/jpegxl/pack.bp.ts",
-      "sha256": "6957a62794fd006128d17a788e227eefdaaae3da359a4b5ca6c592977718c678",
-      "size": 2127
+      "sha256": "2fb0784ef065fa89ef8e8ec82c6463c5fea166fb8c3f7e5a078c0d439b859dd6",
+      "size": 3170
     },
     {
       "id": "las",
@@ -1402,6 +1424,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://github.com/lz4/lz4/blob/dev/doc/lz4_Frame_format.md",
       "coverage": "partial",
+      "helpers": 2,
       "source": {
         "provider": "nybble",
         "id": "lz4",
@@ -1411,8 +1434,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/lz4/pack.bp.ts",
-      "sha256": "d52dfb5d2682c60835a05a2875e0f66589e3bcb12390f75abe4a4078694204ca",
-      "size": 2783
+      "sha256": "b58b1ade08fdd7533dcd46a103a4927c108299b6eb8a13bfaf89e3662c1444b3",
+      "size": 3585
     },
     {
       "id": "universal-binary",
@@ -1433,6 +1456,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://github.com/apple-oss-distributions/xnu/blob/main/EXTERNAL_HEADERS/mach-o/fat.h",
       "coverage": "partial",
+      "helpers": 2,
       "source": {
         "provider": "nybble",
         "id": "macho-fat",
@@ -1442,8 +1466,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/universal-binary/pack.bp.ts",
-      "sha256": "cd4a6660d71347817f2cce1f183b37510bfc40072649a0b8d90c2768dd79eb16",
-      "size": 1741
+      "sha256": "3dc8a03d17802a5360d41b9122d00d94cb41e08d368e91bcafeb30feb8d0d91f",
+      "size": 2161
     },
     {
       "id": "universal-binary-3-slices",
@@ -1464,6 +1488,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://github.com/apple-oss-distributions/xnu/blob/main/EXTERNAL_HEADERS/mach-o/fat.h",
       "coverage": "partial",
+      "helpers": 2,
       "source": {
         "provider": "nybble",
         "id": "macho-fat",
@@ -1473,8 +1498,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/universal-binary-3-slices/pack.bp.ts",
-      "sha256": "8520fba1c6fc76f4045c251d7c5021f94462ea73f0b19328c4e3c65dcd573cc3",
-      "size": 1752
+      "sha256": "cdef76a4cf98822bb3cd43892466867d82b0681791cc539777275fe71dde14e1",
+      "size": 2172
     },
     {
       "id": "universal-binary-64-bit-table",
@@ -1495,6 +1520,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://github.com/apple-oss-distributions/xnu/blob/main/EXTERNAL_HEADERS/mach-o/fat.h",
       "coverage": "partial",
+      "helpers": 2,
       "source": {
         "provider": "nybble",
         "id": "macho-fat",
@@ -1504,8 +1530,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/universal-binary-64-bit-table/pack.bp.ts",
-      "sha256": "5ef9f5c2a8366f0de5cc1eb3e49680a140d443626328942d2bbe7af3b8b23e61",
-      "size": 1820
+      "sha256": "baaadd9f3e5adb11a680ce023f2dcae790dc855dfb3e61fe793a30cd87377586",
+      "size": 2248
     },
     {
       "id": "macho",
@@ -1557,6 +1583,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://www.matroska.org/technical/elements.html",
       "coverage": "partial",
+      "helpers": 5,
       "source": {
         "provider": "nybble",
         "id": "matroska",
@@ -1566,8 +1593,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/matroska/pack.bp.ts",
-      "sha256": "bc1ec89e6adc594218cb087ba2406d9027126d812caff8d1c87de0e7a92fd598",
-      "size": 16110
+      "sha256": "fcbab3fe682f7e7a2b40d49ebf889914be01207976a08db69b9616a43d608efa",
+      "size": 7641
     },
     {
       "id": "mbr",
@@ -1616,6 +1643,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://midi.org/standard-midi-files-specification",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "nybble",
         "id": "midi",
@@ -1625,8 +1653,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/midi/pack.bp.ts",
-      "sha256": "d6f95be097dd35da2fb01e07a483fac8d74ede6ff2676f1a354e6c953560f1fc",
-      "size": 1705
+      "sha256": "b446a65658478b6ce2c381d73b4972046bcceccb0de00d10a5a740b9a28b9302",
+      "size": 1948
     },
     {
       "id": "minidump",
@@ -1647,6 +1675,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://learn.microsoft.com/windows/win32/api/minidumpapiset/",
       "coverage": "partial",
+      "helpers": 27,
       "source": {
         "provider": "nybble",
         "id": "minidump",
@@ -1656,8 +1685,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/minidump/pack.bp.ts",
-      "sha256": "cee2e6ce77f1d22bb7ae32d221fcf766bcd2c8686aa17bf68c2e0929d5d45d33",
-      "size": 14893
+      "sha256": "9b3807d294f4d163a55ac3e4b3451c1a2b8cbdd2fb914e6e62efcec38a0f5434",
+      "size": 19675
     },
     {
       "id": "mp3",
@@ -1678,6 +1707,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://id3.org/id3v2.3.0",
       "coverage": "partial",
+      "helpers": 52,
       "source": {
         "provider": "nybble",
         "id": "mp3",
@@ -1687,8 +1717,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/mp3/pack.bp.ts",
-      "sha256": "554c02b7323e1322ad37328f23b60fc185f02dd4c6314a58766c0df2aa133367",
-      "size": 4059
+      "sha256": "729fb95c8bc13ad2cc7126a96fe4a58a18d4d6d84a3008ac769f98a5187f7464",
+      "size": 13960
     },
     {
       "id": "mp4",
@@ -1711,6 +1741,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://www.iso.org/standard/83102.html",
       "coverage": "partial",
+      "helpers": 15,
       "source": {
         "provider": "nybble",
         "id": "mp4",
@@ -1720,8 +1751,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/mp4/pack.bp.ts",
-      "sha256": "99447c98c6f79137b7bb8dc1086fc63588a9a7486b3a5e3d4a17d8c8a7fe5f1f",
-      "size": 3672
+      "sha256": "6d56661da66cd2a5983ad09ac2e1d4a57a5a09f8fb6855327ec051c202ad5e23",
+      "size": 6160
     },
     {
       "id": "msf",
@@ -1869,6 +1900,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://www.xiph.org/ogg/doc/framing.html",
       "coverage": "partial",
+      "helpers": 9,
       "source": {
         "provider": "nybble",
         "id": "ogg",
@@ -1878,8 +1910,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/ogg/pack.bp.ts",
-      "sha256": "2b48e4c68c19775989e235c6663ee64d93b853c4e76a3bdb7f68f6017f601e6a",
-      "size": 6124
+      "sha256": "860f1b9f0b58910dbf041c79ccc61dafbccd80cc74b011338f98031678c1401f",
+      "size": 8101
     },
     {
       "id": "openexr",
@@ -1909,8 +1941,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/openexr/pack.bp.ts",
-      "sha256": "6049c61c0afe322dd9578a967da72b6b7c7422c5d7fb28dd69b6f810fe625c34",
-      "size": 1599
+      "sha256": "876638e89cc9873b6f048250b78ba3b5a2e1a5217b4a4e7baff9bda9fb77f553",
+      "size": 1527
     },
     {
       "id": "pcap",
@@ -1960,6 +1992,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://pcapng.com/",
       "coverage": "partial",
+      "helpers": 8,
       "source": {
         "provider": "nybble",
         "id": "pcapng",
@@ -1969,8 +2002,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/pcapng/pack.bp.ts",
-      "sha256": "6602bf924329380ed6dc9553f7d5de62128836e5add90128ffda70722bdda0ef",
-      "size": 3569
+      "sha256": "e79fa2067e79e4d56b9a0d8c6c61a91b9d3b3ea437c70ce4e5adee3d943f85c0",
+      "size": 4818
     },
     {
       "id": "prefetch",
@@ -2056,6 +2089,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://github.com/qemu/qemu/blob/master/docs/interop/qcow2.rst",
       "coverage": "partial",
+      "helpers": 2,
       "source": {
         "provider": "nybble",
         "id": "qcow2",
@@ -2065,8 +2099,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/qcow2/pack.bp.ts",
-      "sha256": "08643b32f58de8e483901bc02027cae20d2c246c5160943577be3b5b18d3f79b",
-      "size": 3231
+      "sha256": "735c71ab052cf322db6d35e584396e98a07622e6f781cb2dbe5d912a4ccb47b4",
+      "size": 3910
     },
     {
       "id": "qoi",
@@ -2115,6 +2149,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://www.rarlab.com/technote.htm",
       "coverage": "partial",
+      "helpers": 3,
       "source": {
         "provider": "nybble",
         "id": "rar",
@@ -2124,8 +2159,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/rar5/pack.bp.ts",
-      "sha256": "a19304c815028a88040732aa7afa7688afa3937ef5b4974fd4e1d65dd21cf1a2",
-      "size": 3255
+      "sha256": "73b8ecf13f5a627a999c1d086310d03d5dd5d7e78ad8392abee63d9445fdc664",
+      "size": 4197
     },
     {
       "id": "rar4",
@@ -2145,6 +2180,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://www.rarlab.com/technote.htm",
       "coverage": "partial",
+      "helpers": 6,
       "source": {
         "provider": "nybble",
         "id": "rar",
@@ -2154,8 +2190,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/rar4/pack.bp.ts",
-      "sha256": "a60668e9a45613bb1f259e07417a51b70c7a3146d8157feeb3010e7af52b1211",
-      "size": 5929
+      "sha256": "dd8a9ddbde2905e353d80a6b12a212f2142bfd3ab1ce92885e64aba366327c78",
+      "size": 7458
     },
     {
       "id": "regf",
@@ -2177,6 +2213,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://github.com/msuhanov/regf/blob/master/Windows%20registry%20file%20format%20specification.md",
       "coverage": "partial",
+      "helpers": 8,
       "source": {
         "provider": "nybble",
         "id": "regf",
@@ -2186,8 +2223,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/regf/pack.bp.ts",
-      "sha256": "9b123a94f6bf375417d803238974bf50c0170c8e5cf4f638f15f9d21ebd3fef8",
-      "size": 5629
+      "sha256": "bb5801b9ad5743404f06b97cd14ac81c46d2c98b69ff7efd0367bbe81a084fea",
+      "size": 7746
     },
     {
       "id": "rpm",
@@ -2209,6 +2246,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://rpm-software-management.github.io/rpm/manual/format.html",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "nybble",
         "id": "rpm",
@@ -2218,8 +2256,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/rpm/pack.bp.ts",
-      "sha256": "efec38324dee6db5bacb0ac9cc5a9adb35ef05e262cbf3ee353d571238b7d350",
-      "size": 2841
+      "sha256": "211a58db488d52e985defc710c927dbf6e4b6626f02e39b2ee281653ba1fd920",
+      "size": 2951
     },
     {
       "id": "squashfs",
@@ -2296,6 +2334,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://en.wikipedia.org/wiki/TIFF",
       "coverage": "partial",
+      "helpers": 3,
       "source": {
         "provider": "nybble",
         "id": "tiff",
@@ -2305,8 +2344,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/tiff-le/pack.bp.ts",
-      "sha256": "cff826fcc323fc3124675d74ec12b9ca4f0390544d9ff5df94b58752cdf14803",
-      "size": 1702
+      "sha256": "18e9c69d0dc6add02bb4d6a86d3442452e897c2ff942bf45ea58e6b8ce1fcb78",
+      "size": 2206
     },
     {
       "id": "tiff-be",
@@ -2325,6 +2364,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://en.wikipedia.org/wiki/TIFF",
       "coverage": "partial",
+      "helpers": 3,
       "source": {
         "provider": "nybble",
         "id": "tiff",
@@ -2334,8 +2374,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/tiff-be/pack.bp.ts",
-      "sha256": "66a2c27947bcd2c51e3ca0bd858451598a2fbf1e101def28eb3af1cfa29ffc35",
-      "size": 1675
+      "sha256": "40470d0e85e6ec701994d634ce8e1950be0370b307ba2b25e4277493e5e6b59b",
+      "size": 2179
     },
     {
       "id": "ttf",
@@ -2355,6 +2395,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://learn.microsoft.com/en-us/typography/opentype/spec/otff",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "nybble",
         "id": "truetype",
@@ -2364,8 +2405,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/ttf/pack.bp.ts",
-      "sha256": "6f291be54a2529b0fb13c39782297d246b6e67a077130d3363ed8ed3d3ba5502",
-      "size": 1667
+      "sha256": "9417cbe78615625efe26fddcb6c697329168533ef9595331fa6da85cc525756c",
+      "size": 1775
     },
     {
       "id": "otf",
@@ -2385,6 +2426,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://learn.microsoft.com/en-us/typography/opentype/spec/otff",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "nybble",
         "id": "truetype",
@@ -2394,8 +2436,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/otf/pack.bp.ts",
-      "sha256": "d47cfc8e9936dbdc6036eea8458a443aa7be7d45b06b4087295d50e7f3665a2c",
-      "size": 1650
+      "sha256": "d8250ae5ad112a6930d499417e9c7dad1ddb68d79090971a23b0252fd43682c6",
+      "size": 1758
     },
     {
       "id": "uimage",
@@ -2478,6 +2520,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-vhdx/83e061f8-f6e2-4de1-91bd-5d518a43d477",
       "coverage": "partial",
+      "helpers": 22,
       "source": {
         "provider": "nybble",
         "id": "vhdx",
@@ -2487,8 +2530,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/vhdx/pack.bp.ts",
-      "sha256": "c8f5042788df38be35711df96c8aa7c796ae70e0e024a7d7a7b670d72f301b99",
-      "size": 6080
+      "sha256": "e7c2d1b9664e8777cd773edfe4c0a56d478147d622f92cd3abf86e509deccb11",
+      "size": 11624
     },
     {
       "id": "vmdk",
@@ -2510,6 +2553,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://github.com/libyal/libvmdk/blob/main/documentation/VMWare%20Virtual%20Disk%20Format%20(VMDK).asciidoc",
       "coverage": "partial",
+      "helpers": 12,
       "source": {
         "provider": "nybble",
         "id": "vmdk",
@@ -2519,8 +2563,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/vmdk/pack.bp.ts",
-      "sha256": "71d21121ad8e258fd3dbe380f77611af0113dc624f09ad8ba8b2e9de051361e8",
-      "size": 3382
+      "sha256": "d76399225bf1b540b6f2bc60a4bdb09ebc1b0afb52968eae4679378edda32585",
+      "size": 6992
     },
     {
       "id": "iwad",
@@ -2542,6 +2586,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://doomwiki.org/wiki/WAD",
       "coverage": "partial",
+      "helpers": 2,
       "source": {
         "provider": "nybble",
         "id": "wad",
@@ -2551,8 +2596,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/iwad/pack.bp.ts",
-      "sha256": "7540ac854dd4dc98406cd606c34e13d15f34cf0776be91b58c2709ebb248d3fd",
-      "size": 1434
+      "sha256": "86ce38d51f5c25aca61e93416cc2e15a911024a7cc11cabde8bc8a6aaed04277",
+      "size": 1909
     },
     {
       "id": "pwad",
@@ -2574,6 +2619,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://doomwiki.org/wiki/WAD",
       "coverage": "partial",
+      "helpers": 2,
       "source": {
         "provider": "nybble",
         "id": "wad",
@@ -2583,8 +2629,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/pwad/pack.bp.ts",
-      "sha256": "3fc1cf9b17103ef887ea4ccf357a25a8fec1061add672be6ab3ae1dd9a143d40",
-      "size": 1363
+      "sha256": "762653a7d3ae8dda909a20f4dce03fd7a9b23226ea96dddc7f5a230f2874b129",
+      "size": 1838
     },
     {
       "id": "wasm",
@@ -2605,6 +2651,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://webassembly.github.io/spec/core/binary/index.html",
       "coverage": "partial",
+      "helpers": 4,
       "source": {
         "provider": "nybble",
         "id": "wasm",
@@ -2614,8 +2661,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/wasm/pack.bp.ts",
-      "sha256": "79609694feed71d2cd3a6881cbf4ec08a5efcafe7c67ced17d6380bc3df2b49c",
-      "size": 2293
+      "sha256": "4e035d251b56aa3b080e9567d3a7cffb1798ef84aaee38686e466b8ae4dd1d53",
+      "size": 3002
     },
     {
       "id": "webp",
@@ -2724,6 +2771,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://tukaani.org/xz/xz-file-format.txt",
       "coverage": "partial",
+      "helpers": 5,
       "source": {
         "provider": "nybble",
         "id": "xz",
@@ -2733,8 +2781,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/xz/pack.bp.ts",
-      "sha256": "d52d35224f97f4d0939d075315b13f0d978f92091ac60fcfd8534a0d3574f8cb",
-      "size": 2474
+      "sha256": "13e741c71e6bb3aebbcc62c1854ccf0df38a6a2f285662a9c5dd1a398e4403e4",
+      "size": 4429
     },
     {
       "id": "zstd",
@@ -2754,6 +2802,7 @@
       "license": "Free use / redistribution (Nybble registry)",
       "homepage": "https://www.rfc-editor.org/rfc/rfc8878",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "nybble",
         "id": "zstd",
@@ -2763,8 +2812,8 @@
         "license": "Nybble format registry"
       },
       "path": "packs/zstd/pack.bp.ts",
-      "sha256": "608862430e65def0b55875c692942af12ab9fe7bb2affb8bd0d1cc6210cc973a",
-      "size": 2915
+      "sha256": "63bf631a5a707601ed0e78122338929f4836505636202d6dc8b5af912da61689",
+      "size": 3537
     },
     {
       "id": "imhex-3ds",
@@ -3009,7 +3058,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/Crashlvl.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "Crashlvl.hexpat",
@@ -3017,8 +3065,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-crashlvl/pack.bp.ts",
-      "sha256": "bb506af3872504884a4900091f15d5ab481d78595cf0744c70d54e81920ebca0",
-      "size": 787
+      "sha256": "9fa834ad95ef03f8c654961e5e72b3111cbb26646235c58a1cd39c84d081dd50",
+      "size": 631
     },
     {
       "id": "imhex-dfir-disk-parser",
@@ -3043,8 +3091,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-dfir-disk-parser/pack.bp.ts",
-      "sha256": "9b0d735198858d605578f181825d5f2c208918bafe5de8a11d46c86c864425a1",
-      "size": 4279
+      "sha256": "2154ba6de413af97bbf219626b47662cb9cf922effb606741ab87af6e53d13b5",
+      "size": 4230
     },
     {
       "id": "imhex-dfir-fat32",
@@ -3095,8 +3143,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-dfir-ntfs/pack.bp.ts",
-      "sha256": "dad292822ac805b72e2ee708249d2f84ed672e2ee166dc1345cb544212057444",
-      "size": 21997
+      "sha256": "e4df1d40348b513f6bc0ebe66c38ddbe506ac7f5f826db94290eb34400eec38d",
+      "size": 21821
     },
     {
       "id": "imhex-dfir-exfat",
@@ -3121,8 +3169,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-dfir-exfat/pack.bp.ts",
-      "sha256": "0738a1d56c4289678a8e0cfebfdf82b0a69fb25fc4c4ba9c8aafe34aed2ede4f",
-      "size": 7772
+      "sha256": "3a6720c001d322de28e980e2134d1af49e91295175930f0352c58f6bda83d18d",
+      "size": 7728
     },
     {
       "id": "imhex-devil-may-cry-hd-collection-dmc3-hd-mod",
@@ -3172,8 +3220,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-goldbox-gb-chr/pack.bp.ts",
-      "sha256": "5dddb4a3708db975ec7544809cace18bb9f25a5b4a90a15b0dec94c9890a2105",
-      "size": 14232
+      "sha256": "053abf4034354427e57786aacfeee4deba62ac4e42e6cbc8725ca71ef9429757",
+      "size": 14186
     },
     {
       "id": "imhex-goldbox-gb-exe",
@@ -3190,7 +3238,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/GoldBox/GB_EXE.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "GoldBox/GB_EXE.hexpat",
@@ -3198,8 +3245,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-goldbox-gb-exe/pack.bp.ts",
-      "sha256": "d78b0dc5ae2fad36ac31ac033e3559e426d4e97ed2b9ed70c84622998020595e",
-      "size": 8312
+      "sha256": "f2364bd5026ccd66a86f9bf1abbd9b1991eef5e6c5f1c365d3f56eaaff55d290",
+      "size": 8115
     },
     {
       "id": "imhex-goldbox-gb-geo",
@@ -3224,8 +3271,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-goldbox-gb-geo/pack.bp.ts",
-      "sha256": "439d341a138c0be683fe5972d9ded94c5110261669c2edcc74bb105cf81cc5a7",
-      "size": 12128
+      "sha256": "3a2633fd1deed510366480ad0d7135765bccc12a48957f287d89854e7aba7d99",
+      "size": 11997
     },
     {
       "id": "imhex-goldbox-gb-itm-base",
@@ -3267,7 +3314,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/GoldBox/GB_UA_SCRIPT.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "GoldBox/GB_UA_SCRIPT.hexpat",
@@ -3275,8 +3321,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-goldbox-gb-ua-script/pack.bp.ts",
-      "sha256": "005b1f4cf42f42c271700b67d5485cd03c90bd3f9149c32c40b306274db91db5",
-      "size": 2808
+      "sha256": "8b3b18f17fbdf58abc1f066eed12312c962bac8e345be918f63e8e70f4abe79d",
+      "size": 2614
     },
     {
       "id": "imhex-shr",
@@ -3454,8 +3500,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-a3-a3-rtm/pack.bp.ts",
-      "sha256": "8dd5989021c1885d92e6deafed0b50edad888cebd62dd9be1f3a2a28695a7924",
-      "size": 1341
+      "sha256": "8d5c7b8137d3eebe907f753e1155b5d56108f851c22355b6c5c19c5867eb680e",
+      "size": 1297
     },
     {
       "id": "imhex-a3-a3-texheaders",
@@ -3657,8 +3703,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-ape/pack.bp.ts",
-      "sha256": "594f068b5f5e7701eeffc7c70cc14cfeb7213f8958b85f8fa964da2a8111c045",
-      "size": 1512
+      "sha256": "63061e4d9268a0e2435950cbc11935e6b9459f297975db760b30b1be7d768c49",
+      "size": 1463
     },
     {
       "id": "imhex-apple-single-double",
@@ -3700,7 +3746,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ar.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "ar.hexpat",
@@ -3708,8 +3753,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-ar/pack.bp.ts",
-      "sha256": "2c35350bd87a033b8a3e8a552146747d27a9ea59d1de57746f44ffb8ed684fd9",
-      "size": 906
+      "sha256": "82f3d8e91795df80ce8c5469d3fd7bb22f4a0ee2fe45e88e1426c3a3717a5989",
+      "size": 800
     },
     {
       "id": "imhex-arc",
@@ -3777,6 +3822,7 @@
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bastion/map.hexpat",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "imhex",
         "path": "bastion/map.hexpat",
@@ -3784,8 +3830,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-bastion-map/pack.bp.ts",
-      "sha256": "ce108509ccca78c9f50b7b912c18038d5cfd5cd3481a19e5e59429e3f6907224",
-      "size": 2646
+      "sha256": "f0afba7ff5cd946bdef5470de3b011371cd34a9db08c241ff11472842c48c64e",
+      "size": 3479
     },
     {
       "id": "imhex-bastion-profile",
@@ -3828,6 +3874,7 @@
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bastion/save.hexpat",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "imhex",
         "path": "bastion/save.hexpat",
@@ -3835,8 +3882,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-bastion-save/pack.bp.ts",
-      "sha256": "9526c87bf08b6077a5f9dbaa998614dd04e408359bbe72a4001118f3cfaf3563",
-      "size": 1022
+      "sha256": "a81a1eb3dc647f81cd264ddcf96dbb8f46bb3fa2dd1c70a58c8cde7f2d358341",
+      "size": 1811
     },
     {
       "id": "imhex-bcss",
@@ -3853,7 +3900,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bcss.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "bcss.hexpat",
@@ -3861,8 +3907,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-bcss/pack.bp.ts",
-      "sha256": "c853b21c9d64f1da5edb5fc8538918d04eb1056e41996053cc3ef0ca7a55be7f",
-      "size": 835
+      "sha256": "dcf679a0d9f58aab805a96cd71a81b45e74680d1602e013e703e19adaf31c41c",
+      "size": 681
     },
     {
       "id": "imhex-bgcode",
@@ -3879,7 +3925,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bgcode.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "bgcode.hexpat",
@@ -3887,8 +3932,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-bgcode/pack.bp.ts",
-      "sha256": "6136886be46ce91f666ac28c2edc85fcd85225044687c5ef62c9fd33f247cc7f",
-      "size": 1739
+      "sha256": "a789e4b047170c6defb3cfecdbf5079a4d934e46be97cc80a9d5ad79557c23bc",
+      "size": 1631
     },
     {
       "id": "imhex-bink-container",
@@ -3930,7 +3975,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/blend.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "blend.hexpat",
@@ -3938,8 +3982,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-blend/pack.bp.ts",
-      "sha256": "3513f2198cfcf928fc744837c228eb1d62fde899342ff83bf059f842ee3b70a0",
-      "size": 1136
+      "sha256": "1bd8536f83993d7a86c7b20b823a6a3bf0fc676fb1c1c3521100af2af8880edc",
+      "size": 1022
     },
     {
       "id": "imhex-blf",
@@ -3964,8 +4008,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-blf/pack.bp.ts",
-      "sha256": "527489eb697a8290ca286c12df63db1dd803fb4020b0dee4f860f09f9f91298a",
-      "size": 6520
+      "sha256": "5d82958eeae4253f4821ab120433b10c35dee85f330d76cf114da2ae7669f6ae",
+      "size": 6468
     },
     {
       "id": "imhex-bloodborne-save",
@@ -3990,8 +4034,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-bloodborne-save/pack.bp.ts",
-      "sha256": "5f5720bb9e4ae3ffd3c5ddddcb5129e41bff4aeb9550e2b5d466569ee56be919",
-      "size": 1876
+      "sha256": "4399d2fff8cbefdda25937ffabd66c335ed587d47b736adefb2f2d956390b0b3",
+      "size": 1784
     },
     {
       "id": "imhex-bmp",
@@ -4008,7 +4052,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bmp.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "bmp.hexpat",
@@ -4016,8 +4059,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-bmp/pack.bp.ts",
-      "sha256": "4a28c274436bd0975c5876f6b7689ba2874a0d52309f52da57eaff1d8719a9f2",
-      "size": 5599
+      "sha256": "fa81481eb64a91d3f41958f903ba50b7e666c91c6dfaa63251d2d1dbdc0b7b71",
+      "size": 5491
     },
     {
       "id": "imhex-bplist",
@@ -4034,7 +4077,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/bplist.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "bplist.hexpat",
@@ -4042,8 +4084,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-bplist/pack.bp.ts",
-      "sha256": "c530043e39bf76b25924a420ca6b0c027a8ba794a47e724e7de140e673ff7d3e",
-      "size": 1059
+      "sha256": "15886ac890f324941cc8a901a8e274f6f68d1980b2b4fb083ed39e23362a2b7c",
+      "size": 938
     },
     {
       "id": "imhex-bson",
@@ -4111,7 +4153,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/btrfs_send_stream.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "btrfs_send_stream.hexpat",
@@ -4119,8 +4160,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-btrfs-send-stream/pack.bp.ts",
-      "sha256": "aa32ab0bb2c04da39328cbd8edc00fc1dc76c72ae88c850683ec491daaff912b",
-      "size": 856
+      "sha256": "2c76db7e082d72945ba343870a7fa105460827adc63481ace9cf189e5f7a27cb",
+      "size": 744
     },
     {
       "id": "imhex-bzip3",
@@ -4170,8 +4211,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-cab/pack.bp.ts",
-      "sha256": "9a20832553b9a679ebd44a66e4769b8ac4aa7b5d282da791417ae109d0c64f9f",
-      "size": 2056
+      "sha256": "2fc435ca75e35e8e06b3512b45b3947fd6d62158e9a8fac77c60c57f4938c7a4",
+      "size": 2007
     },
     {
       "id": "imhex-cchva",
@@ -4315,6 +4356,7 @@
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/chm.hexpat",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "imhex",
         "path": "chm.hexpat",
@@ -4322,8 +4364,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-chm/pack.bp.ts",
-      "sha256": "e1ca4766ab82c7aff298f193deb09ab15eb8b0c16a1f8115c2d06a26be600df6",
-      "size": 1818
+      "sha256": "b9203750e503a82856dfeb63187dac26fb666960e5d70ebb53a334d1eb770641",
+      "size": 2607
     },
     {
       "id": "imhex-chromium-pak",
@@ -4399,8 +4441,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-cpio/pack.bp.ts",
-      "sha256": "13844bbe7faf3524eb672582fe742406172a5a1cbd98536a522cb9c505179c4e",
-      "size": 1204
+      "sha256": "b518a8276a9ef89f8021d81877c073603afc36db439e0ec3967cbd71e6a7944d",
+      "size": 1148
     },
     {
       "id": "imhex-cpio-new-ascii",
@@ -4518,7 +4560,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/dds.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "dds.hexpat",
@@ -4526,8 +4567,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-dds/pack.bp.ts",
-      "sha256": "72739f45953d544dedb12808f077f9b1b7bac531eaef190c0925aa6f078b120b",
-      "size": 9799
+      "sha256": "0d91845e49e22fe51adebf9fcf4955069060a88801eeb5dad033e4d621974503",
+      "size": 9693
     },
     {
       "id": "imhex-dex",
@@ -4545,6 +4586,7 @@
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/dex.hexpat",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "imhex",
         "path": "dex.hexpat",
@@ -4552,8 +4594,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-dex/pack.bp.ts",
-      "sha256": "8ef06131c05818c32ac7a7543e85a1cfd44b44ab10402d34b0ffb87035c45335",
-      "size": 4547
+      "sha256": "485b9d0bebd3da5298e6a3a6a32a3b73a9d6a02ab91012b7395d62f895c13c99",
+      "size": 5478
     },
     {
       "id": "imhex-dicom",
@@ -4578,8 +4620,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-dicom/pack.bp.ts",
-      "sha256": "d6283deb5eb3fda22fa4dd507311653fac650cd9641b557cb831a3c16181b205",
-      "size": 910
+      "sha256": "b18582e2965bb9fa0bef965658a3499ed5c8a2c9e9d4140815130c16e88cba60",
+      "size": 865
     },
     {
       "id": "imhex-dmc3-hd-mod",
@@ -4654,8 +4696,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-dod-save/pack.bp.ts",
-      "sha256": "177bed12e76e5f55266b67a55bfe70283ddef5afdc162f9f437adc4c9415b503",
-      "size": 6846
+      "sha256": "5c62c17c423967e5c2103f29a2f75f0b1dfa211d4cbbae1daa99c6d5b727af4d",
+      "size": 6782
     },
     {
       "id": "imhex-dos",
@@ -4680,8 +4722,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-dos/pack.bp.ts",
-      "sha256": "4ec5dc2fa6d1f4c2a15de8230cedcdc8aa464f5da1e9285eb4a5b271ce89e6c2",
-      "size": 1802
+      "sha256": "3057328d27183f3950273fb5e2a611c7e19307b1fd4793db95a0bf489399210c",
+      "size": 1660
     },
     {
       "id": "imhex-dotnet-binaryformatter",
@@ -4706,8 +4748,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-dotnet-binaryformatter/pack.bp.ts",
-      "sha256": "c9fe28941f0d443a0cc533ad6107f5576ccbd32085114fdd831fe1b170a1f46d",
-      "size": 12224
+      "sha256": "f33b896761ac6ba2d9b74837667533724bacfa7f1de9930412dd8578720aeff3",
+      "size": 12174
     },
     {
       "id": "imhex-dpapiblob",
@@ -4809,8 +4851,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-dted/pack.bp.ts",
-      "sha256": "1abeab8af5beb4f60c6915dff206ccfaa6be76566aea9ffc0d4f9eff18ca0dc4",
-      "size": 1304
+      "sha256": "09a008b7b4b01ce260f23ef2485d3f4b7caced499e2a6055a71866538716d673",
+      "size": 4082
     },
     {
       "id": "imhex-ebu-stl",
@@ -4860,8 +4902,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-elf/pack.bp.ts",
-      "sha256": "1c9fa61a99b9205e2c1bcca49657cc948bfc0a4d32b8beffd9a09f40a12f6c7c",
-      "size": 22138
+      "sha256": "c9aa1159366314d06ac913f95237dd8b8fe073c1f738a130bb7ecea4093ee96c",
+      "size": 22002
     },
     {
       "id": "imhex-esp32-image",
@@ -5012,8 +5054,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-fbx/pack.bp.ts",
-      "sha256": "46bde27311d57986bc78dc27e9fff0f115517276a3cf6e25c01e7264382d8a48",
-      "size": 1534
+      "sha256": "befd53c92055a9fad7f6357794974148d142d430ccb0c6880bbe5c482d391d81",
+      "size": 1490
     },
     {
       "id": "imhex-fdt",
@@ -5038,8 +5080,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-fdt/pack.bp.ts",
-      "sha256": "90f6299282abc4bb162e16bda7dd1f362fad595a93c307bd4dbda3958ada492b",
-      "size": 1053
+      "sha256": "b02214dc9c00587d84532ad4accd7a78c404565378933883f22ccbe14eb67123",
+      "size": 1009
     },
     {
       "id": "imhex-fez",
@@ -5090,8 +5132,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-ffx-all-a-abilities-bin/pack.bp.ts",
-      "sha256": "4f3dbd88798b86242d151218b431580ed749bd513d489ad612407f66d99e5e50",
-      "size": 8717
+      "sha256": "f6e99a44d5ef6812c61e16e84fafb07945472da573669feac1c9d51ee67dba16",
+      "size": 8665
     },
     {
       "id": "imhex-ffx-all-btl-bin",
@@ -5108,7 +5150,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/all/btl.bin.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "ffx/all/btl.bin.hexpat",
@@ -5116,8 +5157,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-ffx-all-btl-bin/pack.bp.ts",
-      "sha256": "f73148f1acfdb3e31ebabe2d10d7df02bec9cec7ca05dc42f96bd187012650fc",
-      "size": 1409
+      "sha256": "981d624d551e1481736919c5020c3cb8b875f3fafd5475d4e6bc753bb12bec66",
+      "size": 1259
     },
     {
       "id": "imhex-ffx-all-buki-get-bin",
@@ -5134,7 +5175,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/all/buki_get.bin.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "ffx/all/buki_get.bin.hexpat",
@@ -5142,8 +5182,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-ffx-all-buki-get-bin/pack.bp.ts",
-      "sha256": "8ecd566762d8913a33a71bbc4b2811a6f2f189b0dad8d2236d38a762a53ef6da",
-      "size": 1349
+      "sha256": "f65ca2257ba93942609cc0c02b23adc3675f77a1a1d0186583bb7a6868caf75a",
+      "size": 1200
     },
     {
       "id": "imhex-ffx-all-mon-bin",
@@ -5160,7 +5200,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/all/mon.bin.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "ffx/all/mon.bin.hexpat",
@@ -5168,8 +5207,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-ffx-all-mon-bin/pack.bp.ts",
-      "sha256": "a853274f6bf01ae91aff0540dba7649576080ddc53ff891cf94bb336a1dc8a37",
-      "size": 30525
+      "sha256": "5af803f026d5533d419fa0723870d2a9e3acfd6db288f01634880037d9e7edd5",
+      "size": 30420
     },
     {
       "id": "imhex-ffx-all-ply-save-bin",
@@ -5186,7 +5225,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/all/ply_save.bin.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "ffx/all/ply_save.bin.hexpat",
@@ -5194,8 +5232,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-ffx-all-ply-save-bin/pack.bp.ts",
-      "sha256": "61caf8500eda269e234cd3352ea0c68fe483798f70cc91f7ee7d36044412e39f",
-      "size": 8854
+      "sha256": "e12a44944d70f250ec39e8d52936f98692baf3a2d7d98613349811137487470b",
+      "size": 8749
     },
     {
       "id": "imhex-ffx-all-sphere-grid-layout-dat",
@@ -5237,7 +5275,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/all/st_number.bin.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "ffx/all/st_number.bin.hexpat",
@@ -5245,8 +5282,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-ffx-all-st-number-bin/pack.bp.ts",
-      "sha256": "6d900a1127d0ad0c100827db25a28b6997d242bdd3ce17ed838c12d95f10df0c",
-      "size": 7656
+      "sha256": "a40ff51fa32200a0397b7e06bead29bff6419f3a09686f11bab3fd9f84474d42",
+      "size": 7507
     },
     {
       "id": "imhex-ffx-all-sum-assure-bin",
@@ -5288,7 +5325,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/all/takara.bin.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "ffx/all/takara.bin.hexpat",
@@ -5296,8 +5332,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-ffx-all-takara-bin/pack.bp.ts",
-      "sha256": "3d2e7bf15b9ff99578cc014346db0f35046a987a431e00649bfa90c807caad8b",
-      "size": 786
+      "sha256": "ba2409f14451fb569f40f9dcc791ba184d72ee9acdd59f13251274fc1bccab8c",
+      "size": 637
     },
     {
       "id": "imhex-ffx-all-weapon-bin",
@@ -5347,8 +5383,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-ffx-en-item-bin/pack.bp.ts",
-      "sha256": "94cd02606eb6c0fa66e247b29a8b5027c6788c42a4bb749c970695384fb0f789",
-      "size": 11786
+      "sha256": "e8874b2d56de28f1e7994e7445163485899f339cfddbb0e74962dc639ad266f1",
+      "size": 11738
     },
     {
       "id": "imhex-ffx-en-moncom",
@@ -5373,8 +5409,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-ffx-en-moncom/pack.bp.ts",
-      "sha256": "c18fa6bd5db12bf5accfe029889f4b5f63391f1541773f560e5487f179af08de",
-      "size": 11782
+      "sha256": "89722c8a93c28f1b3ee49ffd5b52c4cd7f5a98d3a666fcfade6c0641de791036",
+      "size": 11734
     },
     {
       "id": "imhex-ffx-en-panel-bin",
@@ -5399,8 +5435,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-ffx-en-panel-bin/pack.bp.ts",
-      "sha256": "e5c13515d73a5244d15d4d289259fcc90fe0477cc7e81885053a95e3441a016f",
-      "size": 1535
+      "sha256": "867a393968875f7e844040d655bfbe8eb0bce87f8808272536bf90f5d06ba9ba",
+      "size": 1489
     },
     {
       "id": "imhex-ffx-en-pccom",
@@ -5425,8 +5461,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-ffx-en-pccom/pack.bp.ts",
-      "sha256": "098cbe2f13d82beeb5eb4f8c907d58e8fb0816c1a5f7e12d8aa01ebb2083313b",
-      "size": 11780
+      "sha256": "3b02c558b9118f80ccb3a40a7baee76a0329cc8853a7122c8165b7ad786640d4",
+      "size": 11732
     },
     {
       "id": "imhex-ffx-en-sphere-bin",
@@ -5451,8 +5487,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-ffx-en-sphere-bin/pack.bp.ts",
-      "sha256": "5d917ed6f6448652ac04ef308348024319d5bd417e98a77752fb93ee93dea16c",
-      "size": 1466
+      "sha256": "c1767f2fa961cdb9a33698a938d870fa2a952f4fda9d0b84e8f23a5eb437249a",
+      "size": 1419
     },
     {
       "id": "imhex-ffx-utils",
@@ -5469,7 +5505,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ffx/utils.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "ffx/utils.hexpat",
@@ -5477,8 +5512,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-ffx-utils/pack.bp.ts",
-      "sha256": "cc372772bbdd6303aa82b0f83b5b6c05f341bad812ece6883563c1497c093f08",
-      "size": 1515
+      "sha256": "99b75ab96f3c2cb972de9c1665383c53e7b771296fc6f601f3beb4b0a1ec1f1b",
+      "size": 1366
     },
     {
       "id": "imhex-flac",
@@ -5503,8 +5538,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-flac/pack.bp.ts",
-      "sha256": "ef238635170edd1a59df0d38b997b9451b3bc817af26d5a902d87b37399640ad",
-      "size": 7732
+      "sha256": "fd837c12eb846a182dfc13ca1223d7d8e4eb69b1b93995236deb381e3bbe529e",
+      "size": 7688
     },
     {
       "id": "imhex-flc",
@@ -5521,7 +5556,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/flc.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "flc.hexpat",
@@ -5529,8 +5563,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-flc/pack.bp.ts",
-      "sha256": "ac0013d84c4f69024d24cd7cf41aeb8d674c5c2cdfd44b893eccd8a2c3f282df",
-      "size": 4568
+      "sha256": "867c349ae8b6118f64f6ceabc37aec0fc8832cb55e66c8477997b5f6e985bcf4",
+      "size": 4463
     },
     {
       "id": "imhex-flipper-settings",
@@ -5555,8 +5589,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-flipper-settings/pack.bp.ts",
-      "sha256": "3ace795997f9beac94c24d1720efe1b925db44005fcdea1aaf9607808bfb820e",
-      "size": 2187
+      "sha256": "caf2468f3c9472db66ff2bbfa9b0bd89a709f752848e96b19da6f30f27134f0e",
+      "size": 2131
     },
     {
       "id": "imhex-flp",
@@ -5581,8 +5615,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-flp/pack.bp.ts",
-      "sha256": "003730fafb5606470daa546cdd5641e61518efe75f3b1838728ccdd73b7728a7",
-      "size": 44938
+      "sha256": "8023d0e076fa10e3c9ee73f0e20d10b4e9f11c96b402ebf734f244ea2b5ce493",
+      "size": 44798
     },
     {
       "id": "imhex-flv",
@@ -5632,8 +5666,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-fs-apfs/pack.bp.ts",
-      "sha256": "10b1f14afa979c5e47604d22b107e2da3df62bb630ba436abd55cb184f5b8caa",
-      "size": 26432
+      "sha256": "4a3cc664d863030937e838e2750e23c7ee89abe41719f517455fc6df481497df",
+      "size": 26605
     },
     {
       "id": "imhex-fs-exfat",
@@ -5658,8 +5692,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-fs-exfat/pack.bp.ts",
-      "sha256": "62af58bb7f62c08bf40b3109dd53317fe906133bfe0d77dec9c1439720e4b7c5",
-      "size": 3340
+      "sha256": "53c3cf4bdfb6c7efef255a2280754ec29edba863ddbdf2d147f668318d1c38ff",
+      "size": 3136
     },
     {
       "id": "imhex-fs-ext4",
@@ -5710,8 +5744,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-fs-fat32/pack.bp.ts",
-      "sha256": "e637c8c383959b986e7387a4f313f7ab784093495de60986da9254ba08441693",
-      "size": 3566
+      "sha256": "cacab0b5d1b9dda839ee8ec56965adfb09250a4f9627692945c29a28d55a5e86",
+      "size": 3522
     },
     {
       "id": "imhex-fs-mbr",
@@ -5786,8 +5820,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-fs-pattern/pack.bp.ts",
-      "sha256": "2636982eff4132dcf8a186d528b5689b95743d3447fefeeada2504ae4b5856d3",
-      "size": 4336
+      "sha256": "eab0a0183976e8daa8d292dd4f398fa9a377e4e7bf251c7169cce984075faaae",
+      "size": 4587
     },
     {
       "id": "imhex-fs-refs",
@@ -5812,8 +5846,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-fs-refs/pack.bp.ts",
-      "sha256": "ed49f8552fe1dac7d9f75eb83a07cc206ddfd0c55a41b1e70eb906a7a9294189",
-      "size": 4621
+      "sha256": "4a29e240dce608b0dbbcfe84cbd9624d5bbc28ab9af42ffed6e09448c158ea3e",
+      "size": 4564
     },
     {
       "id": "imhex-fs",
@@ -5838,8 +5872,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-fs/pack.bp.ts",
-      "sha256": "08d3f3ac2ab08e2afc8087cdfd710be71761c7dedc30ff56feda6e679725fd94",
-      "size": 4660
+      "sha256": "378e52fc05de9d2f67b9d683beaa1aba6bc116ada1ed98ce76bbab7bee7ab34e",
+      "size": 4616
     },
     {
       "id": "imhex-gb",
@@ -5864,8 +5898,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-gb/pack.bp.ts",
-      "sha256": "4117820f2cdd2603b2ee095addc49df6cf2ab4bfc877d78b63c45c053f49b601",
-      "size": 2298
+      "sha256": "642fb2a66bd7406506a3965407c43a2de805123cde1cc81ab8893c505fe7e0e6",
+      "size": 2196
     },
     {
       "id": "imhex-gba",
@@ -5990,8 +6024,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-gif/pack.bp.ts",
-      "sha256": "f332f602045fd933c630fe97e05e44d48f0f567e847c759eab092c49c16eeb69",
-      "size": 4301
+      "sha256": "147f4f6e4a7c89f9160aa88ce9bf1430c4f48502716429231367f48be9d46971",
+      "size": 4257
     },
     {
       "id": "imhex-gltf",
@@ -6016,8 +6050,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-gltf/pack.bp.ts",
-      "sha256": "55b1d5a7ccaf0fd21b96c641feedbbe5f85078693cee0d6a56e56c77906e0d59",
-      "size": 925
+      "sha256": "253f42174c3c68279645372071f8164e715719828480b3690b422c5c6f556102",
+      "size": 820
     },
     {
       "id": "imhex-gmd",
@@ -6117,8 +6151,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-gvas/pack.bp.ts",
-      "sha256": "b67ca20e72e52382b9d98d9ca7df95ba5e1b6c5cf5283eb640e2836999b1dfd5",
-      "size": 5103
+      "sha256": "7e3925b43e32cfe61f11aa80c8b44ba6f83df5851abb9ad05934f695c84d379f",
+      "size": 4994
     },
     {
       "id": "imhex-gzip",
@@ -6272,8 +6306,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-hprof/pack.bp.ts",
-      "sha256": "9a0f6b4d434e9ef83618090b5ce1ea7a2084bf98dcc3857d00e2322e7041c8f5",
-      "size": 6008
+      "sha256": "103403eb4959757cdf1138b020e8a6d8376f71c1e8e6db76b98db2b804fb4b86",
+      "size": 5962
     },
     {
       "id": "imhex-hsdt",
@@ -6290,7 +6324,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/hsdt.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "hsdt.hexpat",
@@ -6298,8 +6331,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-hsdt/pack.bp.ts",
-      "sha256": "028e90afaf6cd2fb18fb282449d6e2cbf2022d936572579b1de0064595fe8803",
-      "size": 806
+      "sha256": "2f411084ede523a3bb3ee33625cd76c0506f4024ea0194e37c8dde6c8c1ee9a8",
+      "size": 650
     },
     {
       "id": "imhex-ico",
@@ -6349,8 +6382,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-id3/pack.bp.ts",
-      "sha256": "48cb308899f395edfd380a4968d444f1f0f35d1ba521fbd82b22893937bad92c",
-      "size": 3752
+      "sha256": "c76744b253f7a06364ed3280cfc0d3b7298f63b5916b7156c2960a9ec2ad2429",
+      "size": 3705
     },
     {
       "id": "imhex-ifile",
@@ -6571,7 +6604,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/jpeg.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "jpeg.hexpat",
@@ -6579,8 +6611,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-jpeg/pack.bp.ts",
-      "sha256": "8919a087132136e33ce1e1152bcad30f0ac4a29b009882fc0e77b98b9e25a63e",
-      "size": 1635
+      "sha256": "4a94b48ed06b968db4a2d2c95b1cfe246ee9d29048fd8487d417e48544e2aee4",
+      "size": 1526
     },
     {
       "id": "imhex-keytab",
@@ -6648,7 +6680,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ktx.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "ktx.hexpat",
@@ -6656,8 +6687,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-ktx/pack.bp.ts",
-      "sha256": "7530740e777200025229b7acd16a6bfd7bded424f1c9505d5bf7da9fada9be54",
-      "size": 6363
+      "sha256": "62a1fc548e53c0f23d4cf4be38784639e1c7e1629ec600946ec727f40eaa5002",
+      "size": 6247
     },
     {
       "id": "imhex-lcesave",
@@ -6682,8 +6713,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-lcesave/pack.bp.ts",
-      "sha256": "6934c654ffe0427f957cc0d0823d57613efac762b0e95a9b8676b3e787dfa080",
-      "size": 1022
+      "sha256": "43f2ab77ee476d17555d4970a46862eda268187d26cc56859197151899ce181c",
+      "size": 974
     },
     {
       "id": "imhex-lnk",
@@ -6708,8 +6739,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-lnk/pack.bp.ts",
-      "sha256": "3322652d9b282cbb9eab6028446f1359b5676521272861d4c3783828b4ba0a18",
-      "size": 10508
+      "sha256": "610047f9ac7405bdf1261230a004bcc47262147cae0d4234df96ec3cf62a2868",
+      "size": 10464
     },
     {
       "id": "imhex-loc",
@@ -6930,7 +6961,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/lznt1.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "lznt1.hexpat",
@@ -6938,8 +6968,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-lznt1/pack.bp.ts",
-      "sha256": "e1d38d33ec62b53b7cc123d263940af1f0642719e4a235862b6f8ca68634aed8",
-      "size": 1708
+      "sha256": "8e684671da51e13b86d000152cd509e3954c14a0597077f67bdc9bbe1b23c32e",
+      "size": 1601
     },
     {
       "id": "imhex-macho",
@@ -6990,8 +7020,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-magic/pack.bp.ts",
-      "sha256": "898b4c07935daae1c25c3a890d9dc82a46f474ad7910805b81c10c9ac8d27ee8",
-      "size": 5466
+      "sha256": "d757aee81769f093640a582a48adfb45e9e000aa1c118331c848e639dd2d3d14",
+      "size": 5412
     },
     {
       "id": "imhex-max-v104",
@@ -7008,7 +7038,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/max_v104.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "max_v104.hexpat",
@@ -7016,8 +7045,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-max-v104/pack.bp.ts",
-      "sha256": "ada768c0e3b069cf1763bfab39801d49878a2aa36875377b283adeab687f4721",
-      "size": 10182
+      "sha256": "28ce4b8ad40b582d03f98c11c770c40b0d389f0fe15a151feb5903bce515b9d0",
+      "size": 9983
     },
     {
       "id": "imhex-midi",
@@ -7034,7 +7063,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/midi.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "midi.hexpat",
@@ -7042,8 +7070,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-midi/pack.bp.ts",
-      "sha256": "9cce11491c148fcebb655e0807ded47616fe04c4a9450dea7cb40e25ab76bb06",
-      "size": 1218
+      "sha256": "b41be87805de8f4376e57fec92040d56bce9498a1d0a523eb47dc084a15ac373",
+      "size": 1110
     },
     {
       "id": "imhex-mifare-mifare-1k",
@@ -7194,8 +7222,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-mp4/pack.bp.ts",
-      "sha256": "821ada6fbe8d1c676b267d3fb4e183ca82bde67266c38983b894524efaf566ec",
-      "size": 8040
+      "sha256": "b8ba212f3a82ef060f3d043027a0d01d923202523069e795eb1231f11d5999f1",
+      "size": 7996
     },
     {
       "id": "imhex-msf",
@@ -7220,8 +7248,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-msf/pack.bp.ts",
-      "sha256": "72d6a7c334fa8682eccfccfe35a623361bc10a7040f3cd15788e46ffe87ce018",
-      "size": 8022
+      "sha256": "7a920913a656c0f2c22a80cd366401f92b49a2b6aad509fd738c87c35db4bbf1",
+      "size": 7974
     },
     {
       "id": "imhex-msgpack",
@@ -7313,7 +7341,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/nbt.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "nbt.hexpat",
@@ -7321,8 +7348,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-nbt/pack.bp.ts",
-      "sha256": "71b44791d20ae103920823fbdc417e11b58504b76137e52d279a0217c8ef7cbc",
-      "size": 879
+      "sha256": "cde25fa40a9d5118f69c5811ffae0bdaeb44748c07dd5e3b3e7ed89b56e8c80d",
+      "size": 774
     },
     {
       "id": "imhex-nds",
@@ -7364,7 +7391,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ne.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "ne.hexpat",
@@ -7372,8 +7398,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-ne/pack.bp.ts",
-      "sha256": "29420ba91eb1ecb8c3295833ef96b4b5fa3bc35f3ee5b4e522c58d67a02f9cbf",
-      "size": 6505
+      "sha256": "a916eae60f4654d35fba46d850a58d42b038aa8329938da9b7a48451afc8d0dd",
+      "size": 6400
     },
     {
       "id": "imhex-nes",
@@ -7416,6 +7442,7 @@
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/notepad-cache.hexpat",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "imhex",
         "path": "notepad-cache.hexpat",
@@ -7423,8 +7450,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-notepad-cache/pack.bp.ts",
-      "sha256": "b7c13020d4c2429233a17611346e393cd49dd6e40d07248035c170e7dc7c2e9a",
-      "size": 911
+      "sha256": "1c591da551a30348d670e6fe9e6662c75726d8e8748a4fdd829764466135ce03",
+      "size": 1691
     },
     {
       "id": "imhex-notepad-state",
@@ -7442,6 +7469,7 @@
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/notepad-state.hexpat",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "imhex",
         "path": "notepad-state.hexpat",
@@ -7449,8 +7477,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-notepad-state/pack.bp.ts",
-      "sha256": "9b766a748f4c323ed73a2593401cad4b38aa4b610a6665b5c97b38f057175a0a",
-      "size": 1229
+      "sha256": "d5fe1c32617c3bdc1965a70235bbad128b54e45ab97856bb85e04009e9283def",
+      "size": 1953
     },
     {
       "id": "imhex-notepadwindowstate",
@@ -7468,6 +7496,7 @@
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/notepadwindowstate.hexpat",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "imhex",
         "path": "notepadwindowstate.hexpat",
@@ -7475,8 +7504,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-notepadwindowstate/pack.bp.ts",
-      "sha256": "e2646e6f69461226eb4e3fe55e375baed9e956bad8b6f6f50f5ba53e6273988a",
-      "size": 813
+      "sha256": "605fe5d4d6ba1de80d19ecd98f9b09152f2bd7e743859ba21764f2fe953212f7",
+      "size": 1597
     },
     {
       "id": "imhex-nro",
@@ -7544,7 +7573,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/nsfe.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "nsfe.hexpat",
@@ -7552,8 +7580,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-nsfe/pack.bp.ts",
-      "sha256": "7d769a82cd58ef6011cf80befaa2add7a3c6904989779feb8a9b346b85709555",
-      "size": 884
+      "sha256": "1945f9f3fa277b42d908284a26be808a6f711a28de53aa3e7b18a2505a773cbe",
+      "size": 778
     },
     {
       "id": "imhex-nso",
@@ -7570,7 +7598,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/nso.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "nso.hexpat",
@@ -7578,8 +7605,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-nso/pack.bp.ts",
-      "sha256": "66f5bbc9b4e1e6b2212900706b597e23465abb7a3407111f520ddb1da383be0e",
-      "size": 1396
+      "sha256": "eede01861f56d376b9d0b8361e7e5e99248f5195c8595a5e576cfd5d76b72b59",
+      "size": 1288
     },
     {
       "id": "imhex-ntag",
@@ -7621,7 +7648,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ogg.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "ogg.hexpat",
@@ -7629,8 +7655,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-ogg/pack.bp.ts",
-      "sha256": "247e746a97c1f79d982f71adc7f2c6da1664380179693416bac85a737e530150",
-      "size": 904
+      "sha256": "e0b231a30e60f08da86041cbea0dac3e7fdfa55f6d9c5f4222c6ec199d1de7a6",
+      "size": 799
     },
     {
       "id": "imhex-openssh",
@@ -7655,8 +7681,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-openssh/pack.bp.ts",
-      "sha256": "13500b20d6d201d899ac72cd2d22802fd1cba691740b74a147b9a2d83ff2ef07",
-      "size": 1145
+      "sha256": "2e77c4ff1aa6b0a78ad80d317ab12c5255828c2a16f9f9632db0e02de3dbbe0c",
+      "size": 1101
     },
     {
       "id": "imhex-optee-ta",
@@ -7681,8 +7707,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-optee-ta/pack.bp.ts",
-      "sha256": "090612870ff7d0e79fd463d0c8eded6d235a3f6e43fdc47df8ac9d380f434dca",
-      "size": 6215
+      "sha256": "26e249d598128436de5cca9bed8bcdffd541755021fd69a774d998e189ce5193",
+      "size": 6150
     },
     {
       "id": "imhex-orp",
@@ -7699,7 +7725,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/orp.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "orp.hexpat",
@@ -7707,8 +7732,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-orp/pack.bp.ts",
-      "sha256": "24f26cdd1c574a46d8e271173924a19153b51fe6bdc08416533d1e85fb0aecec",
-      "size": 1779
+      "sha256": "801df66888e5638ac930f3e8dbf52202a7b297901fab758e93ef8e487d53b98a",
+      "size": 1670
     },
     {
       "id": "imhex-osr",
@@ -7751,6 +7776,7 @@
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/parquet.hexpat",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "imhex",
         "path": "parquet.hexpat",
@@ -7758,8 +7784,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-parquet/pack.bp.ts",
-      "sha256": "5a62bb9c8a12c29ea92485ad37aa9e887474f7bfec59985b7e38790431cee2b9",
-      "size": 1551
+      "sha256": "8cea2ca3506a6a826327a0c3f8e05f2c4832f5ab0e5fd83258917b4a0fe710cb",
+      "size": 2482
     },
     {
       "id": "imhex-pbz",
@@ -7776,7 +7802,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pbz.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "pbz.hexpat",
@@ -7784,8 +7809,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-pbz/pack.bp.ts",
-      "sha256": "a33d04c0b3bb34445b3f4d2d633fbb0668f87d8e45c55bc8bfb241f83108b5a9",
-      "size": 708
+      "sha256": "e033604b0944589e18651d62e0e54218a5895cf4a60742d767b616ec25657e35",
+      "size": 603
     },
     {
       "id": "imhex-pcap",
@@ -7835,8 +7860,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-pcapng/pack.bp.ts",
-      "sha256": "a5295a893de54859d93d7844237ceeb8d0c3cb171258a65eb59423cd83ee97c5",
-      "size": 6090
+      "sha256": "39129349868f3480826678c0f4836681121f3ae53932790acb3688e19451f0fe",
+      "size": 6044
     },
     {
       "id": "imhex-pck",
@@ -7912,8 +7937,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-pe/pack.bp.ts",
-      "sha256": "0c0d5e5350a94afbe63eff1a3abfd9c8557a645a01f19af4ecd4c8c834d1f7d1",
-      "size": 17959
+      "sha256": "b909489653fec17241730dd94e9053eb53c99447c4a8117542b124fb2faf93d8",
+      "size": 17915
     },
     {
       "id": "imhex-pef",
@@ -7956,7 +7981,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pex.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "pex.hexpat",
@@ -7964,8 +7988,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-pex/pack.bp.ts",
-      "sha256": "9a5ae112376d84da684ad20ac422feea4d1847dba082d7520d2f7cffff71ba94",
-      "size": 7862
+      "sha256": "9dec87f374b1c6821c404b1db47873d038ec5741c04af71c84448c86c994d8fa",
+      "size": 7710
     },
     {
       "id": "imhex-pf",
@@ -8016,8 +8040,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-pfs0/pack.bp.ts",
-      "sha256": "ae730798c8d15159f80bb26e4d01a303da45ab002908640c4ecfe5a5041adc5b",
-      "size": 762
+      "sha256": "193ebd578ecf26ede3c5c1b650e2568da1ee7f4b3911fd8d7f0b9c557b7a7686",
+      "size": 717
     },
     {
       "id": "imhex-pickle",
@@ -8034,7 +8058,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pickle.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "pickle.hexpat",
@@ -8042,8 +8065,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-pickle/pack.bp.ts",
-      "sha256": "5d63d539174c2e8b0260b8b7df31fdde4254fc1a1033758fbddc35d6b2affe2b",
-      "size": 1907
+      "sha256": "dbbe4f3535cebad71d6a9cd4d6848c4f4bae1fe2795876054fe1e7651d694608",
+      "size": 1799
     },
     {
       "id": "imhex-pif",
@@ -8213,6 +8236,7 @@
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/protobuf.hexpat",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "imhex",
         "path": "protobuf.hexpat",
@@ -8220,8 +8244,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-protobuf/pack.bp.ts",
-      "sha256": "941cb38e1b6cb4b2db7b4bce14799380670a3762053d6c9ebafcdaf44e5f2ff9",
-      "size": 1354
+      "sha256": "bfe79da4833c18366365a2b91fcc84deef1af44f0cdb7358df25f71cd87e9f8c",
+      "size": 2236
     },
     {
       "id": "imhex-psafe3",
@@ -8238,7 +8262,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/psafe3.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "psafe3.hexpat",
@@ -8246,8 +8269,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-psafe3/pack.bp.ts",
-      "sha256": "81a2d42a6da5d8c9350c3dc4e6d161ebefc4b12a8fcc2315ea32cd4c872cbf79",
-      "size": 1013
+      "sha256": "6bacb1473e8a4322def28b85b4445f1dea6d289aa3c6cc28abfa3266609e8125",
+      "size": 907
     },
     {
       "id": "imhex-pyc",
@@ -8264,7 +8287,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/pyc.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "pyc.hexpat",
@@ -8272,8 +8294,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-pyc/pack.bp.ts",
-      "sha256": "5d18862848f7e69a7e61a0d5d85f7eb82c58f1edf65a50ea876f00a70e975793",
-      "size": 2339
+      "sha256": "95e9e96b49c7198f14279ffc1a8ba46053a775aeaa5c71ce6f6a4d74bb132f61",
+      "size": 2146
     },
     {
       "id": "imhex-pyinstaller",
@@ -8315,7 +8337,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/q3demo.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "q3demo.hexpat",
@@ -8323,8 +8344,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-q3demo/pack.bp.ts",
-      "sha256": "181d30424d420922fc91899de337eee3cbc38ef4f8ccba14a12b57ede565729a",
-      "size": 925
+      "sha256": "0725a2dfa29f2983c355d8c92eb72f4c3790c2c02d3b279180aadf38ab245e28",
+      "size": 817
     },
     {
       "id": "imhex-qbcl",
@@ -8374,8 +8395,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-qoi/pack.bp.ts",
-      "sha256": "bd64e2c03cbd559171f9786327e373f99388dfbfd956a30eaa27eb1347f1918b",
-      "size": 2627
+      "sha256": "62b70a5a29b476ca968042eb8670840b948b43b88c117b8fedb7fff5619b26bc",
+      "size": 2533
     },
     {
       "id": "imhex-quantized-mesh",
@@ -8392,7 +8413,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/quantized-mesh.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "quantized-mesh.hexpat",
@@ -8400,8 +8420,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-quantized-mesh/pack.bp.ts",
-      "sha256": "a62801124035db7c0ed5b228d2c85723eb9f93ed79983080d73cd76e5aae01e2",
-      "size": 2822
+      "sha256": "9142c8fbc28c7c2ac528693bbc8c1d1b883558e1bcbdacc3319ca7fd789d88fe",
+      "size": 2718
     },
     {
       "id": "imhex-rar",
@@ -8419,6 +8439,7 @@
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/rar.hexpat",
       "coverage": "partial",
+      "helpers": 1,
       "source": {
         "provider": "imhex",
         "path": "rar.hexpat",
@@ -8426,8 +8447,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-rar/pack.bp.ts",
-      "sha256": "1821272006697d93a7affd4bd5d3328ba55d53065aaea3d47179a10d565d093f",
-      "size": 8121
+      "sha256": "3e979245561719e0279fba7a6b0855e7f2ff263574b428e71c281d34202750a0",
+      "size": 9202
     },
     {
       "id": "imhex-rcf-v1-2",
@@ -8477,8 +8498,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-rgbds/pack.bp.ts",
-      "sha256": "ad71b8b4cfeaf5465189cecebdd92460070005d293778c5d19a77a8887afba18",
-      "size": 2124
+      "sha256": "259035026e08ef122b059a2e824f981edae251dd9f87bba6b39da8cb645d3800",
+      "size": 1844
     },
     {
       "id": "imhex-rkvd",
@@ -8528,8 +8549,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-roblox-pack/pack.bp.ts",
-      "sha256": "dfc841dec7feff0026562f6f0e1a1366b2fbb344d7b23c47c8c001e94d6d3eca",
-      "size": 822
+      "sha256": "0549fb6a0a1cfdf6c2e45a11d546bc3baf0b00498bde834334ad23572e50b008",
+      "size": 774
     },
     {
       "id": "imhex-rpm",
@@ -8554,8 +8575,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-rpm/pack.bp.ts",
-      "sha256": "77e40055a03160d6228a6ce7bbc8e6f3654450741276ed4531c7d280ea1395c0",
-      "size": 5061
+      "sha256": "8a4d9d303218c10d063f66fce7c065c7a713a176c522406862c4cdf87f8d6ea1",
+      "size": 5331
     },
     {
       "id": "imhex-rsc",
@@ -8630,8 +8651,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-selinux/pack.bp.ts",
-      "sha256": "cfd1dae37a9cf17a13f2c825eccb89c0909f36d51f2d54574632df563db77a51",
-      "size": 13123
+      "sha256": "240bf2054dfaadfa1a590dce2aae49781946e815f5d0ba0af519e39a54070478",
+      "size": 12933
     },
     {
       "id": "imhex-selinuxpp",
@@ -8673,7 +8694,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/sfo.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "sfo.hexpat",
@@ -8681,8 +8701,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-sfo/pack.bp.ts",
-      "sha256": "1297f669a4c82d13e90e75c0f92610b56c096a7626d67586c7a5970bf92d3824",
-      "size": 897
+      "sha256": "b5ffce942a23cd18d188e27f7ced47fb4ea7b6ed5f75dad0fe8ccc3507c4bb53",
+      "size": 786
     },
     {
       "id": "imhex-shp",
@@ -8757,8 +8777,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-sit5/pack.bp.ts",
-      "sha256": "a9cf18864b1b3d7c6738f7a959a61781775e40ab441ec25a9d4c9c79c2805702",
-      "size": 1695
+      "sha256": "2814b5366d2dbd9faa1dc1d4d51f4ca83443d3e28844f93be3f145a77955ff30",
+      "size": 1644
     },
     {
       "id": "imhex-smk",
@@ -8800,7 +8820,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/snes.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "snes.hexpat",
@@ -8808,8 +8827,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-snes/pack.bp.ts",
-      "sha256": "fbf45f58b9b7e791defb73f00a0b9f9af8666de7e94609ac4f9867fc69bf4206",
-      "size": 2159
+      "sha256": "24ec1b73a04a541ad0ed41b9c0ed5a17954980de4bf37e58421af5a556259c17",
+      "size": 2040
     },
     {
       "id": "imhex-spc",
@@ -8885,8 +8904,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-sqlite3/pack.bp.ts",
-      "sha256": "3315b15ae611003ff9a1dad1fdf4a03ee438d628606ea9b80c0c0de2516a84a7",
-      "size": 1154
+      "sha256": "2b2ae19d03d6d8468cba38894901bded93836a0d63a581776702884647e9eb04",
+      "size": 1106
     },
     {
       "id": "imhex-stdfv4",
@@ -8929,7 +8948,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/stl.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "stl.hexpat",
@@ -8937,8 +8955,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-stl/pack.bp.ts",
-      "sha256": "15367e060ab5097c869f1bc66d4231f35598b4bc80713e6dc4cdd68696f03504",
-      "size": 961
+      "sha256": "eb2ebdcd2eae8ba5a5e5242182fb014bb93b77da502bcd0bf82a4e1b8f3b45f7",
+      "size": 810
     },
     {
       "id": "imhex-sup",
@@ -9006,7 +9024,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/tar.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "tar.hexpat",
@@ -9014,8 +9031,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-tar/pack.bp.ts",
-      "sha256": "aeb3e133eed136447f2c944bfb66023357f1b98747852205faddddefcfff02e6",
-      "size": 1558
+      "sha256": "1d330ac704a64b22ab1fcdadcad0f8816550b0abfe6096cca5135f8451ca13c3",
+      "size": 1452
     },
     {
       "id": "imhex-tarc",
@@ -9083,7 +9100,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/tga.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "tga.hexpat",
@@ -9091,8 +9107,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-tga/pack.bp.ts",
-      "sha256": "3b4abf4fb8a539db8d85545cd832be408c8fb69f1679032dc9fd482a6b2d91dc",
-      "size": 2198
+      "sha256": "18239a8c891a8ab4811da665935b63bd8e2e1fad4f06e691d0b1913f9de28182",
+      "size": 2094
     },
     {
       "id": "imhex-thumbcache",
@@ -9109,7 +9125,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/thumbcache.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "thumbcache.hexpat",
@@ -9117,8 +9132,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-thumbcache/pack.bp.ts",
-      "sha256": "f10a10dd6c713fc7dd5a3a6c44641cd3e4a8df5120aa395d40a6ed9ccc1b22dc",
-      "size": 743
+      "sha256": "2ab3e05994ffb5a1175b0156cc132fc87d9cca453f52cc63813ca5a348966e36",
+      "size": 625
     },
     {
       "id": "imhex-tiff",
@@ -9143,8 +9158,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-tiff/pack.bp.ts",
-      "sha256": "d614ff9ea1cad901ce312b98f076efb6488489e7c30763461832755038d6c9d1",
-      "size": 9510
+      "sha256": "d4016193c08cbcb5c7627b4f9d74f1821577df5f9c8d127bd52144efcaf23e50",
+      "size": 9421
     },
     {
       "id": "imhex-tmd",
@@ -9187,7 +9202,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/ttf.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "ttf.hexpat",
@@ -9195,8 +9209,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-ttf/pack.bp.ts",
-      "sha256": "5d934d76f6f30f05395c4aa446214adb90fa7b6042919005f3fb3a55590ef5dc",
-      "size": 18694
+      "sha256": "2068aed862462891cfff938a73c907a53c13e66d4bb554a4ad796f4d9473fe30",
+      "size": 18412
     },
     {
       "id": "imhex-ubiquiti",
@@ -9297,8 +9311,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-uefi-fv-varstore/pack.bp.ts",
-      "sha256": "563661d87cb6ebd713270387c9a9d77435532b103ecd1e893a3275cab653f88d",
-      "size": 3881
+      "sha256": "32843e622f45c9062480775fe702440d87ad7f9fc878b96dbc5c20247f6f3248",
+      "size": 3814
     },
     {
       "id": "imhex-uf2",
@@ -9365,7 +9379,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/unity-asset-bundle.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "unity-asset-bundle.hexpat",
@@ -9373,8 +9386,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-unity-asset-bundle/pack.bp.ts",
-      "sha256": "6ade11919be41e24844c94cb0b6eb90f1e87ce3ef2fb1ca4fb7a1ff447f1b29a",
-      "size": 1419
+      "sha256": "b420baea26fe67ce5444b4b7cb11295c01be550d3b9b12ee70cd11d04982c5ab",
+      "size": 1250
     },
     {
       "id": "imhex-unity-web-data",
@@ -9502,8 +9515,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-vbmeta/pack.bp.ts",
-      "sha256": "6923ee1d2d81c3a30999a82e037cc74c130d1dd9429286cdc7e1b14ef5f0c25e",
-      "size": 3010
+      "sha256": "380bbb845af45667da1ee3ad8a400debb89604739c3edd52f4e66aa64f8a6b01",
+      "size": 2955
     },
     {
       "id": "imhex-vdf",
@@ -9578,8 +9591,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-vgm/pack.bp.ts",
-      "sha256": "c14978095f9a5d866b269e8d155d712ddd6a9b0c344220160432fbbbfbac6b95",
-      "size": 3938
+      "sha256": "ee594e296b27eaf6173ee4afebfaa3b84b6e7ff58e00d2f3cc7d6d73417ef32d",
+      "size": 3850
     },
     {
       "id": "imhex-vhdx",
@@ -9680,8 +9693,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-wav/pack.bp.ts",
-      "sha256": "c68e9d82415a60905d9432fd56c5f5bd38aaee436eb2bd4173228dc01d727bcc",
-      "size": 9251
+      "sha256": "3f37703a484ef2ecb6a60b67876d99ff6bc43a157f82abedbbd78e872068af2e",
+      "size": 9163
     },
     {
       "id": "imhex-webp",
@@ -9706,8 +9719,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-webp/pack.bp.ts",
-      "sha256": "4a723b5bb1f2ded39f0b460035145cf04a211bc50aefc4107a6d54c9c37061ea",
-      "size": 2976
+      "sha256": "cc0e8a038a86f62fcf98e763a4009c3ec4206561717d0426fa8a2f3a62155227",
+      "size": 2932
     },
     {
       "id": "imhex-wfm",
@@ -9774,7 +9787,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/xbeh.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "xbeh.hexpat",
@@ -9782,8 +9794,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-xbeh/pack.bp.ts",
-      "sha256": "ad92e933a18c2e710b670c05c49570f90dec2cf35620e7cffb15d18db0d2dac5",
-      "size": 4637
+      "sha256": "2feb796eb9c12061dc11bbf3807307d9dfeaa8b7389e2c7047379f7aec29fdd6",
+      "size": 4531
     },
     {
       "id": "imhex-xci",
@@ -9825,7 +9837,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/xex.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "xex.hexpat",
@@ -9833,8 +9844,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-xex/pack.bp.ts",
-      "sha256": "cfef90ef995842ae427244e91082e073cf3fdc61682b640b6df4be619b0391f6",
-      "size": 690
+      "sha256": "547b5b70bc5031897fbb578bf88e6a6f68f6ecfa425298bf343fb71d40e1df03",
+      "size": 585
     },
     {
       "id": "imhex-xgstexture",
@@ -9851,7 +9862,6 @@
       "author": "ImHex-Patterns contributors",
       "license": "GPL-2.0-or-later",
       "homepage": "https://github.com/WerWolv/ImHex-Patterns/blob/master/xgstexture.hexpat",
-      "coverage": "partial",
       "source": {
         "provider": "imhex",
         "path": "xgstexture.hexpat",
@@ -9859,8 +9869,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-xgstexture/pack.bp.ts",
-      "sha256": "77bed912f66d458f5cf8e408ec6b868268ebf671ef5b630a52e2a02d38f232d8",
-      "size": 1426
+      "sha256": "4ac7ecd4098f1b46b8f4a2c15c903d52db8737f6b4cdc1f7636d04027757e35f",
+      "size": 1265
     },
     {
       "id": "imhex-xilinx-bit",
@@ -9911,8 +9921,8 @@
         "license": "GPL-2.0-or-later"
       },
       "path": "packs/imhex-xilinx-bootgen/pack.bp.ts",
-      "sha256": "0706713a408d1dd3bc2f49376a5b72616bee8a1797bd2f856334c1a75ea26ae0",
-      "size": 5171
+      "sha256": "8595a68d619aeb31f592c3c408ed852e251f7e24e33495fdd06f5d15b6ae43bc",
+      "size": 5108
     },
     {
       "id": "imhex-zim",

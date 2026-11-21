@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/flv
 // 原始 pack：flv · FLV video v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 4 项（见文件末尾）
+// 覆盖：partial；含 6 个动态辅助节点；未移植 1 项（见文件末尾）
 const FlvAudioHeader = struct("FlvAudioHeader", [
   bits("soundType", 1, { at: 0, bit: 0, unit: 1, label: "soundType" }),
   bits("soundSize", 1, { at: 0, bit: 1, unit: 1, label: "soundSize" }),
@@ -65,14 +65,40 @@ export default definePack({
     "flags_FlvHeaderFlags": structNode(FlvHeaderFlags, { label: "位域 FlvHeaderFlags" }),
     "flags_FlvAudioHeader": structNode(FlvAudioHeader, { label: "位域 FlvAudioHeader" }),
     "flags_FlvVideoHeader": structNode(FlvVideoHeader, { label: "位域 FlvVideoHeader" }),
+    "calc_FlvTag_dataSize": calcNode({
+      label: "FlvTag.dataSize（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "sizeHi": "number", "sizeMid": "number", "sizeLo": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (((Number(inputs["sizeHi"] ?? 0) * 65536) + (Number(inputs["sizeMid"] ?? 0) * 256)) + Number(inputs["sizeLo"] ?? 0)) }),
+    }),
+    "calc_FlvTag_timestamp": calcNode({
+      label: "FlvTag.timestamp（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "timeHi": "number", "timeMid": "number", "timeLo": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: (((Number(inputs["timeHi"] ?? 0) * 65536) + (Number(inputs["timeMid"] ?? 0) * 256)) + Number(inputs["timeLo"] ?? 0)) }),
+    }),
+    "ptr_FlvTag_decoded": calcNode({
+      label: "FlvTag.decoded（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs.base ?? 0) + 15 }),
+    }),
+    "match_FlvTag_decoded_8": structNode(FlvAudioTag, { label: "FlvTag.decoded · match 8" }),
+    "match_FlvTag_decoded_9": structNode(FlvVideoTag, { label: "FlvTag.decoded · match 9" }),
+    "list_Flv_tags": listNode(FlvTag, {
+      label: "Flv.tags（重复元素）",
+      description: "Nybble repeat 字段；address 指向第一个元素，next 按元素大小前进",
+      next: (e) => {  return e.addr + FlvTag.size; },
+      max: 4096,
+    }),
   },
 });
 
 
 /*
 未移植项：
-- FlvTag.dataSize: computed 字段未移植
-- FlvTag.timestamp: computed 字段未移植
 - FlvTag.data: 变长字节块未移植
-- Flv.tags: repeat 字段未移植，后续布局在此停止
 */

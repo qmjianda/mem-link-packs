@@ -3,7 +3,7 @@
   "name": "ImHex · Ar",
   "version": "1.0.0",
   "category": "archive",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "GNU Static library archive",
   "description": "GNU Static library archive",
   "tags": [

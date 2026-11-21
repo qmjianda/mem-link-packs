@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/dtb
 // 原始 pack：dtb · Device tree blob v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 12 项（见文件末尾）
+// 覆盖：partial；含 9 个动态辅助节点；未移植 5 项（见文件末尾）
 const FdtReserveEntry = struct("FdtReserveEntry", [
   u64("address", { endian: "big", label: "physical start address" }),
   u64("size", { endian: "big", label: "size in bytes (0 with address 0 terminates the map)" }),
@@ -47,22 +47,70 @@ export default definePack({
     "FdtNameChunk": structNode(FdtNameChunk, { label: "FdtNameChunk" }),
     "FdtProp": structNode(FdtProp, { label: "FdtProp" }),
     "FdtStructToken": structNode(FdtStructToken, { label: "FdtStructToken" }),
+    "ptr_FdtNameChunk_lastByte": calcNode({
+      label: "FdtNameChunk.lastByte（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs.base ?? 0) + 3 }),
+    }),
+    "calc_FdtProp_padLen": calcNode({
+      label: "FdtProp.padLen（计算）",
+      description: "Nybble computed 字段；输入来自同一结构体的字段端口",
+      inputs: { "len": "number" },
+      outputs: { value: 'number' },
+      run: (inputs) => ({ value: ((4 - (Number(inputs["len"] ?? 0) % 4)) % 4) }),
+    }),
+    "match_FdtStructToken_body_3": structNode(FdtProp, { label: "FdtStructToken.body · match 3" }),
+    "ptr_Fdt_reserveMap": calcNode({
+      label: "Fdt.reserveMap（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "offMemRsvmap": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["offMemRsvmap"] ?? 0) }),
+    }),
+    "list_Fdt_reserveMap": listNode(FdtReserveEntry, {
+      label: "Fdt.reserveMap（重复元素）",
+      description: "Nybble repeat 字段；address 指向第一个元素，next 按元素大小前进",
+      next: (e) => { if ((e.value["size"] == 0)) return null; return e.addr + FdtReserveEntry.size; },
+      max: 4096,
+    }),
+    "ptr_Fdt_structure": calcNode({
+      label: "Fdt.structure（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "offDtStruct": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["offDtStruct"] ?? 0) }),
+    }),
+    "list_Fdt_structure": listNode(FdtStructToken, {
+      label: "Fdt.structure（重复元素）",
+      description: "Nybble repeat 字段；address 指向第一个元素，next 按元素大小前进",
+      next: (e) => { if ((e.value["token"] == 9)) return null; return e.addr + FdtStructToken.size; },
+      max: 4096,
+    }),
+    "ptr_Fdt_strings": calcNode({
+      label: "Fdt.strings（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "offDtStrings": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["offDtStrings"] ?? 0) }),
+    }),
+    "ptr_Fdt_stringList": calcNode({
+      label: "Fdt.stringList（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "offDtStrings": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["offDtStrings"] ?? 0) }),
+    }),
   },
 });
 
 
 /*
 未移植项：
-- FdtNameChunk.lastByte: 指针字段（at +…）未移植
-- FdtBeginNode.name: 指针字段（at +…）未移植
-- FdtBeginNode.chunks: repeat 字段未移植，后续布局在此停止
 - FdtBeginNode: 没有可移植的固定前缀字段
 - FdtProp.value: 变长字节块未移植
-- FdtStructToken.body: match 联合类型未移植，后续布局在此停止
 - FdtString.name: cstring 变长字段未移植，后续布局在此停止
 - FdtString: 没有可移植的固定前缀字段
-- Fdt.reserveMap: 指针字段（at …）未移植
-- Fdt.structure: 指针字段（at …）未移植
-- Fdt.strings: 指针字段（at …）未移植
-- Fdt.stringList: 指针字段（at …）未移植
+- Fdt.stringList: 元素类型 FdtString 不可移植
 */

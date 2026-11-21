@@ -3,7 +3,7 @@
   "name": "ImHex · Tga",
   "version": "1.0.0",
   "category": "image",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "Truevision TGA/TARGA image",
   "description": "Truevision TGA/TARGA image",
   "tags": [

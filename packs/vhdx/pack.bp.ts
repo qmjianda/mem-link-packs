@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/vhdx
 // 原始 pack：vhdx · VHDX disk image v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 8 项（见文件末尾）
+// 覆盖：partial；含 22 个动态辅助节点；未移植 7 项（见文件末尾）
 const VhdxFileParameterFlags = struct("VhdxFileParameterFlags", [
   bits("leaveBlocksAllocated", 1, { at: 0, bit: 0, unit: 4, label: "leaveBlocksAllocated" }),
   bits("hasParent", 1, { at: 0, bit: 1, unit: 4, label: "hasParent" }),
@@ -101,6 +101,91 @@ export default definePack({
     "flags_VhdxFileParameterFlags": structNode(VhdxFileParameterFlags, { label: "位域 VhdxFileParameterFlags" }),
     "flags_VhdxMetadataFlags": structNode(VhdxMetadataFlags, { label: "位域 VhdxMetadataFlags" }),
     "flags_VhdxBatEntry": structNode(VhdxBatEntry, { label: "位域 VhdxBatEntry" }),
+    "ptr_VhdxMetadataTable_value0": calcNode({
+      label: "VhdxMetadataTable.value0（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "value0At": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs.base ?? 0) + Number(inputs["value0At"] ?? 0) }),
+    }),
+    "match_VhdxMetadataTable_value0_3399575351": structNode(VhdxFileParameters, { label: "VhdxMetadataTable.value0 · match 3399575351" }),
+    "ptr_VhdxMetadataTable_value1": calcNode({
+      label: "VhdxMetadataTable.value1（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "value1At": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs.base ?? 0) + Number(inputs["value1At"] ?? 0) }),
+    }),
+    "match_VhdxMetadataTable_value1_3399575351": structNode(VhdxFileParameters, { label: "VhdxMetadataTable.value1 · match 3399575351" }),
+    "ptr_VhdxMetadataTable_value2": calcNode({
+      label: "VhdxMetadataTable.value2（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "value2At": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs.base ?? 0) + Number(inputs["value2At"] ?? 0) }),
+    }),
+    "match_VhdxMetadataTable_value2_3399575351": structNode(VhdxFileParameters, { label: "VhdxMetadataTable.value2 · match 3399575351" }),
+    "ptr_VhdxMetadataTable_value3": calcNode({
+      label: "VhdxMetadataTable.value3（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "value3At": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs.base ?? 0) + Number(inputs["value3At"] ?? 0) }),
+    }),
+    "match_VhdxMetadataTable_value3_3399575351": structNode(VhdxFileParameters, { label: "VhdxMetadataTable.value3 · match 3399575351" }),
+    "ptr_VhdxMetadataTable_value4": calcNode({
+      label: "VhdxMetadataTable.value4（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "value4At": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs.base ?? 0) + Number(inputs["value4At"] ?? 0) }),
+    }),
+    "match_VhdxMetadataTable_value4_3399575351": structNode(VhdxFileParameters, { label: "VhdxMetadataTable.value4 · match 3399575351" }),
+    "ptr_VhdxRegionEntry_region": calcNode({
+      label: "VhdxRegionEntry.region（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "fileOffset": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["fileOffset"] ?? 0) }),
+    }),
+    "match_VhdxRegionEntry_region_2340200966": structNode(VhdxMetadataTable, { label: "VhdxRegionEntry.region · match 2340200966" }),
+    "match_VhdxRegionEntry_region_767719270": structNode(VhdxBat, { label: "VhdxRegionEntry.region · match 767719270" }),
+    "array_VhdxRegionTable_entries": arrayNode(VhdxRegionEntry, {
+      label: "VhdxRegionTable.entries（动态数组）",
+      description: "count 来自 VhdxRegionTable.entryCount；address 指向数组首元素",
+    }),
+    "ptr_Vhdx_header1": calcNode({
+      label: "Vhdx.header1（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: 65536 }),
+    }),
+    "ptrtarget_Vhdx_header1": structNode(VhdxHeader, { label: "指针目标 · Vhdx.header1" }),
+    "ptr_Vhdx_header2": calcNode({
+      label: "Vhdx.header2（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: 131072 }),
+    }),
+    "ptrtarget_Vhdx_header2": structNode(VhdxHeader, { label: "指针目标 · Vhdx.header2" }),
+    "ptr_Vhdx_regionTable": calcNode({
+      label: "Vhdx.regionTable（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: 196608 }),
+    }),
+    "ptrtarget_Vhdx_regionTable": structNode(VhdxRegionTable, { label: "指针目标 · Vhdx.regionTable" }),
+    "ptr_Vhdx_regionTable2": calcNode({
+      label: "Vhdx.regionTable2（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: 262144 }),
+    }),
+    "ptrtarget_Vhdx_regionTable2": structNode(VhdxRegionTable, { label: "指针目标 · Vhdx.regionTable2" }),
   },
 });
 
@@ -108,11 +193,10 @@ export default definePack({
 /*
 未移植项：
 - VhdxMetadataTable.entry5: 条件字段未移植，后续布局在此停止
+- VhdxMetadataTable.value0At: computed 表达式依赖非标量字段，未生成 calc 辅助节点
+- VhdxMetadataTable.value1At: computed 表达式依赖非标量字段，未生成 calc 辅助节点
+- VhdxMetadataTable.value2At: computed 表达式依赖非标量字段，未生成 calc 辅助节点
+- VhdxMetadataTable.value3At: computed 表达式依赖非标量字段，未生成 calc 辅助节点
+- VhdxMetadataTable.value4At: computed 表达式依赖非标量字段，未生成 calc 辅助节点
 - 未找到 struct VhdxBatEntry
-- VhdxRegionEntry.region: 指针字段（at …）未移植
-- VhdxRegionTable.entries: 动态数组长度（field）未移植
-- Vhdx.header1: 指针字段（at …）未移植
-- Vhdx.header2: 指针字段（at …）未移植
-- Vhdx.regionTable: 指针字段（at …）未移植
-- Vhdx.regionTable2: 指针字段（at …）未移植
 */

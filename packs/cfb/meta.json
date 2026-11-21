@@ -19,6 +19,7 @@
   "license": "Free use / redistribution (Nybble registry)",
   "homepage": "https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-cfb/53989ce4-7b05-4f8d-829b-d08d6148375b",
   "coverage": "partial",
+  "helpers": 6,
   "source": {
     "provider": "nybble",
     "id": "cfb",

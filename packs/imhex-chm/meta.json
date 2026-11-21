@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "category": "archive",
   "coverage": "partial",
+  "helpers": 1,
   "summary": "Windows HtmlHelp Data (ITSF / CHM)",
   "description": "Windows HtmlHelp Data (ITSF / CHM)",
   "tags": [

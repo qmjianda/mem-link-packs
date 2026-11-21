@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/cpio.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 2 项（见文件末尾）
+// 覆盖：partial；未移植 1 项（见文件末尾）
 const old_binary_Mode = struct("old_binary_Mode", [
   bits("x", 3, { at: 0, bit: 0, unit: 2, label: "x" }),
   bits("w", 3, { at: 0, bit: 3, unit: 2, label: "w" }),
@@ -28,5 +28,4 @@ export default definePack({
 /*
 未移植项：
 - old_binary_Cpio.header: 类型 CpioHeader 不可移植
-- old_binary_Cpio: 位域没有可移植的固定成员
 */

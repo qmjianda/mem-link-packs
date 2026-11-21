@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/DFIR/DISK_PARSER.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 4 项（见文件末尾）
+// 覆盖：partial；未移植 3 项（见文件末尾）
 const CHS_Decoder = struct("CHS_Decoder", [
   bits("head", 8, { at: 0, bit: 0, unit: 4, label: "head" }),
   bits("sector", 6, { at: 0, bit: 8, unit: 4, label: "sector" }),
@@ -74,5 +74,4 @@ export default definePack({
 - PartitionUnion.PartTypeGUID: 类型 type_GUID 不可移植
 - GPT_PartitionEntry.Type: 类型 PartitionUnion 不可移植
 - MasterBootRecord.MBR_SIG: 类型 MBRSignature 不可移植
-- DiskRoot: 位域没有可移植的固定成员
 */

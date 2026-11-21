@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/evtx
 // 原始 pack：evtx · Windows event log v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 1 项（见文件末尾）
+// 覆盖：partial；含 1 个动态辅助节点
 const EvtxChunk = struct("EvtxChunk", [
   str("magic", { size: 8, label: "ElfChnk, NUL-terminated" }),
   u64("firstEventRecordNumber", { endian: "little", label: "logical number of the first record in this chunk" }),
@@ -53,11 +53,12 @@ export default definePack({
     "entry": structNode(Evtx, { label: "Evtx（入口）" }),
     "EvtxChunk": structNode(EvtxChunk, { label: "EvtxChunk" }),
     "flags_EvtxFileFlags": structNode(EvtxFileFlags, { label: "位域 EvtxFileFlags" }),
+    "list_Evtx_chunks": listNode(EvtxChunk, {
+      label: "Evtx.chunks（重复元素）",
+      description: "Nybble repeat 字段；address 指向第一个元素，next 按元素大小前进",
+      next: (e) => {  return e.addr + EvtxChunk.size; },
+      max: 4096,
+    }),
   },
 });
 
-
-/*
-未移植项：
-- Evtx.chunks: repeat 字段未移植，后续布局在此停止
-*/

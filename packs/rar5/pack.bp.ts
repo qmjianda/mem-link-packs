@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/rar
 // 原始 pack：rar · RAR archive v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 4 项（见文件末尾）
+// 覆盖：partial；含 3 个动态辅助节点；未移植 1 项（见文件末尾）
 const Rar5HeaderFlags = struct("Rar5HeaderFlags", [
   bits("extraArea", 1, { at: 0, bit: 0, unit: 1, label: "extraArea" }),
   bits("dataArea", 1, { at: 0, bit: 1, unit: 1, label: "dataArea" }),
@@ -55,14 +55,35 @@ export default definePack({
     "flags_Rar5HeaderFlags": structNode(Rar5HeaderFlags, { label: "位域 Rar5HeaderFlags" }),
     "flags_Rar5ArchiveFlags": structNode(Rar5ArchiveFlags, { label: "位域 Rar5ArchiveFlags" }),
     "flags_Rar5FileFlags": structNode(Rar5FileFlags, { label: "位域 Rar5FileFlags" }),
+    "read_varint": calcNode({
+      label: '读 Varint',
+      description: '按地址解码 1–9 字节 varint（LEB128）',
+      inputs: { address: 'number' },
+      outputs: { value: 'number', bytes: 'number' },
+      run: ({ address }, ctx) => {
+        let value = 0;
+        for (let i = 0; i < 9; i += 1) {
+          const b = ctx.mem.u8(Number(address) + i);
+          if (i === 8) return { value: value * 256 + b, bytes: 9 };
+          value = value * 128 + (b & 0x7f);
+          if ((b & 0x80) === 0) return { value, bytes: i + 1 };
+        }
+        return { value, bytes: 9 };
+      },
+    }),
+    "ptr_Rar5_firstFile": calcNode({
+      label: "Rar5.firstFile（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number", "firstFilePos": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs["firstFilePos"] ?? 0) }),
+    }),
+    "ptrtarget_Rar5_firstFile": structNode(Rar5FileHeader, { label: "指针目标 · Rar5.firstFile" }),
   },
 });
 
 
 /*
 未移植项：
-- Rar5MainHeader.headerSize: varint 变长字段未移植，后续布局在此停止
-- Rar5FileHeader.headerSize: varint 变长字段未移植，后续布局在此停止
-- Rar5.firstFilePos: computed 字段未移植
-- Rar5.firstFile: 指针字段（at …）未移植
+- Rar5.firstFilePos: computed 表达式依赖非标量字段，未生成 calc 辅助节点
 */

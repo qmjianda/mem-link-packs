@@ -3,7 +3,7 @@
 // 由 store/scripts/port-imhex.mjs 自动生成，请勿手工编辑。
 // 上游：https://github.com/WerWolv/ImHex-Patterns/blob/master/fs/apfs.hexpat
 // 许可：GPL-2.0-or-later（ImHex-Patterns）；生成物按同一许可分发。
-// 覆盖：partial；未移植 14 项（见文件末尾）
+// 覆盖：partial；未移植 13 项（见文件末尾）
 const prange = struct("prange", [
   i64("pr_start_paddr", {  }),
   u64("pr_block_count", {  }),
@@ -17,6 +17,10 @@ const o_type_t = struct("o_type_t", [
 const nx_features_t = struct("nx_features_t", [
   bits("defrag", 1, { at: 0, bit: 0, unit: 8, label: "defrag" }),
   bits("lcfd", 1, { at: 0, bit: 1, unit: 8, label: "lcfd" }),
+]);
+
+const nx_rocompat_features_t = struct("nx_rocompat_features_t", [
+  u64('value', { endian: "little" }),
 ]);
 
 const nx_incompat_features_t = struct("nx_incompat_features_t", [
@@ -436,12 +440,13 @@ export default definePack({
   name: "Apple File System (APFS)",
   endian: "little",
   pointerSize: 8,
-  types: [prange, o_type_t, nx_features_t, nx_incompat_features_t, checkpoint_mapping_t, evict_mapping_val_t, omap_key_t, omap_val_t, omap_snapshot_t, chunk_info_t, spaceman_free_queue_key_t, spaceman_free_queue_entry_t, spaceman_free_queue_t, spaceman_device_t, spaceman_allocation_zone_boundaries_t, spaceman_allocation_zone_info_phys_t, nx_reap_list_entry_t, kb_locker_t, wrapped_crypto_state_t, wrapped_meta_crypto_state_t, j_crypto_val_t, apfs_fs_flags_t, apfs_incompatible_features_t, j_inode_flags_t, j_inode_val_t, j_drec_key_t, j_drec_hashed_len_t, j_drec_hashed_key_t, dir_rec_flags_t, j_drec_val_t, j_dir_stats_val_t, j_xattr_key_t, j_xattr_flags_t, j_xattr_val_t, j_inode_bsd_flags, j_phys_ext_val_t, j_file_extent_key_t, j_file_extent_val_t, j_dstream_id_val_t, j_dstream_t, j_xattr_dstream_t, xf_blob_t, x_flags_t, x_field_t, j_sibling_key_t, j_sibling_val_t, j_sibling_map_val_t, snap_meta_flags_t, j_snap_metadata_val_t, j_snap_name_key_t, j_snap_name_val_t, j_file_info_lba_t, j_file_info_key_t, j_file_data_hash_val_t, j_file_info_val_t, j_key_t, nloc_t, kvloc_t, kvoff_t, btn_flags_t, bt_flags_t, btree_info_fixed_t, btree_info_t, btn_index_node_val_t],
+  types: [prange, o_type_t, nx_features_t, nx_rocompat_features_t, nx_incompat_features_t, checkpoint_mapping_t, evict_mapping_val_t, omap_key_t, omap_val_t, omap_snapshot_t, chunk_info_t, spaceman_free_queue_key_t, spaceman_free_queue_entry_t, spaceman_free_queue_t, spaceman_device_t, spaceman_allocation_zone_boundaries_t, spaceman_allocation_zone_info_phys_t, nx_reap_list_entry_t, kb_locker_t, wrapped_crypto_state_t, wrapped_meta_crypto_state_t, j_crypto_val_t, apfs_fs_flags_t, apfs_incompatible_features_t, j_inode_flags_t, j_inode_val_t, j_drec_key_t, j_drec_hashed_len_t, j_drec_hashed_key_t, dir_rec_flags_t, j_drec_val_t, j_dir_stats_val_t, j_xattr_key_t, j_xattr_flags_t, j_xattr_val_t, j_inode_bsd_flags, j_phys_ext_val_t, j_file_extent_key_t, j_file_extent_val_t, j_dstream_id_val_t, j_dstream_t, j_xattr_dstream_t, xf_blob_t, x_flags_t, x_field_t, j_sibling_key_t, j_sibling_val_t, j_sibling_map_val_t, snap_meta_flags_t, j_snap_metadata_val_t, j_snap_name_key_t, j_snap_name_val_t, j_file_info_lba_t, j_file_info_key_t, j_file_data_hash_val_t, j_file_info_val_t, j_key_t, nloc_t, kvloc_t, kvoff_t, btn_flags_t, bt_flags_t, btree_info_fixed_t, btree_info_t, btn_index_node_val_t],
   nodes: {
     "entry": structNode(apfs_incompatible_features_t, { label: "apfs_incompatible_features_t（入口）" }),
     "prange": structNode(prange, { label: "prange" }),
     "o_type_t": structNode(o_type_t, { label: "o_type_t" }),
     "nx_features_t": structNode(nx_features_t, { label: "nx_features_t" }),
+    "nx_rocompat_features_t": structNode(nx_rocompat_features_t, { label: "nx_rocompat_features_t" }),
     "nx_incompat_features_t": structNode(nx_incompat_features_t, { label: "nx_incompat_features_t" }),
     "checkpoint_mapping_t": structNode(checkpoint_mapping_t, { label: "checkpoint_mapping_t" }),
     "evict_mapping_val_t": structNode(evict_mapping_val_t, { label: "evict_mapping_val_t" }),
@@ -508,7 +513,6 @@ export default definePack({
 
 /*
 未移植项：
-- nx_rocompat_features_t: 位域没有可移植的固定成员
 - nx_superblock_t.nx_o: 类型 obj_phys_t 不可移植
 - checkpoint_map_phys_t.cpm_o: 类型 obj_phys_t 不可移植
 - omap_phys_t.om_o: 类型 obj_phys_t 不可移植

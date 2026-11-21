@@ -3,7 +3,7 @@
   "name": "ImHex · Nbt",
   "version": "1.0.0",
   "category": "data",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "Minecraft NBT",
   "description": "Minecraft NBT",
   "tags": [

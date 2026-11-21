@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/gguf
 // 原始 pack：gguf · GGUF model v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 5 项（见文件末尾）
+// 覆盖：partial；含 5 个动态辅助节点；未移植 1 项（见文件末尾）
 const GgufString = struct("GgufString", [
   u64("length", { endian: "little", label: "bytes of UTF-8 text" }),
 ]);
@@ -31,17 +31,35 @@ const Gguf = struct("Gguf", [
   u64("kvCount", { endian: "little", label: "number of metadata key/value pairs" }),
 ]);
 
+const Elem_u64 = struct("u64Value", [
+  u64('value', { endian: "little" }),
+]);
+
 export default definePack({
   name: "GGUF",
   endian: "little",
   pointerSize: 4,
-  types: [GgufString, GgufArray, GgufKv, GgufTensorInfo, Gguf],
+  types: [GgufString, GgufArray, GgufKv, GgufTensorInfo, Gguf, Elem_u64],
   nodes: {
     "entry": structNode(Gguf, { label: "Gguf（入口）" }),
     "GgufString": structNode(GgufString, { label: "GgufString" }),
     "GgufArray": structNode(GgufArray, { label: "GgufArray" }),
     "GgufKv": structNode(GgufKv, { label: "GgufKv" }),
     "GgufTensorInfo": structNode(GgufTensorInfo, { label: "GgufTensorInfo" }),
+    "match_GgufKv_value_8": structNode(GgufString, { label: "GgufKv.value · match 8" }),
+    "match_GgufKv_value_9": structNode(GgufArray, { label: "GgufKv.value · match 9" }),
+    "array_GgufTensorInfo_dims": arrayNode(Elem_u64, {
+      label: "GgufTensorInfo.dims（动态数组）",
+      description: "count 来自 GgufTensorInfo.nDims；address 指向数组首元素",
+    }),
+    "array_Gguf_metadata": arrayNode(GgufKv, {
+      label: "Gguf.metadata（动态数组）",
+      description: "count 来自 Gguf.kvCount；address 指向数组首元素",
+    }),
+    "array_Gguf_tensors": arrayNode(GgufTensorInfo, {
+      label: "Gguf.tensors（动态数组）",
+      description: "count 来自 Gguf.tensorCount；address 指向数组首元素",
+    }),
   },
 });
 
@@ -49,8 +67,4 @@ export default definePack({
 /*
 未移植项：
 - GgufString.text: 变长字符串未移植
-- GgufArray.items: match 联合类型未移植，后续布局在此停止
-- GgufKv.value: match 联合类型未移植，后续布局在此停止
-- GgufTensorInfo.dims: 动态数组长度（field）未移植
-- Gguf.metadata: 动态数组长度（field）未移植
 */

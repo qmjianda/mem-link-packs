@@ -3,7 +3,7 @@
   "name": "ImHex · Jpeg",
   "version": "1.0.0",
   "category": "image",
-  "coverage": "partial",
+  "coverage": "complete",
   "summary": "JPEG Image",
   "description": "JPEG Image",
   "tags": [

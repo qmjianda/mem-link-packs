@@ -4,7 +4,7 @@
 // 上游：https://github.com/itsmajdbuilds/binary-explorer-registry/tree/main/formats/dds
 // 原始 pack：dds · DDS texture v1.0.0 · 作者 Nybble
 // 许可：Nybble format registry 允许自由使用与再分发；见上游 meta.toml。
-// 覆盖：partial；未移植 2 项（见文件末尾）
+// 覆盖：partial；含 2 个动态辅助节点；未移植 1 项（见文件末尾）
 const DdsHeaderDxt10 = struct("DdsHeaderDxt10", [
   u32("dxgiFormat", { values: { "0": "Unknown", "2": "R32G32B32A32Float", "10": "R16G16B16A16Float", "28": "R8G8B8A8Unorm", "29": "R8G8B8A8UnormSrgb", "54": "R16Float", "61": "R8Unorm", "71": "Bc1Unorm", "72": "Bc1UnormSrgb", "74": "Bc2Unorm", "75": "Bc2UnormSrgb", "77": "Bc3Unorm", "78": "Bc3UnormSrgb", "80": "Bc4Unorm", "83": "Bc5Unorm", "87": "B8G8R8A8Unorm", "91": "B8G8R8A8UnormSrgb", "95": "Bc6hUf16", "98": "Bc7Unorm", "99": "Bc7UnormSrgb" }, label: "the surface format, in DXGI terms" }),
   u32("resourceDimension", { values: { "2": "Texture1D", "3": "Texture2D", "4": "Texture3D" }, label: "1D, 2D or 3D resource" }),
@@ -92,12 +92,19 @@ export default definePack({
     "flags_DdsPixelFormatFlags": structNode(DdsPixelFormatFlags, { label: "位域 DdsPixelFormatFlags" }),
     "flags_DdsCaps": structNode(DdsCaps, { label: "位域 DdsCaps" }),
     "flags_DdsCaps2": structNode(DdsCaps2, { label: "位域 DdsCaps2" }),
+    "ptr_DdsPixelFormat_dx10": calcNode({
+      label: "DdsPixelFormat.dx10（指针地址）",
+      description: "把结构体基址与指针字段/常量相加，接到目标结构节点的 address",
+      inputs: { "base": "number" },
+      outputs: { address: 'number' },
+      run: (inputs) => ({ address: Number(inputs.base ?? 0) + 52 }),
+    }),
+    "match_DdsPixelFormat_dx10_DX10": structNode(DdsHeaderDxt10, { label: "DdsPixelFormat.dx10 · match DX10" }),
   },
 });
 
 
 /*
 未移植项：
-- DdsPixelFormat.dx10: 指针字段（at +…）未移植
 - Dds.surface: 变长字节块未移植
 */
