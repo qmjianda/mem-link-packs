@@ -976,7 +976,7 @@ class Converter {
       ? `function __nybblePath(value, keys) {\n  let cur = value;\n  for (const k of keys) {\n    if (cur == null) return undefined;\n    cur = cur[k];\n  }\n  return cur;\n}\n\n`
       : '';
     const typeCodes = `${helperCode}${allDefs.map((d) => d.code ?? this.structCode(d)).join('\n\n')}`;
-    const nodeCodes = nodes.map((n) => `    ${jsString(n.id)}: structNode(${n.ref}, { label: ${jsString(n.label)} }),`);
+    const nodeCodes = nodes.map((n) => `    ${jsString(n.id)}: structNode(${n.ref}, { label: ${jsString(n.label)}, description: ${jsString(`解析 ${n.label}。数据源接 File；address 填结构起始偏移；字段就是输出端口。`)} }),`);
     for (const h of this.helperNodes) {
       const id = uniqueName(h.id, nodeIds);
       nodeCodes.push(`    ${jsString(id)}: ${h.code},`);

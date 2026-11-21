@@ -117,6 +117,17 @@ function build(root) {
     const source = readFileSync(sourceFile, 'utf8');
     const sha256 = createHash('sha256').update(source).digest('hex');
 
+    const referenceFile = join(packDir, 'reference.blueprint.json');
+    if (!existsSync(referenceFile)) {
+      throw new Error(`${dir}: 缺少 reference.blueprint.json（运行 node store/scripts/build-references.mjs）`);
+    }
+    const referenceText = readFileSync(referenceFile, 'utf8');
+    const reference = readJson(referenceFile);
+    if (reference?.format !== 'memlink-blueprint/3') {
+      throw new Error(`${referenceFile}: format 必须是 memlink-blueprint/3`);
+    }
+    const referenceSha = createHash('sha256').update(referenceText).digest('hex');
+
     const coverage = meta.coverage === 'partial' ? 'partial' : 'complete';
     const sourceInfo = meta.source && typeof meta.source === 'object' && !Array.isArray(meta.source)
       ? meta.source
@@ -141,6 +152,11 @@ function build(root) {
       path: `packs/${id}/pack.bp.ts`,
       sha256,
       size: Buffer.byteLength(source),
+      reference: {
+        path: `packs/${id}/reference.blueprint.json`,
+        sha256: referenceSha,
+        size: Buffer.byteLength(referenceText),
+      },
     });
   }
 

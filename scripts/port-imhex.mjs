@@ -951,7 +951,7 @@ class Converter {
     }
 
     const types = defs.map((d) => d.ref).join(', ');
-    const nodeLines = nodes.map((n) => `    ${jsString(n.id)}: structNode(${n.ref}, { label: ${jsString(n.label)} }),`);
+    const nodeLines = nodes.map((n) => `    ${jsString(n.id)}: structNode(${n.ref}, { label: ${jsString(n.label)}, description: ${jsString(`解析 ${n.label}。数据源接 File 或沿上游继承；address 填结构起始偏移；字段就是输出端口。`)} }),`);
     for (const h of this.helperNodes) {
       const id = this.helperIds.has(h.id) ? h.id : sanitize(h.id);
       nodeLines.push(`    ${jsString(id)}: ${h.code},`);

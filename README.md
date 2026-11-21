@@ -46,6 +46,7 @@
 │   └── <id>/
 │       ├── pack.bp.ts          # mem-link pack（可执行代码）
 │       ├── meta.json           # 商店元数据：名称、版本、分类、来源、覆盖度
+│       ├── reference.blueprint.json # 已接好线的参考图（零填充示例）
 │       └── ...
 ├── scripts/
 │   ├── build-index.mjs         # 生成 / 校验 index.json
@@ -77,6 +78,16 @@
 node scripts/build-index.mjs          # 重新生成 index.json
 node scripts/build-index.mjs --check  # CI：索引过期则退出 1
 ```
+
+参考蓝图在 **mem-link 主仓库**生成（需要主仓库的 pack 加载器）：
+
+```bash
+node store/scripts/build-references.mjs --root store   # 重新生成参考蓝图
+node store/scripts/build-references.mjs --root store --check
+```
+
+`build-index.mjs` 会检查每个 pack 都有 `reference.blueprint.json`，并把它的
+SHA-256 / 大小写进索引。
 
 脚本会：
 

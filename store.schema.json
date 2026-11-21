@@ -27,6 +27,15 @@
         "license": { "type": "string" }
       }
     },
+    "reference": {
+      "type": "object",
+      "required": ["path"],
+      "properties": {
+        "path": { "type": "string", "pattern": "\\.blueprint\\.json$" },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "size": { "type": "integer", "minimum": 0 }
+      }
+    },
     "pack": {
       "type": "object",
       "required": ["id", "name", "version", "category", "summary", "path"],
@@ -57,7 +66,8 @@
         "source": { "$ref": "#/$defs/source" },
         "path": { "type": "string", "pattern": "\\.bp\\.ts$" },
         "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
-        "size": { "type": "integer", "minimum": 0 }
+        "size": { "type": "integer", "minimum": 0 },
+        "reference": { "$ref": "#/$defs/reference" }
       }
     }
   }

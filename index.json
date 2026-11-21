@@ -23,7 +23,12 @@
       "license": "MIT",
       "path": "packs/nes/pack.bp.ts",
       "sha256": "6c0979f8b8859314fae1ff9bfe3219c2c4a085b10eb10130e217b5497735c3d5",
-      "size": 4162
+      "size": 4162,
+      "reference": {
+        "path": "packs/nes/reference.blueprint.json",
+        "sha256": "402ff68e100bbfa6ffaaeede177344a768591e5788683efd9a4e517c6d116e3a",
+        "size": 6262
+      }
     },
     {
       "id": "sqlite",
@@ -44,7 +49,12 @@
       "license": "MIT",
       "path": "packs/sqlite/pack.bp.ts",
       "sha256": "6b40db2a8fac3f6612f936b377ee0ddf94df2809b035d7fa986e179e35da4bed",
-      "size": 6459
+      "size": 6459,
+      "reference": {
+        "path": "packs/sqlite/reference.blueprint.json",
+        "sha256": "4584268384fffcf78d2a3bba4bb2435b7105b93da3742bce151bc253d9c9c5e8",
+        "size": 9317
+      }
     },
     {
       "id": "png",
@@ -64,7 +74,12 @@
       "license": "MIT",
       "path": "packs/png/pack.bp.ts",
       "sha256": "e07a12e76d62e932b348d7ea0e28fa732b196577c02636a8a50a03c899c2246f",
-      "size": 2373
+      "size": 2373,
+      "reference": {
+        "path": "packs/png/reference.blueprint.json",
+        "sha256": "cd6c160c78546af998214c0481d1449cdad0084879ba54329cba9088ac71e906",
+        "size": 5000
+      }
     },
     {
       "id": "bmp",
@@ -84,7 +99,12 @@
       "license": "MIT",
       "path": "packs/bmp/pack.bp.ts",
       "sha256": "91e553b6f35a87a7fb1049d0c959b88062835b841a2ad8788222f8b409eaa6be",
-      "size": 2842
+      "size": 2842,
+      "reference": {
+        "path": "packs/bmp/reference.blueprint.json",
+        "sha256": "e6c8fa0b8eecaac4bd87a9a3aaf69feeb4934310592a681e948ddd8aaf1aa736",
+        "size": 5216
+      }
     },
     {
       "id": "zip",
@@ -104,7 +124,12 @@
       "license": "MIT",
       "path": "packs/zip/pack.bp.ts",
       "sha256": "5224f38ce8999350ca159ba2c2be9802d326a5058dfc5ff56e267446ce269b48",
-      "size": 5806
+      "size": 5806,
+      "reference": {
+        "path": "packs/zip/reference.blueprint.json",
+        "sha256": "1d42a662457977b324d5a755e3a99df4608031bc1fed98b14a9bd7220dfdfc64",
+        "size": 8443
+      }
     },
     {
       "id": "gif",
@@ -124,7 +149,12 @@
       "license": "MIT",
       "path": "packs/gif/pack.bp.ts",
       "sha256": "abb165648772281f6572b12980f3ad4914c75a993ac8b42f436385e81014b59f",
-      "size": 3396
+      "size": 3396,
+      "reference": {
+        "path": "packs/gif/reference.blueprint.json",
+        "sha256": "0979573835716e33956a154ed8b3ef4ef2883772215f4839733dbe68568df27d",
+        "size": 5699
+      }
     },
     {
       "id": "elf",
@@ -145,7 +175,12 @@
       "license": "MIT",
       "path": "packs/elf/pack.bp.ts",
       "sha256": "3eec3b02a116e5f294b4d64731e2c0bb6e03d7b4940f6fd944aa56e49fb56337",
-      "size": 7459
+      "size": 7459,
+      "reference": {
+        "path": "packs/elf/reference.blueprint.json",
+        "sha256": "d6dcdb31db4a3c7e3720e025900c693da07d936fce27a16dff8fed6f3b0f0f63",
+        "size": 10611
+      }
     },
     {
       "id": "pe",
@@ -167,7 +202,12 @@
       "license": "MIT",
       "path": "packs/pe/pack.bp.ts",
       "sha256": "bbc532bb84f8ffd7b0b917608d38621d73f5be6922964fba13a085dc460fda17",
-      "size": 11268
+      "size": 11268,
+      "reference": {
+        "path": "packs/pe/reference.blueprint.json",
+        "sha256": "f3da69e9acbde43ae3710e670de6bfb8ef79787c97f455215abf40e59402fc75",
+        "size": 14314
+      }
     },
     {
       "id": "jpeg",
@@ -188,7 +228,12 @@
       "license": "MIT",
       "path": "packs/jpeg/pack.bp.ts",
       "sha256": "11de1b2c88ed6065fb5f12c5c5c8e22e2021d985a6cc2340a4cf90a159d31d62",
-      "size": 3983
+      "size": 3983,
+      "reference": {
+        "path": "packs/jpeg/reference.blueprint.json",
+        "sha256": "d1de8dac3dc053b1dc952396d3e77dedfa239cd486e96ae5df2b2783096d74c3",
+        "size": 6647
+      }
     },
     {
       "id": "wav",
@@ -209,7 +254,12 @@
       "license": "MIT",
       "path": "packs/wav/pack.bp.ts",
       "sha256": "e6080f62afc858cf64acb3e67652455b102610a348afd14a15ebdd7492f35f69",
-      "size": 2525
+      "size": 2525,
+      "reference": {
+        "path": "packs/wav/reference.blueprint.json",
+        "sha256": "304bebdab6fd51a95afca6bec2638984504ea9ce643b3c16b8daceb1a8790f1b",
+        "size": 5062
+      }
     },
     {
       "id": "7z",
@@ -240,7 +290,12 @@
       },
       "path": "packs/7z/pack.bp.ts",
       "sha256": "38731ec5525f9a48516c5f3778335d627867cce8bea8c6a3f9c8577c14dd2872",
-      "size": 3120
+      "size": 3120,
+      "reference": {
+        "path": "packs/7z/reference.blueprint.json",
+        "sha256": "f4e16111b5e3a6ed1619834644204cc33531ed2b5dfca5d97b87d4315e4f39bb",
+        "size": 5659
+      }
     },
     {
       "id": "aiff",
@@ -268,7 +323,12 @@
       },
       "path": "packs/aiff/pack.bp.ts",
       "sha256": "016d8b694a2d5b4835ec51fd378b88e7183f415df15c2d0f1285d1ff07d706d0",
-      "size": 977
+      "size": 977,
+      "reference": {
+        "path": "packs/aiff/reference.blueprint.json",
+        "sha256": "927c3c4c10a365e0f154c2f45b2a7efb6ca375f054dc9e913e654d09a7fde189",
+        "size": 3064
+      }
     },
     {
       "id": "androidboot",
@@ -299,7 +359,12 @@
       },
       "path": "packs/androidboot/pack.bp.ts",
       "sha256": "cdf5158f426606bd475af010bc2c7695b38063a6ac4b0d153720d40b33c73fb6",
-      "size": 2093
+      "size": 2093,
+      "reference": {
+        "path": "packs/androidboot/reference.blueprint.json",
+        "sha256": "f96137392bd4056db0e3fd3fa802db1c03a2431b2f85d66dbeebd2e451cef20b",
+        "size": 6014
+      }
     },
     {
       "id": "apfs",
@@ -332,7 +397,12 @@
       },
       "path": "packs/apfs/pack.bp.ts",
       "sha256": "4345addc0b90692542b052d881a7e6907c23e91f61589d0ad4f86032c21f379f",
-      "size": 15801
+      "size": 15801,
+      "reference": {
+        "path": "packs/apfs/reference.blueprint.json",
+        "sha256": "7401208ab52916e133f8a1b5fcc0282a57f0676186dcdad5b5cfb7e87280abec",
+        "size": 23654
+      }
     },
     {
       "id": "ar",
@@ -363,7 +433,12 @@
       },
       "path": "packs/ar/pack.bp.ts",
       "sha256": "365f6497f6c2c2ffd8532c700903ccc0631cde87e8be04e1f72c04972309284e",
-      "size": 1527
+      "size": 1527,
+      "reference": {
+        "path": "packs/ar/reference.blueprint.json",
+        "sha256": "51c9260293d765c7a5973e64e9d6a8d683088acfa49636ff0920ec8a2ad05a93",
+        "size": 3824
+      }
     },
     {
       "id": "au",
@@ -395,7 +470,12 @@
       },
       "path": "packs/au/pack.bp.ts",
       "sha256": "12776eacb1043024a1d4ad55f57e0e7df756a092faa56bb15d20b1b313629075",
-      "size": 2026
+      "size": 2026,
+      "reference": {
+        "path": "packs/au/reference.blueprint.json",
+        "sha256": "0614e3ede364d151d12567d57a2bb59203f4edee433c966f54bd5b8be1d60207",
+        "size": 4286
+      }
     },
     {
       "id": "avi",
@@ -425,7 +505,12 @@
       },
       "path": "packs/avi/pack.bp.ts",
       "sha256": "02edb500b33f2b9ded65524f236ca21186f6ae05aa8214fa30c30849d71c15bc",
-      "size": 1460
+      "size": 1460,
+      "reference": {
+        "path": "packs/avi/reference.blueprint.json",
+        "sha256": "ef832dc10dd9007eaedee04feb63460544caefba1d57e7fcdc3bce1412714da5",
+        "size": 3931
+      }
     },
     {
       "id": "bzip2",
@@ -453,7 +538,12 @@
       },
       "path": "packs/bzip2/pack.bp.ts",
       "sha256": "47cf14ca1a259bf36300c6853fe3eab8f6a3e1a322db1f5211ed55614210a618",
-      "size": 1123
+      "size": 1123,
+      "reference": {
+        "path": "packs/bzip2/reference.blueprint.json",
+        "sha256": "bf309820f34650b468057ea9880a01e5c1fc5947e6472abc14255b6b1730bc3a",
+        "size": 3215
+      }
     },
     {
       "id": "cab",
@@ -486,7 +576,12 @@
       },
       "path": "packs/cab/pack.bp.ts",
       "sha256": "99698b05ec1f49006dc50def425427a5f29018355f786a768efa772325e69cb3",
-      "size": 4272
+      "size": 4272,
+      "reference": {
+        "path": "packs/cab/reference.blueprint.json",
+        "sha256": "35aa82138d1f586a32daf5cfa1e204c7cd12dfefebcba74ba31f04fea708cd33",
+        "size": 7755
+      }
     },
     {
       "id": "caf",
@@ -519,7 +614,12 @@
       },
       "path": "packs/caf/pack.bp.ts",
       "sha256": "2868d9ede4d5f4c4362876ece7b8fc47fff8bdea3a8d6923072bf2ec61769a78",
-      "size": 4429
+      "size": 4429,
+      "reference": {
+        "path": "packs/caf/reference.blueprint.json",
+        "sha256": "75e6e3f3f4890eb579998986c3b7aa4b388de2eb22af673b7561298e30cbc047",
+        "size": 8819
+      }
     },
     {
       "id": "cfb",
@@ -553,7 +653,12 @@
       },
       "path": "packs/cfb/pack.bp.ts",
       "sha256": "16208d4fc9ead0c1225092f57288efdca19d9565943fcbbe972b7fe88742b520",
-      "size": 5778
+      "size": 5778,
+      "reference": {
+        "path": "packs/cfb/reference.blueprint.json",
+        "sha256": "680e5eb482b643f5ce85c243612f864c8182f0553bb18927eb053965266ef5c0",
+        "size": 9039
+      }
     },
     {
       "id": "crx",
@@ -585,7 +690,12 @@
       },
       "path": "packs/crx/pack.bp.ts",
       "sha256": "db6e433cfec4d200e86e19c38ad71b9ec85c77d22e6617b41a5bc19df85aed06",
-      "size": 1539
+      "size": 1539,
+      "reference": {
+        "path": "packs/crx/reference.blueprint.json",
+        "sha256": "6e0934e4bebdf00e09eb8ccfdec6552742f2e7478d893cfd640e6f821c00aa3d",
+        "size": 4000
+      }
     },
     {
       "id": "dds",
@@ -617,7 +727,12 @@
       },
       "path": "packs/dds/pack.bp.ts",
       "sha256": "7c69a27492502162f7a0eb894b19458b0c240f6bd7fb6f8073fbaf1f89af7824",
-      "size": 6670
+      "size": 6670,
+      "reference": {
+        "path": "packs/dds/reference.blueprint.json",
+        "sha256": "bd3c9cb2af55050ab30848bb9b818682aef540a3e1b5e041cd770c3333f86f88",
+        "size": 10616
+      }
     },
     {
       "id": "dex",
@@ -646,7 +761,12 @@
       },
       "path": "packs/dex/pack.bp.ts",
       "sha256": "a128268d51d7209f93941032a31900bbb6ff88e4c9b0f3405eab9bf3920fa42c",
-      "size": 2563
+      "size": 2563,
+      "reference": {
+        "path": "packs/dex/reference.blueprint.json",
+        "sha256": "a16ca0571a6ae4b9bd9ae62d05dd9468280b9b1d6fbf2258e7be4b5615d4ebb6",
+        "size": 4758
+      }
     },
     {
       "id": "dicom",
@@ -678,7 +798,12 @@
       },
       "path": "packs/dicom/pack.bp.ts",
       "sha256": "7a9badc16bcfcf7d1ed780bfe46cf1954c9f8049a881cedb95ff98a95c8ed78f",
-      "size": 3261
+      "size": 3261,
+      "reference": {
+        "path": "packs/dicom/reference.blueprint.json",
+        "sha256": "2a3c70514ba64f7853073032f95b6baa2654af5d95cf34e5907ef7703097d370",
+        "size": 6104
+      }
     },
     {
       "id": "dtb",
@@ -711,7 +836,12 @@
       },
       "path": "packs/dtb/pack.bp.ts",
       "sha256": "3555dccfec82029744e8495b85e520904a2afd95fc8c6fde4bdcbad9ce6688ac",
-      "size": 5794
+      "size": 5794,
+      "reference": {
+        "path": "packs/dtb/reference.blueprint.json",
+        "sha256": "45d699bcd4b41f9489792feac1c35fcd7adf14fea5f44b0ae7d9e88d4239ca9a",
+        "size": 9551
+      }
     },
     {
       "id": "evtx",
@@ -743,7 +873,12 @@
       },
       "path": "packs/evtx/pack.bp.ts",
       "sha256": "871739b6058cf462ddb628c467942c8ac06bbcd4d6033f69e9f43a5e1af81931",
-      "size": 3673
+      "size": 3673,
+      "reference": {
+        "path": "packs/evtx/reference.blueprint.json",
+        "sha256": "3e9a98ef0e1b69675e28c520ee7259154d8a8526bfb91a0cb8615a0c26ae8995",
+        "size": 11376
+      }
     },
     {
       "id": "ext4",
@@ -773,7 +908,12 @@
       },
       "path": "packs/ext4/pack.bp.ts",
       "sha256": "8fffee2fabaa8c7e3bc99aea2f7967cc64a5f9290b14a5d6d76b5132b34547be",
-      "size": 6959
+      "size": 6959,
+      "reference": {
+        "path": "packs/ext4/reference.blueprint.json",
+        "sha256": "0e9032dcaef95518c174d1753c9fe4dde5d8229951ea11abed78b379a45d781e",
+        "size": 11280
+      }
     },
     {
       "id": "fat16",
@@ -804,7 +944,12 @@
       },
       "path": "packs/fat16/pack.bp.ts",
       "sha256": "e3acc46d96965b4b1f0d5e266321a728168b75a414fb7f80eae32173d4e578a1",
-      "size": 2877
+      "size": 2877,
+      "reference": {
+        "path": "packs/fat16/reference.blueprint.json",
+        "sha256": "bfdb783b13e23cc58284c79858660014bd962d06d426de503e34adb76abd7aa6",
+        "size": 5117
+      }
     },
     {
       "id": "fat32",
@@ -835,7 +980,12 @@
       },
       "path": "packs/fat32/pack.bp.ts",
       "sha256": "2a22e6eeca7ca501a92a9647cb6ed8721d5ed677652f917d66f9b68438e98211",
-      "size": 3227
+      "size": 3227,
+      "reference": {
+        "path": "packs/fat32/reference.blueprint.json",
+        "sha256": "575e232ebacddadd5ec8075cac10c18d6b6791d0c7f61daef9c904ddb2abc2ee",
+        "size": 5484
+      }
     },
     {
       "id": "flac",
@@ -865,7 +1015,12 @@
       },
       "path": "packs/flac/pack.bp.ts",
       "sha256": "50d38b42e42991eaa7d57b5610bde1ab457c10f90aa32d60e75902420fdf5f85",
-      "size": 2476
+      "size": 2476,
+      "reference": {
+        "path": "packs/flac/reference.blueprint.json",
+        "sha256": "893878dd9a70ae34d60c091ee7e2e395faa42a6e18daa4f55417e24e68c8568c",
+        "size": 5309
+      }
     },
     {
       "id": "flv",
@@ -897,7 +1052,12 @@
       },
       "path": "packs/flv/pack.bp.ts",
       "sha256": "af2ef47121c79f8fc36753d6cda11741104d3a4a85ec771da2bbdd14a667d7ab",
-      "size": 5266
+      "size": 5266,
+      "reference": {
+        "path": "packs/flv/reference.blueprint.json",
+        "sha256": "9a880b7ce420c01fc66ae887f94b3870a88b7ba934879450f0cc8a93ff5b24b3",
+        "size": 9351
+      }
     },
     {
       "id": "gameboy",
@@ -928,7 +1088,12 @@
       },
       "path": "packs/gameboy/pack.bp.ts",
       "sha256": "6f5f3b071688e5232ba30af372e83512179860e8183fd81146e6741688061cb9",
-      "size": 2874
+      "size": 2874,
+      "reference": {
+        "path": "packs/gameboy/reference.blueprint.json",
+        "sha256": "ef4fa8ac166e248c3c54252bbbe26ac2657bc3d38064fc8efbb5230fe34ae9c9",
+        "size": 5218
+      }
     },
     {
       "id": "gba",
@@ -961,7 +1126,12 @@
       },
       "path": "packs/gba/pack.bp.ts",
       "sha256": "f405b1739dd1d9219e1ff49caa033b4f4333adb7ec0d112521ab4f168e8cb141",
-      "size": 1715
+      "size": 1715,
+      "reference": {
+        "path": "packs/gba/reference.blueprint.json",
+        "sha256": "a62896d2791308345e8ac1f7d2d0722152c4329c8698c39150bb077d883a3eef",
+        "size": 3843
+      }
     },
     {
       "id": "gguf",
@@ -995,7 +1165,12 @@
       },
       "path": "packs/gguf/pack.bp.ts",
       "sha256": "18de61aabd464fd4b1f7a711a00cc06dfc81293f0ed2980ecebfa95d9e782929",
-      "size": 3295
+      "size": 3295,
+      "reference": {
+        "path": "packs/gguf/reference.blueprint.json",
+        "sha256": "66e3fa058a79035427fe0a1973bb2283ce635f6a2f9bb588b66dfe190e826e6f",
+        "size": 7294
+      }
     },
     {
       "id": "glb",
@@ -1026,7 +1201,12 @@
       },
       "path": "packs/glb/pack.bp.ts",
       "sha256": "fa8bd127a1c2c4b1df4a77b3ccfaae732b9ad7c5147c3b923a7d3268d557e93d",
-      "size": 1406
+      "size": 1406,
+      "reference": {
+        "path": "packs/glb/reference.blueprint.json",
+        "sha256": "3809ec339aab8231ed8bd956101f23fb0fe2b468139984ec1ffd2257c5c5bed2",
+        "size": 3890
+      }
     },
     {
       "id": "gpt",
@@ -1055,7 +1235,12 @@
       },
       "path": "packs/gpt/pack.bp.ts",
       "sha256": "f566bed23c57cbe051686b0906115464524012cb06c8e3b79b1d74a274bb18a8",
-      "size": 1805
+      "size": 1805,
+      "reference": {
+        "path": "packs/gpt/reference.blueprint.json",
+        "sha256": "b8759c9ef341f213f6626f1e6ddf56876fdc770e9607d68296e3257dc49da28f",
+        "size": 4295
+      }
     },
     {
       "id": "gzip",
@@ -1086,7 +1271,12 @@
       },
       "path": "packs/gzip/pack.bp.ts",
       "sha256": "4dc5b5b5ff2024562c7e965c8e7e9d71c46f434a0cc53feef98a4abee595621e",
-      "size": 1946
+      "size": 1946,
+      "reference": {
+        "path": "packs/gzip/reference.blueprint.json",
+        "sha256": "6491bcdd3476a05bb7f8cdbf6667236aaf23abf2b755b98e5fb02bb094f89dbb",
+        "size": 4315
+      }
     },
     {
       "id": "hdf5",
@@ -1120,7 +1310,12 @@
       },
       "path": "packs/hdf5/pack.bp.ts",
       "sha256": "b4bad1972288155c6c4a6a1cf2af00cb8d43178634a92eb4e239a291b9d9abc3",
-      "size": 14594
+      "size": 14594,
+      "reference": {
+        "path": "packs/hdf5/reference.blueprint.json",
+        "sha256": "06da0377eb7142974922224bc386366672adf9f7b840dca74a87eced07c720fa",
+        "size": 22539
+      }
     },
     {
       "id": "hfsplus",
@@ -1152,7 +1347,12 @@
       },
       "path": "packs/hfsplus/pack.bp.ts",
       "sha256": "facde82d716ba245f5d7a60b1e58beeea83ef2c17d502ec6564c806090b2ad0a",
-      "size": 4865
+      "size": 4865,
+      "reference": {
+        "path": "packs/hfsplus/reference.blueprint.json",
+        "sha256": "e459f1de823456143fdbe355f59bb917e153390ef4c5795eca5ece7dc728058f",
+        "size": 9122
+      }
     },
     {
       "id": "icns",
@@ -1183,7 +1383,12 @@
       },
       "path": "packs/icns/pack.bp.ts",
       "sha256": "59c97c80ae1011813ab3b98f23629c395aae60f8be65f295fab4526bb256f1f8",
-      "size": 1830
+      "size": 1830,
+      "reference": {
+        "path": "packs/icns/reference.blueprint.json",
+        "sha256": "57cfbee3127a993c24e3fc356f06f530474bb4e3dddaa42d9be6b767e5db0082",
+        "size": 4435
+      }
     },
     {
       "id": "ico",
@@ -1213,7 +1418,12 @@
       },
       "path": "packs/ico/pack.bp.ts",
       "sha256": "1d621fc171ef03f124f876d1efdd26210f668848cdbcdefec720b490ec8d2fc1",
-      "size": 1897
+      "size": 1897,
+      "reference": {
+        "path": "packs/ico/reference.blueprint.json",
+        "sha256": "6ab4c7687162f20936571fad2b48bdbed0224c43aa9e0f7fdde06c690f0ce93a",
+        "size": 4442
+      }
     },
     {
       "id": "iso9660",
@@ -1246,7 +1456,12 @@
       },
       "path": "packs/iso9660/pack.bp.ts",
       "sha256": "4fd51ece097f75eee5dbfe51a7b5b4098530317b23cfe74ac4a214c4a99da3bb",
-      "size": 6300
+      "size": 6300,
+      "reference": {
+        "path": "packs/iso9660/reference.blueprint.json",
+        "sha256": "421ada31307d0a2df9b3014776ff6ee6d2d1c2fe4e14705db92cd4dae9c7f519",
+        "size": 14402
+      }
     },
     {
       "id": "el-torito",
@@ -1279,7 +1494,12 @@
       },
       "path": "packs/el-torito/pack.bp.ts",
       "sha256": "31c55f696024bccc965745a56ad0e4129ebe1d13c590382fd92f2817e6c32650",
-      "size": 4113
+      "size": 4113,
+      "reference": {
+        "path": "packs/el-torito/reference.blueprint.json",
+        "sha256": "067d95e17038e7b1c053d169b572b39050fe872505a03da10beae6f84d33a377",
+        "size": 12183
+      }
     },
     {
       "id": "java-class",
@@ -1310,7 +1530,12 @@
       },
       "path": "packs/java-class/pack.bp.ts",
       "sha256": "6734a84b7a2d0e72f01fb49abf5fdfad47c8423d5629422c5cfbb5eec288f247",
-      "size": 4762
+      "size": 4762,
+      "reference": {
+        "path": "packs/java-class/reference.blueprint.json",
+        "sha256": "c61b29d934322115f9b18b8cd8eeb74ef0027379171e592db859a38b71fb7400",
+        "size": 11199
+      }
     },
     {
       "id": "jpegxl",
@@ -1343,7 +1568,12 @@
       },
       "path": "packs/jpegxl/pack.bp.ts",
       "sha256": "2fb0784ef065fa89ef8e8ec82c6463c5fea166fb8c3f7e5a078c0d439b859dd6",
-      "size": 3170
+      "size": 3170,
+      "reference": {
+        "path": "packs/jpegxl/reference.blueprint.json",
+        "sha256": "8d3124cf84adcd3133570044faccb7a5e7cac0e55fe7bf675a49ffddb5b7f463",
+        "size": 6935
+      }
     },
     {
       "id": "las",
@@ -1375,7 +1605,12 @@
       },
       "path": "packs/las/pack.bp.ts",
       "sha256": "f1e51d86ba0791713d5713b1af0273cc2dbac0fad9d76ccb9a3f44d90c559036",
-      "size": 3969
+      "size": 3969,
+      "reference": {
+        "path": "packs/las/reference.blueprint.json",
+        "sha256": "5218fd5f91e6205b851009fd25de66ba01a3d85d03fa7870eb491b58d6c16002",
+        "size": 6443
+      }
     },
     {
       "id": "lnk",
@@ -1405,7 +1640,12 @@
       },
       "path": "packs/lnk/pack.bp.ts",
       "sha256": "d5759cbda7224781df68652c57692793a9af98c7c2197cb5e0e744aeb8556294",
-      "size": 5156
+      "size": 5156,
+      "reference": {
+        "path": "packs/lnk/reference.blueprint.json",
+        "sha256": "e6957531e20e61a79f3dbf9559c18be797f822c0ffe57873f81aac4b8adf384b",
+        "size": 7881
+      }
     },
     {
       "id": "lz4",
@@ -1435,7 +1675,12 @@
       },
       "path": "packs/lz4/pack.bp.ts",
       "sha256": "b58b1ade08fdd7533dcd46a103a4927c108299b6eb8a13bfaf89e3662c1444b3",
-      "size": 3585
+      "size": 3585,
+      "reference": {
+        "path": "packs/lz4/reference.blueprint.json",
+        "sha256": "1fa3fb2d38beac6ab8a523506746f6f0b6b3e00aae28d699c48705cd1bca66b0",
+        "size": 7075
+      }
     },
     {
       "id": "universal-binary",
@@ -1467,7 +1712,12 @@
       },
       "path": "packs/universal-binary/pack.bp.ts",
       "sha256": "3dc8a03d17802a5360d41b9122d00d94cb41e08d368e91bcafeb30feb8d0d91f",
-      "size": 2161
+      "size": 2161,
+      "reference": {
+        "path": "packs/universal-binary/reference.blueprint.json",
+        "sha256": "9e93af3b626ee1c3b6fea5fb20673397cc1989bdbf9aa59d8d81cf592637a725",
+        "size": 4925
+      }
     },
     {
       "id": "universal-binary-3-slices",
@@ -1499,7 +1749,12 @@
       },
       "path": "packs/universal-binary-3-slices/pack.bp.ts",
       "sha256": "cdef76a4cf98822bb3cd43892466867d82b0681791cc539777275fe71dde14e1",
-      "size": 2172
+      "size": 2172,
+      "reference": {
+        "path": "packs/universal-binary-3-slices/reference.blueprint.json",
+        "sha256": "d5fbece564ce0040836fbc28d6e0bc4450a4ac67b4d9e86c5035887b7df66dbc",
+        "size": 4994
+      }
     },
     {
       "id": "universal-binary-64-bit-table",
@@ -1531,7 +1786,12 @@
       },
       "path": "packs/universal-binary-64-bit-table/pack.bp.ts",
       "sha256": "baaadd9f3e5adb11a680ce023f2dcae790dc855dfb3e61fe793a30cd87377586",
-      "size": 2248
+      "size": 2248,
+      "reference": {
+        "path": "packs/universal-binary-64-bit-table/reference.blueprint.json",
+        "sha256": "3d8d95818a59f5f5765398511ee9088763a1bc63f59e2adce9a8cd2910a8e73c",
+        "size": 5121
+      }
     },
     {
       "id": "macho",
@@ -1560,7 +1820,12 @@
       },
       "path": "packs/macho/pack.bp.ts",
       "sha256": "ccbea4f47b38a30045a36f87d13d9d3229318cd628402d183ae304c3c74b0ebb",
-      "size": 1378
+      "size": 1378,
+      "reference": {
+        "path": "packs/macho/reference.blueprint.json",
+        "sha256": "b9f42c631a40a7f651a5bae73b8dc833982699b96a90d50c6974473ef29e132a",
+        "size": 3552
+      }
     },
     {
       "id": "matroska",
@@ -1594,7 +1859,12 @@
       },
       "path": "packs/matroska/pack.bp.ts",
       "sha256": "fcbab3fe682f7e7a2b40d49ebf889914be01207976a08db69b9616a43d608efa",
-      "size": 7641
+      "size": 7641,
+      "reference": {
+        "path": "packs/matroska/reference.blueprint.json",
+        "sha256": "1490ef792b240b07824b1a4d8fa053d2ed90dbc88fbb3fb30c47a1ae2027c4b4",
+        "size": 10609
+      }
     },
     {
       "id": "mbr",
@@ -1623,7 +1893,12 @@
       },
       "path": "packs/mbr/pack.bp.ts",
       "sha256": "f77f641e3b2c17ef9eaf9c7982e20f224a14e2176b02952a178534ccfd291df1",
-      "size": 2026
+      "size": 2026,
+      "reference": {
+        "path": "packs/mbr/reference.blueprint.json",
+        "sha256": "f31884622e0ad879418c4810163f32f082247811ba46453d5a8eb418ef33e576",
+        "size": 4591
+      }
     },
     {
       "id": "midi",
@@ -1654,7 +1929,12 @@
       },
       "path": "packs/midi/pack.bp.ts",
       "sha256": "b446a65658478b6ce2c381d73b4972046bcceccb0de00d10a5a740b9a28b9302",
-      "size": 1948
+      "size": 1948,
+      "reference": {
+        "path": "packs/midi/reference.blueprint.json",
+        "sha256": "5dc951884cb61b24940f84513cd690b15074ca17f305dc2b485e5e1d83a67691",
+        "size": 4608
+      }
     },
     {
       "id": "minidump",
@@ -1686,7 +1966,12 @@
       },
       "path": "packs/minidump/pack.bp.ts",
       "sha256": "9b3807d294f4d163a55ac3e4b3451c1a2b8cbdd2fb914e6e62efcec38a0f5434",
-      "size": 19675
+      "size": 19675,
+      "reference": {
+        "path": "packs/minidump/reference.blueprint.json",
+        "sha256": "3fa17ea52193212f8fe0da374b8581e996b356115e4f822b036ee8386419fb9b",
+        "size": 31058
+      }
     },
     {
       "id": "mp3",
@@ -1718,7 +2003,12 @@
       },
       "path": "packs/mp3/pack.bp.ts",
       "sha256": "729fb95c8bc13ad2cc7126a96fe4a58a18d4d6d84a3008ac769f98a5187f7464",
-      "size": 13960
+      "size": 13960,
+      "reference": {
+        "path": "packs/mp3/reference.blueprint.json",
+        "sha256": "565c977ecf4725762bd7b5cb7e1a26af4342c435c9be6d4e43224867c38b8d51",
+        "size": 25700
+      }
     },
     {
       "id": "mp4",
@@ -1752,7 +2042,12 @@
       },
       "path": "packs/mp4/pack.bp.ts",
       "sha256": "6d56661da66cd2a5983ad09ac2e1d4a57a5a09f8fb6855327ec051c202ad5e23",
-      "size": 6160
+      "size": 6160,
+      "reference": {
+        "path": "packs/mp4/reference.blueprint.json",
+        "sha256": "890991bdab8451d2d8dab827ac58b70e0471f0fa0e72b6463acccaf51776b12b",
+        "size": 12341
+      }
     },
     {
       "id": "msf",
@@ -1784,7 +2079,12 @@
       },
       "path": "packs/msf/pack.bp.ts",
       "sha256": "d2abaa873dfe5dfa5fbe1a20cd4a5a7fd956504e0297ff7dfbe0df876978cfb7",
-      "size": 1375
+      "size": 1375,
+      "reference": {
+        "path": "packs/msf/reference.blueprint.json",
+        "sha256": "fb442ef24005df197fab8be19f59bb4486e4c1ef4214739394ed20617acb1e0d",
+        "size": 3490
+      }
     },
     {
       "id": "n64",
@@ -1817,7 +2117,12 @@
       },
       "path": "packs/n64/pack.bp.ts",
       "sha256": "a018bbc9dffcf9b08586d820a766abbb0c2311ab91b3a2961145bda108847328",
-      "size": 1810
+      "size": 1810,
+      "reference": {
+        "path": "packs/n64/reference.blueprint.json",
+        "sha256": "11f0d323407b6fb98ff467f8da8dcdcd44bd553c3a8b09261309ec9592006ccc",
+        "size": 3951
+      }
     },
     {
       "id": "nifti",
@@ -1847,7 +2152,12 @@
       },
       "path": "packs/nifti/pack.bp.ts",
       "sha256": "b23977d3a257a25d2e39f01f21ca23be74488ccfe2af1eda60d6cf7f27b80bf3",
-      "size": 5670
+      "size": 5670,
+      "reference": {
+        "path": "packs/nifti/reference.blueprint.json",
+        "sha256": "261cbbf69d562d3fea3f964a6e932e2a0ba6a330e8d04f3bfe2f4517cd9b757b",
+        "size": 8440
+      }
     },
     {
       "id": "ntfs",
@@ -1877,7 +2187,12 @@
       },
       "path": "packs/ntfs/pack.bp.ts",
       "sha256": "84ae4b656f0538a14c1b7056aa656045c89eedcb0d512ff7dd28a6e46c22fd34",
-      "size": 2730
+      "size": 2730,
+      "reference": {
+        "path": "packs/ntfs/reference.blueprint.json",
+        "sha256": "90dd514497ead32c64578777315e284c21e9dc37d123980b9fb96ac4a1c391c3",
+        "size": 5288
+      }
     },
     {
       "id": "ogg",
@@ -1911,7 +2226,12 @@
       },
       "path": "packs/ogg/pack.bp.ts",
       "sha256": "860f1b9f0b58910dbf041c79ccc61dafbccd80cc74b011338f98031678c1401f",
-      "size": 8101
+      "size": 8101,
+      "reference": {
+        "path": "packs/ogg/reference.blueprint.json",
+        "sha256": "711df1bba133b56b98248eb3b9025e2c407179270864938a8d296cce80e7b147",
+        "size": 13272
+      }
     },
     {
       "id": "openexr",
@@ -1942,7 +2262,12 @@
       },
       "path": "packs/openexr/pack.bp.ts",
       "sha256": "876638e89cc9873b6f048250b78ba3b5a2e1a5217b4a4e7baff9bda9fb77f553",
-      "size": 1527
+      "size": 1527,
+      "reference": {
+        "path": "packs/openexr/reference.blueprint.json",
+        "sha256": "f4ac1622384c15e340adddf210fec8c8400bb49814aaa70695f19bb3d5a49a75",
+        "size": 3827
+      }
     },
     {
       "id": "pcap",
@@ -1972,7 +2297,12 @@
       },
       "path": "packs/pcap/pack.bp.ts",
       "sha256": "6558a972a83c4e9a9d3d0976c67db10d21455293c2aab175b8ec05b29fac877a",
-      "size": 1930
+      "size": 1930,
+      "reference": {
+        "path": "packs/pcap/reference.blueprint.json",
+        "sha256": "65a157d2495454d998fa9cf1454ab5738a1880224338bc752310841a5e010a6a",
+        "size": 4284
+      }
     },
     {
       "id": "pcapng",
@@ -2003,7 +2333,12 @@
       },
       "path": "packs/pcapng/pack.bp.ts",
       "sha256": "e79fa2067e79e4d56b9a0d8c6c61a91b9d3b3ea437c70ce4e5adee3d943f85c0",
-      "size": 4818
+      "size": 4818,
+      "reference": {
+        "path": "packs/pcapng/reference.blueprint.json",
+        "sha256": "d576004c70073ab630bfa3ddbb1bb556b6cb87df82fc693540fe726486b83828",
+        "size": 9509
+      }
     },
     {
       "id": "prefetch",
@@ -2035,7 +2370,12 @@
       },
       "path": "packs/prefetch/pack.bp.ts",
       "sha256": "91b673bdd19a2fdf25caec2579afd4af09105e1d8899f4fb8c94d9faeb6ac6c7",
-      "size": 5491
+      "size": 5491,
+      "reference": {
+        "path": "packs/prefetch/reference.blueprint.json",
+        "sha256": "58f6b76cb7f12b86a955d4ce66503d3dd55efa489f6b3505586071237961dc0b",
+        "size": 8497
+      }
     },
     {
       "id": "psd",
@@ -2066,7 +2406,12 @@
       },
       "path": "packs/psd/pack.bp.ts",
       "sha256": "9717ec472e7c5bd24bd0de5eb938402e5922c16a6154479a80cef6291a83ecbe",
-      "size": 1517
+      "size": 1517,
+      "reference": {
+        "path": "packs/psd/reference.blueprint.json",
+        "sha256": "b8fbe561cea7490f54b19deccc4923083a10752bd7358209a23f457e02fc7387",
+        "size": 3657
+      }
     },
     {
       "id": "qcow2",
@@ -2100,7 +2445,12 @@
       },
       "path": "packs/qcow2/pack.bp.ts",
       "sha256": "735c71ab052cf322db6d35e584396e98a07622e6f781cb2dbe5d912a4ccb47b4",
-      "size": 3910
+      "size": 3910,
+      "reference": {
+        "path": "packs/qcow2/reference.blueprint.json",
+        "sha256": "5ae3ec1c9aa7911d579f492cbda3a112360390e35caea66bd5b6a4afae55fe19",
+        "size": 7060
+      }
     },
     {
       "id": "qoi",
@@ -2129,7 +2479,12 @@
       },
       "path": "packs/qoi/pack.bp.ts",
       "sha256": "d52678f8d158997a9869bd9d5d1a0ccc373a2d53ce509d49508113e8026e8d54",
-      "size": 1059
+      "size": 1059,
+      "reference": {
+        "path": "packs/qoi/reference.blueprint.json",
+        "sha256": "c53707bb68d94f2e39acfe6fc09f5455c66b1c94b29763d998cc3ac5ecc15697",
+        "size": 3154
+      }
     },
     {
       "id": "rar5",
@@ -2160,7 +2515,12 @@
       },
       "path": "packs/rar5/pack.bp.ts",
       "sha256": "73b8ecf13f5a627a999c1d086310d03d5dd5d7e78ad8392abee63d9445fdc664",
-      "size": 4197
+      "size": 4197,
+      "reference": {
+        "path": "packs/rar5/reference.blueprint.json",
+        "sha256": "c96024c01f2e599546e9daa9f962e47d71dd4a8a15b95d470348dd8282af44d2",
+        "size": 7601
+      }
     },
     {
       "id": "rar4",
@@ -2191,7 +2551,12 @@
       },
       "path": "packs/rar4/pack.bp.ts",
       "sha256": "dd8a9ddbde2905e353d80a6b12a212f2142bfd3ab1ce92885e64aba366327c78",
-      "size": 7458
+      "size": 7458,
+      "reference": {
+        "path": "packs/rar4/reference.blueprint.json",
+        "sha256": "eaa6c6a9018b1a3aeeb07ae7a4718f9562842b1f63800bd7b9884f6f62475116",
+        "size": 11803
+      }
     },
     {
       "id": "regf",
@@ -2224,7 +2589,12 @@
       },
       "path": "packs/regf/pack.bp.ts",
       "sha256": "bb5801b9ad5743404f06b97cd14ac81c46d2c98b69ff7efd0367bbe81a084fea",
-      "size": 7746
+      "size": 7746,
+      "reference": {
+        "path": "packs/regf/reference.blueprint.json",
+        "sha256": "e3bd78019c4cbb4d3249a7b9ae019c759c0dca441f14c35875ebd7d524a49d27",
+        "size": 16308
+      }
     },
     {
       "id": "rpm",
@@ -2257,7 +2627,12 @@
       },
       "path": "packs/rpm/pack.bp.ts",
       "sha256": "211a58db488d52e985defc710c927dbf6e4b6626f02e39b2ee281653ba1fd920",
-      "size": 2951
+      "size": 2951,
+      "reference": {
+        "path": "packs/rpm/reference.blueprint.json",
+        "sha256": "70dff9b7ec77f2141acd09ad332a39d91c800465d932917f1019fb956dcad372",
+        "size": 5919
+      }
     },
     {
       "id": "squashfs",
@@ -2287,7 +2662,12 @@
       },
       "path": "packs/squashfs/pack.bp.ts",
       "sha256": "d14f5ba1b7baa5d06e3f16486886382a9bc9ba8a171bc67dcfe411206306a391",
-      "size": 3466
+      "size": 3466,
+      "reference": {
+        "path": "packs/squashfs/reference.blueprint.json",
+        "sha256": "30a144e7e6dc7c3aa8b54002cf005766106f5d310d167ca553ac7d68da5093df",
+        "size": 5969
+      }
     },
     {
       "id": "tar",
@@ -2315,7 +2695,12 @@
       },
       "path": "packs/tar/pack.bp.ts",
       "sha256": "99b152144889dd9b20617f522f813c56ed0e62dd378844e8de5c61255a33ae01",
-      "size": 1756
+      "size": 1756,
+      "reference": {
+        "path": "packs/tar/reference.blueprint.json",
+        "sha256": "0261a94c7538940b3dfc94ca889abee0b1bf22f2af941df965b105b0a5a2fdd5",
+        "size": 3875
+      }
     },
     {
       "id": "tiff-le",
@@ -2345,7 +2730,12 @@
       },
       "path": "packs/tiff-le/pack.bp.ts",
       "sha256": "18e9c69d0dc6add02bb4d6a86d3442452e897c2ff942bf45ea58e6b8ce1fcb78",
-      "size": 2206
+      "size": 2206,
+      "reference": {
+        "path": "packs/tiff-le/reference.blueprint.json",
+        "sha256": "c5c3039dbadba158555f7f45b5fa64603a7ce6a9824cd80b192542c3b4de5b4d",
+        "size": 5187
+      }
     },
     {
       "id": "tiff-be",
@@ -2375,7 +2765,12 @@
       },
       "path": "packs/tiff-be/pack.bp.ts",
       "sha256": "40470d0e85e6ec701994d634ce8e1950be0370b307ba2b25e4277493e5e6b59b",
-      "size": 2179
+      "size": 2179,
+      "reference": {
+        "path": "packs/tiff-be/reference.blueprint.json",
+        "sha256": "63d3212c177ee19e97786b60cdb4e870bed460cffb37a205c97b69896c012178",
+        "size": 5157
+      }
     },
     {
       "id": "ttf",
@@ -2406,7 +2801,12 @@
       },
       "path": "packs/ttf/pack.bp.ts",
       "sha256": "9417cbe78615625efe26fddcb6c697329168533ef9595331fa6da85cc525756c",
-      "size": 1775
+      "size": 1775,
+      "reference": {
+        "path": "packs/ttf/reference.blueprint.json",
+        "sha256": "741643a32a668b5dc56b609034bf9f927b3ee94f7de18d2f5012ec1967420621",
+        "size": 4264
+      }
     },
     {
       "id": "otf",
@@ -2437,7 +2837,12 @@
       },
       "path": "packs/otf/pack.bp.ts",
       "sha256": "d8250ae5ad112a6930d499417e9c7dad1ddb68d79090971a23b0252fd43682c6",
-      "size": 1758
+      "size": 1758,
+      "reference": {
+        "path": "packs/otf/reference.blueprint.json",
+        "sha256": "88c4eed30ca382977523e09a91bb317bc655bc0fa039938e96fbf84fec5e75e8",
+        "size": 4246
+      }
     },
     {
       "id": "uimage",
@@ -2467,7 +2872,12 @@
       },
       "path": "packs/uimage/pack.bp.ts",
       "sha256": "38b1586f7bbd4b79b8777a5ceeefb72c7c0b61dbe9e6ec5dafa621331e476514",
-      "size": 2435
+      "size": 2435,
+      "reference": {
+        "path": "packs/uimage/reference.blueprint.json",
+        "sha256": "a1c0ecfa645064d7f5ba1d861184da879ba76695bfb6c0c5e27174ed93d89dc8",
+        "size": 4824
+      }
     },
     {
       "id": "usdc",
@@ -2498,7 +2908,12 @@
       },
       "path": "packs/usdc/pack.bp.ts",
       "sha256": "de3e1fe782d6e276798889284c2414e54a2e35ef4150aafd1c2084c4ba3f5546",
-      "size": 945
+      "size": 945,
+      "reference": {
+        "path": "packs/usdc/reference.blueprint.json",
+        "sha256": "cf1e125304100d56f5396f3fd78adbb857ec1ebb9e63d125ad30a75e0e9f7e47",
+        "size": 3044
+      }
     },
     {
       "id": "vhdx",
@@ -2531,7 +2946,12 @@
       },
       "path": "packs/vhdx/pack.bp.ts",
       "sha256": "e7c2d1b9664e8777cd773edfe4c0a56d478147d622f92cd3abf86e509deccb11",
-      "size": 11624
+      "size": 11624,
+      "reference": {
+        "path": "packs/vhdx/reference.blueprint.json",
+        "sha256": "6d3c154952a97163ccd7e42b321ef6e0104aa8ed6a1326aa7a8b49eac307b618",
+        "size": 19046
+      }
     },
     {
       "id": "vmdk",
@@ -2564,7 +2984,12 @@
       },
       "path": "packs/vmdk/pack.bp.ts",
       "sha256": "d76399225bf1b540b6f2bc60a4bdb09ebc1b0afb52968eae4679378edda32585",
-      "size": 6992
+      "size": 6992,
+      "reference": {
+        "path": "packs/vmdk/reference.blueprint.json",
+        "sha256": "fce0cde3fe2e9b7447e50e384138782d1977c32d9b2a2074efb33287b36f2d4b",
+        "size": 10316
+      }
     },
     {
       "id": "iwad",
@@ -2597,7 +3022,12 @@
       },
       "path": "packs/iwad/pack.bp.ts",
       "sha256": "86ce38d51f5c25aca61e93416cc2e15a911024a7cc11cabde8bc8a6aaed04277",
-      "size": 1909
+      "size": 1909,
+      "reference": {
+        "path": "packs/iwad/reference.blueprint.json",
+        "sha256": "794018065a8d2444200a8831006249b2098435cf58ebc835dd511080020901e0",
+        "size": 4472
+      }
     },
     {
       "id": "pwad",
@@ -2630,7 +3060,12 @@
       },
       "path": "packs/pwad/pack.bp.ts",
       "sha256": "762653a7d3ae8dda909a20f4dce03fd7a9b23226ea96dddc7f5a230f2874b129",
-      "size": 1838
+      "size": 1838,
+      "reference": {
+        "path": "packs/pwad/reference.blueprint.json",
+        "sha256": "1fd970c8357b267ee3401997988530a7c9671c1d6a86aaaf4c9412bf05e32e4f",
+        "size": 4403
+      }
     },
     {
       "id": "wasm",
@@ -2662,7 +3097,12 @@
       },
       "path": "packs/wasm/pack.bp.ts",
       "sha256": "4e035d251b56aa3b080e9567d3a7cffb1798ef84aaee38686e466b8ae4dd1d53",
-      "size": 3002
+      "size": 3002,
+      "reference": {
+        "path": "packs/wasm/reference.blueprint.json",
+        "sha256": "be52d645ab09c361bc7188bae98c7b68732d047fd103d594aeddb63dbf3c8bee",
+        "size": 6191
+      }
     },
     {
       "id": "webp",
@@ -2690,7 +3130,12 @@
       },
       "path": "packs/webp/pack.bp.ts",
       "sha256": "3e276b1b352ff4f597eb8ad0eb67c4f751975b560c1492d66bff5677414c89ff",
-      "size": 977
+      "size": 977,
+      "reference": {
+        "path": "packs/webp/reference.blueprint.json",
+        "sha256": "eee0e65b3972b6e6735a532c349a8ef6320e34a063cc0c99b86ebdec22a64176",
+        "size": 3046
+      }
     },
     {
       "id": "woff",
@@ -2719,7 +3164,12 @@
       },
       "path": "packs/woff/pack.bp.ts",
       "sha256": "7c06cf8b9eab0db5c061aff0d239a5aeb69a2f1faefb56504b4e0bbd49f20dec",
-      "size": 1591
+      "size": 1591,
+      "reference": {
+        "path": "packs/woff/reference.blueprint.json",
+        "sha256": "461cd27b20d150a8702a5bb42c42346ff4fd472696db8803d9680106004e1485",
+        "size": 3726
+      }
     },
     {
       "id": "woff2",
@@ -2751,7 +3201,12 @@
       },
       "path": "packs/woff2/pack.bp.ts",
       "sha256": "b19a66a171e8727e3de03ea01ad0d750bded23b0c5f3a9272c2a8d13ebf5b994",
-      "size": 1817
+      "size": 1817,
+      "reference": {
+        "path": "packs/woff2/reference.blueprint.json",
+        "sha256": "fbc406311e39d2598b43adb3748b17294d7f438a1c12a9ee1651fd8f9cd42f1f",
+        "size": 3957
+      }
     },
     {
       "id": "xz",
@@ -2782,7 +3237,12 @@
       },
       "path": "packs/xz/pack.bp.ts",
       "sha256": "13e741c71e6bb3aebbcc62c1854ccf0df38a6a2f285662a9c5dd1a398e4403e4",
-      "size": 4429
+      "size": 4429,
+      "reference": {
+        "path": "packs/xz/reference.blueprint.json",
+        "sha256": "2a6d4df61cad76d1e70663bf0bb95e552e403dcf864337b2c6c0faad406f6a4c",
+        "size": 7295
+      }
     },
     {
       "id": "zstd",
@@ -2813,7 +3273,12 @@
       },
       "path": "packs/zstd/pack.bp.ts",
       "sha256": "63bf631a5a707601ed0e78122338929f4836505636202d6dc8b5af912da61689",
-      "size": 3537
+      "size": 3537,
+      "reference": {
+        "path": "packs/zstd/reference.blueprint.json",
+        "sha256": "e597c969f840125d40c18d3e0ba4bcf951615868288796997a548d5d77d8e0ab",
+        "size": 6664
+      }
     },
     {
       "id": "imhex-3ds",
@@ -2838,7 +3303,12 @@
       },
       "path": "packs/imhex-3ds/pack.bp.ts",
       "sha256": "16389ddf370a6ce2960b80e01e83b77ad970b264d474dde5e24f290270815a10",
-      "size": 19476
+      "size": 19476,
+      "reference": {
+        "path": "packs/imhex-3ds/reference.blueprint.json",
+        "sha256": "7ec1a2b2e032186b292cbf130c67ed3f53b6e12a8aba973ed568df684a4a20e6",
+        "size": 26684
+      }
     },
     {
       "id": "imhex-ac-unity-acu-data-compressed",
@@ -2863,7 +3333,12 @@
       },
       "path": "packs/imhex-ac-unity-acu-data-compressed/pack.bp.ts",
       "sha256": "4e1b2013a1db30d13ef42029591d7d28699239186ed727f43ea6803b4b64ef50",
-      "size": 1213
+      "size": 1213,
+      "reference": {
+        "path": "packs/imhex-ac-unity-acu-data-compressed/reference.blueprint.json",
+        "sha256": "b735208a0b26e61e0fff8988552216de7c1190097e1d3cf98628d52bc9a67b69",
+        "size": 3886
+      }
     },
     {
       "id": "imhex-ac-unity-acu-data-decompressed",
@@ -2888,7 +3363,12 @@
       },
       "path": "packs/imhex-ac-unity-acu-data-decompressed/pack.bp.ts",
       "sha256": "3c19dd2e7cefb1290d14dcdd0d75f1009fb2cd9766330d88ac83f99117a6ef11",
-      "size": 1457
+      "size": 1457,
+      "reference": {
+        "path": "packs/imhex-ac-unity-acu-data-decompressed/reference.blueprint.json",
+        "sha256": "9736fc28ce0e8532b1cccb660beea8d9103c6aa1df85fb3a0b5008417b61a3e7",
+        "size": 4350
+      }
     },
     {
       "id": "imhex-ac-unity-acu-forge",
@@ -2913,7 +3393,12 @@
       },
       "path": "packs/imhex-ac-unity-acu-forge/pack.bp.ts",
       "sha256": "7ff6fe608fbf37ccc1d77a5016d02d5ca1d28748d637ff90b557e88da0ffa711",
-      "size": 1846
+      "size": 1846,
+      "reference": {
+        "path": "packs/imhex-ac-unity-acu-forge/reference.blueprint.json",
+        "sha256": "24c0b3e5d68692a951aeac9f5b8940ddbb5b99bbe789b6b8288cccd95226d32a",
+        "size": 4835
+      }
     },
     {
       "id": "imhex-broengine-anim",
@@ -2939,7 +3424,12 @@
       },
       "path": "packs/imhex-broengine-anim/pack.bp.ts",
       "sha256": "76b7f1560897cd264bfd1453b42c4fa292905e433dce4c367eb953d5eeded691",
-      "size": 910
+      "size": 910,
+      "reference": {
+        "path": "packs/imhex-broengine-anim/reference.blueprint.json",
+        "sha256": "b57a7302c18a0967c81e879f4eefa2c6d67652c9e325972a13fa4837f7b0cb55",
+        "size": 3021
+      }
     },
     {
       "id": "imhex-broengine-mesh",
@@ -2965,7 +3455,12 @@
       },
       "path": "packs/imhex-broengine-mesh/pack.bp.ts",
       "sha256": "5a22d5dc38d6ce24ec7953e6967afb664bcf8ce7911b31e78280b69259fabcaa",
-      "size": 1199
+      "size": 1199,
+      "reference": {
+        "path": "packs/imhex-broengine-mesh/reference.blueprint.json",
+        "sha256": "b872e1cd37fc0638a502491829159b903f301c2381b953fda99a8dbb92659c9d",
+        "size": 3678
+      }
     },
     {
       "id": "imhex-broengine-morph",
@@ -2991,7 +3486,12 @@
       },
       "path": "packs/imhex-broengine-morph/pack.bp.ts",
       "sha256": "c5b146cedd4454f50f65bb037d82574ef5f36a6b5bcff1072cabb2945663a90f",
-      "size": 1747
+      "size": 1747,
+      "reference": {
+        "path": "packs/imhex-broengine-morph/reference.blueprint.json",
+        "sha256": "82ebd9c183d898710597d29789664978f48bef74a18321fbbcf0ad8a8ee32168",
+        "size": 4628
+      }
     },
     {
       "id": "imhex-broengine-skel",
@@ -3016,7 +3516,12 @@
       },
       "path": "packs/imhex-broengine-skel/pack.bp.ts",
       "sha256": "f6015bf8e71cddf275868384a82be515efa842e1df46aff0b01a4fef6e16ba46",
-      "size": 1052
+      "size": 1052,
+      "reference": {
+        "path": "packs/imhex-broengine-skel/reference.blueprint.json",
+        "sha256": "91754bd0ab8ea4d91a68da58a168c528254741c5558dd43677e234b1dc873bc1",
+        "size": 3530
+      }
     },
     {
       "id": "imhex-cgx",
@@ -3041,7 +3546,12 @@
       },
       "path": "packs/imhex-cgx/pack.bp.ts",
       "sha256": "a4651a225915fb7a64767954bb622937ac00ad36f31fe34947ab0563e12ce6dc",
-      "size": 2348
+      "size": 2348,
+      "reference": {
+        "path": "packs/imhex-cgx/reference.blueprint.json",
+        "sha256": "9132bd575a22c9a81b93fc6f0bf63a8cb1a25e6eac0ee347cf2ee9674442a913",
+        "size": 5126
+      }
     },
     {
       "id": "imhex-crashlvl",
@@ -3066,7 +3576,12 @@
       },
       "path": "packs/imhex-crashlvl/pack.bp.ts",
       "sha256": "18bc43564e50389febf2a6a12fe9f056f5aadfdadd7e71e02a3d10b7dd772c80",
-      "size": 725
+      "size": 725,
+      "reference": {
+        "path": "packs/imhex-crashlvl/reference.blueprint.json",
+        "sha256": "d7130054ad799066391b270d69420f7338ab3e68e32ef0d4e27069fe2baa745d",
+        "size": 2879
+      }
     },
     {
       "id": "imhex-dfir-disk-parser",
@@ -3092,7 +3607,12 @@
       },
       "path": "packs/imhex-dfir-disk-parser/pack.bp.ts",
       "sha256": "9f77bd8598508467238843d9dfae17184fbeb5390aa8d8fa14b7603b68f2906d",
-      "size": 4324
+      "size": 4324,
+      "reference": {
+        "path": "packs/imhex-dfir-disk-parser/reference.blueprint.json",
+        "sha256": "08d5b8fa1a02e6f78529a917f80cdb4d000d32a40e4fa8b21315883847124d16",
+        "size": 8055
+      }
     },
     {
       "id": "imhex-dfir-fat32",
@@ -3118,7 +3638,12 @@
       },
       "path": "packs/imhex-dfir-fat32/pack.bp.ts",
       "sha256": "4befbc23270ba9107c09a8c57955dad6f10de8dae2b28884728f7af48e8da3f1",
-      "size": 6142
+      "size": 6142,
+      "reference": {
+        "path": "packs/imhex-dfir-fat32/reference.blueprint.json",
+        "sha256": "61740e2f3003c5dd6dbd834479b51874ab72a7965fc021e8ae7ec6d0fe5f7cbf",
+        "size": 10716
+      }
     },
     {
       "id": "imhex-dfir-ntfs",
@@ -3144,7 +3669,12 @@
       },
       "path": "packs/imhex-dfir-ntfs/pack.bp.ts",
       "sha256": "467587783f0414264bffe37e04052606b68ab9188d461b455bbb5bb1d3b3f3b0",
-      "size": 21915
+      "size": 21915,
+      "reference": {
+        "path": "packs/imhex-dfir-ntfs/reference.blueprint.json",
+        "sha256": "0613db6dc800a0453071e3ea88fedde0ab1c1a3a71febe207aa003483c0e825f",
+        "size": 34336
+      }
     },
     {
       "id": "imhex-dfir-exfat",
@@ -3170,7 +3700,12 @@
       },
       "path": "packs/imhex-dfir-exfat/pack.bp.ts",
       "sha256": "e1c0614ef50606ff991101b5f2fceaa45340174cc051532675600381a46928da",
-      "size": 7822
+      "size": 7822,
+      "reference": {
+        "path": "packs/imhex-dfir-exfat/reference.blueprint.json",
+        "sha256": "500c88d2fc1c5be95b34653030b902b17398f82e4b4a9bbb836d1045f76b5861",
+        "size": 13938
+      }
     },
     {
       "id": "imhex-devil-may-cry-hd-collection-dmc3-hd-mod",
@@ -3195,7 +3730,12 @@
       },
       "path": "packs/imhex-devil-may-cry-hd-collection-dmc3-hd-mod/pack.bp.ts",
       "sha256": "93aca1da31af42a04290b4c752b8d47337a3c61fa19291751a438ed65bb1951c",
-      "size": 3425
+      "size": 3425,
+      "reference": {
+        "path": "packs/imhex-devil-may-cry-hd-collection-dmc3-hd-mod/reference.blueprint.json",
+        "sha256": "51b2bf85966226ac4b746703db7a0006716a869d98d94e9db78cd20990df6a4b",
+        "size": 8087
+      }
     },
     {
       "id": "imhex-goldbox-gb-chr",
@@ -3221,7 +3761,12 @@
       },
       "path": "packs/imhex-goldbox-gb-chr/pack.bp.ts",
       "sha256": "53d6faf20b0b9fdc15509dbfecd486b6b77520ec68c7bd77c2d7c80ef5704d43",
-      "size": 14280
+      "size": 14280,
+      "reference": {
+        "path": "packs/imhex-goldbox-gb-chr/reference.blueprint.json",
+        "sha256": "626e05ae70e5327f7db34f639c2af39cb60f61954db871b3ae8112a423a86051",
+        "size": 21575
+      }
     },
     {
       "id": "imhex-goldbox-gb-exe",
@@ -3246,7 +3791,12 @@
       },
       "path": "packs/imhex-goldbox-gb-exe/pack.bp.ts",
       "sha256": "6278d2757da525109dfba375df9485ffb36a7eff59ffd0de278f6c577809d84a",
-      "size": 8209
+      "size": 8209,
+      "reference": {
+        "path": "packs/imhex-goldbox-gb-exe/reference.blueprint.json",
+        "sha256": "7f6c9b418d62b3a662c63a5181ef206759896a8562528c5d9b8f5693cb14d937",
+        "size": 14758
+      }
     },
     {
       "id": "imhex-goldbox-gb-geo",
@@ -3272,7 +3822,12 @@
       },
       "path": "packs/imhex-goldbox-gb-geo/pack.bp.ts",
       "sha256": "181dc6422b58a97ae71ca67a87ead0776c2f469d5268737b5d435506411d490f",
-      "size": 12091
+      "size": 12091,
+      "reference": {
+        "path": "packs/imhex-goldbox-gb-geo/reference.blueprint.json",
+        "sha256": "379f04ba9ae61f230e2f6835eba1ea713932497ca893aee0b7c1f9583b9d2863",
+        "size": 21209
+      }
     },
     {
       "id": "imhex-goldbox-gb-itm-base",
@@ -3297,7 +3852,12 @@
       },
       "path": "packs/imhex-goldbox-gb-itm-base/pack.bp.ts",
       "sha256": "33e5dbd6d026e5451d1f0e6eb4e7fc05cb26ac7b836a204966e869a2e637ffb0",
-      "size": 2268
+      "size": 2268,
+      "reference": {
+        "path": "packs/imhex-goldbox-gb-itm-base/reference.blueprint.json",
+        "sha256": "8102db564b8bf49133a221f37b86698721a504da7f2c6eb756cdc61e0dd79e45",
+        "size": 4961
+      }
     },
     {
       "id": "imhex-goldbox-gb-ua-script",
@@ -3322,7 +3882,12 @@
       },
       "path": "packs/imhex-goldbox-gb-ua-script/pack.bp.ts",
       "sha256": "11be7da0c0946207c321077b5ff07973abd21b77ed15910930646e2cb268c7cc",
-      "size": 2708
+      "size": 2708,
+      "reference": {
+        "path": "packs/imhex-goldbox-gb-ua-script/reference.blueprint.json",
+        "sha256": "fe3381f3e02d021bc14f7a279d67355bdc5c5e21a356cc337dcb0f60caf13dec",
+        "size": 6045
+      }
     },
     {
       "id": "imhex-shr",
@@ -3347,7 +3912,12 @@
       },
       "path": "packs/imhex-shr/pack.bp.ts",
       "sha256": "11590a93ed3b1922d73a3f8d88fd5fc100d24fa964c85fe7229d22335ca6fb57",
-      "size": 2212
+      "size": 2212,
+      "reference": {
+        "path": "packs/imhex-shr/reference.blueprint.json",
+        "sha256": "811c9cd8806bead301ad8f05a2d66a376c79095dff6074e4336c0652474ef049",
+        "size": 5489
+      }
     },
     {
       "id": "imhex-spore-spore-pdr",
@@ -3372,7 +3942,12 @@
       },
       "path": "packs/imhex-spore-spore-pdr/pack.bp.ts",
       "sha256": "d3a74b728b7013bc37fe3f6f411fb0cfce387e9659f6aeacbc3dff6144c6fdf1",
-      "size": 1586
+      "size": 1586,
+      "reference": {
+        "path": "packs/imhex-spore-spore-pdr/reference.blueprint.json",
+        "sha256": "19fbd05c11dfd31ee9ecd5f8e4b7cd3339ca9208fbe017747992265077cf57b8",
+        "size": 4522
+      }
     },
     {
       "id": "imhex-a3-a3-bmtr",
@@ -3398,7 +3973,12 @@
       },
       "path": "packs/imhex-a3-a3-bmtr/pack.bp.ts",
       "sha256": "097c14393ed556585830e3c9463928f38f7206e2a9ef0f9b06f9ff12990ec277",
-      "size": 1619
+      "size": 1619,
+      "reference": {
+        "path": "packs/imhex-a3-a3-bmtr/reference.blueprint.json",
+        "sha256": "6acbe792f003dfe344ea080b6a0c7e7dde007e77963af60a004f3574ff2ca583",
+        "size": 4687
+      }
     },
     {
       "id": "imhex-a3-a3-p3d-mlod",
@@ -3424,7 +4004,12 @@
       },
       "path": "packs/imhex-a3-a3-p3d-mlod/pack.bp.ts",
       "sha256": "6519ed72e313f9810c7f90586131239450186d823ef075deb43446d0bfb7bd09",
-      "size": 3430
+      "size": 3430,
+      "reference": {
+        "path": "packs/imhex-a3-a3-p3d-mlod/reference.blueprint.json",
+        "sha256": "81e57902ad537b0187ef6472d920ee75daacf2d24f4d5ed2b25eb9460db4f79c",
+        "size": 7716
+      }
     },
     {
       "id": "imhex-a3-a3-paa",
@@ -3449,7 +4034,12 @@
       },
       "path": "packs/imhex-a3-a3-paa/pack.bp.ts",
       "sha256": "193303d9d435afeb8fea094b835407dadbf494a9e494c0b233262335ad021f06",
-      "size": 1264
+      "size": 1264,
+      "reference": {
+        "path": "packs/imhex-a3-a3-paa/reference.blueprint.json",
+        "sha256": "d2182bb011b67ed86e0e5fb067c259c18b51a72ea6a133e10674496121997d02",
+        "size": 3937
+      }
     },
     {
       "id": "imhex-a3-a3-rap",
@@ -3475,7 +4065,12 @@
       },
       "path": "packs/imhex-a3-a3-rap/pack.bp.ts",
       "sha256": "b261bbcf2fb1e0b6d5a23619a4532825143e94cf2c3e52f2e1ef37b7dd942240",
-      "size": 1513
+      "size": 1513,
+      "reference": {
+        "path": "packs/imhex-a3-a3-rap/reference.blueprint.json",
+        "sha256": "c6c3e4a3351ff58e5cf35c37126279e5c2a91f079aac5a4e2fca838e412ea783",
+        "size": 4220
+      }
     },
     {
       "id": "imhex-a3-a3-rtm",
@@ -3501,7 +4096,12 @@
       },
       "path": "packs/imhex-a3-a3-rtm/pack.bp.ts",
       "sha256": "c33f7c30e6172b83450490752bdcb6db54b3e682569bcf9b723fcafe04c7fec8",
-      "size": 1391
+      "size": 1391,
+      "reference": {
+        "path": "packs/imhex-a3-a3-rtm/reference.blueprint.json",
+        "sha256": "5037bae20def95b9cbdc839007306e963060814fe04ad376458c0bc1c51e208c",
+        "size": 4248
+      }
     },
     {
       "id": "imhex-a3-a3-texheaders",
@@ -3527,7 +4127,12 @@
       },
       "path": "packs/imhex-a3-a3-texheaders/pack.bp.ts",
       "sha256": "f825ced414172f1eb6b797a7e414abd356ae4aa8cdd7d59f12b6be932813775a",
-      "size": 2397
+      "size": 2397,
+      "reference": {
+        "path": "packs/imhex-a3-a3-texheaders/reference.blueprint.json",
+        "sha256": "4b30982dfa560d927e4cc66194f84b7d71d252bc063029ae7cb6f25456daed6f",
+        "size": 5462
+      }
     },
     {
       "id": "imhex-adtfdat",
@@ -3553,7 +4158,12 @@
       },
       "path": "packs/imhex-adtfdat/pack.bp.ts",
       "sha256": "2cc4ccdabe3e2710bf19300172d1690984e4548f8d65ae7dee3610a6945a8903",
-      "size": 2684
+      "size": 2684,
+      "reference": {
+        "path": "packs/imhex-adtfdat/reference.blueprint.json",
+        "sha256": "a760040b7f062f780ebd7baa4c71b2652150145bf55feb5a5cea7ffbacc43e25",
+        "size": 6126
+      }
     },
     {
       "id": "imhex-adts",
@@ -3578,7 +4188,12 @@
       },
       "path": "packs/imhex-adts/pack.bp.ts",
       "sha256": "6f1a52f14b817e925bce9335ec80931f05cdb9ca6572cf619cba12a723cddddc",
-      "size": 2123
+      "size": 2123,
+      "reference": {
+        "path": "packs/imhex-adts/reference.blueprint.json",
+        "sha256": "f14f4d128e9313beb624264bfd20177534881f95120ebabf9d5426f4fb9cc5b2",
+        "size": 4475
+      }
     },
     {
       "id": "imhex-afe2",
@@ -3603,7 +4218,12 @@
       },
       "path": "packs/imhex-afe2/pack.bp.ts",
       "sha256": "30910c155050cace77dbd9ed5836c93894207d85f5010456e3c49e8d2cad1ee1",
-      "size": 1497
+      "size": 1497,
+      "reference": {
+        "path": "packs/imhex-afe2/reference.blueprint.json",
+        "sha256": "bc01ad7d3fd76b982ab212f13908b1e1d590de9038b685e62d31c99f79dc08fc",
+        "size": 4016
+      }
     },
     {
       "id": "imhex-amd-ucode-container",
@@ -3628,7 +4248,12 @@
       },
       "path": "packs/imhex-amd-ucode-container/pack.bp.ts",
       "sha256": "9cc2812590919464fcc70fcedba3afce71a33c8a7e37fd7bd79bc07c44da890b",
-      "size": 1004
+      "size": 1004,
+      "reference": {
+        "path": "packs/imhex-amd-ucode-container/reference.blueprint.json",
+        "sha256": "8c1156a22f692ea3aade73a8638f30e8b75feb569f69aee47290f6e98e0e1a5d",
+        "size": 3397
+      }
     },
     {
       "id": "imhex-amd-ucode-patch",
@@ -3653,7 +4278,12 @@
       },
       "path": "packs/imhex-amd-ucode-patch/pack.bp.ts",
       "sha256": "8db93bfa100261cb17af47866707af037566475b7f73166a7e22dcc144d46a2d",
-      "size": 2754
+      "size": 2754,
+      "reference": {
+        "path": "packs/imhex-amd-ucode-patch/reference.blueprint.json",
+        "sha256": "f9d3368ced1b44481bc7cd178b9f54f680ca668f3f4440d2d2f5127a6a5cb29d",
+        "size": 6276
+      }
     },
     {
       "id": "imhex-ani",
@@ -3678,7 +4308,12 @@
       },
       "path": "packs/imhex-ani/pack.bp.ts",
       "sha256": "3a4e2c824ae805be2b00daa0e1d9f1ba26e7be45848ca3dddc2ace85806d3e73",
-      "size": 1310
+      "size": 1310,
+      "reference": {
+        "path": "packs/imhex-ani/reference.blueprint.json",
+        "sha256": "1be98a455337112b2668bf51a09ef96e6a9d352cb6c23e325e3204be53bf7874",
+        "size": 3753
+      }
     },
     {
       "id": "imhex-ape",
@@ -3704,7 +4339,12 @@
       },
       "path": "packs/imhex-ape/pack.bp.ts",
       "sha256": "57b718ae43350198a253074136d66ebe1d666507ed96f74bb0c8ea1c2862dfc4",
-      "size": 1557
+      "size": 1557,
+      "reference": {
+        "path": "packs/imhex-ape/reference.blueprint.json",
+        "sha256": "e98e364e64c7b653b1fd0a97f762c2e8e32d36a5135ebac3a2f3c0633413cc9c",
+        "size": 3994
+      }
     },
     {
       "id": "imhex-apple-single-double",
@@ -3729,7 +4369,12 @@
       },
       "path": "packs/imhex-apple-single-double/pack.bp.ts",
       "sha256": "2375163352e0c933398cdbe01017827265c59b41cd406b12066bb01abb0df8be",
-      "size": 1399
+      "size": 1399,
+      "reference": {
+        "path": "packs/imhex-apple-single-double/reference.blueprint.json",
+        "sha256": "4c54a6dc2ff03a2c5768d87917d95e36bbd417f45b8dd98514373ea8d366e24d",
+        "size": 3860
+      }
     },
     {
       "id": "imhex-ar",
@@ -3754,7 +4399,12 @@
       },
       "path": "packs/imhex-ar/pack.bp.ts",
       "sha256": "ac8cbfbd82496b25434933d9f8cff6e65861e46ddbbd9e516c78b958db0307b4",
-      "size": 894
+      "size": 894,
+      "reference": {
+        "path": "packs/imhex-ar/reference.blueprint.json",
+        "sha256": "2d1cf5ab02dacba6c92fdecb80581db5f9106e8fdeb0f1c46355958b295c1431",
+        "size": 2950
+      }
     },
     {
       "id": "imhex-arc",
@@ -3779,7 +4429,12 @@
       },
       "path": "packs/imhex-arc/pack.bp.ts",
       "sha256": "03505fb994cce69d4cef13c05e9c4c7b8d25b71bc5a4f055d09484d119f4d52a",
-      "size": 777
+      "size": 777,
+      "reference": {
+        "path": "packs/imhex-arc/reference.blueprint.json",
+        "sha256": "083c61400696627fee180dd170acacceedb5e821161457cfa03bdfda2769520e",
+        "size": 2997
+      }
     },
     {
       "id": "imhex-aria2",
@@ -3804,7 +4459,12 @@
       },
       "path": "packs/imhex-aria2/pack.bp.ts",
       "sha256": "5e6c200d2097486fb417e5e09214afb799d85651f8afc82cce5b67b4ad366236",
-      "size": 970
+      "size": 970,
+      "reference": {
+        "path": "packs/imhex-aria2/reference.blueprint.json",
+        "sha256": "9effbf23b0a7c933d19a0c43e3b47a1ed1e2f352566bdd5b84c6c29a8621fd48",
+        "size": 3217
+      }
     },
     {
       "id": "imhex-bastion-map",
@@ -3831,7 +4491,12 @@
       },
       "path": "packs/imhex-bastion-map/pack.bp.ts",
       "sha256": "2cdce710889d8892c5d119df4671ecc176791731bc6f324f8ed213e59c9f6015",
-      "size": 3573
+      "size": 3573,
+      "reference": {
+        "path": "packs/imhex-bastion-map/reference.blueprint.json",
+        "sha256": "d8eba33e37cbd815947ad1f4bf544f940127627db35c594b382ea6d6b4618ae7",
+        "size": 7881
+      }
     },
     {
       "id": "imhex-bastion-profile",
@@ -3856,7 +4521,12 @@
       },
       "path": "packs/imhex-bastion-profile/pack.bp.ts",
       "sha256": "bc7044f7c25f66b1459705e0827a5f1570fb9a63837af56163de61b6a524dd7f",
-      "size": 909
+      "size": 909,
+      "reference": {
+        "path": "packs/imhex-bastion-profile/reference.blueprint.json",
+        "sha256": "2e88a908526ddf653f664b3bc514557abe07931a2b77316183cc400be836e640",
+        "size": 3228
+      }
     },
     {
       "id": "imhex-bastion-save",
@@ -3883,7 +4553,12 @@
       },
       "path": "packs/imhex-bastion-save/pack.bp.ts",
       "sha256": "6d6d3cd29dd26213117f356597df8eb27f7e2d98834517f434cae35658003ff4",
-      "size": 1905
+      "size": 1905,
+      "reference": {
+        "path": "packs/imhex-bastion-save/reference.blueprint.json",
+        "sha256": "24f7eabca1fddaa5921d337abe7a0d883efb9746117f8bf81e58aa04fd350f11",
+        "size": 4298
+      }
     },
     {
       "id": "imhex-bcss",
@@ -3908,7 +4583,12 @@
       },
       "path": "packs/imhex-bcss/pack.bp.ts",
       "sha256": "a1a8e1290d8b338ad2831ce7a51791c464063a084a115686eb11542dbe2b62e7",
-      "size": 775
+      "size": 775,
+      "reference": {
+        "path": "packs/imhex-bcss/reference.blueprint.json",
+        "sha256": "6e30c3f1e95a6cec02171e3f7be9247326b1444f4487032763adc8ad8ad29a76",
+        "size": 2861
+      }
     },
     {
       "id": "imhex-bgcode",
@@ -3933,7 +4613,12 @@
       },
       "path": "packs/imhex-bgcode/pack.bp.ts",
       "sha256": "ef8a4b785f7a6524c42cd1f6f9837e202b0e60bf61a792f197c8440c691c7516",
-      "size": 1725
+      "size": 1725,
+      "reference": {
+        "path": "packs/imhex-bgcode/reference.blueprint.json",
+        "sha256": "b64b391a291ece93e4725afb044a643b6f6d578c43bf11514bc19813ea6aed42",
+        "size": 4599
+      }
     },
     {
       "id": "imhex-bink-container",
@@ -3958,7 +4643,12 @@
       },
       "path": "packs/imhex-bink-container/pack.bp.ts",
       "sha256": "8360187b5956845f2cb4c6a29a7f9ef98ec9bec0403a4b89d163522f5cf2e9d1",
-      "size": 3378
+      "size": 3378,
+      "reference": {
+        "path": "packs/imhex-bink-container/reference.blueprint.json",
+        "sha256": "be80819e7c3f116e24c603cc2dafac4510bc40349aed15157d2a93fe26ec79cf",
+        "size": 6984
+      }
     },
     {
       "id": "imhex-blend",
@@ -3983,7 +4673,12 @@
       },
       "path": "packs/imhex-blend/pack.bp.ts",
       "sha256": "2a34b3162fda6d098eb3dac3fd083d557c2c94aa78a4246b5545a7cb3358aa5b",
-      "size": 1116
+      "size": 1116,
+      "reference": {
+        "path": "packs/imhex-blend/reference.blueprint.json",
+        "sha256": "63ab8b50858b5607778653afeb71a67499362b7a7edbe1e5831eb10af08df0a8",
+        "size": 3536
+      }
     },
     {
       "id": "imhex-blf",
@@ -4009,7 +4704,12 @@
       },
       "path": "packs/imhex-blf/pack.bp.ts",
       "sha256": "7e03396057090699d190668091f2145c01f3f49a79d11c240fc88cbe5cbfd733",
-      "size": 6562
+      "size": 6562,
+      "reference": {
+        "path": "packs/imhex-blf/reference.blueprint.json",
+        "sha256": "e7c2dd2cf0a2a78c50c3372b63757efb1c33a38a8416ad8c47719b89ec269403",
+        "size": 11827
+      }
     },
     {
       "id": "imhex-bloodborne-save",
@@ -4035,7 +4735,12 @@
       },
       "path": "packs/imhex-bloodborne-save/pack.bp.ts",
       "sha256": "74f7c8ce00893361e3c25c0c118319d188809cc6bdc8b498544df62f50bf2db8",
-      "size": 1878
+      "size": 1878,
+      "reference": {
+        "path": "packs/imhex-bloodborne-save/reference.blueprint.json",
+        "sha256": "004a98dc84b49bc30f441f4fa2f346b37e104ae2c79b6b7c25ed40c933919738",
+        "size": 4634
+      }
     },
     {
       "id": "imhex-bmp",
@@ -4060,7 +4765,12 @@
       },
       "path": "packs/imhex-bmp/pack.bp.ts",
       "sha256": "669ec2fe5f25a67f69785a1b162c6a34df96f3701926c1125d6807f7820cf422",
-      "size": 5585
+      "size": 5585,
+      "reference": {
+        "path": "packs/imhex-bmp/reference.blueprint.json",
+        "sha256": "be76c6fd08de40bdd629a752cc0f0e9fd4a61af0a3497574c8858cdbdaa3186c",
+        "size": 9629
+      }
     },
     {
       "id": "imhex-bplist",
@@ -4085,7 +4795,12 @@
       },
       "path": "packs/imhex-bplist/pack.bp.ts",
       "sha256": "0e252d00a488567328b133dfe1acaa4bdf59d670f187371927b84fac0965b360",
-      "size": 1032
+      "size": 1032,
+      "reference": {
+        "path": "packs/imhex-bplist/reference.blueprint.json",
+        "sha256": "1c734bc125b4e28a857bfea667a728b14e450c393ff987b74876542ddeed33a6",
+        "size": 3306
+      }
     },
     {
       "id": "imhex-bson",
@@ -4111,7 +4826,12 @@
       },
       "path": "packs/imhex-bson/pack.bp.ts",
       "sha256": "4a2e80822e60c40d86268a08c05b62de562123649d07bf37a2c485e6e0ad0298",
-      "size": 2016
+      "size": 2016,
+      "reference": {
+        "path": "packs/imhex-bson/reference.blueprint.json",
+        "sha256": "722e14ed8dd7a88786794cabba43638d1a5721688ea7107ce1e340078fc5933d",
+        "size": 4923
+      }
     },
     {
       "id": "imhex-bsp-goldsrc",
@@ -4136,7 +4856,12 @@
       },
       "path": "packs/imhex-bsp-goldsrc/pack.bp.ts",
       "sha256": "1441e500e593d9c154abbf5dc67242cabe4ab2973b8ce59a3946afc7d0f3489b",
-      "size": 3093
+      "size": 3093,
+      "reference": {
+        "path": "packs/imhex-bsp-goldsrc/reference.blueprint.json",
+        "sha256": "153af4c257ae11aab6413c9539ecde80d263e0b5f768420c5de02badc1b001c4",
+        "size": 7573
+      }
     },
     {
       "id": "imhex-btrfs-send-stream",
@@ -4161,7 +4886,12 @@
       },
       "path": "packs/imhex-btrfs-send-stream/pack.bp.ts",
       "sha256": "afcb0051bd67afe805bd834f4ad8f8fcbbda14037e475809e704f004eb3d2db5",
-      "size": 838
+      "size": 838,
+      "reference": {
+        "path": "packs/imhex-btrfs-send-stream/reference.blueprint.json",
+        "sha256": "7eec4bfa13140f3e11448d3098fc6b2afae247e1356a093be8d4166d1d21f5c1",
+        "size": 3211
+      }
     },
     {
       "id": "imhex-bzip3",
@@ -4186,7 +4916,12 @@
       },
       "path": "packs/imhex-bzip3/pack.bp.ts",
       "sha256": "1bccfa02eca7f1b58ac0650b17a54a2a8b4ae0feea5f609a4ed78c47cf4a0982",
-      "size": 1412
+      "size": 1412,
+      "reference": {
+        "path": "packs/imhex-bzip3/reference.blueprint.json",
+        "sha256": "e5b4bab987ca79dd4f818f52650acc1c759e91521e518066fb1612b301d38657",
+        "size": 4293
+      }
     },
     {
       "id": "imhex-cab",
@@ -4212,7 +4947,12 @@
       },
       "path": "packs/imhex-cab/pack.bp.ts",
       "sha256": "23fdbaa4ed30664055157a843f6c61694ef30877229991dd4e8d15f66b20cb59",
-      "size": 2101
+      "size": 2101,
+      "reference": {
+        "path": "packs/imhex-cab/reference.blueprint.json",
+        "sha256": "1463f90416491647a4b4f688003f5c4d70d7e71c5e5789764aa87a8e0794b7e0",
+        "size": 4777
+      }
     },
     {
       "id": "imhex-cchva",
@@ -4237,7 +4977,12 @@
       },
       "path": "packs/imhex-cchva/pack.bp.ts",
       "sha256": "86a490e60dbfad349a417d4509831b48c2f689a41c8f23897fb969a92adc705b",
-      "size": 1187
+      "size": 1187,
+      "reference": {
+        "path": "packs/imhex-cchva/reference.blueprint.json",
+        "sha256": "18cd61c2acc317fb605e0b0eec472a2e2ae7b69a73ccef82a1e1af89b3287a35",
+        "size": 3834
+      }
     },
     {
       "id": "imhex-ccpal",
@@ -4262,7 +5007,12 @@
       },
       "path": "packs/imhex-ccpal/pack.bp.ts",
       "sha256": "ffe138e4f7cb6546aaceeceb16c61171f4f5ac8fe92f59a951a9dd088fc24c96",
-      "size": 848
+      "size": 848,
+      "reference": {
+        "path": "packs/imhex-ccpal/reference.blueprint.json",
+        "sha256": "2ea79e5684bfc4f8a160ae7a89438ae315d7cc4247d052b985f6af58ca8481ef",
+        "size": 3452
+      }
     },
     {
       "id": "imhex-ccvxl",
@@ -4287,7 +5037,12 @@
       },
       "path": "packs/imhex-ccvxl/pack.bp.ts",
       "sha256": "b8864f1842942ec95bf067f995a5159b5530e74217741f7c5dcf6e1e93f40f4c",
-      "size": 2415
+      "size": 2415,
+      "reference": {
+        "path": "packs/imhex-ccvxl/reference.blueprint.json",
+        "sha256": "fe05a0cbcfdd3231c381240b2de78979d5a943fb49481236f927b31f3d4303b0",
+        "size": 6569
+      }
     },
     {
       "id": "imhex-cda",
@@ -4312,7 +5067,12 @@
       },
       "path": "packs/imhex-cda/pack.bp.ts",
       "sha256": "39b527f4f4382bca7d6fb982da49e48d74bb3017d4a06d72c1eb3d2729c4e5c0",
-      "size": 1286
+      "size": 1286,
+      "reference": {
+        "path": "packs/imhex-cda/reference.blueprint.json",
+        "sha256": "cf209671a250e3cd7ae883aa225183d01cc06572fa62063afb724d3fea8e4134",
+        "size": 3561
+      }
     },
     {
       "id": "imhex-chd",
@@ -4338,7 +5098,12 @@
       },
       "path": "packs/imhex-chd/pack.bp.ts",
       "sha256": "7dda0fba605e1ddef75e21ef756a8311987e0a8170c946e88633aed7d0dcc891",
-      "size": 2583
+      "size": 2583,
+      "reference": {
+        "path": "packs/imhex-chd/reference.blueprint.json",
+        "sha256": "f469a5332bdfeb82f4f0de048756a15260a04b502d27947724c61fec1daa6e07",
+        "size": 5703
+      }
     },
     {
       "id": "imhex-chm",
@@ -4365,7 +5130,12 @@
       },
       "path": "packs/imhex-chm/pack.bp.ts",
       "sha256": "199989728b61174b8139f0d8109b080e5cd968e13ad2d7e292f7d970f85e9f1a",
-      "size": 2701
+      "size": 2701,
+      "reference": {
+        "path": "packs/imhex-chm/reference.blueprint.json",
+        "sha256": "cc6442a640906d3c22321816449ddb6fcc8e911f1e14b5080f85eb8206a7f009",
+        "size": 5830
+      }
     },
     {
       "id": "imhex-chromium-pak",
@@ -4390,7 +5160,12 @@
       },
       "path": "packs/imhex-chromium-pak/pack.bp.ts",
       "sha256": "860eb145c231d71e0cb63743ee8c2239165a360e8124048af5c9a077b0a2ef72",
-      "size": 1000
+      "size": 1000,
+      "reference": {
+        "path": "packs/imhex-chromium-pak/reference.blueprint.json",
+        "sha256": "4fabcd547024786f972e952ae0af457bff0b8f476aaa8cd56f2ccd6e9d44b0f2",
+        "size": 3480
+      }
     },
     {
       "id": "imhex-coff",
@@ -4416,7 +5191,12 @@
       },
       "path": "packs/imhex-coff/pack.bp.ts",
       "sha256": "fbb614f2de85e55f6aab772b20b744ab8057900efe3c278a4c66ef11de68814f",
-      "size": 6488
+      "size": 6488,
+      "reference": {
+        "path": "packs/imhex-coff/reference.blueprint.json",
+        "sha256": "30e7893fc965c1b610d137507c2f622c8e0477d06bb414e2165c404da735cfbe",
+        "size": 10635
+      }
     },
     {
       "id": "imhex-cpio",
@@ -4442,7 +5222,12 @@
       },
       "path": "packs/imhex-cpio/pack.bp.ts",
       "sha256": "94344c931ce8a0154d132ddf04224b42362065519d4baba9063f582b3c33ab1f",
-      "size": 1242
+      "size": 1242,
+      "reference": {
+        "path": "packs/imhex-cpio/reference.blueprint.json",
+        "sha256": "c84afdca244d1fc0efa871918e86090f7e198b243eff20e6e1c4fe2d221f46e5",
+        "size": 3311
+      }
     },
     {
       "id": "imhex-cpio-new-ascii",
@@ -4467,7 +5252,12 @@
       },
       "path": "packs/imhex-cpio-new-ascii/pack.bp.ts",
       "sha256": "834d6f46120fb17bed521bce03c9a598b817b39e7bb2678ba4dd556bc9ac7fe0",
-      "size": 728
+      "size": 728,
+      "reference": {
+        "path": "packs/imhex-cpio-new-ascii/reference.blueprint.json",
+        "sha256": "49177a681783af0ec7d678e45bb484e5155893a5d71d830a8ac95bcf04b7112e",
+        "size": 2844
+      }
     },
     {
       "id": "imhex-cpio-portable-ascii",
@@ -4492,7 +5282,12 @@
       },
       "path": "packs/imhex-cpio-portable-ascii/pack.bp.ts",
       "sha256": "3b11986368a99da797f2790d104b43c502bed60109c1d0874afadfa208b23db7",
-      "size": 761
+      "size": 761,
+      "reference": {
+        "path": "packs/imhex-cpio-portable-ascii/reference.blueprint.json",
+        "sha256": "73d38b98435eca4fb04cfacebec7060f1509c9f46d81424d9fb821aebd01fad5",
+        "size": 2921
+      }
     },
     {
       "id": "imhex-credhist",
@@ -4518,7 +5313,12 @@
       },
       "path": "packs/imhex-credhist/pack.bp.ts",
       "sha256": "ab6b3e1a938e08def1cd057ba305a513c8b2675e4bc54e8f8a455dd2e2023383",
-      "size": 1272
+      "size": 1272,
+      "reference": {
+        "path": "packs/imhex-credhist/reference.blueprint.json",
+        "sha256": "0b74d2a93fdd5d6f3867ca67577f9ba8e210ff1dcfb64141f4790408623eac31",
+        "size": 3720
+      }
     },
     {
       "id": "imhex-csnap",
@@ -4543,7 +5343,12 @@
       },
       "path": "packs/imhex-csnap/pack.bp.ts",
       "sha256": "79c1fcc44f687430bc4c11e10f297b84641ee12e1e04bf4c21c705fc455c739f",
-      "size": 990
+      "size": 990,
+      "reference": {
+        "path": "packs/imhex-csnap/reference.blueprint.json",
+        "sha256": "8ec98d7611f330ba06b7588e3c90a0b76f8848c9c059bd87a87cf3efe0ac280e",
+        "size": 3278
+      }
     },
     {
       "id": "imhex-dds",
@@ -4568,7 +5373,12 @@
       },
       "path": "packs/imhex-dds/pack.bp.ts",
       "sha256": "e9ff7896f26ef3517b2fcffb482b71c5bb420ca72acd0965c4a19c58b82563de",
-      "size": 9787
+      "size": 9787,
+      "reference": {
+        "path": "packs/imhex-dds/reference.blueprint.json",
+        "sha256": "ed2620c35c9699c0cfa306f0f5eb8e247d3abdbfcb5f05805755be9da377f0c4",
+        "size": 13944
+      }
     },
     {
       "id": "imhex-dex",
@@ -4595,7 +5405,12 @@
       },
       "path": "packs/imhex-dex/pack.bp.ts",
       "sha256": "0a8fe951e35d4d17571bf9c460933ee1b8b2cd11315fd75065992390e6e4ec77",
-      "size": 5572
+      "size": 5572,
+      "reference": {
+        "path": "packs/imhex-dex/reference.blueprint.json",
+        "sha256": "87db6bde56c1901c5a54809f999b95bcdb36606b064d2936cc9a38f9f6af90b6",
+        "size": 10539
+      }
     },
     {
       "id": "imhex-dicom",
@@ -4621,7 +5436,12 @@
       },
       "path": "packs/imhex-dicom/pack.bp.ts",
       "sha256": "88bdbcca74cb5e2d8f6b397e33a775d614646cccb0c61b551cb4792c879aee87",
-      "size": 959
+      "size": 959,
+      "reference": {
+        "path": "packs/imhex-dicom/reference.blueprint.json",
+        "sha256": "95b40f2ac1f91aeb1f168f93db1f19006fc4e75ab45f2c2f2c1762dcdd540052",
+        "size": 3265
+      }
     },
     {
       "id": "imhex-dmc3-hd-mod",
@@ -4646,7 +5466,12 @@
       },
       "path": "packs/imhex-dmc3-hd-mod/pack.bp.ts",
       "sha256": "9e8c3600461f18644a325e5eab587d99e8c961d9c497d2d5261abcd9c7ad4e46",
-      "size": 3397
+      "size": 3397,
+      "reference": {
+        "path": "packs/imhex-dmc3-hd-mod/reference.blueprint.json",
+        "sha256": "48d0b861591a2d5ee65f589a9bdea1ce423015cce26c73f0571831da1cf10dc9",
+        "size": 7891
+      }
     },
     {
       "id": "imhex-dmp64",
@@ -4671,7 +5496,12 @@
       },
       "path": "packs/imhex-dmp64/pack.bp.ts",
       "sha256": "148ebdbfaa4f29e96ee5dcf7cb561e5141d816fff4d7ad94b398d56d7956541d",
-      "size": 2786
+      "size": 2786,
+      "reference": {
+        "path": "packs/imhex-dmp64/reference.blueprint.json",
+        "sha256": "8d9cdcfa491fac3ae7b0cbfcc7b1e784cb585e2598c1e95ed0a74ac567ff73bf",
+        "size": 10512
+      }
     },
     {
       "id": "imhex-dod-save",
@@ -4697,7 +5527,12 @@
       },
       "path": "packs/imhex-dod-save/pack.bp.ts",
       "sha256": "53aeaa5fafdd18642e7e711e16046e132eb1e2379d4fce76e3edd995661b3aab",
-      "size": 6876
+      "size": 6876,
+      "reference": {
+        "path": "packs/imhex-dod-save/reference.blueprint.json",
+        "sha256": "8fe8352b7a4ecd935379947bbf9de3bcf3b99d3da1e1928bdc330f97fe31fa24",
+        "size": 12673
+      }
     },
     {
       "id": "imhex-dos",
@@ -4723,7 +5558,12 @@
       },
       "path": "packs/imhex-dos/pack.bp.ts",
       "sha256": "57d921422cf697923457e4f8c2eb406797cf5d7a926dba2ea195cf216878eaa3",
-      "size": 1754
+      "size": 1754,
+      "reference": {
+        "path": "packs/imhex-dos/reference.blueprint.json",
+        "sha256": "666837869113add755f65e789ae0b9a10eea400abc7afecedbaca0b6f78ed2bd",
+        "size": 4421
+      }
     },
     {
       "id": "imhex-dotnet-binaryformatter",
@@ -4749,7 +5589,12 @@
       },
       "path": "packs/imhex-dotnet-binaryformatter/pack.bp.ts",
       "sha256": "56f5b47c5b19603e51829b170d9b0e96577d9d49bbbce800dcbb406e5b720b1d",
-      "size": 12268
+      "size": 12268,
+      "reference": {
+        "path": "packs/imhex-dotnet-binaryformatter/reference.blueprint.json",
+        "sha256": "e3ebe1cea05791bf30b5730247a9ece2c8906487a983b0849dd9b85554430416",
+        "size": 21445
+      }
     },
     {
       "id": "imhex-dpapiblob",
@@ -4775,7 +5620,12 @@
       },
       "path": "packs/imhex-dpapiblob/pack.bp.ts",
       "sha256": "ab9fd8b3046e3e722b239c71c9d532cb2e933f2ae3edc2e3d606ad3ed47ab049",
-      "size": 808
+      "size": 808,
+      "reference": {
+        "path": "packs/imhex-dpapiblob/reference.blueprint.json",
+        "sha256": "104a58e7bd133014e6a5900982603f62620051d6b4fc7d163c86a2a4fd174a8e",
+        "size": 2875
+      }
     },
     {
       "id": "imhex-dpapimasterkey",
@@ -4801,7 +5651,12 @@
       },
       "path": "packs/imhex-dpapimasterkey/pack.bp.ts",
       "sha256": "ccc489a6315110187addc2bc7069ced62dbfc3bb9c764c48f5c076b0c4dc0815",
-      "size": 6266
+      "size": 6266,
+      "reference": {
+        "path": "packs/imhex-dpapimasterkey/reference.blueprint.json",
+        "sha256": "6a64d73b6957bef5ce403a793a4bae880459fe3fb004db7ea8b6ef2e76b3a726",
+        "size": 9841
+      }
     },
     {
       "id": "imhex-dsstore",
@@ -4826,7 +5681,12 @@
       },
       "path": "packs/imhex-dsstore/pack.bp.ts",
       "sha256": "604f775225d02a70aa8f42030f2dea1abba809945c8031be16a968144af0fb32",
-      "size": 2774
+      "size": 2774,
+      "reference": {
+        "path": "packs/imhex-dsstore/reference.blueprint.json",
+        "sha256": "aa7698b129a22dc04af0a7e4eb531bdb03f123ae7122e1f89872e3bdccae31ef",
+        "size": 6616
+      }
     },
     {
       "id": "imhex-dted",
@@ -4852,7 +5712,12 @@
       },
       "path": "packs/imhex-dted/pack.bp.ts",
       "sha256": "79a237104723158bb9178602d251065e17442a3c23387f0b9fa647bb60049f38",
-      "size": 4176
+      "size": 4176,
+      "reference": {
+        "path": "packs/imhex-dted/reference.blueprint.json",
+        "sha256": "b3c20cca85c62d6d4c6264ec0395a909b22194bc034266b0173d3888f164f80c",
+        "size": 11469
+      }
     },
     {
       "id": "imhex-ebu-stl",
@@ -4877,7 +5742,12 @@
       },
       "path": "packs/imhex-ebu-stl/pack.bp.ts",
       "sha256": "6839f20a766a6327b70f6b6cf7def2dcd9c3d70cf35d9d44cae9d7bff83420cd",
-      "size": 2126
+      "size": 2126,
+      "reference": {
+        "path": "packs/imhex-ebu-stl/reference.blueprint.json",
+        "sha256": "a111ee3eaffaa9d00068143615d1e3af354203e0b0311acc3be89e3e15a47091",
+        "size": 5432
+      }
     },
     {
       "id": "imhex-elf",
@@ -4903,7 +5773,12 @@
       },
       "path": "packs/imhex-elf/pack.bp.ts",
       "sha256": "96ffc22a28b21401b5bead193299053e081c37c83ea87a2683bbcfe762b36d4d",
-      "size": 22096
+      "size": 22096,
+      "reference": {
+        "path": "packs/imhex-elf/reference.blueprint.json",
+        "sha256": "e5b326801ef1a1dcefb55e389146a6af37373d8ec98ee49b70fc8e5d688cee00",
+        "size": 31563
+      }
     },
     {
       "id": "imhex-esp32-image",
@@ -4929,7 +5804,12 @@
       },
       "path": "packs/imhex-esp32-image/pack.bp.ts",
       "sha256": "096f20d38facdfe5d46d582a94b7ca132746bb40de644bfac2aa79227d794b00",
-      "size": 3304
+      "size": 3304,
+      "reference": {
+        "path": "packs/imhex-esp32-image/reference.blueprint.json",
+        "sha256": "f2871d5683f9274e462c3321252f8ec44f144ec47d98e0da74503d77d811ac39",
+        "size": 6565
+      }
     },
     {
       "id": "imhex-esp8266",
@@ -4954,7 +5834,12 @@
       },
       "path": "packs/imhex-esp8266/pack.bp.ts",
       "sha256": "e07d16fa58c0c1181b90dbe2b34f0a0f2ef69993ea17ed2bb6d965bbe072ee1f",
-      "size": 1293
+      "size": 1293,
+      "reference": {
+        "path": "packs/imhex-esp8266/reference.blueprint.json",
+        "sha256": "9aa916b337a9aa65508b4ecc1e5e82768b188fe75e18ad67f662f774045264a1",
+        "size": 3782
+      }
     },
     {
       "id": "imhex-evtx",
@@ -4979,7 +5864,12 @@
       },
       "path": "packs/imhex-evtx/pack.bp.ts",
       "sha256": "2a91fb48e12320d6b33226d82fa57cf2cecea8a5e88d6b039b7651e37a31e3cb",
-      "size": 2435
+      "size": 2435,
+      "reference": {
+        "path": "packs/imhex-evtx/reference.blueprint.json",
+        "sha256": "0ffdf59f4ecc5e90be6dbe86a326d749269a5a1f26cc42b84e9782c3e9f98081",
+        "size": 10215
+      }
     },
     {
       "id": "imhex-fas-oskasoftware",
@@ -5004,7 +5894,12 @@
       },
       "path": "packs/imhex-fas-oskasoftware/pack.bp.ts",
       "sha256": "a0c1c6963cf88407920ce5586c219df12205c9c7bc61133934ca84714ae52a6f",
-      "size": 2419
+      "size": 2419,
+      "reference": {
+        "path": "packs/imhex-fas-oskasoftware/reference.blueprint.json",
+        "sha256": "2ff4c9c30878bdad82e4fae65e7ff17ea2bc72c197aae85494ba3490cc1fadd6",
+        "size": 5856
+      }
     },
     {
       "id": "imhex-fas-oskasoftware-old",
@@ -5029,7 +5924,12 @@
       },
       "path": "packs/imhex-fas-oskasoftware-old/pack.bp.ts",
       "sha256": "0bd7705836d2eb7fc19616850cba33fbe13acb4d5e38c9c80d588c00a2b98d0e",
-      "size": 2461
+      "size": 2461,
+      "reference": {
+        "path": "packs/imhex-fas-oskasoftware-old/reference.blueprint.json",
+        "sha256": "21e9cd2effc8d430540fcf0cf3015de12087482b30525670896e6d50dcb4e8cd",
+        "size": 5990
+      }
     },
     {
       "id": "imhex-fbx",
@@ -5055,7 +5955,12 @@
       },
       "path": "packs/imhex-fbx/pack.bp.ts",
       "sha256": "4fd0d247f209adbbf0c051d60902493c8ac9bc8a3c043c1e2fef8bc49a69eee8",
-      "size": 1584
+      "size": 1584,
+      "reference": {
+        "path": "packs/imhex-fbx/reference.blueprint.json",
+        "sha256": "3931e38bcdb5484344095767189fb20774c3c8abf7535a5bf8ce0081a93a9398",
+        "size": 4079
+      }
     },
     {
       "id": "imhex-fdt",
@@ -5081,7 +5986,12 @@
       },
       "path": "packs/imhex-fdt/pack.bp.ts",
       "sha256": "88ec74739fe28bad8c4ece219ccf00ac355b2b7544d62b2448b5a35d018c3b9b",
-      "size": 1103
+      "size": 1103,
+      "reference": {
+        "path": "packs/imhex-fdt/reference.blueprint.json",
+        "sha256": "0b8809d69fd221d78feb032645263b25f757a6dfdb3058cdadbd0bfb5aa0f976",
+        "size": 3366
+      }
     },
     {
       "id": "imhex-fez",
@@ -5107,7 +6017,12 @@
       },
       "path": "packs/imhex-fez/pack.bp.ts",
       "sha256": "10e8974e04ceda63b6387c46ae2e6e4de5fa9c449e773cf5584e3831ec0d45c2",
-      "size": 1775
+      "size": 1775,
+      "reference": {
+        "path": "packs/imhex-fez/reference.blueprint.json",
+        "sha256": "12f37552fa51ab91973646192dea8ed0900f7bfe92540e552c34fa8df318c950",
+        "size": 4623
+      }
     },
     {
       "id": "imhex-ffx-all-a-abilities-bin",
@@ -5133,7 +6048,12 @@
       },
       "path": "packs/imhex-ffx-all-a-abilities-bin/pack.bp.ts",
       "sha256": "43cfd664e9d5091dfa3d1d29810147ef313b3507cbc93d7a45834ec7352cfe9b",
-      "size": 8759
+      "size": 8759,
+      "reference": {
+        "path": "packs/imhex-ffx-all-a-abilities-bin/reference.blueprint.json",
+        "sha256": "41934efec6d79d6d2232fef089ea1d8b3405517c4348d558a1a02477a1f95334",
+        "size": 12646
+      }
     },
     {
       "id": "imhex-ffx-all-btl-bin",
@@ -5158,7 +6078,12 @@
       },
       "path": "packs/imhex-ffx-all-btl-bin/pack.bp.ts",
       "sha256": "b3ea3bfa85f6b6e82d499e25c26ad938b2e024baee53556f18db98e7c7024a3c",
-      "size": 1353
+      "size": 1353,
+      "reference": {
+        "path": "packs/imhex-ffx-all-btl-bin/reference.blueprint.json",
+        "sha256": "96d7a1e85164662cce469fdb03b4a0382157df7340288ead7b9e140cb77342bb",
+        "size": 4062
+      }
     },
     {
       "id": "imhex-ffx-all-buki-get-bin",
@@ -5183,7 +6108,12 @@
       },
       "path": "packs/imhex-ffx-all-buki-get-bin/pack.bp.ts",
       "sha256": "bd4bb6943683cf2c8d7ddb7931c8b24c7373a66bf04a26597371ee05e6582630",
-      "size": 1294
+      "size": 1294,
+      "reference": {
+        "path": "packs/imhex-ffx-all-buki-get-bin/reference.blueprint.json",
+        "sha256": "73f2e345d7fafd49853e06f37aef1c3f5ba90653e44c7d30bb41904d6d888fe2",
+        "size": 3704
+      }
     },
     {
       "id": "imhex-ffx-all-mon-bin",
@@ -5208,7 +6138,12 @@
       },
       "path": "packs/imhex-ffx-all-mon-bin/pack.bp.ts",
       "sha256": "ea2a11d7d5a2538b0f96d6ae836d245ffad240457bbe1e1a53597d75b4ed2329",
-      "size": 30514
+      "size": 30514,
+      "reference": {
+        "path": "packs/imhex-ffx-all-mon-bin/reference.blueprint.json",
+        "sha256": "65acbcf46276c79d44e1f81ce6dee68a8e240560b78c3026a8432db365f5225c",
+        "size": 40527
+      }
     },
     {
       "id": "imhex-ffx-all-ply-save-bin",
@@ -5233,7 +6168,12 @@
       },
       "path": "packs/imhex-ffx-all-ply-save-bin/pack.bp.ts",
       "sha256": "60ede981da0843b7c2822bd251f66c61595178cd8b0ad36b5ae951780e885d05",
-      "size": 8843
+      "size": 8843,
+      "reference": {
+        "path": "packs/imhex-ffx-all-ply-save-bin/reference.blueprint.json",
+        "sha256": "091aa023e378392815f7949856a3425c0129bb8d7a8bbccccc1c18466b9b430c",
+        "size": 12449
+      }
     },
     {
       "id": "imhex-ffx-all-sphere-grid-layout-dat",
@@ -5258,7 +6198,12 @@
       },
       "path": "packs/imhex-ffx-all-sphere-grid-layout-dat/pack.bp.ts",
       "sha256": "5eee83a4b3c607c524b2aaff29b03733e0c8d02315660d6da563210320ca8b76",
-      "size": 1419
+      "size": 1419,
+      "reference": {
+        "path": "packs/imhex-ffx-all-sphere-grid-layout-dat/reference.blueprint.json",
+        "sha256": "9ad2b4daba7dcb7a18bd0e3997e946c069f81a0a383737b441dbcc64b34b09f1",
+        "size": 4456
+      }
     },
     {
       "id": "imhex-ffx-all-st-number-bin",
@@ -5283,7 +6228,12 @@
       },
       "path": "packs/imhex-ffx-all-st-number-bin/pack.bp.ts",
       "sha256": "429e70fbf71f6b3c67147ad0283d49b06a0df0a025ee02d245757b490a2c6161",
-      "size": 7601
+      "size": 7601,
+      "reference": {
+        "path": "packs/imhex-ffx-all-st-number-bin/reference.blueprint.json",
+        "sha256": "61df72d1fde5f324a2f8f44c14cd7010d6c5eb74e5bc956f4b9ecccca62ff01b",
+        "size": 11067
+      }
     },
     {
       "id": "imhex-ffx-all-sum-assure-bin",
@@ -5308,7 +6258,12 @@
       },
       "path": "packs/imhex-ffx-all-sum-assure-bin/pack.bp.ts",
       "sha256": "6396e01976d6899d80132d13b7082be028c8dcd49806cbc0c678db27dc2b2c4d",
-      "size": 903
+      "size": 903,
+      "reference": {
+        "path": "packs/imhex-ffx-all-sum-assure-bin/reference.blueprint.json",
+        "sha256": "3eba415dcb192ba2af65a2a0877f955190c2f95c40949b2a65ed5697c6cf2f9f",
+        "size": 3126
+      }
     },
     {
       "id": "imhex-ffx-all-takara-bin",
@@ -5333,7 +6288,12 @@
       },
       "path": "packs/imhex-ffx-all-takara-bin/pack.bp.ts",
       "sha256": "7a03eaad99dc2616e7a7c6b8c239e8c2ed39c8126b4e4fa55311ce19edc8277b",
-      "size": 731
+      "size": 731,
+      "reference": {
+        "path": "packs/imhex-ffx-all-takara-bin/reference.blueprint.json",
+        "sha256": "97036216209eece207145d1e1d643555eaf52dc847b23d89f6b5e9398434cb67",
+        "size": 2893
+      }
     },
     {
       "id": "imhex-ffx-all-weapon-bin",
@@ -5358,7 +6318,12 @@
       },
       "path": "packs/imhex-ffx-all-weapon-bin/pack.bp.ts",
       "sha256": "e9157d7c05c6a25ae4efba3714b3865e84243d9e6799fcfde4085564f7bcd058",
-      "size": 1419
+      "size": 1419,
+      "reference": {
+        "path": "packs/imhex-ffx-all-weapon-bin/reference.blueprint.json",
+        "sha256": "17fbc74d4e1103562e297f711e5f07513aa8f9332246bfb936699fb883eee461",
+        "size": 3823
+      }
     },
     {
       "id": "imhex-ffx-en-item-bin",
@@ -5384,7 +6349,12 @@
       },
       "path": "packs/imhex-ffx-en-item-bin/pack.bp.ts",
       "sha256": "e119854ba782a1f130aa20c0ef87ba61ad922b91e5891917b21c794d2aa7ad77",
-      "size": 11832
+      "size": 11832,
+      "reference": {
+        "path": "packs/imhex-ffx-en-item-bin/reference.blueprint.json",
+        "sha256": "1dd9f72708c325a456f1dbc007966ea832fe61cb4e7bbe8029ec4f248b95d779",
+        "size": 16924
+      }
     },
     {
       "id": "imhex-ffx-en-moncom",
@@ -5410,7 +6380,12 @@
       },
       "path": "packs/imhex-ffx-en-moncom/pack.bp.ts",
       "sha256": "1be9447a9c4563f25242cbe3fe0877a70ca57d12e492dab9d3a56e6965ca2f7c",
-      "size": 11828
+      "size": 11828,
+      "reference": {
+        "path": "packs/imhex-ffx-en-moncom/reference.blueprint.json",
+        "sha256": "8b0906e556d4f08e411c99d97bb2ee5259500e21af57fdd7e5ed9e633d710f18",
+        "size": 16900
+      }
     },
     {
       "id": "imhex-ffx-en-panel-bin",
@@ -5436,7 +6411,12 @@
       },
       "path": "packs/imhex-ffx-en-panel-bin/pack.bp.ts",
       "sha256": "5929419ecb27e9a1bb6cbdd15aff489c9810b27e0ce915a5ca1607f39f3b9089",
-      "size": 1583
+      "size": 1583,
+      "reference": {
+        "path": "packs/imhex-ffx-en-panel-bin/reference.blueprint.json",
+        "sha256": "8b2f8cd2ecfb513885cf0bf41f6cc1572e022a1614c5e362ea5aac7fc70442b7",
+        "size": 3785
+      }
     },
     {
       "id": "imhex-ffx-en-pccom",
@@ -5462,7 +6442,12 @@
       },
       "path": "packs/imhex-ffx-en-pccom/pack.bp.ts",
       "sha256": "9523083cd8157dd9acda9a36687c40bfb8fea445f8f039672f1555bb20678384",
-      "size": 11826
+      "size": 11826,
+      "reference": {
+        "path": "packs/imhex-ffx-en-pccom/reference.blueprint.json",
+        "sha256": "08a715d9b4a0a3e0d0aa08935ff25ce037b5fde2d19f203a4e666fb96f330c33",
+        "size": 16888
+      }
     },
     {
       "id": "imhex-ffx-en-sphere-bin",
@@ -5488,7 +6473,12 @@
       },
       "path": "packs/imhex-ffx-en-sphere-bin/pack.bp.ts",
       "sha256": "ec23a11bc4ed10532c6c463706bf12d3cb1eb8bd4a1ab9ba67ff48659682b942",
-      "size": 1513
+      "size": 1513,
+      "reference": {
+        "path": "packs/imhex-ffx-en-sphere-bin/reference.blueprint.json",
+        "sha256": "79a4a137f8e17e89510e14d83e6733b25d1a330d405ac3f8ff1c440093c2fa25",
+        "size": 3720
+      }
     },
     {
       "id": "imhex-ffx-utils",
@@ -5513,7 +6503,12 @@
       },
       "path": "packs/imhex-ffx-utils/pack.bp.ts",
       "sha256": "1de85cc58d56c94107a008de904784bfb9346dc47ab7b3e92bb402ddd8073c98",
-      "size": 1460
+      "size": 1460,
+      "reference": {
+        "path": "packs/imhex-ffx-utils/reference.blueprint.json",
+        "sha256": "4c3730e3a269f4ae2c9c2895d99d2019be4267f7a3faefcacaa7e082d1a7e83b",
+        "size": 4483
+      }
     },
     {
       "id": "imhex-flac",
@@ -5539,7 +6534,12 @@
       },
       "path": "packs/imhex-flac/pack.bp.ts",
       "sha256": "76bacf10a6c95d22509e96bf4f6f0092c02209aec173593c9e2bb5dacec105b7",
-      "size": 7782
+      "size": 7782,
+      "reference": {
+        "path": "packs/imhex-flac/reference.blueprint.json",
+        "sha256": "a6895885df06417047a519807a0216f1b5b40cc03aa296783059357146ebd717",
+        "size": 14292
+      }
     },
     {
       "id": "imhex-flc",
@@ -5564,7 +6564,12 @@
       },
       "path": "packs/imhex-flc/pack.bp.ts",
       "sha256": "4b5f4f505e2cbdbbe34fd1b9c394677fd580efabdb819a3fb6470002e97da5dc",
-      "size": 4557
+      "size": 4557,
+      "reference": {
+        "path": "packs/imhex-flc/reference.blueprint.json",
+        "sha256": "4311b87ae694b85790c07887c3ee1550bf2c0371e06e39d3a9a6a327f6c305e7",
+        "size": 8048
+      }
     },
     {
       "id": "imhex-flipper-settings",
@@ -5590,7 +6595,12 @@
       },
       "path": "packs/imhex-flipper-settings/pack.bp.ts",
       "sha256": "c419f450da3c48df0f962340136bda70abce88b4e377d9a4295a14120d265429",
-      "size": 2225
+      "size": 2225,
+      "reference": {
+        "path": "packs/imhex-flipper-settings/reference.blueprint.json",
+        "sha256": "a4068cc184e1b5a8d570daf2b3ea35702421d2a7823fafe857222369c103c6a2",
+        "size": 5384
+      }
     },
     {
       "id": "imhex-flp",
@@ -5616,7 +6626,12 @@
       },
       "path": "packs/imhex-flp/pack.bp.ts",
       "sha256": "aaa75591b0aef700e883918a23a11dcb963351f47dc2609a4af05dd1c2dbef5f",
-      "size": 44892
+      "size": 44892,
+      "reference": {
+        "path": "packs/imhex-flp/reference.blueprint.json",
+        "sha256": "082c6e2adf9d68995bf784784f74ce11323d9c3ea5edc8c9773c4797885056e7",
+        "size": 64477
+      }
     },
     {
       "id": "imhex-flv",
@@ -5641,7 +6656,12 @@
       },
       "path": "packs/imhex-flv/pack.bp.ts",
       "sha256": "936f3863d90d48cd35854a3fc637ae1906e35293a1deeb95ff6c7a4f556cb3d5",
-      "size": 686
+      "size": 686,
+      "reference": {
+        "path": "packs/imhex-flv/reference.blueprint.json",
+        "sha256": "f3b5b66fef7032d830cdc86c80553dc250ac3b0d6f961bc20edcd6d26caebd65",
+        "size": 2702
+      }
     },
     {
       "id": "imhex-fs-apfs",
@@ -5667,7 +6687,12 @@
       },
       "path": "packs/imhex-fs-apfs/pack.bp.ts",
       "sha256": "c7ccdbeab2fa826ea12f7ebeb3908b5cd8059ad4dbd4f637b39f45b35715703c",
-      "size": 26699
+      "size": 26699,
+      "reference": {
+        "path": "packs/imhex-fs-apfs/reference.blueprint.json",
+        "sha256": "eaea0cdf1d151038dee8a9cc2eff93ea39f73a36009a77b279cdfb0f4f63ab3f",
+        "size": 42413
+      }
     },
     {
       "id": "imhex-fs-exfat",
@@ -5693,7 +6718,12 @@
       },
       "path": "packs/imhex-fs-exfat/pack.bp.ts",
       "sha256": "83740f1103ab6a27fd1e75527ac6f82762891b71415c10f8f1052523410664b6",
-      "size": 3230
+      "size": 3230,
+      "reference": {
+        "path": "packs/imhex-fs-exfat/reference.blueprint.json",
+        "sha256": "6283c34a3370c872f09e55292f6b58871e423744afb34e9bb92bf58d2292d2d3",
+        "size": 6775
+      }
     },
     {
       "id": "imhex-fs-ext4",
@@ -5719,7 +6749,12 @@
       },
       "path": "packs/imhex-fs-ext4/pack.bp.ts",
       "sha256": "ed2f68061e99048107d22527d28b6f58d2bc62b654007edb7f74e085b7b10b66",
-      "size": 12485
+      "size": 12485,
+      "reference": {
+        "path": "packs/imhex-fs-ext4/reference.blueprint.json",
+        "sha256": "60fc9be5838e5e78f3e6064a100f872733bb3a30b4ce0af221864e851f56b11b",
+        "size": 17111
+      }
     },
     {
       "id": "imhex-fs-fat32",
@@ -5745,7 +6780,12 @@
       },
       "path": "packs/imhex-fs-fat32/pack.bp.ts",
       "sha256": "e9ded7acb63f78e4bfe03c8f67138456a8d7ed95faf20b433f896144ab9536d1",
-      "size": 3616
+      "size": 3616,
+      "reference": {
+        "path": "packs/imhex-fs-fat32/reference.blueprint.json",
+        "sha256": "8845a92962b9bda4bf91c9c02d37b16bdcb51cb937363e72559d639a097719d2",
+        "size": 7006
+      }
     },
     {
       "id": "imhex-fs-mbr",
@@ -5770,7 +6810,12 @@
       },
       "path": "packs/imhex-fs-mbr/pack.bp.ts",
       "sha256": "da8f5c0b3bd374e56b6ce760e2f6657b94cd67ed54fa1fe20044890d0ceafc08",
-      "size": 1645
+      "size": 1645,
+      "reference": {
+        "path": "packs/imhex-fs-mbr/reference.blueprint.json",
+        "sha256": "e20e07b7d206f34ae3f6936e6d435eb43519d4623e27e5bbdd8b9aa0bfedb279",
+        "size": 4143
+      }
     },
     {
       "id": "imhex-fs-ntfs",
@@ -5795,7 +6840,12 @@
       },
       "path": "packs/imhex-fs-ntfs/pack.bp.ts",
       "sha256": "652a22bca9de4fa956602b8558a640f356abca73ca1e7a3f157d6b308ca7fba2",
-      "size": 21577
+      "size": 21577,
+      "reference": {
+        "path": "packs/imhex-fs-ntfs/reference.blueprint.json",
+        "sha256": "95347ac91389455900783ad8985379c67afef115ff57d7d3981d094bad5b3aec",
+        "size": 33639
+      }
     },
     {
       "id": "imhex-fs-pattern",
@@ -5821,7 +6871,12 @@
       },
       "path": "packs/imhex-fs-pattern/pack.bp.ts",
       "sha256": "0fc04e36eb317f1bd33eea004e3e66748e014d8d326885bd588abc4f8bcbc3b1",
-      "size": 4681
+      "size": 4681,
+      "reference": {
+        "path": "packs/imhex-fs-pattern/reference.blueprint.json",
+        "sha256": "118053e9d9396145ca74461987892f5ee7ce318b89b950aea7e77150f09bba51",
+        "size": 8503
+      }
     },
     {
       "id": "imhex-fs-refs",
@@ -5847,7 +6902,12 @@
       },
       "path": "packs/imhex-fs-refs/pack.bp.ts",
       "sha256": "007f5d67b43695169af32b3b9357110e44a02d550f2bef626225b58a5c3d8803",
-      "size": 4658
+      "size": 4658,
+      "reference": {
+        "path": "packs/imhex-fs-refs/reference.blueprint.json",
+        "sha256": "25603f370c5396c304d5ac1068354d2dba56c996bd3d6e411c31be30b5c85a86",
+        "size": 9249
+      }
     },
     {
       "id": "imhex-fs",
@@ -5873,7 +6933,12 @@
       },
       "path": "packs/imhex-fs/pack.bp.ts",
       "sha256": "772d6a9152a813893527bcfde7e739d2f1cdd76a2b5ce518a631062abdad0050",
-      "size": 4710
+      "size": 4710,
+      "reference": {
+        "path": "packs/imhex-fs/reference.blueprint.json",
+        "sha256": "47292cc99aa077770583cd81bf0812a6e9f6db85d4d58008ad9ee4d88e1a4188",
+        "size": 8828
+      }
     },
     {
       "id": "imhex-gb",
@@ -5899,7 +6964,12 @@
       },
       "path": "packs/imhex-gb/pack.bp.ts",
       "sha256": "01441fd8b4f9fcdd2217bac12428a9eae32f933efe3e25bd128b2c38de734669",
-      "size": 2290
+      "size": 2290,
+      "reference": {
+        "path": "packs/imhex-gb/reference.blueprint.json",
+        "sha256": "919b5b97dd3291c4808d2c4233f526a73b26119bde514faf022a1722706db4af",
+        "size": 4952
+      }
     },
     {
       "id": "imhex-gba",
@@ -5924,7 +6994,12 @@
       },
       "path": "packs/imhex-gba/pack.bp.ts",
       "sha256": "9cdef95df2eb559b1b2208c54539904fb349a2c648e077135ed7de8da19f045f",
-      "size": 1055
+      "size": 1055,
+      "reference": {
+        "path": "packs/imhex-gba/reference.blueprint.json",
+        "sha256": "441623bd9ddb0dd306bcc62d21c7dfca23eb2fa317be50284108e8d87dea79cb",
+        "size": 3136
+      }
     },
     {
       "id": "imhex-gbx",
@@ -5949,7 +7024,12 @@
       },
       "path": "packs/imhex-gbx/pack.bp.ts",
       "sha256": "c3f38500d4398395667c55b9139d5e5fabe97ebc2e89a5420430dc2399e9a3e4",
-      "size": 2163
+      "size": 2163,
+      "reference": {
+        "path": "packs/imhex-gbx/reference.blueprint.json",
+        "sha256": "c621a1de6c5e1aee1abed595445de87a5a4a92992ad19086c5e29f8cd2d54f8c",
+        "size": 5033
+      }
     },
     {
       "id": "imhex-gen",
@@ -5974,7 +7054,12 @@
       },
       "path": "packs/imhex-gen/pack.bp.ts",
       "sha256": "5c2365663f85b3eea737cdb9ab2af13c5daee16db8410c8f904314872a693e73",
-      "size": 2889
+      "size": 2889,
+      "reference": {
+        "path": "packs/imhex-gen/reference.blueprint.json",
+        "sha256": "9eaabeb5053d1fd3fe950e529ba87bbe5a5cb50777d810cd03041741c26fa4ff",
+        "size": 6016
+      }
     },
     {
       "id": "imhex-gguf",
@@ -5999,7 +7084,12 @@
       },
       "path": "packs/imhex-gguf/pack.bp.ts",
       "sha256": "325116fcea087cd8e0709b3df559d0ca00a729738cf9639d0e365991fbecfb24",
-      "size": 3091
+      "size": 3091,
+      "reference": {
+        "path": "packs/imhex-gguf/reference.blueprint.json",
+        "sha256": "67082cec64c5459155bbf63be148f2abcc637559e0a9741d6f6fe8cb7679e44b",
+        "size": 6409
+      }
     },
     {
       "id": "imhex-gif",
@@ -6025,7 +7115,12 @@
       },
       "path": "packs/imhex-gif/pack.bp.ts",
       "sha256": "49e70efe27c45867add018dbb068df3f498b2112bdaca95158dfd3c964f008e5",
-      "size": 4351
+      "size": 4351,
+      "reference": {
+        "path": "packs/imhex-gif/reference.blueprint.json",
+        "sha256": "c639d6d38ab230690f75d2b3b21ada873478c5954e8ed91195d7be395ab0c639",
+        "size": 8619
+      }
     },
     {
       "id": "imhex-gltf",
@@ -6051,7 +7146,12 @@
       },
       "path": "packs/imhex-gltf/pack.bp.ts",
       "sha256": "3b1f27dc5a47a3399b1d582937af2668538fa23b8b9e944bc9c5bbc887d899bd",
-      "size": 914
+      "size": 914,
+      "reference": {
+        "path": "packs/imhex-gltf/reference.blueprint.json",
+        "sha256": "23d109a308e801b5f9f9df034db1302c8fea3879fc80958287192ceaede95bbd",
+        "size": 3022
+      }
     },
     {
       "id": "imhex-gmd",
@@ -6076,7 +7176,12 @@
       },
       "path": "packs/imhex-gmd/pack.bp.ts",
       "sha256": "cd51157d66ef02728012310180e56b33ac9642cf1bffbfc671e265ce3054e153",
-      "size": 7689
+      "size": 7689,
+      "reference": {
+        "path": "packs/imhex-gmd/reference.blueprint.json",
+        "sha256": "bf4723f434957a66b99b2e15a646c67ec1afa777c367f535c5a38aec189ce548",
+        "size": 16336
+      }
     },
     {
       "id": "imhex-gmf",
@@ -6101,7 +7206,12 @@
       },
       "path": "packs/imhex-gmf/pack.bp.ts",
       "sha256": "bce1e1ae3118a4935a4ff2289327fc5a3a8d073fe6ebc83e624831ab273300cf",
-      "size": 4475
+      "size": 4475,
+      "reference": {
+        "path": "packs/imhex-gmf/reference.blueprint.json",
+        "sha256": "d75c36600d70ba367ddb25bb72e8eb79f3cdb9d0cc1a1fdb80f914e1f1553d57",
+        "size": 9070
+      }
     },
     {
       "id": "imhex-gtasa-save",
@@ -6126,7 +7236,12 @@
       },
       "path": "packs/imhex-gtasa-save/pack.bp.ts",
       "sha256": "b6735e8a9fbedc4c4b360671014d4ae19fd0c169856c1ee9d548f6787d691fb1",
-      "size": 2580
+      "size": 2580,
+      "reference": {
+        "path": "packs/imhex-gtasa-save/reference.blueprint.json",
+        "sha256": "35c6fca1f3ec610e973ece50aa1317d4f9405cf0a5f257b66e7534f57ee58f12",
+        "size": 5900
+      }
     },
     {
       "id": "imhex-gvas",
@@ -6152,7 +7267,12 @@
       },
       "path": "packs/imhex-gvas/pack.bp.ts",
       "sha256": "0edf2e15712694e06d3230d7b0ded08668a1ee9418d1de32a552151028f08c58",
-      "size": 5088
+      "size": 5088,
+      "reference": {
+        "path": "packs/imhex-gvas/reference.blueprint.json",
+        "sha256": "ba530285563710896312f9217c1c8d6263ae7dfa9c7347199afb9c6ac4d6b492",
+        "size": 10777
+      }
     },
     {
       "id": "imhex-gzip",
@@ -6178,7 +7298,12 @@
       },
       "path": "packs/imhex-gzip/pack.bp.ts",
       "sha256": "78501ed5a9e7e10362683154291b9a550bfeb58dc6cebd2f1a391a4dcf62d703",
-      "size": 1619
+      "size": 1619,
+      "reference": {
+        "path": "packs/imhex-gzip/reference.blueprint.json",
+        "sha256": "5b969099cc38aee30003ebb85d9703f022d29f5964e6fa987900bfd8104684fe",
+        "size": 4078
+      }
     },
     {
       "id": "imhex-hinf-luas",
@@ -6204,7 +7329,12 @@
       },
       "path": "packs/imhex-hinf-luas/pack.bp.ts",
       "sha256": "a2a39d2aa78056a3cfc0336756ad310594e261d94580fb174f733437fdc6ab44",
-      "size": 7996
+      "size": 7996,
+      "reference": {
+        "path": "packs/imhex-hinf-luas/reference.blueprint.json",
+        "sha256": "17f2ad439c1d7de5acb7b91f09cebb3a389e2f40da36f7fcd22b8c026020dd03",
+        "size": 15831
+      }
     },
     {
       "id": "imhex-hinf-module",
@@ -6230,7 +7360,12 @@
       },
       "path": "packs/imhex-hinf-module/pack.bp.ts",
       "sha256": "3faf8e6f091dd565bb8514d86f2148a028aa5d0e0e2a5b52fbce06d7e00f5d09",
-      "size": 2396
+      "size": 2396,
+      "reference": {
+        "path": "packs/imhex-hinf-module/reference.blueprint.json",
+        "sha256": "d3ce2c067c4d8a727c851c9e290deaf449a51a7ecbc7a66e715c840bb7726c37",
+        "size": 5172
+      }
     },
     {
       "id": "imhex-hinf-tag",
@@ -6256,7 +7391,12 @@
       },
       "path": "packs/imhex-hinf-tag/pack.bp.ts",
       "sha256": "721c0f4a724185f27b33604895b1f04be3fdf3168877bfb91c5389d0cdd6f848",
-      "size": 3585
+      "size": 3585,
+      "reference": {
+        "path": "packs/imhex-hinf-tag/reference.blueprint.json",
+        "sha256": "d89b3b1fce2e3936564c05030e2b0c8ccef070c2c508765fc1145bbd386d92ba",
+        "size": 7706
+      }
     },
     {
       "id": "imhex-hldem",
@@ -6281,7 +7421,12 @@
       },
       "path": "packs/imhex-hldem/pack.bp.ts",
       "sha256": "9a4040f28aa9adba747c6015580d12087ebe25b68592461a160be7ef7163714c",
-      "size": 5864
+      "size": 5864,
+      "reference": {
+        "path": "packs/imhex-hldem/reference.blueprint.json",
+        "sha256": "b4712fc8e23bed2ab092ab229dbe5a6237d22496d6461ed86188c00ce7290051",
+        "size": 11603
+      }
     },
     {
       "id": "imhex-hprof",
@@ -6307,7 +7452,12 @@
       },
       "path": "packs/imhex-hprof/pack.bp.ts",
       "sha256": "4db2e1a5e99a2545a174435e891ed27b59697c6a9bb4a9a2015877ac547d8118",
-      "size": 6056
+      "size": 6056,
+      "reference": {
+        "path": "packs/imhex-hprof/reference.blueprint.json",
+        "sha256": "3ab2e3639a5298f754f71cc5d3ef49c9aa0f43aefdbab75d62ba8a62644380ea",
+        "size": 11841
+      }
     },
     {
       "id": "imhex-hsdt",
@@ -6332,7 +7482,12 @@
       },
       "path": "packs/imhex-hsdt/pack.bp.ts",
       "sha256": "07b2f11c23364df2a3e3d187a867cdf8bb8bcbe3fe8cf11c7933e4b0593b995c",
-      "size": 744
+      "size": 744,
+      "reference": {
+        "path": "packs/imhex-hsdt/reference.blueprint.json",
+        "sha256": "063908d464ef10db954342f8acf8aa170cddb9a9b49ebc3711f61f5ab980cf05",
+        "size": 2813
+      }
     },
     {
       "id": "imhex-ico",
@@ -6357,7 +7512,12 @@
       },
       "path": "packs/imhex-ico/pack.bp.ts",
       "sha256": "59b91cc7b2be31aecde91fa5cc1c32e4ec2b7a237d98ff1a3d19f65c42327e9c",
-      "size": 1013
+      "size": 1013,
+      "reference": {
+        "path": "packs/imhex-ico/reference.blueprint.json",
+        "sha256": "df4a2375b0f9ac5f1491db0fdacad9fba0655089fc8aa3b3c6de0f4393a1255d",
+        "size": 3291
+      }
     },
     {
       "id": "imhex-id3",
@@ -6383,7 +7543,12 @@
       },
       "path": "packs/imhex-id3/pack.bp.ts",
       "sha256": "d6ff57012964267e96f90657e1c27207ae91c72ce9cf76679dd6c43ab3096ae5",
-      "size": 3799
+      "size": 3799,
+      "reference": {
+        "path": "packs/imhex-id3/reference.blueprint.json",
+        "sha256": "ac96ff22a2f2fa2d4d2466a1a1df6e02274fe4c1c24883efd4163f1e4678bd62",
+        "size": 7459
+      }
     },
     {
       "id": "imhex-ifile",
@@ -6409,7 +7574,12 @@
       },
       "path": "packs/imhex-ifile/pack.bp.ts",
       "sha256": "43c4dc0f06f4caf8c37aa64cdba0bce49d0efda8ea89dc3af274c98c528bc67d",
-      "size": 1003
+      "size": 1003,
+      "reference": {
+        "path": "packs/imhex-ifile/reference.blueprint.json",
+        "sha256": "a0da51e2b8369e3e367f41f685a231d2893a0f7f5533d8a0fcc0bb7f88866218",
+        "size": 3269
+      }
     },
     {
       "id": "imhex-imah",
@@ -6434,7 +7604,12 @@
       },
       "path": "packs/imhex-imah/pack.bp.ts",
       "sha256": "589e3bc089f5bc565c3c95ed69b5a33d120af4ad1d9857b429870e214c0537a7",
-      "size": 1797
+      "size": 1797,
+      "reference": {
+        "path": "packs/imhex-imah/reference.blueprint.json",
+        "sha256": "4138b31d5e3ddb25066d6e2ffdc426199fa045a3a7cd5a6ecf1d88b141316bcb",
+        "size": 4158
+      }
     },
     {
       "id": "imhex-intel-hex",
@@ -6459,7 +7634,12 @@
       },
       "path": "packs/imhex-intel-hex/pack.bp.ts",
       "sha256": "1f55628ba10230599aca298a106470a962a7a01d2c484f422214499c7f660381",
-      "size": 1094
+      "size": 1094,
+      "reference": {
+        "path": "packs/imhex-intel-hex/reference.blueprint.json",
+        "sha256": "b0c76d3f8d3cf72c846c18e5f73247c0046fe42e2605be1d2ba23d1738027b1a",
+        "size": 3372
+      }
     },
     {
       "id": "imhex-ip",
@@ -6485,7 +7665,12 @@
       },
       "path": "packs/imhex-ip/pack.bp.ts",
       "sha256": "2c5a6e53e87459fe0935e2e8d10dfa65900c84193a0993c5ec374aecc3713696",
-      "size": 4173
+      "size": 4173,
+      "reference": {
+        "path": "packs/imhex-ip/reference.blueprint.json",
+        "sha256": "151ccfd768932e5afd856361170603ebd727e697a0c2ee9cbf5e0366c0af6aa7",
+        "size": 8255
+      }
     },
     {
       "id": "imhex-ips",
@@ -6511,7 +7696,12 @@
       },
       "path": "packs/imhex-ips/pack.bp.ts",
       "sha256": "c72ae9ae96cac81c8239d59cebddda2b1edd93bc6c40e9ca8602ee30fa5fd4c1",
-      "size": 780
+      "size": 780,
+      "reference": {
+        "path": "packs/imhex-ips/reference.blueprint.json",
+        "sha256": "49bae40635abb622d5a87e198e8e8e1d3fd30bbfb44de29735c7198e78bc4fcd",
+        "size": 2849
+      }
     },
     {
       "id": "imhex-iso",
@@ -6536,7 +7726,12 @@
       },
       "path": "packs/imhex-iso/pack.bp.ts",
       "sha256": "91b02fa183d4d5adda5861f1517cba4d8c27d5a2ff1e10d1a61a884b9cf94e8c",
-      "size": 3233
+      "size": 3233,
+      "reference": {
+        "path": "packs/imhex-iso/reference.blueprint.json",
+        "sha256": "a5937b14dd3d2e331a6b4c8e39128ab54009407487665b33184035fc36128753",
+        "size": 6725
+      }
     },
     {
       "id": "imhex-java-class",
@@ -6561,7 +7756,12 @@
       },
       "path": "packs/imhex-java-class/pack.bp.ts",
       "sha256": "78b7f50021166f33fa4584bd83c71c08886d5e1a2196db126b881606b274f908",
-      "size": 18452
+      "size": 18452,
+      "reference": {
+        "path": "packs/imhex-java-class/reference.blueprint.json",
+        "sha256": "88c04173b7ad2b90d574118a83225704f90f286a554b09585d0bee55c5edd840",
+        "size": 33082
+      }
     },
     {
       "id": "imhex-job",
@@ -6587,7 +7787,12 @@
       },
       "path": "packs/imhex-job/pack.bp.ts",
       "sha256": "2dd852c67cc1a763be09df75caadda2777dc3a65f109da6cc757227cc2a41f67",
-      "size": 2939
+      "size": 2939,
+      "reference": {
+        "path": "packs/imhex-job/reference.blueprint.json",
+        "sha256": "7264c3b5ee4817f8a5feb0fe65f7e4633fc4756a22a72086ba219b556bfaa831",
+        "size": 5961
+      }
     },
     {
       "id": "imhex-jpeg",
@@ -6612,7 +7817,12 @@
       },
       "path": "packs/imhex-jpeg/pack.bp.ts",
       "sha256": "0d2da23905bc484247c52a3edbb7c0b3cae78fe5e4ab3212656a798deccb0e09",
-      "size": 1620
+      "size": 1620,
+      "reference": {
+        "path": "packs/imhex-jpeg/reference.blueprint.json",
+        "sha256": "2a1d964591e69c18c8129f5e3aef802a99f950638744a4057560e34255c97bcf",
+        "size": 4473
+      }
     },
     {
       "id": "imhex-keytab",
@@ -6638,7 +7848,12 @@
       },
       "path": "packs/imhex-keytab/pack.bp.ts",
       "sha256": "8f33c0448dd3f9a7cf971ec3c5d603e436ebe3bc09f324935333b87ed0094c88",
-      "size": 2256
+      "size": 2256,
+      "reference": {
+        "path": "packs/imhex-keytab/reference.blueprint.json",
+        "sha256": "091d5ef555e30f40166a85e58fc6b340fc69a8e5876195a5d2d7275df42ef618",
+        "size": 5379
+      }
     },
     {
       "id": "imhex-kindle-update",
@@ -6663,7 +7878,12 @@
       },
       "path": "packs/imhex-kindle-update/pack.bp.ts",
       "sha256": "b62348743e501f991f15d3fc3c5ce17ac2850db2d090caab67939afdfa551b26",
-      "size": 16943
+      "size": 16943,
+      "reference": {
+        "path": "packs/imhex-kindle-update/reference.blueprint.json",
+        "sha256": "736f7ac55b2996d4b1f36f5e251db3f9d2d3e72412e9fcef5a6a158eb8f84f0b",
+        "size": 22362
+      }
     },
     {
       "id": "imhex-ktx",
@@ -6688,7 +7908,12 @@
       },
       "path": "packs/imhex-ktx/pack.bp.ts",
       "sha256": "44e32c2fdfcf77ed6ef7ae671dcf4ac919c9e54a186227629705833b1f483fa3",
-      "size": 6341
+      "size": 6341,
+      "reference": {
+        "path": "packs/imhex-ktx/reference.blueprint.json",
+        "sha256": "707031de76e0fd9e90152416b0c0e605ab650c1cb0c4b68ecca395c28570528e",
+        "size": 9469
+      }
     },
     {
       "id": "imhex-lcesave",
@@ -6714,7 +7939,12 @@
       },
       "path": "packs/imhex-lcesave/pack.bp.ts",
       "sha256": "d5eef9472fb16f92480a74aa5ed9f13f6cc0deff933070524a0d767e494af344",
-      "size": 1068
+      "size": 1068,
+      "reference": {
+        "path": "packs/imhex-lcesave/reference.blueprint.json",
+        "sha256": "cc5f6fb251d50c2cd0a53cdf39cf1b2e3f023091cb45ee7aea912c565e21a1ad",
+        "size": 3347
+      }
     },
     {
       "id": "imhex-lnk",
@@ -6740,7 +7970,12 @@
       },
       "path": "packs/imhex-lnk/pack.bp.ts",
       "sha256": "cfd3e04a486f1a76a28d7afeeda3348b0730d760f17ab9cf2cffdb3508ce937d",
-      "size": 10558
+      "size": 10558,
+      "reference": {
+        "path": "packs/imhex-lnk/reference.blueprint.json",
+        "sha256": "997e6b7dbba8eae7f550ee0d57440aa66f88054e5df9edfc3637fbc5289aaa7f",
+        "size": 15929
+      }
     },
     {
       "id": "imhex-loc",
@@ -6765,7 +8000,12 @@
       },
       "path": "packs/imhex-loc/pack.bp.ts",
       "sha256": "790199dafee4414472f5d774bbe7f7a80a6befba3e4cea56d7cafb0e364731aa",
-      "size": 1229
+      "size": 1229,
+      "reference": {
+        "path": "packs/imhex-loc/reference.blueprint.json",
+        "sha256": "eb097bee91db21f444f92b346b7dd7cec9b395a62fe9c61debb91e62a25ee64c",
+        "size": 4012
+      }
     },
     {
       "id": "imhex-lua40",
@@ -6791,7 +8031,12 @@
       },
       "path": "packs/imhex-lua40/pack.bp.ts",
       "sha256": "6b99ae598a25a075796a65edc180eba733e6d8dd1766a39e73b2b3f250fec7d5",
-      "size": 1447
+      "size": 1447,
+      "reference": {
+        "path": "packs/imhex-lua40/reference.blueprint.json",
+        "sha256": "b1bb96de868b75a6058a8588265bbb2db2d78959aa12bd813c831ec6299bb49b",
+        "size": 3717
+      }
     },
     {
       "id": "imhex-lua50",
@@ -6817,7 +8062,12 @@
       },
       "path": "packs/imhex-lua50/pack.bp.ts",
       "sha256": "17d8fb73848c82c3fee94b523849bdb0e1a0019c69af3f468d657928a1712146",
-      "size": 1591
+      "size": 1591,
+      "reference": {
+        "path": "packs/imhex-lua50/reference.blueprint.json",
+        "sha256": "566f38573a960a13f138fb0b8ba7a1ea48b05d1cf17ea41eee22c35b0b4e89e4",
+        "size": 4051
+      }
     },
     {
       "id": "imhex-lua51",
@@ -6843,7 +8093,12 @@
       },
       "path": "packs/imhex-lua51/pack.bp.ts",
       "sha256": "8974822c096bcd2d4a10397d8f17fbbe6b1df746ab0dc0fa462e65f2ae7a63d3",
-      "size": 1522
+      "size": 1522,
+      "reference": {
+        "path": "packs/imhex-lua51/reference.blueprint.json",
+        "sha256": "f6e0903479600b6f1ad5ac787c9a4a0ccd696f15279581a6a5fedcf610ab8e17",
+        "size": 3973
+      }
     },
     {
       "id": "imhex-lua52",
@@ -6868,7 +8123,12 @@
       },
       "path": "packs/imhex-lua52/pack.bp.ts",
       "sha256": "59d3314aa1e91b5e21babcdbfd10660cffed1c0e49f60f0c58f1b8da3e296325",
-      "size": 2530
+      "size": 2530,
+      "reference": {
+        "path": "packs/imhex-lua52/reference.blueprint.json",
+        "sha256": "846ebae4b5b544d4d162dfb50865163f03c317b1cbd93ae36329889ca5391537",
+        "size": 6143
+      }
     },
     {
       "id": "imhex-lua53",
@@ -6893,7 +8153,12 @@
       },
       "path": "packs/imhex-lua53/pack.bp.ts",
       "sha256": "c5cdf79527d3426be04e12b13097709e07366f38c87e153e790fcdbd30fcaf94",
-      "size": 2264
+      "size": 2264,
+      "reference": {
+        "path": "packs/imhex-lua53/reference.blueprint.json",
+        "sha256": "d69bccb5750469864cb1ba0be8063bb35ab9b8287dea1566c782ddf93ffe732f",
+        "size": 5675
+      }
     },
     {
       "id": "imhex-lua54",
@@ -6919,7 +8184,12 @@
       },
       "path": "packs/imhex-lua54/pack.bp.ts",
       "sha256": "647a7d766f3ac8e0387cba8aa5d6c435492681e02384a5d7c054715dac02b727",
-      "size": 2023
+      "size": 2023,
+      "reference": {
+        "path": "packs/imhex-lua54/reference.blueprint.json",
+        "sha256": "cfd2a8f2a5b2af2a2fa2a6b27c838f957762c723cb9bab9e5741f2ea3fe62159",
+        "size": 4868
+      }
     },
     {
       "id": "imhex-lz4",
@@ -6944,7 +8214,12 @@
       },
       "path": "packs/imhex-lz4/pack.bp.ts",
       "sha256": "66ee48be0899c1dd23acba38efa044dd7eebd28e0a0a2b39662a960da4dfebc3",
-      "size": 3169
+      "size": 3169,
+      "reference": {
+        "path": "packs/imhex-lz4/reference.blueprint.json",
+        "sha256": "1e28ac30db2b00328f7046fdb839414c43b7d16b0f4178c8a0ce81e3b8615859",
+        "size": 6637
+      }
     },
     {
       "id": "imhex-lznt1",
@@ -6969,7 +8244,12 @@
       },
       "path": "packs/imhex-lznt1/pack.bp.ts",
       "sha256": "186995e5033ee575874275b51ddf06b52ea31d4d7052b5d6b4146af307e9a28b",
-      "size": 1695
+      "size": 1695,
+      "reference": {
+        "path": "packs/imhex-lznt1/reference.blueprint.json",
+        "sha256": "91899310d8d8cc6cdda59cb341c0d39fccd2edad61e90a888e6fc118f73e7402",
+        "size": 4316
+      }
     },
     {
       "id": "imhex-macho",
@@ -6995,7 +8275,12 @@
       },
       "path": "packs/imhex-macho/pack.bp.ts",
       "sha256": "6c0c65a3caf3bc107aab14194f870dc51585bbfcd707190f4a4c82bb65b6e073",
-      "size": 6632
+      "size": 6632,
+      "reference": {
+        "path": "packs/imhex-macho/reference.blueprint.json",
+        "sha256": "b7823ebc644fecbee4f192faa335a289ffe67980fda6e8b672e0923ed86d0f06",
+        "size": 11262
+      }
     },
     {
       "id": "imhex-magic",
@@ -7021,7 +8306,12 @@
       },
       "path": "packs/imhex-magic/pack.bp.ts",
       "sha256": "d1866334cd7f2901d18f76f5fcadae8b98c2384edc53cb3abaf83a3f8e35b7af",
-      "size": 5506
+      "size": 5506,
+      "reference": {
+        "path": "packs/imhex-magic/reference.blueprint.json",
+        "sha256": "434c00ee9a08f61655ca262ec7684e038d233044370bd015d93f4932506ce97d",
+        "size": 9103
+      }
     },
     {
       "id": "imhex-max-v104",
@@ -7046,7 +8336,12 @@
       },
       "path": "packs/imhex-max-v104/pack.bp.ts",
       "sha256": "935324a66c559300f567f4c0604e435a69e4994993f5eddabb6807a14cf1eb53",
-      "size": 10077
+      "size": 10077,
+      "reference": {
+        "path": "packs/imhex-max-v104/reference.blueprint.json",
+        "sha256": "75c6d98004c3539c17a13fe77819b056789d9c2928d2abb619cf724395827f0f",
+        "size": 22603
+      }
     },
     {
       "id": "imhex-midi",
@@ -7071,7 +8366,12 @@
       },
       "path": "packs/imhex-midi/pack.bp.ts",
       "sha256": "efb4c9989ee6e1d9db26410feaf621a5dbc23a52aae192e7ffd3c73cc3eb232b",
-      "size": 1204
+      "size": 1204,
+      "reference": {
+        "path": "packs/imhex-midi/reference.blueprint.json",
+        "sha256": "bcbf1992bdb61d28c07c2da853de37878e7f229d98a3708196cf65d9a2f9bd41",
+        "size": 3686
+      }
     },
     {
       "id": "imhex-mifare-mifare-1k",
@@ -7096,7 +8396,12 @@
       },
       "path": "packs/imhex-mifare-mifare-1k/pack.bp.ts",
       "sha256": "9c035c676100271d8fd57a52547a3a8dc087a29de94e2b532beb3f5886de940a",
-      "size": 2034
+      "size": 2034,
+      "reference": {
+        "path": "packs/imhex-mifare-mifare-1k/reference.blueprint.json",
+        "sha256": "bbf51696ab38f657b6c0b3948c7ddfee08cc6176d53c6a6fb3d58e3c499798c2",
+        "size": 5913
+      }
     },
     {
       "id": "imhex-mifare-mifare-4k",
@@ -7121,7 +8426,12 @@
       },
       "path": "packs/imhex-mifare-mifare-4k/pack.bp.ts",
       "sha256": "d7b80a5e3ec52f25f4aa39f0c526acdbe7fc2ef4e4464ce4fdedfacda25ac2ba",
-      "size": 2753
+      "size": 2753,
+      "reference": {
+        "path": "packs/imhex-mifare-mifare-4k/reference.blueprint.json",
+        "sha256": "e1f48675a7370c0951679c98564938869e847c310c0ebe2f82f3e39fdee4a0ca",
+        "size": 10970
+      }
     },
     {
       "id": "imhex-minidump",
@@ -7147,7 +8457,12 @@
       },
       "path": "packs/imhex-minidump/pack.bp.ts",
       "sha256": "43c1409ba2abbc3984fca23840a5da878c96b969790a50faa4d624f610c8ad78",
-      "size": 14848
+      "size": 14848,
+      "reference": {
+        "path": "packs/imhex-minidump/reference.blueprint.json",
+        "sha256": "23a9dabb566e5c0b9fc60658a7c7ae23c7cdc90e57e741c2260a948af0b8bdc9",
+        "size": 23560
+      }
     },
     {
       "id": "imhex-mo",
@@ -7172,7 +8487,12 @@
       },
       "path": "packs/imhex-mo/pack.bp.ts",
       "sha256": "179ae1e8cac18a2f8bf397b90a8c4fa99bc90d9cf7cc36cc70283034b3921187",
-      "size": 867
+      "size": 867,
+      "reference": {
+        "path": "packs/imhex-mo/reference.blueprint.json",
+        "sha256": "3fa7291ea179a6cd35b25941b1e6e5ea9a6da2d6e0ec1b36ffd38afd0b6e108d",
+        "size": 3171
+      }
     },
     {
       "id": "imhex-moduleanalysiscache",
@@ -7197,7 +8517,12 @@
       },
       "path": "packs/imhex-moduleanalysiscache/pack.bp.ts",
       "sha256": "804e5f3cd2f30646073ac099b9daee544155211c884b878d6409229ef22f0144",
-      "size": 1539
+      "size": 1539,
+      "reference": {
+        "path": "packs/imhex-moduleanalysiscache/reference.blueprint.json",
+        "sha256": "8b1717b502caa4be8783e8b93926075a42e044fc4b0d35cb6aa6e19afb1b1571",
+        "size": 4519
+      }
     },
     {
       "id": "imhex-mp4",
@@ -7223,7 +8548,12 @@
       },
       "path": "packs/imhex-mp4/pack.bp.ts",
       "sha256": "275adcfac842f7c2e71151a3f9b76bd2156aba6199d4d12531f30e52eb76866b",
-      "size": 8090
+      "size": 8090,
+      "reference": {
+        "path": "packs/imhex-mp4/reference.blueprint.json",
+        "sha256": "b469b9790b28e4c5122ab5abaf51e6aeb42b6fb3ef10e17332f163c63422ce33",
+        "size": 16277
+      }
     },
     {
       "id": "imhex-msf",
@@ -7249,7 +8579,12 @@
       },
       "path": "packs/imhex-msf/pack.bp.ts",
       "sha256": "f4c46e58ddb0f1199337c6d16bda15442f0d770bce2761aee59762e596fb2fbc",
-      "size": 8068
+      "size": 8068,
+      "reference": {
+        "path": "packs/imhex-msf/reference.blueprint.json",
+        "sha256": "1ee93589b38c6ea8a9bf096b632803e7710df9fda645bfd538f6bb2c848bc2d7",
+        "size": 14096
+      }
     },
     {
       "id": "imhex-msgpack",
@@ -7274,7 +8609,12 @@
       },
       "path": "packs/imhex-msgpack/pack.bp.ts",
       "sha256": "2433321de5e0dcf630d569b5b71ecdda6b8922c3b6078aeb687c46b434eb96e8",
-      "size": 1505
+      "size": 1505,
+      "reference": {
+        "path": "packs/imhex-msgpack/reference.blueprint.json",
+        "sha256": "95e19c66a581e51cec47870151bd72b578f6ff2cd70233fac3f5f91cc87717d5",
+        "size": 3889
+      }
     },
     {
       "id": "imhex-msscmp",
@@ -7299,7 +8639,12 @@
       },
       "path": "packs/imhex-msscmp/pack.bp.ts",
       "sha256": "10b78ee67f0e280d1ba135a3d333590ad1f5443074911c1c975bbedd74028f79",
-      "size": 2003
+      "size": 2003,
+      "reference": {
+        "path": "packs/imhex-msscmp/reference.blueprint.json",
+        "sha256": "e9ee72465c3acb77ff9485768157e968b82824fd90d5ce618fee4ebe16b90c00",
+        "size": 5121
+      }
     },
     {
       "id": "imhex-nacp",
@@ -7324,7 +8669,12 @@
       },
       "path": "packs/imhex-nacp/pack.bp.ts",
       "sha256": "f913f161593b508b71826d4538369c0afab46048ccc1ed1f70b2a210b13434bd",
-      "size": 6275
+      "size": 6275,
+      "reference": {
+        "path": "packs/imhex-nacp/reference.blueprint.json",
+        "sha256": "c861df96f75be7fd84636bd1bd52b473154971f581194ae08f90e2dd1744c253",
+        "size": 14359
+      }
     },
     {
       "id": "imhex-nbt",
@@ -7349,7 +8699,12 @@
       },
       "path": "packs/imhex-nbt/pack.bp.ts",
       "sha256": "4ac7f920174b852d0fa484c2e59678570d91d0b751fb58f2a59e0665e765938e",
-      "size": 868
+      "size": 868,
+      "reference": {
+        "path": "packs/imhex-nbt/reference.blueprint.json",
+        "sha256": "572a699664ebb6fb98dd95b4d08bd40dfcfe936a9eeb4a99035794d9dc956b09",
+        "size": 2940
+      }
     },
     {
       "id": "imhex-nds",
@@ -7374,7 +8729,12 @@
       },
       "path": "packs/imhex-nds/pack.bp.ts",
       "sha256": "32a6bf13e9ea1dd31f40a35aea987567ff73cc285f8722cce048f4c777d31d5f",
-      "size": 2669
+      "size": 2669,
+      "reference": {
+        "path": "packs/imhex-nds/reference.blueprint.json",
+        "sha256": "defef07635306af78df82eb548a97e8da7182ac340bcf3a52883db0deff736fa",
+        "size": 9647
+      }
     },
     {
       "id": "imhex-ne",
@@ -7399,7 +8759,12 @@
       },
       "path": "packs/imhex-ne/pack.bp.ts",
       "sha256": "c3b386f6e80975a315a256a2f8ea4c383699a7ef359831f05e1959e3817a22f5",
-      "size": 6494
+      "size": 6494,
+      "reference": {
+        "path": "packs/imhex-ne/reference.blueprint.json",
+        "sha256": "3f3b4815a44fc350401bd23e545794deeb3023e623ce5bf536c984ce357f1e16",
+        "size": 11484
+      }
     },
     {
       "id": "imhex-nes",
@@ -7424,7 +8789,12 @@
       },
       "path": "packs/imhex-nes/pack.bp.ts",
       "sha256": "cc3c8e977b4f926f6a00992463426c8a2f8d91431fdfd3af85b47eac2be190a3",
-      "size": 6203
+      "size": 6203,
+      "reference": {
+        "path": "packs/imhex-nes/reference.blueprint.json",
+        "sha256": "e6b718a57e9db4ff9a4a92e4807c6965d515d658ef8c9773fe0530724afc9756",
+        "size": 11709
+      }
     },
     {
       "id": "imhex-notepad-cache",
@@ -7451,7 +8821,12 @@
       },
       "path": "packs/imhex-notepad-cache/pack.bp.ts",
       "sha256": "984e4977ae4dc779a45f1d5777c9b12a25c230af70b84b64a4ddce4a02f82969",
-      "size": 1785
+      "size": 1785,
+      "reference": {
+        "path": "packs/imhex-notepad-cache/reference.blueprint.json",
+        "sha256": "e50aa355730d4002df73f4a182851fe0931d79036c0ed4602ab1b4d246f72c9d",
+        "size": 4024
+      }
     },
     {
       "id": "imhex-notepad-state",
@@ -7478,7 +8853,12 @@
       },
       "path": "packs/imhex-notepad-state/pack.bp.ts",
       "sha256": "2e6cf68adac421dae8945a33b9182d3159c1a0c7f287f838d9c0c6108f697f4f",
-      "size": 2047
+      "size": 2047,
+      "reference": {
+        "path": "packs/imhex-notepad-state/reference.blueprint.json",
+        "sha256": "12343063a82633d1d233394c22bbca3d886d597f748bb036434527f16bcf1a40",
+        "size": 4480
+      }
     },
     {
       "id": "imhex-notepadwindowstate",
@@ -7505,7 +8885,12 @@
       },
       "path": "packs/imhex-notepadwindowstate/pack.bp.ts",
       "sha256": "e11d6f23cb8c86f375a2c77713202ec7f6eaee00d993d045fcb9397b4122ab6a",
-      "size": 1691
+      "size": 1691,
+      "reference": {
+        "path": "packs/imhex-notepadwindowstate/reference.blueprint.json",
+        "sha256": "163219680d6f5e08920d69708858aadb98f7e9ce6ee3e6344ba3aec44433081c",
+        "size": 3982
+      }
     },
     {
       "id": "imhex-nro",
@@ -7530,7 +8915,12 @@
       },
       "path": "packs/imhex-nro/pack.bp.ts",
       "sha256": "d975e2d87436e7015e990eb05546f4e97aca8cea07458ebd459a0a55b1294472",
-      "size": 1193
+      "size": 1193,
+      "reference": {
+        "path": "packs/imhex-nro/reference.blueprint.json",
+        "sha256": "af433c369b071a864bc5dc6d0b796f3e31d5f1ede50cd2108a384d515869255b",
+        "size": 3615
+      }
     },
     {
       "id": "imhex-nsf",
@@ -7556,7 +8946,12 @@
       },
       "path": "packs/imhex-nsf/pack.bp.ts",
       "sha256": "03ce0bcf14899eea6d1b87e404f9734784437efd3f5f5309b5413a7fb08e8265",
-      "size": 2433
+      "size": 2433,
+      "reference": {
+        "path": "packs/imhex-nsf/reference.blueprint.json",
+        "sha256": "84c51d17a6a10856dabde7ee27cf5b362fe7e9d1150efe589e09b5eb2550ca1a",
+        "size": 5322
+      }
     },
     {
       "id": "imhex-nsfe",
@@ -7581,7 +8976,12 @@
       },
       "path": "packs/imhex-nsfe/pack.bp.ts",
       "sha256": "8090c3c1798a4f290226f7ca13da3640883078ab91cb96ee3fa105d5fd8aece7",
-      "size": 872
+      "size": 872,
+      "reference": {
+        "path": "packs/imhex-nsfe/reference.blueprint.json",
+        "sha256": "2da86e74f4821ec68f419f171d2841f67582304607d1552e587d329ed38350eb",
+        "size": 3099
+      }
     },
     {
       "id": "imhex-nso",
@@ -7606,7 +9006,12 @@
       },
       "path": "packs/imhex-nso/pack.bp.ts",
       "sha256": "bf67a88f076d19a44871c22d5de877173a0a40babdbac2c2c08ee15df6224c4c",
-      "size": 1382
+      "size": 1382,
+      "reference": {
+        "path": "packs/imhex-nso/reference.blueprint.json",
+        "sha256": "bbb6e1d82f68f7486c7daf9f8aab33fae294f4b8a356161e2d0b16960396483b",
+        "size": 3634
+      }
     },
     {
       "id": "imhex-ntag",
@@ -7631,7 +9036,12 @@
       },
       "path": "packs/imhex-ntag/pack.bp.ts",
       "sha256": "05a679c0bd8a268ad77bf4dacd376537eba6da42cbb59779d6c133096aa3b19b",
-      "size": 4340
+      "size": 4340,
+      "reference": {
+        "path": "packs/imhex-ntag/reference.blueprint.json",
+        "sha256": "f50898d2b0607be1a7e42058dec35f6d486348144a63398d5fbe53a8efb23b67",
+        "size": 9080
+      }
     },
     {
       "id": "imhex-ogg",
@@ -7656,7 +9066,12 @@
       },
       "path": "packs/imhex-ogg/pack.bp.ts",
       "sha256": "c59fff5c86302256aa8442b45ee043726cb03ad17b1bda90cf05ab0377619da6",
-      "size": 893
+      "size": 893,
+      "reference": {
+        "path": "packs/imhex-ogg/reference.blueprint.json",
+        "sha256": "b4c856ade2d7117c7b2ca89dfbe436bdbcb97ac93e677c2a122217cc62206918",
+        "size": 2917
+      }
     },
     {
       "id": "imhex-openssh",
@@ -7682,7 +9097,12 @@
       },
       "path": "packs/imhex-openssh/pack.bp.ts",
       "sha256": "4a6cae272498f013ea9f9423cca792216afeb42fa503d72bbce9413b0f4cf92e",
-      "size": 1195
+      "size": 1195,
+      "reference": {
+        "path": "packs/imhex-openssh/reference.blueprint.json",
+        "sha256": "f5b5127143faff5fd028d85a301fcf0ce2cbdb271944750099b9372dd3addf32",
+        "size": 3649
+      }
     },
     {
       "id": "imhex-optee-ta",
@@ -7708,7 +9128,12 @@
       },
       "path": "packs/imhex-optee-ta/pack.bp.ts",
       "sha256": "f0508dd3b1b2741314b30a674f63970439daa3034e6849075f64a6495ec56d17",
-      "size": 6244
+      "size": 6244,
+      "reference": {
+        "path": "packs/imhex-optee-ta/reference.blueprint.json",
+        "sha256": "7ad6cb0697e72626239550a99ae27e21d0fd7e951a9644b4caa991cc6ac31d91",
+        "size": 8873
+      }
     },
     {
       "id": "imhex-orp",
@@ -7733,7 +9158,12 @@
       },
       "path": "packs/imhex-orp/pack.bp.ts",
       "sha256": "f51cf0f593d1d4e7320df04ad27c77c15df686f5f950c66330083f8c7d832bd4",
-      "size": 1764
+      "size": 1764,
+      "reference": {
+        "path": "packs/imhex-orp/reference.blueprint.json",
+        "sha256": "fe8dc88194f226aa8bc60a9cafc178eded98730be0884a859b135572efbcc994",
+        "size": 5107
+      }
     },
     {
       "id": "imhex-osr",
@@ -7758,7 +9188,12 @@
       },
       "path": "packs/imhex-osr/pack.bp.ts",
       "sha256": "55f93bffbd2d85488b6c089627fe56b06bb765e702e8963a45feb9b0693c0f73",
-      "size": 3769
+      "size": 3769,
+      "reference": {
+        "path": "packs/imhex-osr/reference.blueprint.json",
+        "sha256": "e517c6fd5a32663cb867a36e2b64e062100263a53898b289fe5997181b41d28a",
+        "size": 6575
+      }
     },
     {
       "id": "imhex-parquet",
@@ -7785,7 +9220,12 @@
       },
       "path": "packs/imhex-parquet/pack.bp.ts",
       "sha256": "25db1d6a58363b84a6c3b35a42425bcd3bd6789e7c0d412bf853e443ad0e5084",
-      "size": 2576
+      "size": 2576,
+      "reference": {
+        "path": "packs/imhex-parquet/reference.blueprint.json",
+        "sha256": "90b7081adba08932f31498daab9cce0f8633205941055115e83bac41c0e8ba74",
+        "size": 5334
+      }
     },
     {
       "id": "imhex-pbz",
@@ -7810,7 +9250,12 @@
       },
       "path": "packs/imhex-pbz/pack.bp.ts",
       "sha256": "fc7f9dfd33cdce14f8fba052104191f57f76471b9d5df180874a01f890c7ad8d",
-      "size": 697
+      "size": 697,
+      "reference": {
+        "path": "packs/imhex-pbz/reference.blueprint.json",
+        "sha256": "94a7d72f503b8e6102d52f3d6779c14bd49f0021ab6de2a44be1ca81d3578d11",
+        "size": 2712
+      }
     },
     {
       "id": "imhex-pcap",
@@ -7835,7 +9280,12 @@
       },
       "path": "packs/imhex-pcap/pack.bp.ts",
       "sha256": "714a3ea89d5dc1a4de8112901aee732ef0940b1197e4407e22bdb5f31c4e60d0",
-      "size": 4649
+      "size": 4649,
+      "reference": {
+        "path": "packs/imhex-pcap/reference.blueprint.json",
+        "sha256": "b8167205b9c4ef870eb00853a78c5a534799d3bbcd2c332abe6b46a72050d908",
+        "size": 7565
+      }
     },
     {
       "id": "imhex-pcapng",
@@ -7861,7 +9311,12 @@
       },
       "path": "packs/imhex-pcapng/pack.bp.ts",
       "sha256": "d8617e6ccf23283d3c255637f0bc53035afd8dcbcf560cacd67f87b75ec79498",
-      "size": 6138
+      "size": 6138,
+      "reference": {
+        "path": "packs/imhex-pcapng/reference.blueprint.json",
+        "sha256": "8f0fc18255f309b25544e2a990f725ec572f14d1a05548d4069563c828e3ec98",
+        "size": 10080
+      }
     },
     {
       "id": "imhex-pck",
@@ -7887,7 +9342,12 @@
       },
       "path": "packs/imhex-pck/pack.bp.ts",
       "sha256": "94600e990ffa0da409fd6d49e07c66049f5bf005044705d05cbfb97a211adc6c",
-      "size": 1792
+      "size": 1792,
+      "reference": {
+        "path": "packs/imhex-pck/reference.blueprint.json",
+        "sha256": "ced17128a95e37ba54c18e5a85f7f94715b6d44c7821404213d04ebf4a33cdc0",
+        "size": 4970
+      }
     },
     {
       "id": "imhex-pcx",
@@ -7912,7 +9372,12 @@
       },
       "path": "packs/imhex-pcx/pack.bp.ts",
       "sha256": "85fd190f65061645960f85cb1f0c1801a1e4153b892b64cbb82c1aba5e1c43bd",
-      "size": 1676
+      "size": 1676,
+      "reference": {
+        "path": "packs/imhex-pcx/reference.blueprint.json",
+        "sha256": "ba9b19a02e1e6d2ed0c6e9f8a013f8f3368dcad07633b54e164f61c1a3acac8d",
+        "size": 4326
+      }
     },
     {
       "id": "imhex-pe",
@@ -7938,7 +9403,12 @@
       },
       "path": "packs/imhex-pe/pack.bp.ts",
       "sha256": "3294b89b974a2ef48e359cf9d91a05e24404f6f1a3a49198c3df8bf1750f75a1",
-      "size": 18009
+      "size": 18009,
+      "reference": {
+        "path": "packs/imhex-pe/reference.blueprint.json",
+        "sha256": "6514b572c3c0be069b8d94c94cdcc82fc3bb56642a5ecffadd6d9335438c2009",
+        "size": 29699
+      }
     },
     {
       "id": "imhex-pef",
@@ -7964,7 +9434,12 @@
       },
       "path": "packs/imhex-pef/pack.bp.ts",
       "sha256": "6057cce0228a8dea9c85fb6a97d7da410177130db95cd4df4a12986f677b5f35",
-      "size": 8092
+      "size": 8092,
+      "reference": {
+        "path": "packs/imhex-pef/reference.blueprint.json",
+        "sha256": "d1cb2a6f8c9d5e4c9e6262b12adbb9d29a5cc6be217e0a935937a2d9e9d5615e",
+        "size": 14339
+      }
     },
     {
       "id": "imhex-pex",
@@ -7989,7 +9464,12 @@
       },
       "path": "packs/imhex-pex/pack.bp.ts",
       "sha256": "e960e1c0a6d6129ecae7b286baf38082b6e9e136ba3194117e0ae39da4f292c1",
-      "size": 7804
+      "size": 7804,
+      "reference": {
+        "path": "packs/imhex-pex/reference.blueprint.json",
+        "sha256": "f26e9de535429f1c06e622cb47e7897dd2375d0834989aee44f9a302c8a66566",
+        "size": 17181
+      }
     },
     {
       "id": "imhex-pf",
@@ -8015,7 +9495,12 @@
       },
       "path": "packs/imhex-pf/pack.bp.ts",
       "sha256": "e7bb5dbe8d0818eb80e99920cfd94aba672db268a58c92dbc49fb50c4a675079",
-      "size": 1965
+      "size": 1965,
+      "reference": {
+        "path": "packs/imhex-pf/reference.blueprint.json",
+        "sha256": "a0cfee782b69153883f06c3afec0139f9705d855ea4710ba3842eafb3616cd31",
+        "size": 4767
+      }
     },
     {
       "id": "imhex-pfs0",
@@ -8041,7 +9526,12 @@
       },
       "path": "packs/imhex-pfs0/pack.bp.ts",
       "sha256": "fefd5a49a19bdb1a0b8c824eb09f02e3b5bc16f6f5a6999ee8c65a4927cd3113",
-      "size": 811
+      "size": 811,
+      "reference": {
+        "path": "packs/imhex-pfs0/reference.blueprint.json",
+        "sha256": "9a500f217d3b2f6ed904ff0c242a4d2afc4ce1a168ab8b1d357b8ad8c60ca311",
+        "size": 2888
+      }
     },
     {
       "id": "imhex-pickle",
@@ -8066,7 +9556,12 @@
       },
       "path": "packs/imhex-pickle/pack.bp.ts",
       "sha256": "2d56c1518989803882664bcc5d603dee9e7257e66e0e3aace9190c67eb190a1d",
-      "size": 1893
+      "size": 1893,
+      "reference": {
+        "path": "packs/imhex-pickle/reference.blueprint.json",
+        "sha256": "9333dde32bca25cd1d93b62efdc3c1ed60ace8e27678c4954abab1747b2ebcea",
+        "size": 4269
+      }
     },
     {
       "id": "imhex-pif",
@@ -8091,7 +9586,12 @@
       },
       "path": "packs/imhex-pif/pack.bp.ts",
       "sha256": "4854111dc21c45d73e57f6dae8aedd54f866f7a0edfec1062c6d58becfada320",
-      "size": 1496
+      "size": 1496,
+      "reference": {
+        "path": "packs/imhex-pif/reference.blueprint.json",
+        "sha256": "d1b6cf7c0c7a0a2273990229f76767837df9521992a0728306c7f1ffbd47bd08",
+        "size": 3955
+      }
     },
     {
       "id": "imhex-pkm",
@@ -8116,7 +9616,12 @@
       },
       "path": "packs/imhex-pkm/pack.bp.ts",
       "sha256": "1feca93a48650f460ef8981a2c9a25594380a24617b7e5940883d096ebbe7833",
-      "size": 1233
+      "size": 1233,
+      "reference": {
+        "path": "packs/imhex-pkm/reference.blueprint.json",
+        "sha256": "22bc8a7e74f9cbbc4486a90beee489ebbb2329ae5d5294d82b3476f26a7c7e22",
+        "size": 3411
+      }
     },
     {
       "id": "imhex-png",
@@ -8142,7 +9647,12 @@
       },
       "path": "packs/imhex-png/pack.bp.ts",
       "sha256": "10afd89a7225b8c0f40f46f2a5712666886b91275b14a334a42ea4bfc11282e4",
-      "size": 3243
+      "size": 3243,
+      "reference": {
+        "path": "packs/imhex-png/reference.blueprint.json",
+        "sha256": "bf1ccfffcc64cd00dc31773479375f700f10782529105d348065d6f2b22d4dd0",
+        "size": 7279
+      }
     },
     {
       "id": "imhex-png2",
@@ -8168,7 +9678,12 @@
       },
       "path": "packs/imhex-png2/pack.bp.ts",
       "sha256": "7fc2e9b2766e6e752ab81dc0b0433544c388b3adad1a6412bb56abb365b0f80a",
-      "size": 3244
+      "size": 3244,
+      "reference": {
+        "path": "packs/imhex-png2/reference.blueprint.json",
+        "sha256": "f616be8a9b58ac67d51b96748256ca596fffed53004f466f5aacbdfeccf63b3a",
+        "size": 7288
+      }
     },
     {
       "id": "imhex-popcap-luc",
@@ -8193,7 +9708,12 @@
       },
       "path": "packs/imhex-popcap-luc/pack.bp.ts",
       "sha256": "38d08579a6539d6a23c704b2d928b2ba041393532965e21f3be78582050d06ce",
-      "size": 1778
+      "size": 1778,
+      "reference": {
+        "path": "packs/imhex-popcap-luc/reference.blueprint.json",
+        "sha256": "bae84c7ffef51b4a7f0dc47ca36ac31d094c29ee1b1459c4817d6a08529a61ed",
+        "size": 5231
+      }
     },
     {
       "id": "imhex-prodinfo",
@@ -8218,7 +9738,12 @@
       },
       "path": "packs/imhex-prodinfo/pack.bp.ts",
       "sha256": "2ce8e37bce00efdffdd37f6a045848b7ae8d924fff1f9822070269c247ffeafc",
-      "size": 1387
+      "size": 1387,
+      "reference": {
+        "path": "packs/imhex-prodinfo/reference.blueprint.json",
+        "sha256": "fc66519b3efdab0736394938de0f2c28355020bc251841e3fef41b25bc88e835",
+        "size": 3878
+      }
     },
     {
       "id": "imhex-protobuf",
@@ -8245,7 +9770,12 @@
       },
       "path": "packs/imhex-protobuf/pack.bp.ts",
       "sha256": "0af0fb0f0abc0fb66696f78df3d9cd86f267553d86043dd6b45047d321c9c374",
-      "size": 2330
+      "size": 2330,
+      "reference": {
+        "path": "packs/imhex-protobuf/reference.blueprint.json",
+        "sha256": "bb129b2d7f5fc9f8c81636fb32aecddb52b939d90e5a40a7fd8b7910499ff3d7",
+        "size": 5105
+      }
     },
     {
       "id": "imhex-psafe3",
@@ -8270,7 +9800,12 @@
       },
       "path": "packs/imhex-psafe3/pack.bp.ts",
       "sha256": "de06cda8f465adf77abbd31ba13b10d7b83a562c04b2839c332a28b321c4fdc4",
-      "size": 1001
+      "size": 1001,
+      "reference": {
+        "path": "packs/imhex-psafe3/reference.blueprint.json",
+        "sha256": "b21c69d0de8b2305e3f9231ac377facda54aa4e45f0682c27dbb779cc871e027",
+        "size": 3252
+      }
     },
     {
       "id": "imhex-pyc",
@@ -8295,7 +9830,12 @@
       },
       "path": "packs/imhex-pyc/pack.bp.ts",
       "sha256": "7760ce18151627037501c61d8510d05eead6790e34160bbcdce25f9f3a912bb2",
-      "size": 2240
+      "size": 2240,
+      "reference": {
+        "path": "packs/imhex-pyc/reference.blueprint.json",
+        "sha256": "014ee3588d5b596c8110f2fa813feab29dd8c2824336b837b677522f3c62db4e",
+        "size": 5326
+      }
     },
     {
       "id": "imhex-pyinstaller",
@@ -8320,7 +9860,12 @@
       },
       "path": "packs/imhex-pyinstaller/pack.bp.ts",
       "sha256": "e518ce6d173db9751e13353da2f409b6789c8368748cf789ab5dac361c98cbe5",
-      "size": 1356
+      "size": 1356,
+      "reference": {
+        "path": "packs/imhex-pyinstaller/reference.blueprint.json",
+        "sha256": "5e6e629e249b2e72b665f7dddb3f8e02ac7b64cf6148da6528e990ab119d994c",
+        "size": 3878
+      }
     },
     {
       "id": "imhex-q3demo",
@@ -8345,7 +9890,12 @@
       },
       "path": "packs/imhex-q3demo/pack.bp.ts",
       "sha256": "d2d66375dd724e65de76c293e6ccb96acd2cbe90b9112f715ba146d59c4fbc23",
-      "size": 911
+      "size": 911,
+      "reference": {
+        "path": "packs/imhex-q3demo/reference.blueprint.json",
+        "sha256": "772703746ebe7f3bf14415815cd4193f8dca5953bf30ffd1b669b91fcd1a755b",
+        "size": 3161
+      }
     },
     {
       "id": "imhex-qbcl",
@@ -8370,7 +9920,12 @@
       },
       "path": "packs/imhex-qbcl/pack.bp.ts",
       "sha256": "5bf2b424b6f6cde974d93fa51bbeacf65f38a94a3bbb66c0f1c032bf15466c0b",
-      "size": 1987
+      "size": 1987,
+      "reference": {
+        "path": "packs/imhex-qbcl/reference.blueprint.json",
+        "sha256": "842f190fc32a3474e37991e345d56ee1d721e3775134cff87d0513557f99562f",
+        "size": 5220
+      }
     },
     {
       "id": "imhex-qoi",
@@ -8396,7 +9951,12 @@
       },
       "path": "packs/imhex-qoi/pack.bp.ts",
       "sha256": "da881efb8079f7a86eb8340c2244adc098bee45c36dc274453733a33011732f0",
-      "size": 2627
+      "size": 2627,
+      "reference": {
+        "path": "packs/imhex-qoi/reference.blueprint.json",
+        "sha256": "31a007c04705561c2b5684098024bc832c11baf5df83ad7820693eb78a513d8d",
+        "size": 5853
+      }
     },
     {
       "id": "imhex-quantized-mesh",
@@ -8421,7 +9981,12 @@
       },
       "path": "packs/imhex-quantized-mesh/pack.bp.ts",
       "sha256": "1fb4cd6901ecc509b7ab59602609c8268519e96caf1fdde3df762781a9a4de1d",
-      "size": 2812
+      "size": 2812,
+      "reference": {
+        "path": "packs/imhex-quantized-mesh/reference.blueprint.json",
+        "sha256": "fbf0b6e156c261570040ee76f5c10db055432c2ae97a1d646e85aa9de40848f8",
+        "size": 6901
+      }
     },
     {
       "id": "imhex-rar",
@@ -8448,7 +10013,12 @@
       },
       "path": "packs/imhex-rar/pack.bp.ts",
       "sha256": "d851c333bef2ef618bef12037d3841598dd01fbb96360a90563ae4476162a45d",
-      "size": 9296
+      "size": 9296,
+      "reference": {
+        "path": "packs/imhex-rar/reference.blueprint.json",
+        "sha256": "00438f2df3674fc016ebd626d0e56f18d137b9982b2f999d4b087153636d1fbb",
+        "size": 15338
+      }
     },
     {
       "id": "imhex-rcf-v1-2",
@@ -8473,7 +10043,12 @@
       },
       "path": "packs/imhex-rcf-v1-2/pack.bp.ts",
       "sha256": "ea0b8a5f5400e258d4b8d7a37d505615ed3600715b264eaab025b316d89020a2",
-      "size": 1170
+      "size": 1170,
+      "reference": {
+        "path": "packs/imhex-rcf-v1-2/reference.blueprint.json",
+        "sha256": "f94b7d3d564c8084e9224c5a7fade033217ba5b367022f5fec0637961c460311",
+        "size": 3688
+      }
     },
     {
       "id": "imhex-rgbds",
@@ -8499,7 +10074,12 @@
       },
       "path": "packs/imhex-rgbds/pack.bp.ts",
       "sha256": "a11d7f1c111635660434453765e720792e98f29c6a89a706db26a7850242a10d",
-      "size": 1938
+      "size": 1938,
+      "reference": {
+        "path": "packs/imhex-rgbds/reference.blueprint.json",
+        "sha256": "1d5daf022c244a1f2afaaedc35a0e48282356760c2c57235b19c9dc170695631",
+        "size": 4672
+      }
     },
     {
       "id": "imhex-rkvd",
@@ -8524,7 +10104,12 @@
       },
       "path": "packs/imhex-rkvd/pack.bp.ts",
       "sha256": "0664081df67dfd8f49e3399ab110641c61422d2887be6698c3d4d562a4edc6fd",
-      "size": 1153
+      "size": 1153,
+      "reference": {
+        "path": "packs/imhex-rkvd/reference.blueprint.json",
+        "sha256": "219e76f1c638541da22d48d7829d73eb72d645b76264a83e87f1bec2a1bc9be1",
+        "size": 3589
+      }
     },
     {
       "id": "imhex-roblox-pack",
@@ -8550,7 +10135,12 @@
       },
       "path": "packs/imhex-roblox-pack/pack.bp.ts",
       "sha256": "663023ab54d041a4c40fe555271d08e76a068e7ccd0924411e0031a9ed8a8028",
-      "size": 868
+      "size": 868,
+      "reference": {
+        "path": "packs/imhex-roblox-pack/reference.blueprint.json",
+        "sha256": "da94fb8d2db15ab18aa3acbc58bd8922157a39e41b2e3fd8a3ddd8d071b32c52",
+        "size": 3000
+      }
     },
     {
       "id": "imhex-rpm",
@@ -8576,7 +10166,12 @@
       },
       "path": "packs/imhex-rpm/pack.bp.ts",
       "sha256": "adc4d7d87c33ac505b21d0e239937223f875b335451980a5dfec9a4e16ff818c",
-      "size": 5425
+      "size": 5425,
+      "reference": {
+        "path": "packs/imhex-rpm/reference.blueprint.json",
+        "sha256": "0b7d83cecb394ad3db68005e0974512be7cc25d2fdba35cd254b683addb8a286",
+        "size": 8772
+      }
     },
     {
       "id": "imhex-rsc",
@@ -8601,7 +10196,12 @@
       },
       "path": "packs/imhex-rsc/pack.bp.ts",
       "sha256": "486bf6a60f20299c79bfff0b2624519eb3452959d6c1489edae7b2be92ca341a",
-      "size": 712
+      "size": 712,
+      "reference": {
+        "path": "packs/imhex-rsc/reference.blueprint.json",
+        "sha256": "286435691a09b94d5631235d755a836051f34f2538fa266046c83fc8842f050d",
+        "size": 2759
+      }
     },
     {
       "id": "imhex-sdb",
@@ -8626,7 +10226,12 @@
       },
       "path": "packs/imhex-sdb/pack.bp.ts",
       "sha256": "f3c0b97f175de8cc5be32ef5b626e421454a3f1689c3879571865dec72f4ae2e",
-      "size": 1065
+      "size": 1065,
+      "reference": {
+        "path": "packs/imhex-sdb/reference.blueprint.json",
+        "sha256": "4e7906b53f1eddbc2af6eb384fe2fa26cb199a84170719fa1730f3999a67544c",
+        "size": 3493
+      }
     },
     {
       "id": "imhex-selinux",
@@ -8652,7 +10257,12 @@
       },
       "path": "packs/imhex-selinux/pack.bp.ts",
       "sha256": "f694e2a4fbd4f99ed7bfbb5b76b82ccce56a29419e5adb85bb39b19fde92279f",
-      "size": 13027
+      "size": 13027,
+      "reference": {
+        "path": "packs/imhex-selinux/reference.blueprint.json",
+        "sha256": "d480b39b57895b43a24f33ec063d4b959cfbd591a675a273b1e485b490ce8f14",
+        "size": 26997
+      }
     },
     {
       "id": "imhex-selinuxpp",
@@ -8677,7 +10287,12 @@
       },
       "path": "packs/imhex-selinuxpp/pack.bp.ts",
       "sha256": "28daee50bb6d3bad758358fad6f0f587a1d2878e10c1f0972409f02aee0094bf",
-      "size": 684
+      "size": 684,
+      "reference": {
+        "path": "packs/imhex-selinuxpp/reference.blueprint.json",
+        "sha256": "f18e644a9d5e5efe5f28c3a27e07d7169914966031554024d42a224b408f8c45",
+        "size": 2758
+      }
     },
     {
       "id": "imhex-sfo",
@@ -8702,7 +10317,12 @@
       },
       "path": "packs/imhex-sfo/pack.bp.ts",
       "sha256": "17e60a8931bb769ffa3fa8d7674805990377d44f8e8c7d1f492f2fefee8a9e69",
-      "size": 880
+      "size": 880,
+      "reference": {
+        "path": "packs/imhex-sfo/reference.blueprint.json",
+        "sha256": "85347c67c3130a4c72cf87fc00f8ee6a8777eec0b5ca78709b7437cca821b198",
+        "size": 2931
+      }
     },
     {
       "id": "imhex-shp",
@@ -8727,7 +10347,12 @@
       },
       "path": "packs/imhex-shp/pack.bp.ts",
       "sha256": "75b952f022755f5e3dc025ee94a9e1e239eac946efd4683a5b836ecce95decde",
-      "size": 4367
+      "size": 4367,
+      "reference": {
+        "path": "packs/imhex-shp/reference.blueprint.json",
+        "sha256": "76219e04810cfdd2da2a9041726a08006e3080286fcd954335b08753f9d96aed",
+        "size": 9656
+      }
     },
     {
       "id": "imhex-shx",
@@ -8752,7 +10377,12 @@
       },
       "path": "packs/imhex-shx/pack.bp.ts",
       "sha256": "5698e135b58625ccac98998609c5d4656bf8c55b93b69ec00809d2b6a3c64319",
-      "size": 1540
+      "size": 1540,
+      "reference": {
+        "path": "packs/imhex-shx/reference.blueprint.json",
+        "sha256": "6f6d2082a46e638c78cdca5668f57f0341a0db78c9eed7d07a6f0aec50b445a1",
+        "size": 4041
+      }
     },
     {
       "id": "imhex-sit5",
@@ -8778,7 +10408,12 @@
       },
       "path": "packs/imhex-sit5/pack.bp.ts",
       "sha256": "067dc981a822f095ae567f4d19afb45c81c2f3a07a8c9158bd67ad9f4ce1f3ce",
-      "size": 1738
+      "size": 1738,
+      "reference": {
+        "path": "packs/imhex-sit5/reference.blueprint.json",
+        "sha256": "a1c1044bc3e75f5f24a7d9c7a43e9179f63d259c82f0478d069b7007dbab4072",
+        "size": 4380
+      }
     },
     {
       "id": "imhex-smk",
@@ -8803,7 +10438,12 @@
       },
       "path": "packs/imhex-smk/pack.bp.ts",
       "sha256": "1e01825eb38dbceafece6803553f8196d4234f527dbc43357b096333da79f108",
-      "size": 4404
+      "size": 4404,
+      "reference": {
+        "path": "packs/imhex-smk/reference.blueprint.json",
+        "sha256": "880610e608355fa1872704143f82429220662c9cfe43e65382d738ea3f7ba1dc",
+        "size": 8304
+      }
     },
     {
       "id": "imhex-snes",
@@ -8828,7 +10468,12 @@
       },
       "path": "packs/imhex-snes/pack.bp.ts",
       "sha256": "fef163f53fd18c60b6d65fe8e11c054561f01851bc811400cc0d45d13edd6f27",
-      "size": 2134
+      "size": 2134,
+      "reference": {
+        "path": "packs/imhex-snes/reference.blueprint.json",
+        "sha256": "aeb0417dfa4132b07bf04702e484cb196e1cba7c3b7f6c5fef5dab317eaf21a6",
+        "size": 4892
+      }
     },
     {
       "id": "imhex-spc",
@@ -8854,7 +10499,12 @@
       },
       "path": "packs/imhex-spc/pack.bp.ts",
       "sha256": "be8a9e500faba142381fd070111c0355b9e2c8c3681fe302983821b08cc382df",
-      "size": 1905
+      "size": 1905,
+      "reference": {
+        "path": "packs/imhex-spc/reference.blueprint.json",
+        "sha256": "e1708d84dd5ab4006173909372e84d76f02a12168778d78183e5329bb8e8eac6",
+        "size": 4573
+      }
     },
     {
       "id": "imhex-spirv",
@@ -8879,7 +10529,12 @@
       },
       "path": "packs/imhex-spirv/pack.bp.ts",
       "sha256": "6cba281f2cace46e60848f79d5251f6bf19502854e094c748bf281f872c81679",
-      "size": 22277
+      "size": 22277,
+      "reference": {
+        "path": "packs/imhex-spirv/reference.blueprint.json",
+        "sha256": "2afbb7e3a5af8568da0c0b42f358ec63316b9d76be6fc06b7677f7a374fbf4b8",
+        "size": 27345
+      }
     },
     {
       "id": "imhex-sqlite3",
@@ -8905,7 +10560,12 @@
       },
       "path": "packs/imhex-sqlite3/pack.bp.ts",
       "sha256": "2b991e6522ef1e3aa5b0a8290882dd7f60645bbf8b3d4692ac4f5593b9ef558b",
-      "size": 1200
+      "size": 1200,
+      "reference": {
+        "path": "packs/imhex-sqlite3/reference.blueprint.json",
+        "sha256": "326fff6f7672513ff835edace59fa0ec396d5b1f4cea785185617db6897703cb",
+        "size": 3474
+      }
     },
     {
       "id": "imhex-stdfv4",
@@ -8931,7 +10591,12 @@
       },
       "path": "packs/imhex-stdfv4/pack.bp.ts",
       "sha256": "a49cc191dd564c027e9e26fc57daeae88f40bd524b3043620584f75edb5dc108",
-      "size": 13270
+      "size": 13270,
+      "reference": {
+        "path": "packs/imhex-stdfv4/reference.blueprint.json",
+        "sha256": "8d239fc3efa6f15e1a68e9b62171c5d3e017c5d8c5209fd98f4d4e8050cbbd81",
+        "size": 23662
+      }
     },
     {
       "id": "imhex-stl",
@@ -8956,7 +10621,12 @@
       },
       "path": "packs/imhex-stl/pack.bp.ts",
       "sha256": "f3fd0c0371b06a242bbcbcbc34079aa5e17dbedfe490d96d620bb0fabcd76385",
-      "size": 904
+      "size": 904,
+      "reference": {
+        "path": "packs/imhex-stl/reference.blueprint.json",
+        "sha256": "09102ccba8d2c6bb8154f8d4af6841809078f99f1e0672eb8d5fbf6fec4d8f4b",
+        "size": 3119
+      }
     },
     {
       "id": "imhex-sup",
@@ -8982,7 +10652,12 @@
       },
       "path": "packs/imhex-sup/pack.bp.ts",
       "sha256": "ec64e5810b163d2a55a71b28ff43b91e90717887e2c7c456d384245f2e671fef",
-      "size": 3582
+      "size": 3582,
+      "reference": {
+        "path": "packs/imhex-sup/reference.blueprint.json",
+        "sha256": "8cb72b2ae5fa53783fb899c6517dc0544ac1309210cde4b10f832099a9275fd5",
+        "size": 7147
+      }
     },
     {
       "id": "imhex-swf",
@@ -9007,7 +10682,12 @@
       },
       "path": "packs/imhex-swf/pack.bp.ts",
       "sha256": "1873442293eb04bc972e4928dd7076a0e096d06c0dc40b17400efde5b6200e43",
-      "size": 1040
+      "size": 1040,
+      "reference": {
+        "path": "packs/imhex-swf/reference.blueprint.json",
+        "sha256": "2b8dc4eecbe66e7f143941db245b9006b37d21d259d09f3ed6129eef0cb285a7",
+        "size": 3286
+      }
     },
     {
       "id": "imhex-tar",
@@ -9032,7 +10712,12 @@
       },
       "path": "packs/imhex-tar/pack.bp.ts",
       "sha256": "f63b1b8b759d1105de76d358db20e215e71f80457751bc488fb27b8e50a2a686",
-      "size": 1546
+      "size": 1546,
+      "reference": {
+        "path": "packs/imhex-tar/reference.blueprint.json",
+        "sha256": "9cc77b40117354ce3b348b52ab6f83d20e20370abbc60df423c37b54b292ed64",
+        "size": 3827
+      }
     },
     {
       "id": "imhex-tarc",
@@ -9057,7 +10742,12 @@
       },
       "path": "packs/imhex-tarc/pack.bp.ts",
       "sha256": "92f4635069e5baac53b1b7d2c6822a19342e25db1bbb5d0bc9713deb7a6adbee",
-      "size": 1597
+      "size": 1597,
+      "reference": {
+        "path": "packs/imhex-tarc/reference.blueprint.json",
+        "sha256": "27900ccb0b387818123a1b40ba3fcac68fe133655f72ae168151397ee04f96fe",
+        "size": 4104
+      }
     },
     {
       "id": "imhex-terminfo",
@@ -9083,7 +10773,12 @@
       },
       "path": "packs/imhex-terminfo/pack.bp.ts",
       "sha256": "d29181e72f6c6463a575c5ae900a319bf72bef202f0e4c88ea38673dd653ab3d",
-      "size": 2326
+      "size": 2326,
+      "reference": {
+        "path": "packs/imhex-terminfo/reference.blueprint.json",
+        "sha256": "a4824d3b028134428e6f85572ced4cde71df77b5be458214a81c72eb97156fc9",
+        "size": 5624
+      }
     },
     {
       "id": "imhex-tga",
@@ -9108,7 +10803,12 @@
       },
       "path": "packs/imhex-tga/pack.bp.ts",
       "sha256": "cb1e8579bb2d6b7b67ae86fd79d5e5669cc4af38a3eeffa4155bb48b48419b67",
-      "size": 2188
+      "size": 2188,
+      "reference": {
+        "path": "packs/imhex-tga/reference.blueprint.json",
+        "sha256": "8ab9c90dfbe5920a14d37143ffb24da35744c21b27c6754c42f1e2645e78d6dc",
+        "size": 5082
+      }
     },
     {
       "id": "imhex-thumbcache",
@@ -9133,7 +10833,12 @@
       },
       "path": "packs/imhex-thumbcache/pack.bp.ts",
       "sha256": "82925c6c32dc1571bcff3cebfc6c40fa3e4e44bc01a5621e28ece5c023bee29b",
-      "size": 719
+      "size": 719,
+      "reference": {
+        "path": "packs/imhex-thumbcache/reference.blueprint.json",
+        "sha256": "123f4a351afc814b9d82893eb1a7ef45bbc76de4a17dfbb497426bce4110c336",
+        "size": 2817
+      }
     },
     {
       "id": "imhex-tiff",
@@ -9159,7 +10864,12 @@
       },
       "path": "packs/imhex-tiff/pack.bp.ts",
       "sha256": "6064945ca2dc284215d6240c818a9eb7e5cf3a5f632d62bfe0b9dbdc36f01dea",
-      "size": 9515
+      "size": 9515,
+      "reference": {
+        "path": "packs/imhex-tiff/reference.blueprint.json",
+        "sha256": "513cd6d2d264f6151c2d86233ac1f44435e21ad759488d9a20d1e8c42b1f4acc",
+        "size": 13216
+      }
     },
     {
       "id": "imhex-tmd",
@@ -9185,7 +10895,12 @@
       },
       "path": "packs/imhex-tmd/pack.bp.ts",
       "sha256": "2b1ee3f4c1c3558175988e86d9077ab11f056c17bbb20c1309efd2aecd71842f",
-      "size": 1737
+      "size": 1737,
+      "reference": {
+        "path": "packs/imhex-tmd/reference.blueprint.json",
+        "sha256": "74e0902ac298abc604d50d21b73399310d0d30ded2720d671dc3d3b983b35997",
+        "size": 4552
+      }
     },
     {
       "id": "imhex-ttf",
@@ -9210,7 +10925,12 @@
       },
       "path": "packs/imhex-ttf/pack.bp.ts",
       "sha256": "fd650f0b4b2600e3e7604a9d2d15e5321036cfb08dabca5b45f22d716c4906a9",
-      "size": 18506
+      "size": 18506,
+      "reference": {
+        "path": "packs/imhex-ttf/reference.blueprint.json",
+        "sha256": "f2994031ec8908a68f155244cc3f63353929bf33edc3b6285557c3647abc5e1b",
+        "size": 35286
+      }
     },
     {
       "id": "imhex-ubiquiti",
@@ -9235,7 +10955,12 @@
       },
       "path": "packs/imhex-ubiquiti/pack.bp.ts",
       "sha256": "981e0c9d1accc3b66ecafadbd2f9f067f470d5db47a0ab65ab07950e427afb43",
-      "size": 1708
+      "size": 1708,
+      "reference": {
+        "path": "packs/imhex-ubiquiti/reference.blueprint.json",
+        "sha256": "a10ceaebcb2e299d21f6a3f5e859e3e12c901a306e664355fc1236d80ff89958",
+        "size": 4774
+      }
     },
     {
       "id": "imhex-uefi",
@@ -9260,7 +10985,12 @@
       },
       "path": "packs/imhex-uefi/pack.bp.ts",
       "sha256": "d80ef42de96db828b00aca23fea5ebf99a08e659fedcf9daeefca32eb0e97f89",
-      "size": 2708
+      "size": 2708,
+      "reference": {
+        "path": "packs/imhex-uefi/reference.blueprint.json",
+        "sha256": "b4a4ffab7b57f3a878dc8cf6e75ad20c66e721b232f475f716e2e69b8588e0a1",
+        "size": 7195
+      }
     },
     {
       "id": "imhex-uefi-boot-entry",
@@ -9286,7 +11016,12 @@
       },
       "path": "packs/imhex-uefi-boot-entry/pack.bp.ts",
       "sha256": "07d8c85a9bb255092c06ed804d420c8f8422757c2d55cc1738e22d73a5c74499",
-      "size": 1465
+      "size": 1465,
+      "reference": {
+        "path": "packs/imhex-uefi-boot-entry/reference.blueprint.json",
+        "sha256": "3703265ac93faba66bf80ea7791c4d7dd84e7df908565ca7cfa9cccbf76f48c6",
+        "size": 4200
+      }
     },
     {
       "id": "imhex-uefi-fv-varstore",
@@ -9312,7 +11047,12 @@
       },
       "path": "packs/imhex-uefi-fv-varstore/pack.bp.ts",
       "sha256": "a1ebd06d8920c25e904b876292e51ec0789f995f06ed1c28deef36b9e69a9109",
-      "size": 3908
+      "size": 3908,
+      "reference": {
+        "path": "packs/imhex-uefi-fv-varstore/reference.blueprint.json",
+        "sha256": "31637233abdd8971957e52db633b38135ee1cfdf5e9d86e2102031908bdabade",
+        "size": 7226
+      }
     },
     {
       "id": "imhex-uf2",
@@ -9337,7 +11077,12 @@
       },
       "path": "packs/imhex-uf2/pack.bp.ts",
       "sha256": "609ed942b66b9d23e7c26aca5a6f67df6343becba4566be6b73c63687871757e",
-      "size": 1997
+      "size": 1997,
+      "reference": {
+        "path": "packs/imhex-uf2/reference.blueprint.json",
+        "sha256": "2056eedb9f1e592b63b0845df82e71fd64ab6de6c477c254b3b5a8db09715467",
+        "size": 4847
+      }
     },
     {
       "id": "imhex-unif",
@@ -9362,7 +11107,12 @@
       },
       "path": "packs/imhex-unif/pack.bp.ts",
       "sha256": "e47b8068d143006e76030a5af898f4610552d90bf496e06f4780c2f7aed97757",
-      "size": 861
+      "size": 861,
+      "reference": {
+        "path": "packs/imhex-unif/reference.blueprint.json",
+        "sha256": "5669034c16dfa88cc1fe50fbf9044dd0abe79ef3dd83a1733171770762c1c68b",
+        "size": 3103
+      }
     },
     {
       "id": "imhex-unity-asset-bundle",
@@ -9387,7 +11137,12 @@
       },
       "path": "packs/imhex-unity-asset-bundle/pack.bp.ts",
       "sha256": "f9e82681e27b800bbd8966fc793ec77568ed4285fca8f55259180a561c99b6f0",
-      "size": 1344
+      "size": 1344,
+      "reference": {
+        "path": "packs/imhex-unity-asset-bundle/reference.blueprint.json",
+        "sha256": "bcfde1a61225bfaf9b669eff5c3aa86452ff488c6b03330e2275a6300b02ca85",
+        "size": 4080
+      }
     },
     {
       "id": "imhex-unity-web-data",
@@ -9412,7 +11167,12 @@
       },
       "path": "packs/imhex-unity-web-data/pack.bp.ts",
       "sha256": "04fb5378300ddebd8a36a10703584f8fce4c3d855388e39c23138541c2479275",
-      "size": 921
+      "size": 921,
+      "reference": {
+        "path": "packs/imhex-unity-web-data/reference.blueprint.json",
+        "sha256": "13b42e3d6151ef245e4a85f8a9df3e53cf99e68c59f0150e2d97d68369844800",
+        "size": 3234
+      }
     },
     {
       "id": "imhex-upk-ue3",
@@ -9438,7 +11198,12 @@
       },
       "path": "packs/imhex-upk-ue3/pack.bp.ts",
       "sha256": "167bca98b265b39ed2b49d8e08ec3d319cae834bb6e9241f6f7e43c5e0a4d5f7",
-      "size": 2306
+      "size": 2306,
+      "reference": {
+        "path": "packs/imhex-upk-ue3/reference.blueprint.json",
+        "sha256": "f319221c3b16a31c3cff2059f04a8162ff3f264215310ea92f2eb6f5d81eff0d",
+        "size": 5401
+      }
     },
     {
       "id": "imhex-usb",
@@ -9464,7 +11229,12 @@
       },
       "path": "packs/imhex-usb/pack.bp.ts",
       "sha256": "f762e9d774481851fc16a4f751b5b709e68b49df13f0295b79070186d983fb27",
-      "size": 4763
+      "size": 4763,
+      "reference": {
+        "path": "packs/imhex-usb/reference.blueprint.json",
+        "sha256": "28f5542b79ea2631278566ca9b887f81f8a16a91cb087649fab8d36f4fd2b40c",
+        "size": 8982
+      }
     },
     {
       "id": "imhex-valve-vpk",
@@ -9490,7 +11260,12 @@
       },
       "path": "packs/imhex-valve-vpk/pack.bp.ts",
       "sha256": "fdee8398f8f4d3fd44ed653f02bad9d42e785acc61e4b603249652818f693f86",
-      "size": 1023
+      "size": 1023,
+      "reference": {
+        "path": "packs/imhex-valve-vpk/reference.blueprint.json",
+        "sha256": "9f8f48f73971432b52d5c7335ec1bf4a193567f85b9cc237f81a6d7af1ada2ae",
+        "size": 3279
+      }
     },
     {
       "id": "imhex-vbmeta",
@@ -9516,7 +11291,12 @@
       },
       "path": "packs/imhex-vbmeta/pack.bp.ts",
       "sha256": "eef4c4c1cec0b47ce6c3fe63b022e25465f0f1051d18996d553498ef0c9c49cc",
-      "size": 3049
+      "size": 3049,
+      "reference": {
+        "path": "packs/imhex-vbmeta/reference.blueprint.json",
+        "sha256": "8f1092a3c9caf4adffa82205d0c5a2c582a9bd813e3b4445184b80752c816803",
+        "size": 6195
+      }
     },
     {
       "id": "imhex-vdf",
@@ -9541,7 +11321,12 @@
       },
       "path": "packs/imhex-vdf/pack.bp.ts",
       "sha256": "6cd5a27cf9d2635b40fac6301aa4ccaca285443288b32eeb7eabe3403adc19b6",
-      "size": 952
+      "size": 952,
+      "reference": {
+        "path": "packs/imhex-vdf/reference.blueprint.json",
+        "sha256": "406aba35acc9d2e0f51e6ac06aed19196ae58b1133c82f4eb4097bcb44a6edba",
+        "size": 3237
+      }
     },
     {
       "id": "imhex-veado",
@@ -9566,7 +11351,12 @@
       },
       "path": "packs/imhex-veado/pack.bp.ts",
       "sha256": "ffd3dfd2800245f53a906a4cc886dfb73b41d2b3eb68604bf5e0a907aaca3801",
-      "size": 3783
+      "size": 3783,
+      "reference": {
+        "path": "packs/imhex-veado/reference.blueprint.json",
+        "sha256": "5b7f10f0b275c590c7af0f4ae142101eb496174511da2780638bc4ceef0671bf",
+        "size": 8590
+      }
     },
     {
       "id": "imhex-vgm",
@@ -9592,7 +11382,12 @@
       },
       "path": "packs/imhex-vgm/pack.bp.ts",
       "sha256": "112b38cf5bbd53e19e51bc6289997b4f1250ec6f2c3020fd2f7a91bd64f588b7",
-      "size": 3944
+      "size": 3944,
+      "reference": {
+        "path": "packs/imhex-vgm/reference.blueprint.json",
+        "sha256": "bae5ae1657016f6358066118babb881079815a3c6140aef000bad64a1ed941c7",
+        "size": 8012
+      }
     },
     {
       "id": "imhex-vhdx",
@@ -9618,7 +11413,12 @@
       },
       "path": "packs/imhex-vhdx/pack.bp.ts",
       "sha256": "78ae0d2109bcd5dd43d76dc11b951b17e00fc5572f2db3b8ba480e4d5faeac09",
-      "size": 4549
+      "size": 4549,
+      "reference": {
+        "path": "packs/imhex-vhdx/reference.blueprint.json",
+        "sha256": "582784221053a1d3ff58b807d9311e3207a80218724f01f5688fbcfde1157847",
+        "size": 13989
+      }
     },
     {
       "id": "imhex-vox",
@@ -9643,7 +11443,12 @@
       },
       "path": "packs/imhex-vox/pack.bp.ts",
       "sha256": "57c35395f1a16dc6cadf5eac948885ddf4a6374215158be557acbe4b935525ce",
-      "size": 2587
+      "size": 2587,
+      "reference": {
+        "path": "packs/imhex-vox/reference.blueprint.json",
+        "sha256": "b8b25bc034f2c02213a9089aade6c087da866fe74e5392a03f029aded13ed063",
+        "size": 6564
+      }
     },
     {
       "id": "imhex-wad",
@@ -9668,7 +11473,12 @@
       },
       "path": "packs/imhex-wad/pack.bp.ts",
       "sha256": "ba9f8cf99aec0d9eb5e9ea12d01c1386d46d1ff7d8bf5c917a057fca69115811",
-      "size": 832
+      "size": 832,
+      "reference": {
+        "path": "packs/imhex-wad/reference.blueprint.json",
+        "sha256": "d59347a4ab6ad730eae65010da39ee4eca1a294fd65e651ea61fa879cccce5f4",
+        "size": 3051
+      }
     },
     {
       "id": "imhex-wav",
@@ -9694,7 +11504,12 @@
       },
       "path": "packs/imhex-wav/pack.bp.ts",
       "sha256": "64874634c08f3e3bfd5a27932114ff1672fb0e83eed51136a17bf965c190a58d",
-      "size": 9257
+      "size": 9257,
+      "reference": {
+        "path": "packs/imhex-wav/reference.blueprint.json",
+        "sha256": "bc6783e832aed3ca09dc1e264da27d0153cdcb04921d1f1d968198deedc30da3",
+        "size": 16313
+      }
     },
     {
       "id": "imhex-webp",
@@ -9720,7 +11535,12 @@
       },
       "path": "packs/imhex-webp/pack.bp.ts",
       "sha256": "6716d81e4ef73ce6d7b450b59f26cd4d25508fe122ed3a067fad8642c784607d",
-      "size": 3026
+      "size": 3026,
+      "reference": {
+        "path": "packs/imhex-webp/reference.blueprint.json",
+        "sha256": "0c68d84b55463eacac9629bf28eef885a3cf61922fba904d9fa99f7ee8261b22",
+        "size": 6640
+      }
     },
     {
       "id": "imhex-wfm",
@@ -9745,7 +11565,12 @@
       },
       "path": "packs/imhex-wfm/pack.bp.ts",
       "sha256": "8a230a0c37154e027c085ea05fed9e8dc7e0992cfab607f59aa0513a433c991f",
-      "size": 7725
+      "size": 7725,
+      "reference": {
+        "path": "packs/imhex-wfm/reference.blueprint.json",
+        "sha256": "0e935a6664f3bcd0587c48b070e35c5002b1702c38cd2004ccad29b59c1cf169",
+        "size": 13652
+      }
     },
     {
       "id": "imhex-wintec-tes",
@@ -9770,7 +11595,12 @@
       },
       "path": "packs/imhex-wintec-tes/pack.bp.ts",
       "sha256": "265c766fb1b68076dd76b4d732e94bd11fad06bfcfd64b6e6691673f6af26565",
-      "size": 1562
+      "size": 1562,
+      "reference": {
+        "path": "packs/imhex-wintec-tes/reference.blueprint.json",
+        "sha256": "cc748826b0974185cfd46ca90d30bbd5fdb29ac27ed73d86cdcb9337ebdae765",
+        "size": 4068
+      }
     },
     {
       "id": "imhex-xbeh",
@@ -9795,7 +11625,12 @@
       },
       "path": "packs/imhex-xbeh/pack.bp.ts",
       "sha256": "1586ad36fe13ea5610f8ff87b641406de9398677ea9868afa8fa1dc844adcede",
-      "size": 4625
+      "size": 4625,
+      "reference": {
+        "path": "packs/imhex-xbeh/reference.blueprint.json",
+        "sha256": "557b46e5cb41e86ba37455ec95c85bd323d0ee7d2dc1f4eabda0f96b8b3228bd",
+        "size": 8548
+      }
     },
     {
       "id": "imhex-xci",
@@ -9820,7 +11655,12 @@
       },
       "path": "packs/imhex-xci/pack.bp.ts",
       "sha256": "596db2100db3698620d1cb525fffe6c4ae5e02a41dc8f9e6c56abf34b351b2b0",
-      "size": 2026
+      "size": 2026,
+      "reference": {
+        "path": "packs/imhex-xci/reference.blueprint.json",
+        "sha256": "dcbc24349f1ad79907ff25696b4ea6937d48d055e15dcc901c3752a3ebdd6b80",
+        "size": 5048
+      }
     },
     {
       "id": "imhex-xex",
@@ -9845,7 +11685,12 @@
       },
       "path": "packs/imhex-xex/pack.bp.ts",
       "sha256": "d639682651f39363d853430ac37604ef08efdd59d2017e9515dde391a3cee40e",
-      "size": 679
+      "size": 679,
+      "reference": {
+        "path": "packs/imhex-xex/reference.blueprint.json",
+        "sha256": "f9478a23c99c7573b4d636184cb0b5f6bbff9020a0ef08a4a4a78693caddf3d9",
+        "size": 2737
+      }
     },
     {
       "id": "imhex-xgstexture",
@@ -9870,7 +11715,12 @@
       },
       "path": "packs/imhex-xgstexture/pack.bp.ts",
       "sha256": "c852f6e390b52aa2141992d1c0a353a672bedc2178a24c31c1e54b975d15da5a",
-      "size": 1359
+      "size": 1359,
+      "reference": {
+        "path": "packs/imhex-xgstexture/reference.blueprint.json",
+        "sha256": "7e6374c41be3bb3f9c665c2afbc0542a640121b6976c4c7513ff503c72e2901f",
+        "size": 3501
+      }
     },
     {
       "id": "imhex-xilinx-bit",
@@ -9896,7 +11746,12 @@
       },
       "path": "packs/imhex-xilinx-bit/pack.bp.ts",
       "sha256": "146b87370c6deb811bdc46b169859d7ffb7540d2ccaa325e2da77381efe9e07a",
-      "size": 1095
+      "size": 1095,
+      "reference": {
+        "path": "packs/imhex-xilinx-bit/reference.blueprint.json",
+        "sha256": "3a838f3c7f8f2d6ba3a184756968b396eb287d9a87c17a8cf2e494ce2239f0c9",
+        "size": 3567
+      }
     },
     {
       "id": "imhex-xilinx-bootgen",
@@ -9922,7 +11777,12 @@
       },
       "path": "packs/imhex-xilinx-bootgen/pack.bp.ts",
       "sha256": "be44e1203bb4eaf93c642956b9cee438a0cb279abb47acfdd67f5c77310349c5",
-      "size": 5202
+      "size": 5202,
+      "reference": {
+        "path": "packs/imhex-xilinx-bootgen/reference.blueprint.json",
+        "sha256": "735e543f7cd590c4e51527f53e68b5d06cdf8b00d91060cbb04134711f5d4959",
+        "size": 10443
+      }
     },
     {
       "id": "imhex-zim",
@@ -9948,7 +11808,12 @@
       },
       "path": "packs/imhex-zim/pack.bp.ts",
       "sha256": "59ccf41ebabf4a6ca1fac807ca6084af8162bf7976c3196c2f6c72b7337dabe6",
-      "size": 1459
+      "size": 1459,
+      "reference": {
+        "path": "packs/imhex-zim/reference.blueprint.json",
+        "sha256": "4b4c7a0e870bc9c1168618e253805e4306f2063a63f4c8b7997fcbeef567048f",
+        "size": 4065
+      }
     },
     {
       "id": "imhex-zip",
@@ -9974,7 +11839,12 @@
       },
       "path": "packs/imhex-zip/pack.bp.ts",
       "sha256": "83a30e14c28f9322b78b644e2a56ce7c19927c3d5df961cd59a82036a60d6ed6",
-      "size": 5565
+      "size": 5565,
+      "reference": {
+        "path": "packs/imhex-zip/reference.blueprint.json",
+        "sha256": "fc85cdcdf6845cf25058fb44f3742d267483762fc74be0dd5e285e3364f101c7",
+        "size": 9896
+      }
     },
     {
       "id": "imhex-zlib",
@@ -9999,7 +11869,12 @@
       },
       "path": "packs/imhex-zlib/pack.bp.ts",
       "sha256": "ac3dc082d0a339b876a59823b38d52580a8696900b338268d93d4ea7de5a8142",
-      "size": 1097
+      "size": 1097,
+      "reference": {
+        "path": "packs/imhex-zlib/reference.blueprint.json",
+        "sha256": "424a6d6b5d41764734edfa005b3f6a9eaf01802f6e599e81d424b5797728b4a0",
+        "size": 3344
+      }
     },
     {
       "id": "imhex-zone",
@@ -10025,7 +11900,12 @@
       },
       "path": "packs/imhex-zone/pack.bp.ts",
       "sha256": "8ddd77eeabc7a4f11318710d72f2d660a40d0d34cd7576e283e20f2a463fbd9a",
-      "size": 2264
+      "size": 2264,
+      "reference": {
+        "path": "packs/imhex-zone/reference.blueprint.json",
+        "sha256": "8794f894405df226575a9fa282c3c27f29f59b6bf1febd690d2289c60cfcd4ab",
+        "size": 5347
+      }
     },
     {
       "id": "imhex-zstd",
@@ -10050,7 +11930,12 @@
       },
       "path": "packs/imhex-zstd/pack.bp.ts",
       "sha256": "2eb637d0301f11046b2c18d3ccdd4d23203c6e96b13eb06ae20a7d33d7974315",
-      "size": 2781
+      "size": 2781,
+      "reference": {
+        "path": "packs/imhex-zstd/reference.blueprint.json",
+        "sha256": "86773de4ed6ca6884600c363740b83b3c1e915e6867dd86ac9bb5902900cb61e",
+        "size": 6053
+      }
     }
   ]
 }
